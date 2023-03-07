@@ -1,2 +1,2 @@
 # F1
-F1 site en Laravel
+Petit projet fait pour pratiquer php et laravel 
