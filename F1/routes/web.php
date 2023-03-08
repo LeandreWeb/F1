@@ -15,4 +15,33 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+Route::get('/standing', function(){
+    return "<h1>Standing</h1>";
+});
+
+Route::prefix("drivers")->group(function() {
+    Route::get('/', function () {
+
+        $drivers= [
+            1 =>['Lastname'=>'Alonso'],
+            2 =>['Lastname'=>'Stroll'],
+            3 =>['Lastname'=>'Verstapen'],
+            4 =>['Lastname'=>'Perex']
+        ];
+
+
+        return view('Drivers.allDrivers',['drivers'=> $drivers]);
+    })->name('allDrivers');
+});
+
+
+Route::get('/team/{id}',function($id){
+
+    return "Team". $id;
+})->name('teams');
+
+Route::fallback(function(){
+    return "<h1>404 Page not Found</h1> ";
 });
