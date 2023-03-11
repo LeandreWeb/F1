@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+<main>
     <h1>Drivers</h1>
 
 
@@ -9,4 +10,5 @@
     <?php endforeach ?>
 
     <a href="{{route('home')}}">Home</a>
+</main>
 @endsection

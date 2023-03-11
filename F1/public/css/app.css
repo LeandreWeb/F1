@@ -1,3 +1,4 @@
+/* Initialisation */
 * {
     margin: 0px;
     padding: 0px;
@@ -9,6 +10,9 @@
     --background-light: #464046;
     --text: #fefefa;
     --accent: #68fe9a;
+
+    --header-height: 8em;
+    --footer-heaght: 12em;
 }
 
 body {
@@ -16,6 +20,11 @@ body {
     color: var(--text);
     font-family: "Golos Text", sans-serif;
 }
+
+a {
+    color: blue;
+}
+/* Header */
 
 header {
     position: sticky;
@@ -25,6 +34,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: var(--header-height);
 }
 
 header a {
@@ -32,15 +42,13 @@ header a {
     font-weight: 600;
     color: var(--text);
 }
-a {
-    color: blue;
-}
 
 #title {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--accent);
+    min-width: 260px;
 }
 
 #title h2 {
@@ -54,5 +62,77 @@ a {
 .nav-links {
     mix-blend-mode: difference;
     font-size: 20px;
+}
 
+.nav-links:hover {
+    text-decoration: underline var(--accent);
+}
+/* main */
+
+main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-heaght));
+}
+
+/* Footer */
+
+footer {
+    padding: 0 3em;
+    min-height: var(--footer-heaght);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.foot-container {
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    border-top: solid var(--background-light);
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+footer #title {
+    text-decoration: none;
+    flex: 1;
+}
+
+.foot-nav-myself {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-nav-myself a:hover{
+    text-decoration: underline var(--accent);
+}
+
+.foot-nav-myself h3 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.nav-container,
+.myself-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.myself-links {
+    flex-direction: column;
+}
+
+.nav-container a {
+    min-width: 30%;
+}
+
+footer h4 {
+    text-align: center;
 }

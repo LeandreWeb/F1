@@ -14,12 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home.home');
 })->name('home');
 
+Route::get('/Teams', function(){
+    return view("Teams.teams");
+})->name('teams');
+
 Route::get('/standing', function(){
-    return "<h1>Standing</h1>";
-});
+    return view("Standing.standing");
+})->name('standing');
+
+Route::get('/schedule', function(){
+    return view("Schedule.schedule");
+})->name('schedule');
+
+Route::get('/about', function(){
+    return view("About.about");
+})->name('about');
 
 Route::prefix("drivers")->group(function() {
     Route::get('/', function () {
@@ -40,7 +52,9 @@ Route::prefix("drivers")->group(function() {
 Route::get('/team/{id}',function($id){
 
     return "Team". $id;
-})->name('teams');
+})->name('team');
+
+
 
 Route::fallback(function(){
     return "<h1>404 Page not Found</h1> ";
