@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>F1</title>
-</head>
-<body>
-    <header>
-        <h1>F1 Project</h1>
-        
-    </header>
-<a href="{{route('allDrivers')}}">Driversdsad</a>
+@extends('layouts.main')
 
-</body>
-</html>
+@section('content')
+    <h1>MainPage</h1>
+    
+
+    <a href="{{route('allDrivers')}}">Drivers</a>
+@endsection
+
