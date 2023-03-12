@@ -1,7 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-<main><h1>MainPage</h1></main>
+<main>
+@include('Home.Components.news')
+</main>
+
+
     
     
 

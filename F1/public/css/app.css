@@ -27,7 +27,7 @@ a {
 /* Header */
 
 header {
-    position: sticky;
+    
     top: 0px;
     width: 100%;
     padding: 1em;
@@ -35,6 +35,9 @@ header {
     justify-content: space-around;
     align-items: center;
     min-height: var(--header-height);
+    z-index: 1;
+    background-color: var(--background);
+    
 }
 
 header a {
@@ -72,6 +75,82 @@ header a {
 main {
     min-height: calc(100vh - var(--header-height) - var(--footer-heaght));
 }
+.top-left{
+    position: absolute;
+    top: -2.5vw;
+    left: .5em;
+    color: var(--accent);
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+/* News and top 3 */
+
+#News-Top3 {
+    display: flex;
+    padding: 2em 3em;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+/* News */
+
+.top-news  {
+    background-color: var(--background-light);
+    position: relative;
+    flex: 3;
+    padding: 0.5em;
+    border-radius: 15px;
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
+    min-width: 1125px;
+}
+
+.news-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7.5px;
+}
+
+.news-title{
+    position: absolute;
+    bottom: 10px;
+    left: 1px;
+    right: 1px;
+    padding:  1em;
+    font-size: 2vw;
+    background-image: linear-gradient(to top, var(--background-light), transparent);  
+
+}
+
+.news-title h2{
+    font-size: 4vw;
+}
+
+/*Top 3*/
+.top3 {
+    flex-shrink: 2;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.top3-drivers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.top3 h2 {
+    
+    text-align: center;
+    color: var(--accent);
+    font-size: 30px;
+}
+
 
 /* Footer */
 
@@ -94,7 +173,7 @@ footer a {
     display: flex;
     justify-content: center;
     border-top: solid var(--background-light);
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
 }
 
@@ -106,10 +185,11 @@ footer #title {
 .foot-nav-myself {
     flex: 2;
     display: flex;
+    gap: 1em;
     justify-content: space-around;
 }
 
-.foot-nav-myself a:hover{
+.foot-nav-myself a:hover {
     text-decoration: underline var(--accent);
 }
 
@@ -136,3 +216,24 @@ footer #title {
 footer h4 {
     text-align: center;
 }
+
+@media screen and (max-width: 1655px) {
+    
+    .top3-drivers {
+        flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+    .top-news{
+        min-width: 0px;
+    }
+
+    .driver-card{
+        width: auto;
+    }
+  }
+
+
+
