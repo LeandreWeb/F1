@@ -3,6 +3,7 @@
 @section('content')
 <main>
 @include('Home.Components.news')
+@include('Home.Components.next-race')
 </main>
 
 

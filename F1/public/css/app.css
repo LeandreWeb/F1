@@ -13,6 +13,7 @@
 
     --header-height: 8em;
     --footer-heaght: 12em;
+
 }
 
 body {
@@ -87,6 +88,7 @@ main {
 /* News and top 3 */
 
 #News-Top3 {
+    margin: 10em 0;
     display: flex;
     padding: 2em 3em;
     gap: 1em;
