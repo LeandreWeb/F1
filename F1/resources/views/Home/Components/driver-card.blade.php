@@ -8,7 +8,7 @@
     </div>
     <div class="driver-photo">
         <img src="{{asset('Images/Drivers/Side-profil/max.avif')}}" alt="">
-        <h2 class="driver-position">1</h2>
+        <h2 class="driver-position">{{$position+1}}</h2>
     </div>
 </div>
 

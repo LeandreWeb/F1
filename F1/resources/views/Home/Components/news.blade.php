@@ -11,7 +11,7 @@
         <h2>Top 3</h2>
         <div class="top3-drivers"->
         @for ($i = 0 ; $i < 3 ; $i++)
-            @include('Home.Components.driver-card')
+            @include('Home.Components.driver-card' ,['position'=>$i])
         @endfor
         </div>
     </div>
