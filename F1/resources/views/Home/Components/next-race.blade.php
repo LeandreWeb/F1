@@ -65,10 +65,12 @@
     font-size: 40px;
     align-items: flex-end;
     font-weight:700;
+    padding: 1em;
 }
 
 .next-infos h2{
     font-size: 80px;
+    
 }
 
 
