@@ -8,6 +8,6 @@
     </a>
     <a class="nav-links" href="{{route('schedule')}}">Calendrier</a>
     <a class="nav-links" href="{{route('allDrivers')}}">Pilotes</a>
-
+    
 </header>
 

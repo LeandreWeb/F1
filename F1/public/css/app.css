@@ -22,9 +22,7 @@ body {
     font-family: "Golos Text", sans-serif;
 }
 
-a {
-    color: blue;
-}
+
 /* Header */
 
 header {
@@ -47,12 +45,15 @@ header a {
     color: var(--text);
 }
 
+
+
 #title {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--accent);
     min-width: 260px;
+    justify-self: center;
 }
 
 #title h2 {
@@ -71,6 +72,69 @@ header a {
 .nav-links:hover {
     text-decoration: underline var(--accent);
 }
+.hamburger{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .nav-links{
+        display: none;
+    }
+header{
+    justify-content: center;
+    position: relative;
+    padding: 1em;
+}
+
+    .hamburger{
+        display:grid;
+        top: 1em;
+        place-items: center;
+        position: absolute;
+        right: 1em;
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        height: 55px;
+        aspect-ratio: 1/1;
+        z-index: 2;
+    }
+    .open-hamburger{
+        position: fixed;
+    }
+
+    .hamburger-main{
+        width: 35px;
+        height: 2px;
+        background-color: var(--text);
+        
+        position: relative;
+        
+    }
+    .hamburger-main::after{
+        position: absolute;
+        background-color: inherit;
+        content: "";
+        top: 10px;
+        width: inherit;
+        height: inherit;
+        left: 0px;
+        z-index: 10;
+    }
+
+    .hamburger:hover .hamburger-main{
+        background-color: var(--accent);
+    }
+
+
+    .open-hamburger .hamburger-main {
+        animation: open-hamburgerTop forwards 1s;
+    }
+
+    .closed-hamburger .hamburger-main {
+        animation: close-hamburgerTop forwards 1s;
+    }
+   
+  }
 /* main */
 
 main {
@@ -88,7 +152,7 @@ main {
 /* News and top 3 */
 
 #News-Top3 {
-    margin: 10em 0;
+    margin: 5em 0;
     display: flex;
     padding: 2em 3em;
     gap: 1em;
@@ -242,6 +306,28 @@ footer h4 {
     }
    
   }
+
+
+/* Animation */
+
+@keyframes open-hamburgerTop {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(25deg);
+    }
+}
+@keyframes close-hamburgerTop {
+    from{
+        transform: rotate(25deg);
+
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
 
 
 
