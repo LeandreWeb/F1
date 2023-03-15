@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DriversController;
+use App\Http\Controllers\HomePage;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Home.home');
-})->name('home');
+Route::get('/', [HomePage::class,"home"])->name('home');
 
 Route::get('/Teams', function(){
     return view("Teams.teams");
@@ -34,18 +34,7 @@ Route::get('/about', function(){
 })->name('about');
 
 Route::prefix("drivers")->group(function() {
-    Route::get('/', function () {
-
-        $drivers= [
-            1 =>['Lastname'=>'Alonso'],
-            2 =>['Lastname'=>'Stroll'],
-            3 =>['Lastname'=>'Verstapen'],
-            4 =>['Lastname'=>'Perex']
-        ];
-
-
-        return view('Drivers.allDrivers',['drivers'=> $drivers]);
-    })->name('allDrivers');
+    Route::get('/', [DriversController::class,'index'])->name('allDrivers');
 });
 
 
