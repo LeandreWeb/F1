@@ -120,6 +120,10 @@ class countriesSeeder extends Seeder
             "id"=>26,
             "name"=>"Chine"
         ];
+        $countries[]=[
+            "id"=>27,
+            "name"=>"Suisse"
+        ];
         
 
 

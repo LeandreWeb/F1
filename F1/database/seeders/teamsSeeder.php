@@ -18,71 +18,61 @@ class TeamsSeeder extends Seeder
         $teams[]= [
             "id"=>1,
             'Name'=>'Ferrari',
-            'Country'=>'Italie',
-            'Team-Chief'=>'Frederick Vaseur',
+            'country_id'=>6,
             'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>2,
             'Name'=>'Red Bull',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'Christian Horner',
+            'country_id'=>11,
             'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [
             "id"=>3,
             'Name'=>'Aston Martin',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'Mike Krack',
+            'country_id'=>11,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>4,
             'Name'=>'Mercedes',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'Toto Wolff',
+            'country_id'=>11,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>5,
             'Name'=>'Alfa Romeo',
-            'Country'=>'Suisse',
-            'Team-Chief'=>'Alessandro Alunni Bravi',
+            'country_id'=>27,
             'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>6,
             'Name'=>'Alpine',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'Otmar Szafnauer',
+            'country_id'=>11,
             'Power-Unit'=>'Renauld'
         ];
         $teams[]= [
             "id"=>7,
             'Name'=>'Williams',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'James Vowles',
+            'country_id'=>11,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>8,
             'Name'=>'AlphaTauri',
-            'Country'=>'Italie',
-            'Team-Chief'=>'Franz Tost',
+            'country_id'=>6,
             'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [
             "id"=>9,
             'Name'=>'Hass',
-            'Country'=>'États-Unis',
-            'Team-Chief'=>'Guenther Steiner',
+            'country_id'=>5,
             'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>10,
             'Name'=>'McLaren',
-            'Country'=>'Royaume-Uni',
-            'Team-Chief'=>'Andrea Stella',
+            'country_id'=>11,
             'Power-Unit'=>'Mercedes'
         ];
         DB::table('teams')->delete();

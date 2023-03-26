@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(countriesSeeder::class);
         
-        // $this->call(teamsSeeder::class);
+        $this->call(teamsSeeder::class);
         // $this->call(driversSeeder::class);
     }
 }
