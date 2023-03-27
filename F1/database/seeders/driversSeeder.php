@@ -18,143 +18,163 @@ class DriversSeeder extends Seeder
         $drivers=[];
         
         $drivers[]=[
+            "id"=>16,
             "teams_id"=>1,
             "FirstName"=>"Charles",
             "LastName"=>"Leclerc",
-            "Country"=>"Monaco",
+            "country_id"=>7,
             "Number"=>16
         ];
         $drivers[]=[
+            "id"=>55,
             "teams_id"=>1,
             "FirstName"=>"Carlos",
             "LastName"=>"Sainz",
-            "Country"=>"Espagne",
+            "country_id"=>8,
             "Number"=>55
         ];
         $drivers[]=[
+            "id"=>1,
             "teams_id"=>2,
             "FirstName"=>"Max",
             "LastName"=>"Verstapen",
-            "Country"=>"Pays Bas",
+            "country_id"=>14,
             "Number"=>1
         ];
         $drivers[]=[
+            "id"=>11,
             "teams_id"=>2,
             "FirstName"=>"Sergio",
             "LastName"=>"Perez",
-            "Country"=>"Mexique",
+            "country_id"=>18,
             "Number"=>11
         ];
         $drivers[]=[
+            "id"=>14,
             "teams_id"=>3,
             "FirstName"=>"Fernando",
             "LastName"=>"Alonso",
-            "Country"=>"Espagne",
+            "country_id"=>8,
             "Number"=>14
         ];
         $drivers[]=[
+            "id"=>18,
             "teams_id"=>3,
             "FirstName"=>"Lance",
             "LastName"=>"Stroll",
-            "Country"=>"Canada",
+            "country_id"=>9,
             "Number"=>18
         ];
         $drivers[]=[
+            "id"=>44,
             "teams_id"=>4,
             "FirstName"=>"Lewis",
             "LastName"=>"Hamilton",
-            "Country"=>"Royaume-Uni",
+            "country_id"=>11,
             "Number"=>44
         ];
         $drivers[]=[
+            "id"=>63,
             "teams_id"=>4,
             "FirstName"=>"George",
             "LastName"=>"Russel",
-            "Country"=>"Royaume-Uni",
+            "country_id"=>11,
             "Number"=>63
         ];
         $drivers[]=[
+            "id"=>77,
             "teams_id"=>5,
             "FirstName"=>"Valtteri",
             "LastName"=>"Bottas",
-            "Country"=>"Finlande",
+            "country_id"=>21,
             "Number"=>77
         ];
         $drivers[]=[
+            "id"=>24,
             "teams_id"=>5,
             "FirstName"=>"Zhou",
             "LastName"=>"Guanyu",
-            "Country"=>"Chine",
+            "country_id"=>26,
             "Number"=>24
         ];
         $drivers[]=[
+            "id"=>10,
             "teams_id"=>6,
             "FirstName"=>"Pierre",
             "LastName"=>"Gasly",
-            "Country"=>"France",
+            "country_id"=>22,
             "Number"=>10
         ];
         $drivers[]=[
+            "id"=>31,
             "teams_id"=>6,
             "FirstName"=>"Esteban",
             "LastName"=>"Ocon",
-            "Country"=>"France",
+            "country_id"=>22,
             "Number"=>31
         ];
         $drivers[]=[
+            "id"=>23,
             "teams_id"=>7,
             "FirstName"=>"Alexander",
             "LastName"=>"Albon",
-            "Country"=>"Thailande",
+            "country_id"=>24,
             "Number"=>23
         ];
         $drivers[]=[
+            "id"=>2,
             "teams_id"=>7,
             "FirstName"=>"Logan",
             "LastName"=>"Sargeant",
-            "Country"=>"États-Unis",
+            "country_id"=>5,
             "Number"=>2
         ];
         $drivers[]=[
+            "id"=>22,
             "teams_id"=>8,
             "FirstName"=>"Yuki",
             "LastName"=>"Tsunoda",
-            "Country"=>"Japon",
+            "country_id"=>16,
             "Number"=>22
         ];
         $drivers[]=[
+            "id"=>21,
             "teams_id"=>8,
             "FirstName"=>"Nyck",
             "LastName"=>"De Vries",
-            "Country"=>"Pays Bas",
+            "country_id"=>14,
             "Number"=>21
         ];
         $drivers[]=[
+            "id"=>27,
             "teams_id"=>9,
             "FirstName"=>"Nico",
             "LastName"=>"Hulkenberg",
-            "Country"=>"Allemagne",
+            "country_id"=>25,
             "Number"=>27
         ];
         $drivers[]=[
+            "id"=>20,
             "teams_id"=>9,
             "FirstName"=>"Kevin",
             "LastName"=>"Magnussen",
-            "Country"=>"Danemark",
+            "country_id"=>23,
             "Number"=>20
         ];
         $drivers[]=[
+            "id"=>4,
             "teams_id"=>10,
             "FirstName"=>"Lando",
             "LastName"=>"Norris",
-            "Country"=>"Royaume-Uni",
+            "country_id"=>11,
             "Number"=>4
         ];
         $drivers[]=[
+            "id"=>81,
             "teams_id"=>10,
             "FirstName"=>"Oscar",
             "LastName"=>"Piastry",
-            "Country"=>"Australie",
+            "country_id"=>3,
             "Number"=>81
         ];
         

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('teams_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('FirstName');
             $table->string("Lastname");
-            $table->string("Country");
+            $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('Number');
             
         });
