@@ -19,10 +19,20 @@ class HomePage extends Controller
         $drivers = Driver::all();
 
         foreach($drivers as $driver){
-            echo $driver->Number;
-            $test =RaceResult::where('drivers_id',"=",$driver->id)->get();
+            echo $driver->Number . " " . $driver->Lastname;
+            $test =RaceResult::select("points","")->where('drivers_id',$driver->id)->get();
+            $total=0;
+            foreach($test as $testData)
+            {
+                if ($testData->points) {
+                    
+                  $total+=$testData->points;  
+                }
             
-            echo $test[0];
+            }
+            echo "<br>";
+
+            echo $total;
             echo "<br>";
             echo "<br>";
 

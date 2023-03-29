@@ -180,7 +180,8 @@ main {
 
 .news-title{
     position: absolute;
-    bottom: 10px;
+    border-radius: inherit;
+    bottom: 0px;
     left: 1px;
     right: 1px;
     padding:  1em;

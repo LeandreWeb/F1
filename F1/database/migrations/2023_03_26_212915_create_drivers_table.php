@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string("Lastname");
             $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('Number');
+            $table->integer("points")->nullable();
             
         });
     }

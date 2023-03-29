@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
+
 class qualifications_results02Seeder extends Seeder
 {
     /**
