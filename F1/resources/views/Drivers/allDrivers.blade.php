@@ -6,7 +6,7 @@
 
 
     <?php foreach ($drivers as $driver): ?> 
-        <p>{{$driver['Lastname']}}</p>
+        <p>{{$driver->Lastname}}</p>
     <?php endforeach ?>
 
     <a href="{{route('home')}}">Home</a>

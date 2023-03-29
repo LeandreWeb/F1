@@ -20,5 +20,9 @@ class DatabaseSeeder extends Seeder
         $this->call(qualificationsSeeder::class);
         $this->call(sprintsSeeder::class);
         $this->call(grands_prixSeeder::class);
+        $this->call(races_results01Seeder::class);
+        $this->call(races_results02Seeder::class);
+        $this->call(qualifications_results01Seeder::class);
+        $this->call(qualifications_results02Seeder::class);
     }
 }

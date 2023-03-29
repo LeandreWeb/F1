@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->foreignId('drivers_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('races_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->time("total_time");
-            $table->time("best-lap");
-            $table->integer("position");
-            $table->integer("points");
+            $table->time("total_time")->nullable();
+            $table->time("best-lap")->nullable();
+            $table->integer("position")->nullable();
+            $table->integer("points")->nullable();
         });
     }
 
