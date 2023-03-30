@@ -57,6 +57,7 @@
  .driver-photo img:first-child{
    background-color:transparent;
    z-index: 1;
+   margin-bottom: -10px;
  }
 
  .driver-team {
@@ -84,6 +85,17 @@
         flex-direction: column;
         width: 100%;
     }
+    .driver-team {
+   position: absolute;
+   width: 100%;
+   object-fit: contain !important;
+   top:30%;
+   aspect-ratio:2/1;
+   right: 0px;
+   left: 0px;
+  
+   opacity: .4;
+ }
     
   }
 </style>
