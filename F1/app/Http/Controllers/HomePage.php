@@ -16,30 +16,15 @@ class HomePage extends Controller
     {
         $raceresults =RaceResult::all();
 
-        $drivers = Driver::all();
+        $drivers = Driver::orderBy("points","desc")->limit(3)->get();
 
         foreach($drivers as $driver){
-            echo $driver->Number . " " . $driver->Lastname;
-            $test =RaceResult::select("points","")->where('drivers_id',$driver->id)->get();
-            $total=0;
-            foreach($test as $testData)
-            {
-                if ($testData->points) {
-                    
-                  $total+=$testData->points;  
-                }
             
-            }
-            echo "<br>";
-
-            echo $total;
-            echo "<br>";
-            echo "<br>";
-
+            
             
             
         }
         
-        return view('Home.home');
+        return view('Home.home',["top3"=>$drivers]);
     }
 }

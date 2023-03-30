@@ -2,7 +2,7 @@
 
 @section('content')
 <main>
-@include('Home.Components.news')
+@include('Home.Components.news',["top3"=>$top3])
 @include('Home.Components.next-race')
 </main>
 

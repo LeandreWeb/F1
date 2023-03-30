@@ -19,6 +19,8 @@ return new class extends Migration
             $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('Number');
             $table->integer("points")->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             
         });
     }

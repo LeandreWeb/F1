@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Driver;
 use App\Models\RaceResult;
+use App\Models\Race;
 
 class pointsSeeder extends Seeder
 {
@@ -19,22 +20,55 @@ class pointsSeeder extends Seeder
         $raceresults =RaceResult::all();
 
         $drivers = Driver::all();
+        $racesDones=RaceResult::select("races_id")->max("races_id");
+
+        $fastestLapsPoint=[];
+        
+        for ($i=0; $i < $racesDones; $i++) { 
+            $fastestLap=RaceResult::where("races_id",$i+1)->min("best_lap");
+            $fastestdriver=RaceResult::select("drivers_id","position")->where("races_id",$i+1)->where("best_lap",$fastestLap)->get();
+            
+            echo $fastestLap. "\n";
+            echo $fastestdriver. "\n";
+            
+            echo $fastestdriver[0]->position . "\n";
+            
+            if ($fastestdriver[0]->position>10){
+                $fastestdriver[0]->drivers_id=0;
+            }
+            
+            $fastestLapsPoint[]=$fastestdriver[0];
+        }
+
+        
 
         foreach($drivers as $driver){
+
             $totalPoints=0;
             $bestLap=0;
 
             $raceResults=RaceResult::select("points","best_lap")->where('drivers_id',$driver->id)->get();
 
+
             foreach($raceResults as $raceResult){
                 if($raceResult->points){
                     $totalPoints+=$raceResult->points;
                 }
-                if($raceResult->best_lap){
-                    echo "Best Lap :" . $raceResult->best_lap;
+                
+            }
+            
+            foreach($fastestLapsPoint as $fastestLap){
+                
+                if($fastestLap->drivers_id == $driver->id)
+                {
+                    $totalPoints+=1;
                 }
             }
-            echo $driver->Lastname. " : " . $totalPoints . "\n" ;
+
+
+            $driver->points = $totalPoints;
+            $driver->save();
+            // Driver::where('id',$driver->id)->update
             
         }
 
