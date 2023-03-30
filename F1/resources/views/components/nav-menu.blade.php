@@ -18,7 +18,7 @@
         width: 100%;
         height: 100vh;
         top: 0px;
-        z-index: 1;
+        z-index: 2;
         scale: 0;
         
         

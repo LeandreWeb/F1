@@ -7,8 +7,9 @@
         </div>
     </div>
     <div class="driver-photo">
-        <img src="{{asset('Images/Drivers/Side-profil/max.avif')}}" alt="">
+        <img src="{{asset('Images/Drivers/Side-profil/'.$driver->id.".avif")}}" alt="">
         <h2 class="driver-position">{{$position+1}}</h2>
+        <img src="{{asset('Images/Teams/'.$driver->teams_id.' black.png')}}" class="driver-team" src="" alt="">
     </div>
 </div>
 
@@ -30,6 +31,7 @@
     justify-content: space-between;
     flex: 1;
     font-weight: 700;
+    z-index: 1;
  }
  .driver-points{
     font-size: 40px
@@ -44,17 +46,28 @@
  .driver-photo{
     display: flex;
     justify-content: flex-end;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url({{url("Images/Teams/redbull.png")}});
-    
-    
     
  }
 
  .driver-photo img{
     object-fit: cover;
 
+ }
+
+ .driver-photo img:first-child{
+   background-color:transparent;
+   z-index: 1;
+ }
+
+ .driver-team {
+   position: absolute;
+   width: 75%;
+   object-fit: contain !important;
+   top:10%;
+   aspect-ratio:2/1;
+   right: 0px;
+  
+   opacity: .4;
  }
 
  .driver-position{
