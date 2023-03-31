@@ -9,6 +9,5 @@ class QualificationResult extends Model
 {
     use HasFactory;
     
-    protected $table ="qualifications_results";
-    protected $primaryKey = "_id";
+    //qualification_results
 }

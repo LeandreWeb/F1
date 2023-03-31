@@ -8,189 +8,189 @@ use Illuminate\Support\Facades\DB;
 
 
 
-class qualifications_results02Seeder extends Seeder
+class qualification_results02Seeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $qualificationsResults=[];
-        $qualificationsResults[]=[
+        $qualificationResults=[];
+        $qualificationResults[]=[
             "id"=>201,
-            "drivers_id"=>11,
-            'qualifications_id'=>2,
+            "driver_id"=>11,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.244",
             "q2"=>"00:01:28.635",
             "q3"=>"00:01:28.265",
             "position"=>1
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>202,
-            "drivers_id"=>16,
-            'qualifications_id'=>2,
+            "driver_id"=>16,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.376",
             "q2"=>"00:01:28.903",
             "q3"=>"00:01:28.420",
             "position"=>2
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>203,
-            "drivers_id"=>14,
-            'qualifications_id'=>2,
+            "driver_id"=>14,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.298",
             "q2"=>"00:01:28.757",
             "q3"=>"00:01:28.730",
             "position"=>3
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>204,
-            "drivers_id"=>63,
-            'qualifications_id'=>2,
+            "driver_id"=>63,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.292",
             "q2"=>"00:01:29.132",
             "q3"=>"00:01:28.857",
             "position"=>4
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>205,
-            "drivers_id"=>55,
-            'qualifications_id'=>2,
+            "driver_id"=>55,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.411",
             "q2"=>"00:01:28.957",
             "q3"=>"00:01:28.931",
             "position"=>5
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>206,
-            "drivers_id"=>18,
-            'qualifications_id'=>2,
+            "driver_id"=>18,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.335",
             "q2"=>"00:01:28.962",
             "q3"=>"00:01:28.931",
             "position"=>6
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>207,
-            "drivers_id"=>31,
-            'qualifications_id'=>2,
+            "driver_id"=>31,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.707",
             "q2"=>"00:01:29.255",
             "q3"=>"00:01:29.078",
             "position"=>7
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>208,
-            "drivers_id"=>44,
-            'qualifications_id'=>2,
+            "driver_id"=>44,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.689",
             "q2"=>"00:01:29.374",
             "q3"=>"00:01:29.223",
             "position"=>8
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>209,
-            "drivers_id"=>81,
-            'qualifications_id'=>2,
+            "driver_id"=>81,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.706",
             "q2"=>"00:01:29.378",
             "q3"=>"00:01:29.243",
             "position"=>9
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>210,
-            "drivers_id"=>10,
-            'qualifications_id'=>2,
+            "driver_id"=>10,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.890",
             "q2"=>"00:01:29.411",
             "q3"=>"00:01:29.357",
             "position"=>10
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>211,
-            "drivers_id"=>27,
-            'qualifications_id'=>2,
+            "driver_id"=>27,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.547",
             "q2"=>"00:01:29.451",
             "q3"=>null,
             "position"=>11
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>212,
-            "drivers_id"=>24,
-            'qualifications_id'=>2,
+            "driver_id"=>24,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.547",
             "q2"=>"00:01:29.451",
             "q3"=>null,
             "position"=>12
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>213,
-            "drivers_id"=>20,
-            'qualifications_id'=>2,
+            "driver_id"=>20,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.744",
             "q2"=>"00:01:29.634",
             "q3"=>null,
             "position"=>13
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>214,
-            "drivers_id"=>77,
-            'qualifications_id'=>2,
+            "driver_id"=>77,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.929",
             "q2"=>"00:01:29.634",
             "q3"=>null,
             "position"=>14
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>215,
-            "drivers_id"=>1,
-            'qualifications_id'=>2,
+            "driver_id"=>1,
+            'qualification_id'=>2,
             "q1"=>"00:01:28.761",
             "q2"=>"00:01:49.953",
             "q3"=>null,
             "position"=>15
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>216,
-            "drivers_id"=>22,
-            'qualifications_id'=>2,
+            "driver_id"=>22,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.239",
             "q2"=>null,
             "q3"=>null,
             "position"=>16
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>217,
-            "drivers_id"=>23,
-            'qualifications_id'=>2,
+            "driver_id"=>23,
+            'qualification_id'=>2,
             "q1"=>"00:01:29.994",
             "q2"=>null,
             "q3"=>null,
             "position"=>17
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>218,
-            "drivers_id"=>21,
-            'qualifications_id'=>2,
+            "driver_id"=>21,
+            'qualification_id'=>2,
             "q1"=>"00:01:30.244",
             "q2"=>null,
             "q3"=>null,
             "position"=>18
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>219,
-            "drivers_id"=>4,
-            'qualifications_id'=>2,
+            "driver_id"=>4,
+            'qualification_id'=>2,
             "q1"=>"00:01:30.447",
             "q2"=>null,
             "q3"=>null,
             "position"=>19
         ];
-        $qualificationsResults[]=[
+        $qualificationResults[]=[
             "id"=>220,
-            "drivers_id"=>10,
-            'qualifications_id'=>2,
+            "driver_id"=>10,
+            'qualification_id'=>2,
             "q1"=>"00:02:08.510",
             "q2"=>null,
             "q3"=>null,
@@ -198,6 +198,6 @@ class qualifications_results02Seeder extends Seeder
         ];
 
         
-        Db::table('qualifications_results')->insert($qualificationsResults);
+        Db::table('qualification_results')->insert($qualificationResults);
     }
 }

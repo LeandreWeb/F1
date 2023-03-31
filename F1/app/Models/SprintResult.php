@@ -10,6 +10,7 @@ class SprintResult extends Model
     use HasFactory;
 
     
-    protected $table ="sprints";
-    protected $primaryKey = "_id";
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
 }

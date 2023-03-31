@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('qualifications_results', function (Blueprint $table) {
+        Schema::create('qualification_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('drivers_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('qualifications_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('driver_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('qualification_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->time("q1")->nullable();
             $table->time("q2")->nullable();
             $table->time("q3")->nullable();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('qualifications_results');
+        Schema::dropIfExists('qualification_results');
     }
 };

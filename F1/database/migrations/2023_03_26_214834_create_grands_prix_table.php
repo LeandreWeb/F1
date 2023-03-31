@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('grands_prix', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('countries_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('races_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('qualifications_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('sprints_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('country_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('race_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('qualification_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('sprint_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
         });
     }
 

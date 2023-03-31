@@ -9,6 +9,7 @@ class TeamChief extends Model
 {
     use HasFactory;
     
-    protected $table ="teams_chiefs";
-    protected $primaryKey = "_id";
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
 }

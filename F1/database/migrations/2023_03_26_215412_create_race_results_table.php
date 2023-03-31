@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('races_results', function (Blueprint $table) {
+        Schema::create('race_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('drivers_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('races_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('driver_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('race_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->time("total_time")->nullable();
             $table->double("best_lap",6,3)->nullable();
             $table->integer("position")->nullable();
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('races_results');
+        Schema::dropIfExists('race_results');
     }
 };

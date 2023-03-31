@@ -20,21 +20,17 @@ class pointsSeeder extends Seeder
         $raceresults =RaceResult::all();
 
         $drivers = Driver::all();
-        $racesDones=RaceResult::select("races_id")->max("races_id");
+        $racesDones=RaceResult::select("race_id")->max("race_id");
 
         $fastestLapsPoint=[];
         
         for ($i=0; $i < $racesDones; $i++) { 
-            $fastestLap=RaceResult::where("races_id",$i+1)->min("best_lap");
-            $fastestdriver=RaceResult::select("drivers_id","position")->where("races_id",$i+1)->where("best_lap",$fastestLap)->get();
+            $fastestLap=RaceResult::where("race_id",$i+1)->min("best_lap");
+            $fastestdriver=RaceResult::select("driver_id","position")->where("race_id",$i+1)->where("best_lap",$fastestLap)->get();
             
-            echo $fastestLap. "\n";
-            echo $fastestdriver. "\n";
-            
-            echo $fastestdriver[0]->position . "\n";
             
             if ($fastestdriver[0]->position>10){
-                $fastestdriver[0]->drivers_id=0;
+                $fastestdriver[0]->driver_id=0;
             }
             
             $fastestLapsPoint[]=$fastestdriver[0];
@@ -47,8 +43,9 @@ class pointsSeeder extends Seeder
             $totalPoints=0;
             $bestLap=0;
 
-            $raceResults=RaceResult::select("points","best_lap")->where('drivers_id',$driver->id)->get();
+            $raceResults=$driver->raceResult;
 
+            
 
             foreach($raceResults as $raceResult){
                 if($raceResult->points){
@@ -58,8 +55,10 @@ class pointsSeeder extends Seeder
             }
             
             foreach($fastestLapsPoint as $fastestLap){
+
                 
-                if($fastestLap->drivers_id == $driver->id)
+                
+                if($fastestLap->driver_id == $driver->id)
                 {
                     $totalPoints+=1;
                 }

@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sprints_results', function (Blueprint $table) {
+        Schema::create('sprint_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('drivers_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('sprints_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('driver_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('sprint_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->time("total_time");
             $table->time("best-lap");
             $table->integer("position");
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sprints_results');
+        Schema::dropIfExists('sprint_results');
     }
 };

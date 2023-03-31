@@ -10,6 +10,9 @@ class RaceResult extends Model
     use HasFactory;
 
     
-    protected $table ="races_results";
-    protected $primaryKey = "_id";
+    
+
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
 }

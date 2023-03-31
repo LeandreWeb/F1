@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Driver extends Model
 {
     use HasFactory;
+
+
+
+    public function raceResult()
+    {
+        return $this->hasMany(RaceResult::class);
+    }
+    public function qualiResult()
+    {
+        return $this->hasMany(QualificationResult::class);
+    }
+    public function sprintResult(){
+        return $this->hasMany(SprintResult::class);
+    }
 }

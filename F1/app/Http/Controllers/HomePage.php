@@ -14,16 +14,11 @@ class HomePage extends Controller
 {
     public function home()
     {
-        $raceresults =RaceResult::all();
+        
 
         $drivers = Driver::orderBy("points","desc")->limit(3)->get();
 
-        foreach($drivers as $driver){
-            
-            
-            
-            
-        }
+        
         
         return view('Home.home',["top3"=>$drivers]);
     }
