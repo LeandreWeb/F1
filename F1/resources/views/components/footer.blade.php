@@ -1,8 +1,7 @@
 <footer>
     <div class="foot-container">
         <a id="title" href="{{route('home')}}">
-            <h2>The</h2>
-            <h2>F1 Web Project</h2>
+            <img src="{{asset('Images/Logo.svg')}}"  src="" alt="">
         </a>
         <div class="foot-nav-myself">
             <div class="fooot-nav">

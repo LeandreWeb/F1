@@ -152,11 +152,11 @@ main {
 /* News and top 3 */
 
 #News-Top3 {
-    margin: 5em 0;
     display: flex;
     padding: 2em 3em;
     gap: 1em;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* News */
@@ -169,7 +169,12 @@ main {
     border-radius: 15px;
     aspect-ratio: 16/9;
     flex-shrink: 0;
-    min-width: 1125px;
+    min-width: 1000px;
+    max-width: 1150px;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .news-img{
@@ -192,6 +197,7 @@ main {
 
 .news-title h2{
     font-size: 4vw;
+    
 }
 
 /*Top 3*/
@@ -304,12 +310,34 @@ footer h4 {
     
     .top-news{
         min-width: 0px;
+        
     }
 
     .driver-card{
         width: auto;
     }
    
+  }
+  @media screen and (max-width: 600px) {
+    
+    .news-title{
+        position:initial;
+
+    }
+    .top-news{
+        flex-direction: column;
+    }
+
+    .news-title h2{
+        font-size: 38px;
+        
+    }
+    .news-title h3{
+        font-size: 20px;
+        
+    }
+
+    
   }
 
 
