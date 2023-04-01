@@ -22,4 +22,7 @@ class Driver extends Model
     public function sprintResult(){
         return $this->hasMany(SprintResult::class);
     }
+    public function team(){
+        return $this->belongsTo(Team::class);
+    }
 }
