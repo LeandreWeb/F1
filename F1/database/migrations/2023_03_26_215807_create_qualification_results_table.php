@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('driver_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('qualification_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->time("q1")->nullable();
-            $table->time("q2")->nullable();
-            $table->time("q3")->nullable();
+            $table->double("q1",6,3)->nullable();
+            $table->double("q2",6,3)->nullable();
+            $table->double("q3",6,3)->nullable();
             $table->integer("position");
         });
     }
