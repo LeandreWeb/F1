@@ -17,11 +17,13 @@
 .driver-card{
     position: relative;
     background-color: var(--background-light);
-    width: 400px;
+    width: 375px;
     display: flex;
     justify-content: space-between;
     padding: 10px ;
     border-radius: 20px ;
+    box-shadow: 0px 0px 3px var(--text);
+    
 
     
 }

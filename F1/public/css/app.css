@@ -203,20 +203,24 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    justify-content: start;
+    justify-content: space-between;
 }
 .top3-drivers{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .top3 h2 {
-    
     text-align: center;
     color: var(--accent);
-    font-size: 30px;
+    font-size: 50px;
+    
+}
+.top3 h2:first-child{
+    text-decoration: underline;
+    text-decoration-color: var(--text);
 }
 
 
