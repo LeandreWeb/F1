@@ -25,4 +25,7 @@ class Driver extends Model
     public function team(){
         return $this->belongsTo(Team::class);
     }
+    public function Country(){
+        return $this->belongsTo(Country::class);
+    }
 }

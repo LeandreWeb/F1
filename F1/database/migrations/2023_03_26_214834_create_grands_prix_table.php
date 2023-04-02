@@ -18,7 +18,6 @@ return new class extends Migration
             $table->foreignId('qualification_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('sprint_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('track_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
-            $table->foreignId('story_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
         });
     }
 

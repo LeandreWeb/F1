@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Story extends Model
+class RaceStory extends Model
 {
     use HasFactory;
-
-    public function grandPrix(){
-        return $this->belongsTo(GrandsPrix::class);
-    }
 }

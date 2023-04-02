@@ -13,4 +13,8 @@ class SprintResult extends Model
     public function driver(){
         return $this->belongsTo(Driver::class);
     }
+
+    public function sprint(){
+        return $this->belongsTo(Sprint::class);
+    }
 }

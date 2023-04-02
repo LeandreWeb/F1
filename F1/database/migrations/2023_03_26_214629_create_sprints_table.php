@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->date("date");
             $table->time("start");
+            #$table->foreignId('sprint_story_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
         });
     }
 

@@ -8,7 +8,7 @@
                 
             </div>
             <div class="track-container">
-                @include('svg.saudi-arabia') 
+                @include('svg.baku') 
             </div>
             
     

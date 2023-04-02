@@ -24,7 +24,7 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>1,
         'sprint_id'=>null,
         'track_id'=>1,
-        'story_id'=>1
+        
         
         
      ];
@@ -35,7 +35,7 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>2,
         'sprint_id'=>null,
         'track_id'=>2,
-        'story_id'=>2
+        
 
       ];
      $grandsPrix[]=[
@@ -45,7 +45,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>3,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -55,7 +54,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>4,
         'sprint_id'=>4,
         'track_id'=>null,
-        'story_id'=>null
    
       ];
      $grandsPrix[]=[
@@ -65,7 +63,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>5,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -75,7 +72,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>6,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -85,7 +81,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>7,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -95,7 +90,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>8,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -105,7 +99,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>9,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -115,7 +108,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>10,
         'sprint_id'=>10,
         'track_id'=>null,
-        'story_id'=>null
   
       ];
      $grandsPrix[]=[
@@ -125,7 +117,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>11,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -135,7 +126,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>12,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -145,7 +135,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>13,
         'sprint_id'=>13,
         'track_id'=>null,
-        'story_id'=>null
   
       ];
      $grandsPrix[]=[
@@ -155,7 +144,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>14,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -165,7 +153,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>15,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
 
@@ -176,7 +163,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>16,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -186,7 +172,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>17,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -196,7 +181,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>18,
         'sprint_id'=>18,
         'track_id'=>null,
-        'story_id'=>null
   
       ];
      $grandsPrix[]=[
@@ -206,7 +190,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>19,
         'sprint_id'=>19,
         'track_id'=>null,
-        'story_id'=>null
   
       ];
      $grandsPrix[]=[
@@ -216,7 +199,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>20,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -226,7 +208,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>21,
         'sprint_id'=>21,
         'track_id'=>null,
-        'story_id'=>null
   
       ];
      $grandsPrix[]=[
@@ -236,7 +217,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>22,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
      $grandsPrix[]=[
@@ -246,7 +226,6 @@ class grands_prixSeeder extends Seeder
         'qualification_id'=>23,
         'sprint_id'=>null,
         'track_id'=>null,
-        'story_id'=>null
 
       ];
 

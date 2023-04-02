@@ -26,7 +26,7 @@ class countriesSeeder extends Seeder
         ];
         $countries[]=[
             "id"=>3,
-            "name"=>"Autralie"
+            "name"=>"Australie"
         ];
         $countries[]=[
             "id"=>4,

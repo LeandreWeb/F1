@@ -9,5 +9,10 @@ class QualificationResult extends Model
 {
     use HasFactory;
     
-    //qualification_results
+    public function qualifications(){
+        return $this->belongsTo(Qualification::class);
+    }
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
 }
