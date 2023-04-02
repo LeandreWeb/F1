@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('tracks', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->decimal("lenght");
+            $table->double("length",6,3);
+            $table->integer("laps");
             $table->integer("turns");
             $table->timestamps();
         });
