@@ -176,7 +176,7 @@ class TrackSeeder extends Seeder
             "laps"=>58,
             "turns"=>16,
         ];
-        Db::table("traks")->delete();
-        Db::table("traks")->insert($tracks);
+        Db::table("tracks")->delete();
+        Db::table("tracks")->insert($tracks);
     }
 }
