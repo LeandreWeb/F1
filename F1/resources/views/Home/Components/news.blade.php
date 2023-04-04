@@ -3,8 +3,8 @@
         <h4 class="top-left">Nouvelle</h4>
             <img class="news-img" src="{{asset('Images/Stories/News'.$lastRace->id.'.jpg')}}" alt="">
         <div class="news-title">
-            <h2>GP {{$country}}</h2>
-            <h3>Chaos a Melbourne</h3>
+            <h2>GP {{$lastRace->grandPrixWeekend->country->name}}</h2>
+            <h3>{{$lastRace->raceStory->catchphrase}}</h3>
         </div>  
     </div>
     <div class="top3">

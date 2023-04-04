@@ -1,21 +1,31 @@
+@php
+    $date= \Carbon\Carbon::parse($nextRace->date);
+
+$formattedDate = $date->format('j F ');
+
+
+@endphp
+
+
 <section id="next-race">
     <div class="next-race-container">
         <h4 class="top-left">Prochain GP</h4>
         <div class="racetrack">
             <div class="country">
-                <h3>Arabie Saudite</h3>
-                <img src="{{asset('Images/Flags/Saudi_Arabia.jpg')}}" alt="">
+                <h3>{{$nextRace->grandPrixWeekend->country->name}}</h3>
+                <img src="{{asset('Images/Flags/'.$nextRace->grandPrixWeekend->country->name.'.jpg')}}" alt="">
                 
             </div>
             <div class="track-container">
-                @include('svg.baku') 
+                @include('svg.'.$nextRace->grandPrixWeekend->country->name) 
+                
             </div>
             
     
         </div>
         <div class="next-infos">
-            <h3 >17-19 Mars</h3>
-            <h2 > Ronde 2</h2>
+            <h3 >{{$formattedDate}}</h3>
+            <h2 > Ronde {{$nextRace->grandPrixWeekend->id}}</h2>
         </div>
     </div>
     

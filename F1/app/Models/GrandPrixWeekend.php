@@ -5,11 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class GrandsPrix extends Model
+class GrandPrixWeekend extends Model
 {
     use HasFactory;
 
     
-    protected $table ="grands_prix";
-    protected $primaryKey = "_id";
+    public function country(){
+        return $this->belongsTo(Country::class);
+    }
+    
 }

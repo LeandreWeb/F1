@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
-class grands_prixSeeder extends Seeder
+class GrandPrixWeekendSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,9 @@ class grands_prixSeeder extends Seeder
     public function run(): void
     {
      
-     $grandsPrix=[];
+     $grandPrixWeekends=[];
      
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>1,
         "country_id"=>1,
         'race_id'=>1,
@@ -28,7 +28,7 @@ class grands_prixSeeder extends Seeder
         
         
      ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>2,
         "country_id"=>2,
         'race_id'=>2,
@@ -38,7 +38,7 @@ class grands_prixSeeder extends Seeder
         
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>3,
         "country_id"=>3,
         'race_id'=>3,
@@ -47,7 +47,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>4,
         "country_id"=>4,
         'race_id'=>4,
@@ -56,7 +56,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
    
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>5,
         "country_id"=>5,
         'race_id'=>5,
@@ -65,7 +65,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>6,
         "country_id"=>6,
         'race_id'=>6,
@@ -74,7 +74,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>7,
         "country_id"=>1,
         'race_id'=>7,
@@ -83,7 +83,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>8,
         "country_id"=>8,
         'race_id'=>8,
@@ -92,7 +92,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>9,
         "country_id"=>9,
         'race_id'=>9,
@@ -101,7 +101,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>10,
         "country_id"=>10,
         'race_id'=>10,
@@ -110,7 +110,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
   
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>11,
         "country_id"=>11,
         'race_id'=>11,
@@ -119,7 +119,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>12,
         "country_id"=>12,
         'race_id'=>12,
@@ -128,7 +128,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>13,
         "country_id"=>13,
         'race_id'=>13,
@@ -137,7 +137,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
   
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>14,
         "country_id"=>14,
         'race_id'=>14,
@@ -146,7 +146,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>15,
         "country_id"=>6,
         'race_id'=>15,
@@ -156,7 +156,7 @@ class grands_prixSeeder extends Seeder
 
       ];
 
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>16,
         "country_id"=>15,
         'race_id'=>16,
@@ -165,7 +165,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>17,
         "country_id"=>16,
         'race_id'=>17,
@@ -174,7 +174,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>18,
         "country_id"=>17,
         'race_id'=>18,
@@ -183,7 +183,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
   
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>19,
         "country_id"=>5,
         'race_id'=>19,
@@ -192,7 +192,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
   
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>20,
         "country_id"=>18,
         'race_id'=>20,
@@ -201,7 +201,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>21,
         "country_id"=>19,
         'race_id'=>21,
@@ -210,7 +210,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
   
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>22,
         "country_id"=>5,
         'race_id'=>22,
@@ -219,7 +219,7 @@ class grands_prixSeeder extends Seeder
         'track_id'=>null,
 
       ];
-     $grandsPrix[]=[
+     $grandPrixWeekends[]=[
         "id"=>23,
         "country_id"=>20,
         'race_id'=>23,
@@ -232,8 +232,8 @@ class grands_prixSeeder extends Seeder
 
 
 
-        Db::table('grands_prix')->delete();
-        Db::table('grands_prix')->insert($grandsPrix);
+        Db::table('grand_prix_weekends')->delete();
+        Db::table('grand_prix_weekends')->insert($grandPrixWeekends);
 
 
     }

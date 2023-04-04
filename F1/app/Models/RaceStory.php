@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class RaceStory extends Model
 {
     use HasFactory;
+
+    public function race(){
+        return $this->hasone(Race::class);
+    }
 }

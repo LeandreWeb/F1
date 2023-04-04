@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('grands_prix', function (Blueprint $table) {
+        Schema::create('grand_prix_weekends', function (Blueprint $table) {
             $table->id();
             $table->foreignId('country_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('race_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('grands_prix');
+        Schema::dropIfExists('grand_prix');
     }
 };

@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('race_stories', function (Blueprint $table) {
             $table->id();
+            $table->string("catchphrase");
+            $table->text("intro");
             $table->text("first_part");
             $table->text("middle_part");
             $table->text("last_part");
+            $table->text("conclusion");
+            $table->text("extra")->nullable();
             $table->timestamps();
         });
     }

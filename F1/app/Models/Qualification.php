@@ -15,4 +15,7 @@ class Qualification extends Model
     public function qualificationResult(){
         return $this->hasMany(QualificationResult::class);
     }
+    // public function qualificationStory(){
+    //     return $this->belongsTo(quali::class);
+    // }
 }
