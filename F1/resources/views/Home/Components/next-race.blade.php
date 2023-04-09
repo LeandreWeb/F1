@@ -1,7 +1,8 @@
 @php
+    \Carbon\Carbon::setLocale('fr');
     $date= \Carbon\Carbon::parse($nextRace->date);
 
-$formattedDate = $date->format('j F ');
+$formattedDate = $date->translatedFormat('j F ');
 
 
 @endphp

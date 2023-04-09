@@ -173,9 +173,14 @@ main {
     max-width: 1150px;
     display: flex;
     justify-content: center;
-
-
+    color: var(--text);
 }
+
+.top-news:hover .news-title {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
 
 .news-img{
     width: 100%;

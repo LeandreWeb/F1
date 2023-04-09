@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DriversController;
 use App\Http\Controllers\HomePage;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,8 @@ Route::get('/team/{id}',function($id){
 
     return "Team". $id;
 })->name('team');
+
+Route::get('/news/{id}',[NewsController::class,"index"])->name('news');
 
 
 
