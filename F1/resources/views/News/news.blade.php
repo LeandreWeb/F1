@@ -86,11 +86,13 @@
     padding: 1em;
     gap: 1em;
     margin-top: 1em;
+    align-items: center;
 }
 
 .race_content  p {
     flex: 2;
     min-width: 525px;
+    padding: 1em
 }
 
 .race_content div {
@@ -101,6 +103,7 @@
     display: grid;
     aspect-ratio:16/9;
     place-items: center;
+    align-self: stretch;
 
 
 }

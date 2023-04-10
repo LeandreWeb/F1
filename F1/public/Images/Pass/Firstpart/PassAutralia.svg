@@ -29,7 +29,7 @@
         width: 25px;
         z-index: 1;
         offset-path: path("M15.5 109C76.8333 107 196 106 202 99.5002C207.521 93.5194 230 99.5003 234.5 106C242.65 117.772 253.5 228.5 318 223");
-        animation: followpathrus 5s  linear  infinite forwards;
+        animation: followpathrus 10s  linear  infinite forwards;
 }
 
 #maxp{
@@ -39,22 +39,22 @@
         width: 25px;
         z-index: 1;
         offset-path: path("M37 101C173.5 99 191.5 101 196.5 93C207.167 92.3334 230 93 236 101C243.5 111 246.5 229 317.5 223");
-        animation: followpathmax 5s linear infinite forwards;
+        animation: followpathmax 10s linear infinite forwards;
 }
 
 
  @keyframes followpathmax {
-    0%,10% {
+    0%,30% {
         offset-distance: 0%;
     }
 
     
 
-    90%,100%{
+    70%,100%{
         motion-offset: 100%;
         offset-distance: 100%;
     }
-    90%{
+    70%{
         opacity:1
     }
     100%{
@@ -63,16 +63,16 @@
  }
 
  @keyframes followpathrus {
-    0%,10% {
+    0%,30% {
         offset-distance: 0%;
     }
     
 
-    80%,100%{
+    65%,100%{
         motion-offset: 100%;
         offset-distance: 100%;
     }
-    80%{
+    65%{
         opacity:1
     }
     100%{
