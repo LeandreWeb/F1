@@ -19,8 +19,8 @@
         width: 50%;
         aspect-ratio:16/9;
         margin: auto;
-        
-        
+
+
     }
 </style> --}}
     {{-- <a href="{{route('allDrivers')}}">Drivers</a> --}}

@@ -1,38 +1,10 @@
 @extends('layouts.main')
 
 @section('content')
-<main id="race_story">
-    <section class="intro">
-        <div class="race_intro">
-            <h1>{{$raceStory->catchphrase}}</h1>
-            <p>{{$raceStory->intro}}</p>
-        </div>
-        <img src="{{asset('Images/Stories/News'.$raceStory->id.'.jpg')}}"" alt="">
-    </section>
+<main id="quali_story">
 
-    <section class="first_part race_content">
-        <div>
-            <img src="{{asset('Images/Pass/Firstpart/passAutralia.svg')}}" alt="">
-        </div>
-        <p>{{$raceStory->first_part}}</p>
-    </section>
+    <h1>{{$qualiStory}}</h1>
 
-    <section class="middle_part race_content">
-        <div></div>
-        <p>{{$raceStory->middle_part}}</p>
-    </section>
-
-    <section class="last_part race_content">
-        <div></div>
-        <p>{{$raceStory->last_part}}</p>
-    </section>
-
-    <section class="race_conclusion">
-        <p>{{$raceStory->conclusion}}</p>
-    </section>
-
-
-    
 </main>
 
 <style>
@@ -111,17 +83,30 @@
 .race_content img{
     width: 90%;
     height: 90%;
+
 }
 
 .middle_part{
     flex-direction:row-reverse;
+
+}
+
+.middle_part div {
+
+}
+
+.middle_part img{
+object-fit: cover;
+width: 100%;
+    height: 100%;
+    border-radius:inherit;
+
 }
 
 
 
-    
 </style>
-    
+
 @endsection
 
 

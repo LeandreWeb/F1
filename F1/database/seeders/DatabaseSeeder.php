@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\GrandsPrixWeekend;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(driversSeeder::class);
         $this->call(team_chiefsseeder::class);
         $this->call(RaceStorySeeder::class);
+        $this->call(QualificationStorySeeder::class);
         $this->call(racesSeeder::class);
         $this->call(qualificationsSeeder::class);
         $this->call(sprintsSeeder::class);
