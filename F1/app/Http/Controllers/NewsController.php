@@ -14,22 +14,14 @@ class NewsController extends Controller
     {
         $raceStory= RaceStory::where("id",$id)->first();
 
-
-
-
-        return view('News.racenews',['raceStory'=> $raceStory]);
+        return view('News.racenews',compact("raceStory"));
     }
 
     public function quali($id){
 
-        $qualificationStory= QualificationStory::where("id",$id)->first();
+        $qualiStory= QualificationStory::where("id",$id)->first();
 
-        
-
-
-
-
-        return view('News.qualinews',['qualiStory'=> $qualificationStory]);
+        return view('News.qualinews',compact('qualiStory'));
 
     }
 }

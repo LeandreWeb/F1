@@ -1,3 +1,7 @@
+@php
+$countryName = $raceStory->race->grandPrixWeekend->country->name
+@endphp
+
 @extends('layouts.main')
 
 @section('content')
@@ -6,7 +10,7 @@
         <div class="race_intro">
             <h1>{{$raceStory->catchphrase}}</h1>
             <p>{{$raceStory->intro}}</p>
-            <a href="{{route('qualinews',["id"=>$raceStory->id])}}">Qualifications</a>
+            <a class="quali_link" href="{{route('qualinews',["id"=>$raceStory->id])}}">Qualifications -></a>
         </div>
         <img src="{{asset('Images/Stories/News'.$raceStory->id.'.jpg')}}"" alt="">
     </section>
@@ -34,6 +38,9 @@
     </section>
 
     <section class="race_conclusion">
+        <div class="conclusion_photo">
+            <img src="{{asset("Images/Pass/Conclusion/australia.jpg")}}" alt="">
+        </div>
         <p>{{$raceStory->conclusion}}</p>
     </section>
 
@@ -82,7 +89,7 @@
 
 }
 #race_story p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .intro img{
@@ -145,7 +152,52 @@ width: 100%;
 
 }
 
+.quali_link{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
 
+.quali_link::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: .5s
+}
+
+.quali_link:hover::after{
+    width: 100%;
+}
+
+.race_conclusion{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 5em 0
+
+
+}
+
+.conclusion_photo{
+    display: grid;
+    place-items: center;
+}
+
+.race_conclusion p{
+    padding: 0 2em;
+}
+
+.conclusion_photo img{
+    width: 100%;
+    aspect-ratio:16/9;
+    object-fit: cover;
+    border-radius:15px;
+}
 
 </style>
 

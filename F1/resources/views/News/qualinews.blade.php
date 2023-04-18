@@ -2,7 +2,14 @@
 
 @section('content')
 <main id="quali_story">
-
+    {{-- <section class="intro">
+        <div class="quali_intro">
+            <h1>{{$raceStory->catchphrase}}</h1>
+            <p>{{$raceStory->intro}}</p>
+            <a class="quali_link" href="{{route('qualinews',["id"=>$raceStory->id])}}">Qualifications -></a>
+        </div>
+        <img src="{{asset('Images/Stories/News'.$raceStory->id.'.jpg')}}"" alt="">
+    </section> --}}
     <h1>{{$qualiStory}}</h1>
 
 </main>
