@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Track extends Model
 {
     use HasFactory;
+
+    public function Grand_Prix(){
+        return $this->hasOne(GrandsPrix::class);
+    }
 }

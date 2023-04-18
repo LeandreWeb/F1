@@ -22,12 +22,14 @@ class NewsController extends Controller
 
     public function quali($id){
 
-        $QualificationStory= QualificationStory::where("id",$id)->first();
+        $qualificationStory= QualificationStory::where("id",$id)->first();
+
+        
 
 
 
 
-        return view('News.qualinews',['qualiStory'=> $QualificationStory]);
+        return view('News.qualinews',['qualiStory'=> $qualificationStory]);
 
     }
 }

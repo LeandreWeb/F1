@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->date("date");
             $table->time("start");
-            #$table->foreignId('qualification_story_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('qualification_story_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
 
         });
     }

@@ -10,13 +10,13 @@ class Country extends Model
     use HasFactory;
 
     public function Grand_Prix(){
-        return $this->belongsTo(GrandsPrix::class);
+        return $this->hasMany(GrandsPrix::class);
     }
     public function Drivers(){
-        return $this->belongsTo(Driver::class);
+        return $this->hasMany(Driver::class);
     }
     public function Teams(){
-        return $this->belongsTo(Team::class);
+        return $this->hasMany(Team::class);
     }
     // protected $table ="countries";
     // protected $primaryKey = "_id";

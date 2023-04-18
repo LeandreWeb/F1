@@ -14,7 +14,7 @@ class Team extends Model
     // protected $primaryKey = "_id"
 
     public function teamChief(){
-        return $this->hasMany(TeamChief::class);
+        return $this->hasOne(TeamChief::class);
     }
     public function driver(){
         return $this->hasMany(Driver::class);

@@ -8,8 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class QualificationStory extends Model
 {
     public function qualification(){
-        return $this->hasone(Qualification::class);
+        return $this->hasOne(Qualification::class);
     }
+
+    // public function qualificationsStorie(){
+    //     return $this->hasOneThrough(Qualification::class,QualificationResult::class);
+    // }
+
+
 
     use HasFactory;
 }

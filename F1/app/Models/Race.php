@@ -19,7 +19,5 @@ class Race extends Model
     public function raceStory(){
         return $this->belongsTo(RaceStory::class);
     }
-    public function country(){    
-        return $this->belongsTo(Country::class);
-    }
+    
 }

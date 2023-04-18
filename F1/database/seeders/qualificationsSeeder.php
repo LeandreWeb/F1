@@ -18,121 +18,144 @@ class qualificationsSeeder extends Seeder
         $qualifications[]=[
             "id"=>1,
             "date"=>'2023-03-04',
-            "start"=>'09:00:00'
+            "start"=>'09:00:00',
+            'qualification_story_id'=>1
 
         ];
         $qualifications[]=[
             "id"=>2,
             "date"=>'2023-03-18',
-            "start"=>'13:00:00'
+            "start"=>'13:00:00',
+            'qualification_story_id'=>2
 
         ];
         $qualifications[]=[
             "id"=>3,
             "date"=>'2023-04-01',
-            "start"=>'01:00:00'
+            "start"=>'01:00:00',
+            'qualification_story_id'=>3
         ];
         $qualifications[]=[
             "id"=>4,
             "date"=>'2023-04-28',
-            "start"=>'09:00:00'
+            "start"=>'09:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>5,
             "date"=>'2023-05-06',
-            "start"=>'16:00:00'
+            "start"=>'16:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>6,
             "date"=>'2023-05-20',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>7,
             "date"=>'2023-05-27',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>8,
             "date"=>'2023-06-03',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>9,
             "date"=>'2023-06-17',
-            "start"=>'16:00:00'
+            "start"=>'16:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>10,
             "date"=>'2023-06-30',
-            "start"=>'11:00:00'
+            "start"=>'11:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>11,
             "date"=>'2023-07-08',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>12,
             "date"=>'2023-07-22',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>13,
             "date"=>'2023-07-28',
-            "start"=>'11:00:00'
+            "start"=>'11:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>14,
             "date"=>'2023-08-26',
-            "start"=>'09:00:00'
+            "start"=>'09:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>15,
             "date"=>'2023-09-02',
-            "start"=>'10:00:00'
+            "start"=>'10:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>16,
             "date"=>'2023-09-16',
-            "start"=>'09:00:00'
+            "start"=>'09:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>17,
             "date"=>'2023-09-23',
-            "start"=>'02:00:00'
+            "start"=>'02:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>18,
             "date"=>'2023-10-07',
-            "start"=>'13:30:00'
+            "start"=>'13:30:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>19,
             "date"=>'2023-10-20',
-            "start"=>'17:00:00'
+            "start"=>'17:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>20,
             "date"=>'2023-10-28',
-            "start"=>'17:00:00'
+            "start"=>'17:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>21,
             "date"=>'2023-11-03',
-            "start"=>'14:00:00'
+            "start"=>'14:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>22,
             "date"=>'2023-11-18',
-            "start"=>'03:00:00'
+            "start"=>'03:00:00',
+            'qualification_story_id'=>null
         ];
         $qualifications[]=[
             "id"=>23,
             "date"=>'2023-11-25',
-            "start"=>'09:00:00'
+            "start"=>'09:00:00',
+            'qualification_story_id'=>null
         ];
-        
+
 
 
 
