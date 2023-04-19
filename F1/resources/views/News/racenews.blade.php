@@ -17,21 +17,21 @@ $countryName = $raceStory->race->grandPrixWeekend->country->name
 
     <section class="first_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/Firstpart/australia.svg')}}" alt="">
+            <img src="{{asset('Images/Pass/Firstpart/'.$countryName.'.svg')}}" alt="">
         </div>
         <p>{{$raceStory->first_part}}</p>
     </section>
 
     <section class="middle_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/MiddlePart/australia.jpg')}}" alt="">
+            <img src="{{asset('Images/Pass/MiddlePart/'.$countryName.'.jpg')}}" alt="">
         </div>
         <p>{{$raceStory->middle_part}}</p>
     </section>
 
     <section class="last_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/Lastpart/australia.svg')}}" alt="">
+            <img src="{{asset('Images/Pass/Lastpart/'.$countryName.'.svg')}}" alt="">
 
         </div>
         <p>{{$raceStory->last_part}}</p>
@@ -39,7 +39,7 @@ $countryName = $raceStory->race->grandPrixWeekend->country->name
 
     <section class="race_conclusion">
         <div class="conclusion_photo">
-            <img src="{{asset("Images/Pass/Conclusion/australia.jpg")}}" alt="">
+            <img src="{{asset('Images/Pass/Conclusion/'.$countryName.'.jpg')}}" alt="">
         </div>
         <p>{{$raceStory->conclusion}}</p>
     </section>
