@@ -31,7 +31,7 @@ class qualification_results03Seeder extends Seeder
             'qualification_id'=>3,
             "q1"=>77.654,
             "q2"=>77.513,
-            "q3"=>76.698,
+            "q3"=>76.968,
             "position"=>2
         ];
         $qualificationResults[]=[
@@ -138,7 +138,7 @@ class qualification_results03Seeder extends Seeder
             "driver_id"=>20,
             'qualification_id'=>3,
             "q1"=>78.159,
-            "q2"=>78.119,
+            "q2"=>78.129,
             "q3"=>null,
             "position"=>14
         ];
@@ -197,7 +197,7 @@ class qualification_results03Seeder extends Seeder
             "position"=>20
         ];
 
-        
+
         Db::table('qualification_results')->insert($qualificationResults);
     }
 }

@@ -9,8 +9,8 @@ class Qualification extends Model
 {
     use HasFactory;
 
-    public function grandPrix(){
-        return $this->hasOne(GrandsPrix::class);
+    public function grandPrixWeekend(){
+        return $this->hasOne(GrandPrixWeekend::class);
     }
     public function qualificationResult(){
         return $this->hasMany(QualificationResult::class);
@@ -20,14 +20,14 @@ class Qualification extends Model
         return $this->belongsTo(QualificationStory::class);
     }
 
-    public function q3out(){
+    public function q1out(){
         return $this->hasMany(QualificationResult::class)->orderBy("position","desc")->take(5);
     }
     public function q2out(){
         return $this->hasMany(QualificationResult::class)->orderBy("position","desc")->skip(5)->take(5);
     }
-    public function q1results(){
-        return $this->hasMany(QualificationResult::class)->orderBy("position","asc")->take(5);
+    public function q3results(){
+        return $this->hasMany(QualificationResult::class)->orderBy("position","desc")->skip(10)->take(10);
     }
 
     // public function qualificationStory(){

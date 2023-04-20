@@ -1,25 +1,129 @@
+@php
+$quali= $qualiStory->qualification;
+$countryName = $quali->grandPrixWeekend->country->name
+@endphp
+
+
 @extends('layouts.main')
 
 @section('content')
 <main id="quali_story">
-    {{-- <section class="intro">
+    {{-- Intro --}}
+    <section class="intro">
         <div class="quali_intro">
-            <h1>{{$raceStory->catchphrase}}</h1>
-            <p>{{$raceStory->intro}}</p>
-            <a class="quali_link" href="{{route('qualinews',["id"=>$raceStory->id])}}">Qualifications -></a>
+            <h1>{{$qualiStory->catchphrase}}</h1>
+            <p>{{$qualiStory->intro}}</p>
+            @if ($quali->grandPrixWeekend->race->race_story_id)
+            <a class="race_link" href="{{route('racenews',["id"=>$qualiStory->id])}}">Race -></a>
+
+            @endif
+
         </div>
-        <img src="{{asset('Images/Stories/News'.$raceStory->id.'.jpg')}}"" alt="">
-    </section> --}}
-    <h1>{{$qualiStory}}</h1>
+        <img src="{{asset('Images/Stories/News'.$qualiStory->id.'.jpg')}}"" alt="">
+    </section>
+    {{-- Q1 --}}
+    <section class="q1 quali_content">
+        <p>{{$qualiStory->q1}}</p>
+        <div class="q1Out quali_outs">
+            @foreach ($quali->q1out as $qualiresult )
+                <div class="q1_times quali_times">
+                    <h3><span><h2>{{$qualiresult->position}} </h2></span> {{$qualiresult->driver->Lastname}} </h3>
+                    @if ($qualiresult->q1)
+                    @php
+                    $minutes = floor($qualiresult->q1 / 60);
+                    $seconds=fmod($qualiresult->q1,60);
+                    $millisecondsparts = explode('.',$qualiresult->q1 );
+                    $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
+                    $seconds = floor($seconds);
+                    $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
+                    @endphp
+
+
+                    <h3> {{$time}}</h3>
+                    @else
+                        <h3>DNF</h3>
+                    @endif
+                </div>
+            @endforeach
+            <h1 class="out_title">Q1 out</h1>
+        </div>
+        <h1 class="content_title" >Q1</h1>
+    </section>
+    {{-- q2 --}}
+    <section class="q2 quali_content">
+        <div class="q2Out quali_outs">
+            @foreach ($quali->q2out as $qualiresult )
+                <div class="q2_times quali_times">
+                    <h3><span><h2>{{$qualiresult->position}} </h2></span> {{$qualiresult->driver->Lastname}} </h3>
+                    @if ($qualiresult->q2)
+
+                    @php
+                    $minutes = floor($qualiresult->q2 / 60);
+                    $seconds=fmod($qualiresult->q2,60);
+                    $millisecondsparts = explode('.',$qualiresult->q2 );
+                    $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
+                    $seconds = floor($seconds);
+                    $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
+                    @endphp
+
+
+                    <h3> {{$time}}</h3>
+                    @else
+                        <h3>DNF</h3>
+                    @endif
+                </div>
+            @endforeach
+            <h1 class="out_title out_q2">Q2 out</h1>
+        </div>
+        <p>{{$qualiStory->q2}}</p>
+        <h1 class="content_title" >Q2</h1>
+    </section>
+    {{-- q3 --}}
+    <section class="q3 quali_content">
+        <p>{{$qualiStory->q3}}</p>
+        <div class="q3Out quali_outs">
+            @foreach ($quali->q3results as $qualiresult )
+                <div class="q3_times quali_times">
+                    <h3><span><h2>{{$qualiresult->position}} </h2></span> {{$qualiresult->driver->Lastname}} </h3>
+                    @if ($qualiresult->q3)
+                    @php
+                    $minutes = floor($qualiresult->q3 / 60);
+                    $seconds=fmod($qualiresult->q3,60);
+                    $millisecondsparts = explode('.',$qualiresult->q3 );
+                    $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
+                    $seconds = floor($seconds);
+                    $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
+                    @endphp
+
+
+                    <h3> {{$time}}</h3>
+                    @else
+                        <h3>DNF</h3>
+                    @endif
+                </div>
+            @endforeach
+            <h1 class="out_title out_q2">Q3 resultats</h1>
+        </div>
+        <h1 class="content_title" >Q3</h1>
+    </section>
+
+    {{-- conclusion --}}
+    <section class="quali_conclusion">
+        <div class="conclusion_photo">
+            <img src="{{asset('Images/Pass/Conclusion/'.$countryName.'.jpg')}}" alt="">
+        </div>
+        <p>{{$qualiStory->conclusion}}</p>
+    </section>
 
 </main>
 
 <style>
 
-#race_story{
+#quali_story{
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 2em;
+    gap: 1em;
 }
 
 .intro{
@@ -28,7 +132,7 @@
     min-height: calc(100vh - 138px);
  }
 
-.race_intro{
+.quali_intro{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -39,14 +143,14 @@
 
 
 
-.race_intro h1{
+.quali_intro h1{
     color: var(--accent);
     text-decoration: underline;
     text-decoration-color: var(--text);
     font-size: 100px;
 
 }
-#race_story p{
+#quali_story p{
     font-size: 25px;
 }
 
@@ -59,35 +163,23 @@
         border-radius: 50px;
 }
 
-.race_content{
+.quali_content{
+    position: relative;
     display: flex;
     flex-wrap: wrap-reverse;
-    padding: 1em;
+    padding:64px 1em;
     gap: 1em;
     margin-top: 1em;
     align-items: center;
 }
 
-.race_content  p {
+.quali_content  p {
     flex: 2;
     min-width: 525px;
     padding: 1em
 }
 
-.race_content div {
-    flex: 1.25;
-    min-width: 400px;
-    background-color: rgba(0, 0, 0, 0.50);
-    border-radius: 15px;
-    display: grid;
-    aspect-ratio:16/9;
-    place-items: center;
-    align-self: stretch;
-
-
-}
-
-.race_content img{
+.quali_content img{
     width: 90%;
     height: 90%;
 
@@ -110,7 +202,86 @@ width: 100%;
 
 }
 
+.quali_outs{
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column
 
+}
+
+.quali_times{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quali_outs{
+    position: relative;
+    padding: 16px 1.5em;
+    flex: 1.25;
+    border-radius: 15px;
+    gap: 15px;
+}
+.out_title{
+    position: absolute;
+    left: 16px;
+    top: -16px;
+    font-size: 32px;
+    color: var(--accent)
+}
+.content_title{
+    position: absolute;
+    left: 32px;
+    top: -32px;
+    font-size: 64px;
+    color: var(--accent)
+}
+
+.quali_conclusion{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 5em 0
+}
+
+.conclusion_photo{
+    display: grid;
+    place-items: center;
+}
+
+.quali_conclusion p{
+    padding: 0 2em;
+}
+
+.conclusion_photo img{
+    width: 100%;
+    max-width: 1500px;
+    aspect-ratio:16/9;
+    object-fit: cover;
+    border-radius:15px;
+}
+
+.race_link{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.race_link::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: .5s
+}
+
+.race_link:hover::after{
+    width: 100%;
+}
 
 </style>
 
