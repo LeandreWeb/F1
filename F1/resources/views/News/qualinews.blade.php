@@ -115,6 +115,11 @@ $countryName = $quali->grandPrixWeekend->country->name
         <p>{{$qualiStory->conclusion}}</p>
     </section>
 
+    <div>
+        @include('svg.'.$countryName,["time"=>$quali->winner[0]->q3])
+    </div>
+    <h1>{{$quali->winner[0]->q3}}</h1>
+
 </main>
 
 <style>

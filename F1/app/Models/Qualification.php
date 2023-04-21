@@ -29,6 +29,9 @@ class Qualification extends Model
     public function q3results(){
         return $this->hasMany(QualificationResult::class)->orderBy("position","desc")->skip(10)->take(10);
     }
+    public function winner(){
+        return $this->hasMany(QualificationResult::class)->orderBy("position","asc")->take(1);
+    }
 
     // public function qualificationStory(){
     //     return $this->belongsTo(quali::class);

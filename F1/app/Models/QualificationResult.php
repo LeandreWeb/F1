@@ -15,6 +15,7 @@ class QualificationResult extends Model
     public function driver(){
         return $this->belongsTo(Driver::class);
     }
-
     
+
+
 }
