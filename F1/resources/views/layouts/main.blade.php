@@ -22,7 +22,7 @@
     {{-- Content --}}
     @yield('content')
 
-    {{-- Footert --}}
+    {{-- Footer --}}
     @include("components.footer")
 
 
