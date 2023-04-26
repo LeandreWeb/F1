@@ -11,8 +11,18 @@
     --text: #fefefa;
     --accent: #68fe9a;
 
-    --red-bulls: #3671C6;
-    --mercedes:#6CD3BF;
+    --Red-Bull: #3671C6;
+    --Mercedes:#6CD3BF;
+    --Aston-Martin:#358C75;
+    --Ferrari:#F91536;
+    --Mclaren:#F58020;
+    --Alpine:#2293D1;
+    --Hass:#B6BABD;
+    --Alfa-Romeo:#C92D4B;
+    --AlphaTauri:#5E8FAA;
+    --Williams:#37BEDD;
+
+
 
 
     --header-height: 8em;
@@ -30,7 +40,7 @@ body {
 /* Header */
 
 header {
-    
+
     top: 0px;
     width: 100%;
     padding: 1em;
@@ -40,7 +50,7 @@ header {
     min-height: var(--header-height);
     z-index: 1;
     background-color: var(--background);
-    
+
 }
 
 header a {
@@ -110,9 +120,9 @@ header{
         width: 35px;
         height: 2px;
         background-color: var(--text);
-        
+
         position: relative;
-        
+
     }
     .hamburger-main::after{
         position: absolute;
@@ -137,8 +147,130 @@ header{
     .closed-hamburger .hamburger-main {
         animation: close-hamburgerTop forwards 1s;
     }
-   
+
   }
+
+/* Color by teams */
+
+.team_1--text{
+    color: var(--Ferrari);
+}
+
+.team_1--background{
+    background-color: var(--Ferrari);
+}
+
+.team_1--fill{
+    fill: var(--Ferrari);
+}
+
+.team_2--text{
+    color: var(--Red-Bull);
+}
+
+.team_2--background{
+    background-color: var(--Red-Bull);
+}
+
+.team_2--fill{
+    fill: var(--Red-Bull);
+}
+
+.team_3--text{
+    color: var(--Aston-Martin);
+}
+
+.team_3--background{
+    background-color: var(--Aston-Martin);
+}
+
+.team_3--fill{
+    fill: var(--Aston-Martin);
+}
+
+.team_4--text{
+    color: var(--Mercedes);
+}
+
+.team_4--background{
+    background-color: var(--Mercedes);
+}
+
+.team_4--fill{
+    fill: var(--Mercedes);
+}
+
+.team_5--text{
+    color: var(--Alfa-Romeo);
+}
+
+.team_5--background{
+    background-color: var(--Alfa-Romeo);
+}
+
+.team_5--fill{
+    fill: var(--Alfa-Romeo);
+}
+
+.team_6--text{
+    color: var(--Alpine);
+}
+
+.team_6--background{
+    background-color: var(--Alpine);
+}
+
+.team_6--fill{
+    fill: var(--Alpine);
+}
+.team_7--text{
+    color: var(--Williams);
+}
+
+.team_7--background{
+    background-color: var(--Williams);
+}
+
+.team_7--fill{
+    fill: var(--Williams);
+}
+.team_8--text{
+    color: var(--AlphaTauri);
+}
+
+.team_8--background{
+    background-color: var(--AlphaTauri);
+}
+
+.team_8--fill{
+    fill: var(--AlphaTauri);
+}
+.team_9--text{
+    color: var(--Hass);
+}
+
+.team_9--background{
+    background-color: var(--Hass);
+}
+
+.team_9--fill{
+    fill: var(--Hass);
+}
+.team_10--text{
+    color: var(--Mclaren);
+}
+
+.team_10--background{
+    background-color: var(--Mclaren);
+}
+
+.team_10--fill{
+    fill: var(--Mclaren);
+}
+
+
+
+
 /* main */
 
 main {
@@ -200,13 +332,13 @@ main {
     right: 1px;
     padding:  1em;
     font-size: 2vw;
-    background-image: linear-gradient(to top, var(--background-light), transparent);  
+    background-image: linear-gradient(to top, var(--background-light), transparent);
 
 }
 
 .news-title h2{
     font-size: 4vw;
-    
+
 }
 
 /*Top 3*/
@@ -231,7 +363,7 @@ main {
     text-align: center;
     color: var(--accent);
     font-size: 50px;
-    
+
 }
 .top3 h2:first-child{
     text-decoration: underline;
@@ -316,19 +448,19 @@ footer h4 {
   }
 
   @media screen and (max-width: 1200px) {
-    
+
     .top-news{
         min-width: 0px;
-        
+
     }
 
     .driver-card{
         width: auto;
     }
-   
+
   }
   @media screen and (max-width: 600px) {
-    
+
     .news-title{
         position:initial;
 
@@ -339,14 +471,14 @@ footer h4 {
 
     .news-title h2{
         font-size: 38px;
-        
+
     }
     .news-title h3{
         font-size: 20px;
-        
+
     }
 
-    
+
   }
 
 

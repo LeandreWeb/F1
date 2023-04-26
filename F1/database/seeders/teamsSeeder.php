@@ -23,7 +23,7 @@ class TeamsSeeder extends Seeder
         ];
         $teams[]= [
             "id"=>2,
-            'Name'=>'Red Bull',
+            'Name'=>'Red Bull Racing',
             'country_id'=>11,
             'Power-Unit'=>'Red Bull Powertrain'
         ];

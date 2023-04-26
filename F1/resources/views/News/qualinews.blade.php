@@ -1,6 +1,6 @@
 @php
 $quali= $qualiStory->qualification;
-$countryName = $quali->grandPrixWeekend->country->name
+$countryName = $quali->grandPrixWeekend->country->name;
 @endphp
 
 
@@ -13,13 +13,11 @@ $countryName = $quali->grandPrixWeekend->country->name
         <div class="quali_intro">
             <h1>{{$qualiStory->catchphrase}}</h1>
             <p>{{$qualiStory->intro}}</p>
-            @if ($quali->grandPrixWeekend->race->race_story_id)
-            <a class="race_link" href="{{route('racenews',["id"=>$qualiStory->id])}}">Race -></a>
 
-            @endif
+
 
         </div>
-        <img src="{{asset('Images/Stories/News'.$qualiStory->id.'.jpg')}}"" alt="">
+        <img src="{{asset('Images/Stories/Qualifications/'.$countryName.'Main.jpg')}}" alt="Main Photo">
     </section>
     {{-- Q1 --}}
     <section class="q1 quali_content">
@@ -110,15 +108,27 @@ $countryName = $quali->grandPrixWeekend->country->name
     {{-- conclusion --}}
     <section class="quali_conclusion">
         <div class="conclusion_photo">
-            <img src="{{asset('Images/Pass/Conclusion/'.$countryName.'.jpg')}}" alt="">
+            <img src="{{asset('Images/Stories/Qualifications/'.$countryName.'End.jpg')}}" alt="Photo Winner">
         </div>
         <p>{{$qualiStory->conclusion}}</p>
+
+        @if ($quali->grandPrixWeekend->race->race_story_id)
+        <a class="race_link" href="{{route('racenews',["id"=>$qualiStory->id])}}">Course -></a>
+        @endif
     </section>
 
-    <div>
-        @include('svg.'.$countryName,["time"=>$quali->winner[0]->q3])
-    </div>
-    <h1>{{$quali->winner[0]->q3}}</h1>
+    <section class="quali_visual">
+
+        @include('svg.'.$countryName,["time"=>$quali->winner[0]->q3,"teamid"=>$quali->winner[0]->driver->team->id])
+        <div class="quali_visual--infos">
+            <button class="start--animation">Démarrer</button>
+            <h3>{{$quali->winner[0]->q3}} s</h3>
+        <h3 class="driver_pole team_{{$quali->winner[0]->driver->team->id}}--text">{{$quali->winner[0]->driver->FirstName}} {{$quali->winner[0]->driver->Lastname}}</h3>
+        </div>
+    </section>
+
+
+
 
 </main>
 
@@ -220,9 +230,14 @@ width: 100%;
     align-items: center;
 }
 
+.quali_times:not(:last-child){
+    border-bottom: solid 2px var(--background-light)
+
+}
+
 .quali_outs{
     position: relative;
-    padding: 16px 1.5em;
+    padding: 45px 1.5em;
     flex: 1.25;
     border-radius: 15px;
     gap: 15px;
@@ -265,6 +280,7 @@ width: 100%;
     aspect-ratio:16/9;
     object-fit: cover;
     border-radius:15px;
+    object-position: top;
 }
 
 .race_link{
@@ -287,6 +303,50 @@ width: 100%;
 .race_link:hover::after{
     width: 100%;
 }
+
+.quali_visual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    color: var(--accent);
+    background-color: #1E1E1E;
+    align-self: center;
+    max-width: 1000px;
+    width: 100%;
+
+
+    border-radius: 15px;
+}
+.quali_visual button{
+    margin-top: 15px
+}
+
+.start--animation{
+    color: #000000;
+    font-size:20px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: var(--accent);
+    border: transparent;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border-radius:15px;
+}
+
+.start--animation:active{
+    transform: translateY(3px)
+}
+
+.quali_visual--infos {
+    background-color:#0F0F0F;
+    align-self: stretch;
+    border-radius: 0 0 10px 10px;
+    padding: 0 15px 15px 15px;
+    border-top: solid 2px var(--background-light)
+}
+
 
 </style>
 
