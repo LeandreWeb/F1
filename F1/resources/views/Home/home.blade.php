@@ -2,8 +2,15 @@
 
 @section('content')
 <main>
-@include('Home.Components.news',["top3"=>$top3,"lastRace"=>$lastRace])
-@include('Home.Components.next-race',["nextRace"=>$nextRace])
+@if ($qualification)
+    @include('Home.Components.news',compact('top3','qualification'))
+
+@else
+    @include('Home.Components.news',compact('top3','lastRace'))
+
+@endif
+
+@include('Home.Components.next-race',compact('nextRace'))
 
 </main>
 

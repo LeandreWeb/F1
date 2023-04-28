@@ -17,7 +17,7 @@ $countryName = $quali->grandPrixWeekend->country->name;
 
 
         </div>
-        <img src="{{asset('Images/Stories/Qualifications/'.$countryName.'Main.jpg')}}" alt="Main Photo">
+        <img src="{{asset('Images/Stories/Qualifications/Main/'.$countryName.'.jpg')}}" alt="Main Photo">
     </section>
     {{-- Q1 --}}
     <section class="q1 quali_content">
@@ -108,7 +108,7 @@ $countryName = $quali->grandPrixWeekend->country->name;
     {{-- conclusion --}}
     <section class="quali_conclusion">
         <div class="conclusion_photo">
-            <img src="{{asset('Images/Stories/Qualifications/'.$countryName.'End.jpg')}}" alt="Photo Winner">
+            <img src="{{asset('Images/Stories/Qualifications/End/'.$countryName.'.jpg')}}" alt="Photo Winner">
         </div>
         <p>{{$qualiStory->conclusion}}</p>
 
@@ -119,7 +119,7 @@ $countryName = $quali->grandPrixWeekend->country->name;
 
     <section class="quali_visual">
 
-        @include('svg.'.$countryName,["time"=>$quali->winner[0]->q3,"teamid"=>$quali->winner[0]->driver->team->id])
+        @include('svg.Qualifications.'.$countryName,["time"=>$quali->winner[0]->q3,"teamid"=>$quali->winner[0]->driver->team->id])
         <div class="quali_visual--infos">
             <button class="start--animation">Démarrer</button>
             <h3>{{$quali->winner[0]->q3}} s</h3>

@@ -15,22 +15,22 @@ $formattedDate = $date->translatedFormat('j F ');
             <div class="country">
                 <h3>{{$nextRace->grandPrixWeekend->country->name}}</h3>
                 <img src="{{asset('Images/Flags/'.$nextRace->grandPrixWeekend->country->name.'.jpg')}}" alt="">
-                
+
             </div>
             <div class="track-container">
-                @include('svg.'.$nextRace->grandPrixWeekend->country->name) 
-                
+                @include('svg.NextRace.'.$nextRace->grandPrixWeekend->country->name)
+
             </div>
-            
-    
+
+
         </div>
         <div class="next-infos">
             <h3 >{{$formattedDate}}</h3>
             <h2 > Ronde {{$nextRace->grandPrixWeekend->id}}</h2>
         </div>
     </div>
-    
-</section>  
+
+</section>
 
 
 <style>
@@ -39,7 +39,7 @@ $formattedDate = $date->translatedFormat('j F ');
         display: flex;
         justify-content: center;
         padding:2em 3em;
-        
+
     }
 
 .next-race-container{
@@ -81,7 +81,7 @@ $formattedDate = $date->translatedFormat('j F ');
 
 .next-infos h2{
     font-size: 80px;
-    
+
 }
 
 

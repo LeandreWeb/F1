@@ -28,12 +28,13 @@ class DatabaseSeeder extends Seeder
         $this->call(sprintsSeeder::class);
         $this->call(TrackSeeder::class);
         $this->call(GrandPrixWeekendSeeder::class);
-        $this->call(race_results01Seeder::class);
-        $this->call(race_results02Seeder::class);
-        $this->call(race_results03Seeder::class);
         $this->call(qualification_results01Seeder::class);
         $this->call(qualification_results02Seeder::class);
         $this->call(qualification_results03Seeder::class);
+        $this->call(qualification_results04Seeder::class);
+        $this->call(race_results01Seeder::class);
+        $this->call(race_results02Seeder::class);
+        $this->call(race_results03Seeder::class);
         $this->call(pointsSeeder::class);
     }
 }
