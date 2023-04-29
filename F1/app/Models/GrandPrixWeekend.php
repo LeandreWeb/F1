@@ -25,6 +25,9 @@ class GrandPrixWeekend extends Model
     public function sprint(){
         return $this->belongsTo(Sprint::class);
     }
+    public function sprintShootout(){
+        return $this->belongsTo(SprintShootout::class);
+    }
 
     public function track(){
         return $this->belongsTo(Track::class);

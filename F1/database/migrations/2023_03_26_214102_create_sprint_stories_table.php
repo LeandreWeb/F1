@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string("catchphrase");
             $table->text("intro");
             $table->text("first_part");
-            $table->text("middle_part");
             $table->text("last_part");
             $table->text("conclusion");
             $table->text("extra")->nullable();

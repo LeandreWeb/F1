@@ -10,11 +10,11 @@ if ($eventType=="qualification") {
 }
 else if ($eventType=="sprint shootout") {
     $story="sprintShootoutStory";
-    
+
     $imagePath='Images/Stories/SprintShootouts/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
 }
 else if ($eventType=="sprint") {
-    // $imagePath='Images/Stories/Sprints/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+    $imagePath='Images/Stories/Sprints/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
 }
 else  {
 
