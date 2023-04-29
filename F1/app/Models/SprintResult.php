@@ -9,7 +9,7 @@ class SprintResult extends Model
 {
     use HasFactory;
 
-    
+
     public function driver(){
         return $this->belongsTo(Driver::class);
     }
@@ -18,3 +18,4 @@ class SprintResult extends Model
         return $this->belongsTo(Sprint::class);
     }
 }
+
