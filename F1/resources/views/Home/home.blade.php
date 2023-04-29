@@ -7,16 +7,16 @@
 
 
 @isset ($qualification)
-    @include('Home.Components.news',compact('top3','qualification'),["eventType"=>"qualification"])
+    @include('Home.Components.news',compact('top3',),['event'=>$qualification,"eventType"=>"qualification"])
 @endif
 @isset($sprintShootout)
-    @include('Home.Components.news',compact('top3','sprintShootout'),["eventType"=>"sprint shootout"])
+    @include('Home.Components.news',compact('top3','sprintShootout'),['event'=>$sprintShootout,"eventType"=>"sprint shootout"])
 @endif
 @isset ($sprint)
-    @include('Home.Components.news',compact('top3','sprint'),["eventType"=>"sprint"])
+    @include('Home.Components.news',compact('top3','sprint'),['event'=>$sprint,"eventType"=>"sprint"])
 @endif
 @isset ($lastRace)
-    @include('Home.Components.news',compact('top3','lastRace'),["eventType"=>"race"])
+    @include('Home.Components.news',compact('top3','lastRace'),['event'=>$lastRace,"eventType"=>"race"])
 @endif
 
 

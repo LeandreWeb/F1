@@ -24,26 +24,37 @@ class HomePage extends Controller
         $sprintShootout=SprintShootout::whereDate("date","<=",now())->orderBy("date","desc")->first();
         $sprint=Sprint::whereDate("date","<=",now())->orderBy("date","desc")->first();
 
+
         $nextRace = Race::whereDate("date",">=",now())->orderBy("date","asc")->first();;
 
 
-
-        if($qualification->qualification_story_id){
-
-            return view('Home.home',compact('top3','qualification','nextRace'));
-        }
-        else if($lastRace->race_story_id){
-            echo $lastRace->race_story_id;
+        if($qualification->date<=$lastRace->date && $lastRace->race_story_id)
+        {
             return view('Home.home',compact('top3','lastRace','nextRace'));
         }
-        else if($sprint->sprint_story_id){
+
+        else if($qualification->date<=$sprint->date && $sprint->sprint_story_id)
+        {
             return view('Home.home',compact('top3','sprint','nextRace'));
         }
-        else if($sprintShootout->sprint_shootout_story_id){
+
+        else if($qualification->date<=$sprintShootout->date &&  $sprintShootout->sprint_shootout_story_id)
+        {
             return view('Home.home',compact('top3','sprintShootout','nextRace'));
         }
-        else
+        else if($qualification->qualification_story_id){
+            return view('Home.home',compact('top3','qualification','nextRace'));
+        }
+
+        else{
+            $lastRaceId =$lastRace->id;
+            $lastRace = Race::where("id","<",$lastRaceId)->orderBy("date","desc")->first();
+
             return view('Home.home',compact('top3','lastRace','nextRace'));
+        }
+
+
+
 
 
     }

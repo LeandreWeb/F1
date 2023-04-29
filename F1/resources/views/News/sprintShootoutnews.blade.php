@@ -1,6 +1,7 @@
 @php
-$sprintShootout= $sprintShootoutStory->qualification;
-$countryName = $sprintShootout->grandPrixWeekend->country->name;
+
+$sprintShootout= $sprintShootoutStory->sprintShootout;
+ $countryName = $sprintShootout->grandPrixWeekend->country->name;
 @endphp
 
 
@@ -16,7 +17,7 @@ $countryName = $sprintShootout->grandPrixWeekend->country->name;
         </div>
         <img src="{{asset('Images/Stories/SprintShootouts/Main/'.$countryName.'.jpg')}}" alt="Main Photo">
     </section>
-    {{-- Q1 --}}
+
     <section class="q1 sprintShootout_content">
         <p>{{$sprintShootoutStory->q1}}</p>
         <div class="q1Out sprintShootout_outs">

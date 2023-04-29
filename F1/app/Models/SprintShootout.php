@@ -11,7 +11,7 @@ class SprintShootout extends Model
 
 
     public function grandPrixWeekend(){
-        return $this->hasOne(SprintShootoutResult::class);
+        return $this->hasOne(GrandPrixWeekend::class);
     }
     public function sprintShootoutResult(){
         return $this->hasMany(SprintShootoutResult::class);
