@@ -28,4 +28,6 @@ class Driver extends Model
     public function Country(){
         return $this->belongsTo(Country::class);
     }
+    
+
 }
