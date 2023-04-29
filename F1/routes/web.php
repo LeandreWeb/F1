@@ -44,8 +44,10 @@ Route::get('/team/{id}',function($id){
     return "Team". $id;
 })->name('team');
 
-Route::get('/news/race{id}',[NewsController::class,"race"])->name('racenews');
-Route::get('/news/quali{id}',[NewsController::class,"quali"])->name('qualinews');
+Route::get('/news/race{id}',[NewsController::class,"race"])->name('raceNews');
+Route::get('/news/quali{id}',[NewsController::class,"quali"])->name('qualificationNews');
+Route::get('/news/sprintShootout{id}',[NewsController::class,"sprintShootout"])->name('sprint shootoutNews');
+Route::get('/news/sprint{id}',[NewsController::class,"sprint"])->name('sprintNews');
 
 
 

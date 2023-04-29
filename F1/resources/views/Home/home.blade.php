@@ -2,13 +2,24 @@
 
 @section('content')
 <main>
-@if ($qualification)
-    @include('Home.Components.news',compact('top3','qualification'))
 
-@else
-    @include('Home.Components.news',compact('top3','lastRace'))
 
+
+
+@isset ($qualification)
+    @include('Home.Components.news',compact('top3','qualification'),["eventType"=>"qualification"])
 @endif
+@isset($sprintShootout)
+    @include('Home.Components.news',compact('top3','sprintShootout'),["eventType"=>"sprint shootout"])
+@endif
+@isset ($sprint)
+    @include('Home.Components.news',compact('top3','sprint'),["eventType"=>"sprint"])
+@endif
+@isset ($lastRace)
+    @include('Home.Components.news',compact('top3','lastRace'),["eventType"=>"race"])
+@endif
+
+
 
 @include('Home.Components.next-race',compact('nextRace'))
 

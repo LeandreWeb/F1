@@ -11,7 +11,8 @@ use App\Models\Qualification;
 use  App\Models\QualificationResult;
 use App\Models\RaceResult;
 use App\Models\RaceStory;
-
+use App\Models\Sprint;
+use App\Models\SprintShootout;
 
 class HomePage extends Controller
 {
@@ -20,17 +21,29 @@ class HomePage extends Controller
         $top3 = Driver::orderBy("points","desc")->limit(3)->get();
         $lastRace = Race::whereDate("date","<=",now())->orderBy("date","desc")->first();
         $qualification=Qualification::whereDate("date","<=",now())->orderBy("date","desc")->first();
+        $sprintShootout=SprintShootout::whereDate("date","<=",now())->orderBy("date","desc")->first();
+        $sprint=Sprint::whereDate("date","<=",now())->orderBy("date","desc")->first();
 
         $nextRace = Race::whereDate("date",">=",now())->orderBy("date","asc")->first();;
 
-        if($qualification->id>$lastRace->id)
-        {
+
+
+        if($qualification->qualification_story_id){
+
             return view('Home.home',compact('top3','qualification','nextRace'));
         }
-        else{
-
+        else if($lastRace->race_story_id){
+            echo $lastRace->race_story_id;
             return view('Home.home',compact('top3','lastRace','nextRace'));
         }
+        else if($sprint->sprint_story_id){
+            return view('Home.home',compact('top3','sprint','nextRace'));
+        }
+        else if($sprintShootout->sprint_shootout_story_id){
+            return view('Home.home',compact('top3','sprintShootout','nextRace'));
+        }
+        else
+            return view('Home.home',compact('top3','lastRace','nextRace'));
 
 
     }

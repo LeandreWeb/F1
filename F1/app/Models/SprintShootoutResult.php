@@ -5,11 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SprintShootoutStory extends Model
+class SprintShootoutResult extends Model
 {
     public function sprintShootout(){
-        return $this->hasOne(SprintShootout::class);
+        return $this->belongsTo(SprintShootout::class);
     }
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
+
+
 
     use HasFactory;
 }

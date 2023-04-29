@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use  App\Models\Driver;
 use App\Models\QualificationStory;
 use  App\Models\RaceStory;
-
+use App\Models\SprintShootoutStory;
 
 class NewsController extends Controller
 {
@@ -14,14 +14,19 @@ class NewsController extends Controller
     {
         $raceStory= RaceStory::where("id",$id)->first();
 
-        return view('News.racenews',compact("raceStory"));
+        return view('News.raceNews',compact("raceStory"));
     }
 
     public function quali($id){
 
         $qualiStory= QualificationStory::where("id",$id)->first();
 
-        return view('News.qualinews',compact('qualiStory'));
+        return view('News.qualiNews',compact('qualiStory'));
+    }
+    public function sprintShootout($id){
 
+        $sprintShootoutStory= SprintShootoutStory::where("id",$id)->first();
+
+        return view('News.sprintShootoutnews',compact('sprintShootoutStory'));
     }
 }
