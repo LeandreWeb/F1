@@ -1,5 +1,6 @@
 @php
-$countryName = $raceStory->race->grandPrixWeekend->country->name
+$countryName = $raceStory->race->grandPrixWeekend->country->name;
+$race = $raceStory->race;
 @endphp
 
 @extends('layouts.main')
@@ -10,28 +11,29 @@ $countryName = $raceStory->race->grandPrixWeekend->country->name
         <div class="race_intro">
             <h1>{{$raceStory->catchphrase}}</h1>
             <p>{{$raceStory->intro}}</p>
-            <a class="quali_link" href="{{route('qualinews',["id"=>$raceStory->id])}}">Qualifications -></a>
+            <a class="quali_link" href="{{route('qualificationNews',["id"=>$raceStory->id])}}">Qualifications -></a>
         </div>
-        <img src="{{asset('Images/Stories/News'.$raceStory->id.'.jpg')}}"" alt="">
+        <img src="{{asset('Images/Stories/Races/Main/'.$countryName.'.jpg')}}"" alt="">
     </section>
 
     <section class="first_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/Firstpart/'.$countryName.'.svg')}}" alt="">
+            <img src="{{asset('Images/Stories/Races/FirstPart/'.$countryName.'.jpg')}}"" alt="">
         </div>
         <p>{{$raceStory->first_part}}</p>
     </section>
 
     <section class="middle_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/MiddlePart/'.$countryName.'.jpg')}}" alt="">
+            <img src="{{asset('Images/Stories/Races/MiddlePArt/'.$countryName.'.jpg')}}"" alt="">
         </div>
         <p>{{$raceStory->middle_part}}</p>
     </section>
 
     <section class="last_part race_content">
         <div>
-            <img src="{{asset('Images/Pass/Lastpart/'.$countryName.'.svg')}}" alt="">
+            <img src="{{asset('Images/Stories/Races/LastPart/'.$countryName.'.jpg')}}"" alt="">
+
 
         </div>
         <p>{{$raceStory->last_part}}</p>
@@ -39,7 +41,7 @@ $countryName = $raceStory->race->grandPrixWeekend->country->name
 
     <section class="race_conclusion">
         <div class="conclusion_photo">
-            <img src="{{asset('Images/Pass/Conclusion/'.$countryName.'.jpg')}}" alt="">
+            <img src="{{asset('Images/Stories/Races/End/'.$countryName.'.jpg')}}"" alt="">
         </div>
         <p>{{$raceStory->conclusion}}</p>
     </section>
@@ -52,6 +54,18 @@ $countryName = $raceStory->race->grandPrixWeekend->country->name
 
     @endif
 
+    <section class="links">
+        @if ($race->grandPrixWeekend->qualification->qualification_story_id)
+        <a class="race_link link" href="{{route('sprintNews',["id"=>$raceStory->id])}}">Sprint -></a>
+        @endif
+        @if ($race->grandPrixWeekend->sprintShootout->sprint_shootout_story_id)
+        <a class="sprint_link link" href="{{route('sprint shootoutNews',["id"=>$raceStory->id])}}">Sprint Shootout -></a>
+        @endif
+        @if ($race->grandPrixWeekend->race->race_story_id)
+        <a class="race_link link" href="{{route('qualificationNews',["id"=>$raceStory->id])}}">Qualifications -></a>
+        @endif
+
+    </section>
 
 
 </main>
@@ -200,6 +214,34 @@ width: 100%;
     max-width: 1500px;
 }
 
+
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.link{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.link::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: .5s
+}
+
+.link:hover::after{
+    width: 100%;
+}
 </style>
 
 @endsection

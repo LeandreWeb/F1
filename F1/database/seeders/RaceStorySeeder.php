@@ -26,7 +26,7 @@ class RaceStorySeeder extends Seeder
             et il est maintenant de voir le fruit de leurs efforts.
             Il sera intéressant de voir comment Alonso et Aston Martin se comportent par rapport à leurs concurrents,
             en particulier Red Bull et Verstappen.",
-            
+
             "first_part"=>"Le premier départ de la saison a été intense.
             Max Verstappen a réussi à garder sa première position au premier virage,
             tandis que Charles Leclerc a réussi à dépasser Sergio Perez.
@@ -36,14 +36,14 @@ class RaceStorySeeder extends Seeder
             contrairement à la voiture de Hulkenberg chez Haas,
             dont l'aileron avant a été endommagé lors d'un contact avec Ocon.
             C'était malheureux pour Hulkenberg, qui avait réussi à se qualifier assez bien pour la course et aurait pu espérer un bon résultat sans cet incident.",
-            
+
             "middle_part"=>"Au tour 14, c'était malheureux pour la première course du jeune Piastri car sa transmission a sauté,
              le forçant à abandonner la course.
               Au 26ème tour, après avoir effectué un arrêt aux stands,
                Sergio Perez a réussi à dépasser Charles Leclerc pour obtenir la 2ème position.
                 Plus tard, au tour 32, après un dépassement de Fernando Alonso sur George Russell,
                  Lance Stroll a également réussi à le dépasser pour prendre la 7eme position",
-            
+
             "last_part"=>"
             Au tour 37, Fernando Alonso a réussi à rattraper Lewis Hamilton,
              et a essayé de le dépasser au virage 4,
@@ -58,16 +58,16 @@ class RaceStorySeeder extends Seeder
 
                 Max Verstappen a eu une course tranquille et a finalement gagné avec une différence de plus de 11 secondes sur le deuxième
             ",
-            
+
             "conclusion"=>"La course a été très excitante avec de nombreux dépassements et des moments intenses,
              mais au final, Verstappen a montré sa domination dès le début de la saison.
 
             Le milieu de peloton a été plutôt tranquille avec quelques exceptions comme Pierre Gasly qui a réussi à remonter de la 20ème à la 9ème place et Alexander Albon qui a marqué un point pour Williams en terminant 10ème.
-            
+
             Cependant, la star du week-end a été Fernando Alonso,
              avec ses nombreuses manoeuvres de dépassement impressionnantes. Sa remontée sur le terrain a été très appréciée des fans et il a clairement montré qu'il était de retour en forme.
               On attend avec impatience les prochaines courses pour voir comment les choses vont se dérouler pour les différents pilotes et équipes.",
-            
+
             "extra"=>null,
         ];
         $raceStories[]=[
@@ -122,6 +122,17 @@ class RaceStorySeeder extends Seeder
                 ce qui a permis à Alonso de reprendre la 3ème position malgré son spin initial. Sainz a écopé d'une pénalité de 5 secondes pour son implication dans un accident.
                  Finalement, c'est Verstappen qui a remporté la course, profitant des circonstances chaotiques pour monter sur la plus haute marche du podium.
                   Cette course a été pleine de rebondissements et de surprises, confirmant que la Formule 1 peut être imprévisible et pleine d'action à chaque tour de piste.",
+            "extra"=>null,
+        ];
+        $raceStories[]=[
+            "id"=>4,
+            "catchphrase"=>"Calme a Bakou",
+            "intro"=>"Après une première tentative plus ou moins réussie avec le nouveau format de course sprint en F1, il est maintenant temps pour les pilotes de se préparer pour l'événement principal. La ville de Baku en Azerbaïdjan accueille la quatrième manche du championnat, avec une piste rapide et technique qui promet des sensations fortes pour les fans de F1. ",
+            "first_part"=>"La course de Baku a débuté avec une relative tranquillité pour un circuit réputé pour son imprévisibilité. Charles Leclerc a conservé sa position en tête de la course au départ.Cependant, Leclerc n'a pas pu garder sa position pendant longtemps, car Max Verstappen a utilisé la supériorité de sa voiture en vitesse pour le dépasser sur la longue ligne droite. Verstappen a alors pris la tête de la course, sous les encouragements de ses fans. Quelques tours plus tard, c'était au tour de son coéquipier chez Red Bull, Sergio Perez, de dépasser Leclerc au même endroit, le reléguant à la troisième place.",
+            "middle_part"=>"La course a connu un tournant au 11ème tour, lorsque Nyck De Vries a perdu le contrôle de sa voiture au virage 5 et a violemment heurté le mur, endommageant sa suspension avant. Sa voiture est restée bloquée au virage 6, obligeant la direction de course à faire sortir la voiture de sécurité pour dégager la piste. Pendant ce temps, Max Verstappen a sauté aux stands pour un changement de pneus prévu. Cependant, juste après sa sortie des stands, la voiture de sécurité a été déployée, profitant à Sergio Perez, qui a pu faire son changement de pneus et prendre la tête de la course. Cette intervention de la voiture de sécurité a été un véritable avantage pour Perez, qui a su tirer profit de cette situation pour prendre l'avantage sur Verstappen",
+            "last_part"=>"Le reste de la course a été relativement calme, avec Sergio Perez qui a pu creuser un écart confortable entre lui et Max Verstappen. Malgré cela, il y a eu quelques dépassements notables, comme celui d'Alonso sur Sainz et de Norris sur Hulkenberg. Cependant, un événement surprenant s'est produit au dernier tour. Plusieurs photographes se sont précipités vers les stands pour prendre en photo le vainqueur à la ligne d'arrivée, mais ils ont failli causer un accident en bloquant la voie des stands. Heureusement, cela n'a pas eu de conséquences dramatiques, même si cela a rappelé la nécessité de respecter les règles de sécurité en tout temps. En fin de compte, Sergio Perez a contrôlé la course avec brio et a remporté une victoire bien méritée, sous les applaudissements du public et de son équipe",
+            "conclusion"=>"
+            Bien que la course de Baku ait été réputée pour son imprévisibilité et ses nombreux incidents au fil des ans, l'édition de cette année a été étonnamment calme. Malgré cela, Sergio Perez a su tirer profit de la situation pour remporter une victoire solide et méritée, tandis que Max Verstappen a dû se contenter de la deuxième place. Les dépassements notables de Fernando Alonso et Lando Norris ont ajouté une touche d'excitation à la course, tandis que l'incident avec les photographes a rappelé l'importance de la sécurité en Formule 1. ",
             "extra"=>null,
         ];
 

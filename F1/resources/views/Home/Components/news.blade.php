@@ -18,7 +18,7 @@ else if ($eventType=="sprint") {
 }
 else  {
 
-    // $imagePath='Images/Stories/Races/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+     $imagePath='Images/Stories/Races/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
 }
 
 

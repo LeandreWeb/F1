@@ -52,7 +52,7 @@ $sprint= $sprintStory->sprint;
         <a class="sprint_link link" href="{{route('sprint shootoutNews',["id"=>$sprintStory->id])}}">Sprint Shootout -></a>
         @endif
         @if ($sprint->grandPrixWeekend->race->race_story_id)
-        <a class="race_link link" href="{{route('racenews',["id"=>$sprintStory->id])}}">Course -></a>
+        <a class="race_link link" href="{{route('raceNews',["id"=>$sprintStory->id])}}">Course -></a>
         @endif
         @if ($sprint->grandPrixWeekend->qualification->qualification_story_id)
         <a class="race_link link" href="{{route('qualificationNews',["id"=>$sprintStory->id])}}">Qualification -></a>

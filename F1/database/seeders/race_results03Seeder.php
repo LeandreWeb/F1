@@ -30,7 +30,7 @@ class race_results03Seeder extends Seeder
             "id"=>302,
             "driver_id"=>44,
             "race_id"=>3,
-            "total_time"=>"02:32:38.55", 
+            "total_time"=>"02:32:38.55",
             "best_lap"=>080.613,
             "position"=>2,
             "points"=>18,
@@ -39,8 +39,8 @@ class race_results03Seeder extends Seeder
             "id"=>303,
             "driver_id"=>14,
             "race_id"=>3,
-            "total_time"=>"02:32:39.14", 
-            "best_lap"=>080.476, 
+            "total_time"=>"02:32:39.14",
+            "best_lap"=>080.476,
             "position"=>3,
             "points"=>15,
         ];
@@ -48,7 +48,7 @@ class race_results03Seeder extends Seeder
             "id"=>304,
             "driver_id"=>18,
             "race_id"=>3,
-            "total_time"=>"02:32:41.453", 
+            "total_time"=>"02:32:41.453",
             "best_lap"=>080.934,
             "position"=>4,
             "points"=>12,
@@ -66,7 +66,7 @@ class race_results03Seeder extends Seeder
             "id"=>306,
             "driver_id"=>4,
             "race_id"=>3,
-            "total_time"=>"02:32:42.072", 
+            "total_time"=>"02:32:42.072",
             "best_lap"=>081.173,
             "position"=>6,
             "points"=>8,
@@ -75,7 +75,7 @@ class race_results03Seeder extends Seeder
             "id"=>307,
             "driver_id"=>27,
             "race_id"=>3,
-            "total_time"=>"02:32:43.310", 
+            "total_time"=>"02:32:43.310",
             "best_lap"=>081.124,
             "position"=>7,
             "points"=>6
@@ -84,7 +84,7 @@ class race_results03Seeder extends Seeder
             "id"=> 308,
             "driver_id"=>81,
             "race_id"=>3,
-            "total_time"=>"02:32:43.753", 
+            "total_time"=>"02:32:43.753",
             "best_lap"=>081.335,
             "position"=>8,
             "points"=>4
@@ -93,7 +93,7 @@ class race_results03Seeder extends Seeder
             "id"=> 309,
             "driver_id"=>24,
             "race_id"=>3,
-            "total_time"=>"02:32:44.084", 
+            "total_time"=>"02:32:44.084",
             "best_lap"=>081.819,
             "position"=>9,
             "points"=>2
@@ -102,7 +102,7 @@ class race_results03Seeder extends Seeder
             "id"=> 310,
             "driver_id"=>22,
             "race_id"=>3,
-            "total_time"=>"02:32:44.423", 
+            "total_time"=>"02:32:44.423",
             "best_lap"=>081.789,
             "position"=>10,
             "points"=>1
@@ -111,7 +111,7 @@ class race_results03Seeder extends Seeder
             "id"=> 311,
             "driver_id"=>77,
             "race_id"=>3,
-            "total_time"=>"02:32:44.884", 
+            "total_time"=>"02:32:44.884",
             "best_lap"=>082.233,
             "position"=>11,
             "points"=>0
@@ -120,7 +120,7 @@ class race_results03Seeder extends Seeder
             "id"=> 312,
             "driver_id"=>55,
             "race_id"=>3,
-            "total_time"=>"02:32:44.965", 
+            "total_time"=>"02:32:44.965",
             "best_lap"=>080.462,
             "position"=>12,
             "points"=>0
@@ -129,7 +129,7 @@ class race_results03Seeder extends Seeder
             "id"=> 313,
             "driver_id"=>10,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>080.995,
             "position"=>13,
             "points"=>0
@@ -138,7 +138,7 @@ class race_results03Seeder extends Seeder
             "id"=> 314,
             "driver_id"=>31,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>081.203,
             "position"=>14,
             "points"=>0
@@ -147,7 +147,7 @@ class race_results03Seeder extends Seeder
             "id"=> 315,
             "driver_id"=>21,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>081.183,
             "position"=>15,
             "points"=>0
@@ -156,7 +156,7 @@ class race_results03Seeder extends Seeder
             "id"=> 316,
             "driver_id"=>2,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>081.456,
             "position"=>16,
             "points"=>0
@@ -165,7 +165,7 @@ class race_results03Seeder extends Seeder
             "id"=> 317,
             "driver_id"=>20,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>081.685,
             "position"=>17,
             "points"=>0
@@ -174,7 +174,7 @@ class race_results03Seeder extends Seeder
             "id"=> 318,
             "driver_id"=>63,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>082.680,
             "position"=>18,
             "points"=>0
@@ -183,7 +183,7 @@ class race_results03Seeder extends Seeder
             "id"=> 319,
             "driver_id"=>23,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>83.349,
             "position"=>null,
             "points"=>null
@@ -192,16 +192,16 @@ class race_results03Seeder extends Seeder
             "id"=> 320,
             "driver_id"=>16,
             "race_id"=>3,
-            "total_time"=>null, 
+            "total_time"=>null,
             "best_lap"=>null,
             "position"=>null,
             "points"=>null
         ];
-        
-        
 
-        
-        
+
+
+
+
         Db::table('race_results')->insert($raceResults);
     }
 }

@@ -113,7 +113,7 @@ $countryName = $quali->grandPrixWeekend->country->name;
         <p>{{$qualiStory->conclusion}}</p>
 
         @if ($quali->grandPrixWeekend->race->race_story_id)
-        <a class="race_link" href="{{route('racenews',["id"=>$qualiStory->id])}}">Course -></a>
+        <a class="race_link" href="{{route('raceNews',["id"=>$qualiStory->id])}}">Course -></a>
         @endif
     </section>
 
