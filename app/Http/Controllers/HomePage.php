@@ -28,7 +28,10 @@ class HomePage extends Controller
         $nextRace = Race::whereDate("date",">=",now())->orderBy("date","asc")->first();;
 
 
-        if($qualification->date<=$lastRace->date && $lastRace->race_story_id)
+        echo $qualification->date;
+        echo "/n    ". $lastRace->date;
+
+        if($qualification->date<=$lastRace->date && $lastRace->race_story_id )
         {
             return view('Home.home',compact('top3','lastRace','nextRace'));
         }
@@ -45,11 +48,13 @@ class HomePage extends Controller
         else if($qualification->qualification_story_id){
             return view('Home.home',compact('top3','qualification','nextRace'));
         }
+        else if($lastRace->race_story_id ){
+            return view('Home.home',compact('top3','lastRace','nextRace'));
 
+        }
         else{
             $lastRaceId =$lastRace->id;
             $lastRace = Race::where("id","<",$lastRaceId)->orderBy("date","desc")->first();
-
             return view('Home.home',compact('top3','lastRace','nextRace'));
         }
 
