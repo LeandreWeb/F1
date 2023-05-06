@@ -28,9 +28,6 @@ class HomePage extends Controller
         $nextRace = Race::whereDate("date",">=",now())->orderBy("date","asc")->first();;
 
 
-        echo $qualification->date;
-        echo "/n    ". $lastRace->date;
-
         if($qualification->date<=$lastRace->date && $lastRace->race_story_id )
         {
             return view('Home.home',compact('top3','lastRace','nextRace'));
