@@ -6,7 +6,7 @@ $story= $eventType."Story";
 
 
 if ($eventType=="qualification") {
-    // $imagePath='Images/Stories/Qualifications/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+    $imagePath='Images/Stories/Qualifications/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
 }
 else if ($eventType=="sprint shootout") {
     $story="sprintShootoutStory";
@@ -49,5 +49,5 @@ else  {
 
 <style>
 
-    
+
 </style>
