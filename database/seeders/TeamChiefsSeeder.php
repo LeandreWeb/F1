@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
-class team_chiefsseeder extends Seeder
+class TeamChiefsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class team_chiefsseeder extends Seeder
     public function run(): void
     {
         $team_chiefs=[];
-        
+
         $team_chiefs[]=[
             "id"=>1,
             "team_id"=>1,
