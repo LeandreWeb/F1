@@ -25,7 +25,7 @@ $race = $raceStory->race;
 
     <section class="middle_part race_content">
         <div>
-            <img src="{{asset('Images/Stories/Races/MiddlePArt/'.$countryName.'.jpg')}}"" alt="">
+            <img src="{{asset('Images/Stories/Races/MiddlePart/'.$countryName.'.jpg')}}"" alt="">
         </div>
         <p>{{$raceStory->middle_part}}</p>
     </section>
