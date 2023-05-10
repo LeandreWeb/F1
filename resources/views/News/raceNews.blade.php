@@ -33,8 +33,6 @@ $race = $raceStory->race;
     <section class="last_part race_content">
         <div>
             <img src="{{asset('Images/Stories/Races/LastPart/'.$countryName.'.jpg')}}"" alt="">
-
-
         </div>
         <p>{{$raceStory->last_part}}</p>
     </section>
@@ -55,13 +53,13 @@ $race = $raceStory->race;
     @endif
 
     <section class="links">
-        @if ($race->grandPrixWeekend->qualification->qualification_story_id)
+        @if ($race->grandPrixWeekend->sprint)
         <a class="race_link link" href="{{route('sprintNews',["id"=>$raceStory->id])}}">Sprint -></a>
         @endif
-        @if ($race->grandPrixWeekend->sprintShootout->sprint_shootout_story_id)
+        @if ($race->grandPrixWeekend->sprintShootout)
         <a class="sprint_link link" href="{{route('sprint shootoutNews',["id"=>$raceStory->id])}}">Sprint Shootout -></a>
         @endif
-        @if ($race->grandPrixWeekend->race->race_story_id)
+        @if ($race->grandPrixWeekend->qualification->qualification_story_id)
         <a class="race_link link" href="{{route('qualificationNews',["id"=>$raceStory->id])}}">Qualifications -></a>
         @endif
 
@@ -144,8 +142,11 @@ $race = $raceStory->race;
 }
 
 .race_content img{
-    width: 90%;
-    height: 90%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius:inherit;
+
 
 }
 
