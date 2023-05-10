@@ -7,7 +7,7 @@
         <circle class="driver_circle pause team_{{ $teamid }}--fill" r="12" />
     </g>
 
-    
+
     <style>
         svg {
             padding: 25px;
@@ -33,7 +33,81 @@
                 offset-distance: 5.75%;
             }
 
+            {{-- T1 --}} 6.709% {
+                offset-distance: .75%;
+            }
 
+            {{-- T2 --}} 10.096% {
+                offset-distance: -.5%;
+            }
+
+            {{-- T3 --}} 12.225% {
+                offset-distance: -2.75%;
+            }
+
+            {{-- T4 --}} 21.817% {
+                offset-distance: -12.75%;
+            }
+
+            {{-- 5 --}}  23.076%% {
+                offset-distance: -15.5%;
+            }
+
+            {{-- 6 --}} 25% {
+                offset-distance: -18.5%;
+            }
+
+            {{-- 7 --}} 29.018% {
+                offset-distance: -21.5%;
+            }
+
+            {{-- 8 --}} 30.302% {
+                offset-distance: -22.5%;
+            }
+
+            {{-- 9 --}} 39.465% {
+                offset-distance: -33%;
+            }
+
+            {{-- 10 --}} 43.216% {
+                offset-distance: -37.5%;
+            }
+
+            {{-- 11 --}} 53% {
+                offset-distance: -49.75%;
+            }
+
+            {{-- 12 --}} 57.227% {
+                offset-distance: -52%;
+            }
+
+            {{-- 13 --}} 60.599% {
+                offset-distance: -53.5%;
+            }
+
+            {{-- 14 --}} 62.90% {
+                offset-distance: -55.5%;
+            }
+
+            {{-- 15 --}}  63.706% {
+                offset-distance: -56.23%;
+            }
+
+            {{-- T16 --}} 67.527% {
+                offset-distance: -57.75%;
+            }
+
+            {{-- 17 --}} 89.73% {
+                offset-distance: -82.25%;
+            }
+
+            {{-- 18 --}} 94.76% {
+                offset-distance: -85.25%;
+            }
+
+            {{-- T19 --}} 96.75% {
+                offset-distance: -88.5%;
+            }
 
             {{-- End --}} 100% {
                 motion-offset: -94.25%;
@@ -43,7 +117,3 @@
     </style>
 
 </svg>
-
-
-
-
