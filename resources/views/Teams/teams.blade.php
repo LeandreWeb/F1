@@ -1,11 +1,15 @@
 @extends('layouts.main')
 
 @section('content')
-<main>
+<main class="in_construction">
     <h1>Équipes</h1>
-    <a href="{{route('home')}}">Home</a>
+    @include('.components.constuction')
 </main>
-    
+
+
+
 @endsection
+
+
 
 
