@@ -34,13 +34,16 @@ body {
     background-color: var(--background);
     color: var(--text);
     font-family: "Golos Text", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 
 /* Header */
 
 header {
-
+    flex: 0 0 var(--header-height);
     top: 0px;
     width: 100%;
     padding: 1em;
@@ -274,7 +277,7 @@ header{
 /* main */
 
 main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-heaght));
+    flex: 1 1 auto;
 }
 .top-left{
     position: absolute;
@@ -374,8 +377,8 @@ main {
 /* Footer */
 
 footer {
+    flex:  0 0 var(--footer-heaght);
     padding: 0 3em;
-    min-height: var(--footer-heaght);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -434,6 +437,13 @@ footer #title {
 
 footer h4 {
     text-align: center;
+}
+
+.in_construction{
+    overflow: hidden;
+    & h1{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1655px) {
