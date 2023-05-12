@@ -48,8 +48,6 @@ if (qualiStarter) {
 
 
 window.addEventListener("resize", () => {
-    console.log("Hello i resize" + window.innerWidth);
-
     if (window.innerWidth > 800) {
         navMenu.classList.remove("nav-open");
         navMenu.classList.add("nav-closed");
