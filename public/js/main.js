@@ -5,6 +5,7 @@ const hamburger = document.querySelector(".hamburger");
 const qualiStarter = document.querySelector(".start--animation");
 const qualiDriver = document.querySelector(".driver_circle");
 const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
     console.log("Click ");
@@ -45,13 +46,11 @@ if (qualiStarter) {
     });
 }
 
-
-
 window.addEventListener("resize", () => {
     if (window.innerWidth > 800) {
-        navMenu.classList.remove("nav-open");
-        navMenu.classList.add("nav-closed");
         hamburger.classList.remove("open-hamburger");
         hamburger.classList.add("closed-hamburger");
+        navMenu.classList.remove("nav-open");
+        navMenu.classList.add("nav-closed");
     }
 });
