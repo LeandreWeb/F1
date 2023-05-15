@@ -19,6 +19,7 @@ class GrandPrixWeekendSeeder extends Seeder
 
      $grandPrixWeekends[]=[
         "id"=>1,
+        "name"=>"Grand Prix de Bahrain",
         "country_id"=>1,
         'race_id'=>1,
         'qualification_id'=>1,
@@ -31,6 +32,7 @@ class GrandPrixWeekendSeeder extends Seeder
      ];
      $grandPrixWeekends[]=[
         "id"=>2,
+        "name"=>"Grand Prix d'Arabie Saoudite",
         "country_id"=>2,
         'race_id'=>2,
         'qualification_id'=>2,
@@ -42,6 +44,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>3,
+        "name"=>"Grand Prix d'Australie",
         "country_id"=>3,
         'race_id'=>3,
         'qualification_id'=>3,
@@ -52,6 +55,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>4,
+        "name"=>"Grand Prix d'Azerbaijan",
         "country_id"=>4,
         'race_id'=>4,
         'qualification_id'=>4,
@@ -62,6 +66,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>5,
+        "name"=>"Grand Prix de Miami",
         "country_id"=>5,
         'race_id'=>5,
         'qualification_id'=>5,
@@ -72,6 +77,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>6,
+        "name"=>"Grand Prix Emilia-Rmagna",
         "country_id"=>6,
         'race_id'=>6,
         'qualification_id'=>6,
@@ -82,6 +88,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>7,
+        "name"=>"Grand Prix de Monaco",
         "country_id"=>1,
         'race_id'=>7,
         'qualification_id'=>7,
@@ -92,6 +99,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>8,
+        "name"=>"Grand Prix d'Espagne",
         "country_id"=>8,
         'race_id'=>8,
         'qualification_id'=>8,
@@ -102,6 +110,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>9,
+        "name"=>"Grand Prix du Canada",
         "country_id"=>9,
         'race_id'=>9,
         'qualification_id'=>9,
@@ -112,6 +121,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>10,
+        "name"=>"Grand Prix d'Autriche",
         "country_id"=>10,
         'race_id'=>10,
         'qualification_id'=>10,
@@ -122,6 +132,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>11,
+        "name"=>"Grand Prix Britanique",
         "country_id"=>11,
         'race_id'=>11,
         'qualification_id'=>11,
@@ -132,6 +143,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>12,
+        "name"=>"Grand Prix Hongrois",
         "country_id"=>12,
         'race_id'=>12,
         'qualification_id'=>12,
@@ -142,6 +154,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>13,
+        "name"=>"Grand Prix de la Belgique",
         "country_id"=>13,
         'race_id'=>13,
         'qualification_id'=>13,
@@ -152,6 +165,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>14,
+        "name"=>"Grand Prix Néerlandais",
         "country_id"=>14,
         'race_id'=>14,
         'qualification_id'=>14,
@@ -162,6 +176,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>15,
+        "name"=>"Grand Prix d'Italie",
         "country_id"=>6,
         'race_id'=>15,
         'qualification_id'=>15,
@@ -173,6 +188,7 @@ class GrandPrixWeekendSeeder extends Seeder
 
      $grandPrixWeekends[]=[
         "id"=>16,
+        "name"=>"Grand Prix de Singapore",
         "country_id"=>15,
         'race_id'=>16,
         'qualification_id'=>16,
@@ -183,6 +199,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>17,
+        "name"=>"Grand Prix du Japon",
         "country_id"=>16,
         'race_id'=>17,
         'qualification_id'=>17,
@@ -193,6 +210,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>18,
+        "name"=>"Grand Prix de Qatar",
         "country_id"=>17,
         'race_id'=>18,
         'qualification_id'=>18,
@@ -203,6 +221,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>19,
+        "name"=>"Grand Prix des États Unis",
         "country_id"=>5,
         'race_id'=>19,
         'qualification_id'=>19,
@@ -213,6 +232,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>20,
+        "name"=>"Grand Prix du Mexique",
         "country_id"=>18,
         'race_id'=>20,
         'qualification_id'=>20,
@@ -223,6 +243,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>21,
+        "name"=>"Grand Prix du Bresil",
         "country_id"=>19,
         'race_id'=>21,
         'qualification_id'=>21,
@@ -233,6 +254,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>22,
+        "name"=>"Grand Prix de Las Vegas",
         "country_id"=>5,
         'race_id'=>22,
         'qualification_id'=>22,
@@ -243,6 +265,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>23,
+        "name"=>"Grand Prix d'Abu Dhabi",
         "country_id"=>20,
         'race_id'=>23,
         'qualification_id'=>23,
