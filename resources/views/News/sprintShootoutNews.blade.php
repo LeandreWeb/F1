@@ -1,4 +1,5 @@
 @php
+    $grandPrixName = $sprintShootoutStory->sprintShootout->grandPrixWeekend->name;
 
     $sprintShootout = $sprintShootoutStory->sprintShootout;
     $countryName = $sprintShootout->grandPrixWeekend->country->name;
@@ -15,7 +16,7 @@
                 <h1>{{ $sprintShootoutStory->catchphrase }}</h1>
                 <p>{{ $sprintShootoutStory->intro }}</p>
             </div>
-            <img src="{{ asset('Images/Stories/SprintShootouts/Main/' . $countryName . '.jpg') }}" alt="Main Photo">
+            <img src="{{ asset('Images/Stories/SprintShootouts/Main/' . $grandPrixName . '.jpg') }}" alt="Main Photo">
         </section>
 
         <section class="q1 sprintShootout_content">
@@ -111,7 +112,7 @@
         {{-- conclusion --}}
         <section class="sprintShootout_conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/SprintShootouts/End/' . $countryName . '.jpg') }}" alt="Photo Winner">
+                <img src="{{ asset('Images/Stories/SprintShootouts/End/' . $grandPrixName . '.jpg') }}" alt="Photo Winner">
             </div>
             <p>{{ $sprintShootoutStory->conclusion }}</p>
 

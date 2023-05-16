@@ -1,5 +1,6 @@
 @php
     $quali = $qualiStory->qualification;
+    $grandPrixName = $qualiStory->qualification->grandPrixWeekend->name;
     $countryName = $quali->grandPrixWeekend->country->name;
 @endphp
 
@@ -17,7 +18,7 @@
 
 
             </div>
-            <img src="{{ asset('Images/Stories/Qualifications/Main/' . $countryName . '.jpg') }}" alt="Main Photo">
+            <img src="{{ asset('Images/Stories/Qualifications/Main/' . $grandPrixName . '.jpg') }}" alt="Main Photo">
         </section>
         {{-- Q1 --}}
         <section class="q1 quali_content">
@@ -113,7 +114,7 @@
         {{-- conclusion --}}
         <section class="quali_conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/Qualifications/End/' . $countryName . '.jpg') }}" alt="Photo Winner">
+                <img src="{{ asset('Images/Stories/Qualifications/End/' . $grandPrixName . '.jpg') }}" alt="Photo Winner">
             </div>
             <p>{{ $qualiStory->conclusion }}</p>
 

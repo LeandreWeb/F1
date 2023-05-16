@@ -6,19 +6,19 @@ $story= $eventType."Story";
 
 
 if ($eventType=="qualification") {
-    $imagePath='Images/Stories/Qualifications/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+    $imagePath='Images/Stories/Qualifications/Main/'.$event->grandPrixWeekend->name.'.jpg';
 }
 else if ($eventType=="sprint shootout") {
     $story="sprintShootoutStory";
 
-    $imagePath='Images/Stories/SprintShootouts/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+    $imagePath='Images/Stories/SprintShootouts/Main/'.$event->grandPrixWeekend->name.'.jpg';
 }
 else if ($eventType=="sprint") {
-    $imagePath='Images/Stories/Sprints/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+    $imagePath='Images/Stories/Sprints/Main/'.$event->grandPrixWeekend->name.'.jpg';
 }
 else  {
 
-     $imagePath='Images/Stories/Races/Main/'.$event->grandPrixWeekend->country->name.'.jpg';
+     $imagePath='Images/Stories/Races/Main/'.$event->grandPrixWeekend->name.'.jpg';
 }
 
 

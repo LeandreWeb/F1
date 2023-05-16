@@ -1,5 +1,6 @@
 @php
     $countryName = $raceStory->race->grandPrixWeekend->country->name;
+    $grandPrixName = $raceStory->race->grandPrixWeekend->name;
     $race = $raceStory->race;
 @endphp
 
@@ -13,33 +14,33 @@
                 <p>{{ $raceStory->intro }}</p>
                 <a class="quali_link" href="{{ route('qualificationNews', ['id' => $raceStory->id]) }}">Qualifications -></a>
             </div>
-            <img src="{{ asset('Images/Stories/Races/Main/' . $countryName . '.jpg') }}"" alt="">
+            <img src="{{ asset('Images/Stories/Races/Main/' . $grandPrixName . '.jpg') }}"" alt="">
         </section>
 
         <section class="first_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/FirstPart/' . $countryName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/Races/FirstPart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->first_part }}</p>
         </section>
 
         <section class="middle_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/MiddlePart/' . $countryName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/Races/MiddlePart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->middle_part }}</p>
         </section>
 
         <section class="last_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/LastPart/' . $countryName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/Races/LastPart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->last_part }}</p>
         </section>
 
         <section class="race_conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/Races/End/' . $countryName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/Races/End/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->conclusion }}</p>
         </section>
@@ -241,28 +242,29 @@
         }
 
         @media screen and (max-width: 675px) {
-          #race_story p {
-            font-size: 16px
-          }
-          .race_intro h1 {
-            font-size:64px
-          }
+            #race_story p {
+                font-size: 16px
+            }
 
-          .race_content p  {
-            min-width: auto;
-          }
+            .race_intro h1 {
+                font-size: 64px
+            }
 
-          .race_content div{
-            flex: auto;
-            min-width: 200px;
-          }
+            .race_content p {
+                min-width: auto;
+            }
+
+            .race_content div {
+                flex: auto;
+                min-width: 200px;
+            }
         }
 
         @media screen and (max-width: 450px) {
 
-          .race_intro h1 {
-            font-size:48px
-          }
+            .race_intro h1 {
+                font-size: 48px
+            }
 
 
 
