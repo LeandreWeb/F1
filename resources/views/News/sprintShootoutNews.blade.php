@@ -129,7 +129,7 @@
 
         <section class="sprintShootout_visual">
 
-            @include('svg.Qualifications.' . $countryName, [
+            @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
                 'time' => $sprintShootout->winner[0]->q3,
                 'teamid' => $sprintShootout->winner[0]->driver->team->id,
             ])

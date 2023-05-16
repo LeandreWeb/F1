@@ -20,7 +20,7 @@ $formattedDate = $date->translatedFormat('j F ');
         <img class="flag" src="{{asset('Images/Flags/'.$nextRace->grandPrixWeekend->country->name.'.jpg')}}" alt="">
 
         <div class="track-container">
-            @include('svg.NextRace.'.$nextRace->grandPrixWeekend->country->name)
+            @include('svg.NextRace.'.$nextRace->grandPrixWeekend->track->name)
         </div>
 
         <h2 class="next_race_time"> Ronde {{$nextRace->grandPrixWeekend->id}}</h2>

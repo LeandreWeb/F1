@@ -125,7 +125,7 @@
 
         <section class="quali_visual">
 
-            @include('svg.Qualifications.' . $countryName, [
+            @include('svg.Qualifications.' . $quali->grandPrixWeekend->track->name, [
                 'time' => $quali->winner[0]->q3,
                 'teamid' => $quali->winner[0]->driver->team->id,
             ])
