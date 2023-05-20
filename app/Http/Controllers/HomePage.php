@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 use  App\Models\Country;
 use  App\Models\Driver;
@@ -23,12 +24,19 @@ class HomePage extends Controller
         $qualification=Qualification::whereDate("date","<=",now())->orderBy("date","desc")->first();
         $sprintShootout=SprintShootout::whereDate("date","<=",now())->orderBy("date","desc")->first();
         $sprint=Sprint::whereDate("date","<=",now())->orderBy("date","desc")->first();
+        $article=Article::whereDate("created_time","<=",now())->orderBy("created_time","desc")->first();
 
 
         $nextRace = Race::whereDate("date",">=",now())->orderBy("date","asc")->first();;
 
+        
 
-        if($qualification->date<=$lastRace->date && $lastRace->race_story_id )
+        if ($article->created_time>=$lastRace->date ){
+
+            return view('Home.home',compact('top3','article','nextRace'));
+        }
+
+        else if($qualification->date<=$lastRace->date && $lastRace->race_story_id )
         {
             return view('Home.home',compact('top3','lastRace','nextRace'));
         }
@@ -50,6 +58,7 @@ class HomePage extends Controller
 
         }
         else{
+
             $lastRaceId =$lastRace->id;
             $lastRace = Race::where("id","<",$lastRaceId)->orderBy("date","desc")->first();
             return view('Home.home',compact('top3','lastRace','nextRace'));

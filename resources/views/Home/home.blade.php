@@ -3,9 +3,9 @@
 @section('content')
 <main>
 
-
-
-
+@isset ($article)
+    @include('Home.Components.news',compact('top3',),['event'=>$article,"eventType"=>"article"])
+@endif
 @isset ($qualification)
     @include('Home.Components.news',compact('top3',),['event'=>$qualification,"eventType"=>"qualification"])
 @endif
