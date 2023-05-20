@@ -48,6 +48,7 @@ Route::get('/news/race{id}',[NewsController::class,"race"])->name('raceNews');
 Route::get('/news/quali{id}',[NewsController::class,"quali"])->name('qualificationNews');
 Route::get('/news/sprintShootout{id}',[NewsController::class,"sprintShootout"])->name('sprint shootoutNews');
 Route::get('/news/sprint{id}',[NewsController::class,"sprint"])->name('sprintNews');
+Route::get('/news/article{id}',[NewsController::class,"article"])->name('articleNews');
 
 
 

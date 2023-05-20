@@ -32,5 +32,8 @@ class GrandPrixWeekend extends Model
     public function track(){
         return $this->belongsTo(Track::class);
     }
+    public function article(){
+        return $this->hasOne(Article::class);
+    }
 
 }
