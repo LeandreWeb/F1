@@ -7,18 +7,18 @@
         $title = $event->title;
     } elseif ($eventType == 'qualification') {
         $imagePath = 'Images/Stories/Qualifications/Main/' . $event->grandPrixWeekend->name . '.jpg';
-        $catchphrase = $eventType . ('Story')->catchphrase;
+        $catchphrase = $event->qualificationStory->catchphrase;;
         $title = 'Qualifications';
     } elseif ($eventType == 'sprint shootout') {
-        $catchphrase = $eventType . ('Story')->catchphrase;
+        $catchphrase = $event->sprintshootoutStory->catchphrase;
         $imagePath = 'Images/Stories/SprintShootouts/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Sprint Shootout';
     } elseif ($eventType == 'sprint') {
-        $catchphrase = $eventType . ('Story')->catchphrase;
+        $catchphrase = $event->sprintStory->catchphrase;
         $imagePath = 'Images/Stories/Sprints/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Sprint';
     } else {
-        $catchphrase = $eventType . ('Story')->catchphrase;
+        $catchphrase = $event->raceStory->catchphrase;
         $imagePath = 'Images/Stories/Races/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Course';
     }
