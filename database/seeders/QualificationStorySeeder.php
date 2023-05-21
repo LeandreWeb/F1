@@ -31,12 +31,20 @@ class QualificationStorySeeder extends Seeder
     ];
     $qualificationStory[] = [
       "id" => 2,
-      "catchphrase" => "Write something",
-      "intro" => "Write something",
-      "q3" => "Write something",
-      "q2" => "Write something",
-      "q1" => "Write something",
-      "conclusion" => "write something",
+      "catchphrase" => "La bataille à trois pour la pole position",
+      "intro" => "Après la spectaculaire domination des Red Bulls lors du dernier Grand Prix de Bahreïn, l'atmosphère est électrique ici alors que nous attendons avec impatience de découvrir qui sortira vainqueur des qualifications.",
+      "q1" => "La première session de qualifications (Q1) du Grand Prix d'Arabie Saoudite 2023 a été riche en rebondissements. Dès sa première sortie, Nick DeVries a été confronté à un tête-à-queue avec son Alpha Tauri, frôlant de justesse un accrochage avec le mur. Malheureusement, plusieurs temps ont été effacés, car certains pilotes ont mis leurs pneus sur la ligne d'entrée des stands après le dernier virage.
+      Le malheur a également frappé Lando Norris, qui a accroché le mur au virage 27, entraînant la rupture de sa suspension. Contraint de rentrer aux stands, il n'a malheureusement pas réussi à se qualifier pour la Q2. En revanche, son coéquipier, Oscar Piastri, a réalisé une performance exceptionnelle en se qualifiant pour la Q2, marquant ainsi la première fois de sa jeune carrière.",
+      "q2" => "La session de qualifications Q2 du Grand Prix d'Arabie Saoudite 2023 a été marquée par des événements majeurs. Peu de temps après le début de la séance, le moteur de la voiture de Max Verstappen, considéré comme le favori, a lâché, l'empêchant de réaliser un tour de qualification. Malheureusement pour lui, il se retrouvera en 15e position sur la grille de départ de la course.
+      Malgré cet incident inattendu, le reste de la session s'est déroulé dans le calme. Les autres pilotes ont pu se concentrer sur la recherche des meilleurs temps pour se qualifier en Q3, la phase finale des qualifications. Cependant, la véritable surprise est venue d'Oscar Piastri, qui a réalisé une performance remarquable. Après seulement sa deuxième course en Formule 1, il a réussi à se qualifier pour la Q3, démontrant ainsi son talent et sa rapidité grandissante.",
+      "q3" => "La session de qualifications Q3 du Grand Prix d'Arabie Saoudite 2023 a été extrêmement captivante, avec trois favoris se battant pour la pole position. Sergio Perez, Charles Leclerc et Fernando Alonso se sont échangé tour à tour les meilleurs temps, créant une véritable bataille entre ces pilotes talentueux.
+      Finalement, c'est Sergio Perez qui a décroché la pole position, réalisant un temps impressionnant de 1 minute 28.265 secondes. Sa performance remarquable lui a valu la première place sur la grille de départ, offrant ainsi de grandes perspectives pour la course à venir.
+      Cependant, Charles Leclerc a également réalisé une performance remarquable en se classant deuxième lors des qualifications. Malheureusement, il a été pénalisé de 10 positions sur la grille de départ en raison d'infractions antérieures, ce qui signifie qu'il partira de la 12e position lors de la course. Malgré cette pénalité, il a tout de même démontré son potentiel et sa rapidité.
+      Fernando Alonso a également réalisé une solide performance, se qualifiant en troisième position. Sa présence dans le top 3 de la grille de départ promet une course palpitante, alors qu'il se battra pour monter sur le podium.",
+      "conclusion" => "En conclusion, le Grand Prix d'Arabie Saoudite 2023 s'annonce comme une course pleine de surprises et de rebondissements. Les qualifications ont été le théâtre d'événements captivants, avec des incidents inattendus, des performances exceptionnelles et des pénalités qui ont influencé la composition de la grille de départ.
+      Sergio Perez a brillé en remportant la pole position avec un temps impressionnant, démontrant sa maîtrise et sa rapidité. Charles Leclerc, bien qu'ayant obtenu le deuxième temps, a été pénalisé de 10 positions, ajoutant une dimension stratégique à sa course. Fernando Alonso, quant à lui, a confirmé sa compétitivité en se qualifiant en troisième position.
+      Cependant, la course réserve toujours des surprises et des défis imprévisibles. Les autres pilotes, qu'ils soient sur la grille de départ ou plus loin derrière, ont l'opportunité de montrer leur détermination et de se battre pour des résultats remarquables.
+      Les attentes sont grandes et les spectateurs sont impatients de voir ces pilotes s'affronter sur le circuit. Le Grand Prix d'Arabie Saoudite 2023 promet une compétition féroce, une action palpitante et des moments inoubliables. Que la course commence et que le meilleur pilote triomphe sur cette nouvelle piste prestigieuse !",
       "extra" => null
     ];
     $qualificationStory[] = [

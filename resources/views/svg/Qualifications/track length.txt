@@ -1,0 +1,101 @@
+            {{-- T1 --}} 7.6% {
+                offset-distance: -8%;
+            }
+
+            {{-- T2 --}} 9.05% {
+                offset-distance: -9.2%;
+            }
+
+            {{-- T3 --}} 13.26% {
+                offset-distance: -11.5%;
+            }
+
+            {{-- T4 --}} 18.91% {
+                offset-distance: -16.5%;
+            }
+
+            {{-- T5 --}}  20.96% {
+                offset-distance: -18.5%;
+            }
+
+            {{-- T6 --}} 23.69% {
+                offset-distance: -21%;
+            }
+
+            {{-- T7 --}} 25.57% {
+                offset-distance: -23%;
+            }
+
+            {{-- T8 --}} 26.85% {
+                offset-distance: -24%;
+            }
+
+            {{-- T9 --}} 29.12% {
+                offset-distance: -26.5%;
+            }
+
+            {{-- T10 --}} 30.92% {
+                offset-distance: -28%;
+            }
+
+            {{-- T11 --}} 32.40% {
+                offset-distance:-29.25%;
+            }
+
+            {{-- T12 --}} 34.10% {
+                offset-distance: -31%;
+            }
+
+            {{-- T13 --}} 41.61% {
+                offset-distance: -40%;
+            }
+
+            {{-- T14 --}} 18.61% {
+                offset-distance: -46%;
+            }
+
+            {{-- T15 --}}  51.36% {
+                offset-distance: -49%;
+            }
+
+            {{-- T16 --}} 52.06% {
+                offset-distance: -50.5%;
+            }
+
+            {{-- T17 --}} 55.01% {
+                offset-distance: -52%;
+            }
+
+            {{-- T18 --}} 58.36% {
+                offset-distance: -54%;
+            }
+
+            {{-- T19 --}} 61.56% {
+                offset-distance: -58%;
+            }
+            {{-- T20 --}} 64.34% {
+                offset-distance: -61%;
+            }
+            {{-- T21 --}} 67.11% {
+                offset-distance: -67%;
+            }
+            {{-- T22 --}} 70.35% {
+                offset-distance: -70%;
+                        }
+            {{-- T23 --}} 72.26% {
+                offset-distance: -72%;
+                        }
+            {{-- T24 --}} 74.70% {
+                offset-distance: -74%;
+                        }
+            {{-- T25 --}} 78.05% {
+                offset-distance: -78%;
+                        }
+            {{-- T26 --}} 85.17% {
+                offset-distance: -84%;
+                        }
+            {{-- T27 --}} 89.97%
+            {
+                 offset-distance: -90.75%;
+            }
+

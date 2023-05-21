@@ -30,7 +30,9 @@ class NewsController extends Controller
 
             $article = $race->grandPrixWeekend->article;
 
-            return view('News.article', compact("article"));
+            return to_route('articleNews', ['id' => $article->id]);
+
+
         }
     }
 
@@ -50,7 +52,7 @@ class NewsController extends Controller
 
             $article = $quali->grandPrixWeekend->article;
 
-            return view('News.article', compact("article"));
+            return to_route('articleNews', ['id' => $article->id]);
         }
 
         $qualiStory = QualificationStory::where("id", $id)->first();
