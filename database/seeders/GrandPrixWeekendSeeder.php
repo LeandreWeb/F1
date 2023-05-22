@@ -96,7 +96,7 @@ class GrandPrixWeekendSeeder extends Seeder
         "id"=>7,
         "name"=>"Grand Prix de Monaco",
         "status"=>"incoming",
-        "country_id"=>1,
+        "country_id"=>7,
         'race_id'=>7,
         'qualification_id'=>7,
         'sprint_id'=>null,
