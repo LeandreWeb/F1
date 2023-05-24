@@ -8,6 +8,9 @@
 
         @include('.svg.CalendarTracks.Circuit International de Bahrain')
         @include('.svg.CalendarTracks.Circuit de la corniche de Djeddah')
+        @include('.svg.CalendarTracks.Circuit parcs Albert')
+        @include('.svg.CalendarTracks.Circuit ville de Baku')
+        @include('.svg.CalendarTracks.Autodrome International de Miami')
 
     </main>
 @endsection
