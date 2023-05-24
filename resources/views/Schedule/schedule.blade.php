@@ -11,6 +11,11 @@
         @include('.svg.CalendarTracks.Circuit parcs Albert')
         @include('.svg.CalendarTracks.Circuit ville de Baku')
         @include('.svg.CalendarTracks.Autodrome International de Miami')
+        @include('.svg.CalendarTracks.Autodrome Enzo e Dino Ferrari')
+        @include('.svg.CalendarTracks.Circuit de Monaco')
+        @include('.svg.CalendarTracks.Circuit de Barcelona-Catalunya')
+        @include('.svg.CalendarTracks.Circuit Gilles-Villeneuve')
+        @include('.svg.CalendarTracks.Red Bull Ring')
 
     </main>
 @endsection
