@@ -30,5 +30,11 @@
         @include('.svg.CalendarTracks.Las Vegas')
         @include('.svg.CalendarTracks.Circuit Yas Marina') --}}
 
+
+
+        {{-- Test pour Qualifications --}}
+        {{-- @include('.svg.Qualifications.Circuit de Monaco') --}}
+
+
     </main>
 @endsection
