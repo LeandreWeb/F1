@@ -1,81 +1,93 @@
+# Monaco
+
             {{-- T1 --}} 7.6% {
                 offset-distance: -8%;
             }
 
             {{-- T2 --}} 9.05% {
-                offset-distance: -9.2%;
+                offset-distance: -20%;
             }
 
             {{-- T3 --}} 13.26% {
-                offset-distance: -11.5%;
-            }
-
-            {{-- T4 --}} 18.91% {
-                offset-distance: -16.5%;
-            }
-
-            {{-- T5 --}}  20.96% {
-                offset-distance: -18.5%;
-            }
-
-            {{-- T6 --}} 23.69% {
-                offset-distance: -21%;
-            }
-
-            {{-- T7 --}} 25.57% {
-                offset-distance: -23%;
-            }
-
-            {{-- T8 --}} 26.85% {
                 offset-distance: -24%;
             }
 
-            {{-- T9 --}} 29.12% {
-                offset-distance: -26.5%;
-            }
-
-            {{-- T10 --}} 30.92% {
+            {{-- T4 --}} 18.91% {
                 offset-distance: -28%;
             }
 
-            {{-- T11 --}} 32.40% {
-                offset-distance:-29.25%;
+            {{-- T5 --}}  20.96% {
+                offset-distance: -35.25%;
             }
 
-            {{-- T12 --}} 34.10% {
-                offset-distance: -31%;
+            {{-- T6 --}} 23.69% {
+                offset-distance: -39%;
             }
 
-            {{-- T13 --}} 41.61% {
-                offset-distance: -40%;
+            {{-- T7 --}} 25.57% {
+                offset-distance: -41.75%;
+
             }
 
-            {{-- T14 --}} 18.61% {
-                offset-distance: -46%;
+            {{-- T8 --}} 26.85% {
+                offset-distance: -44.25%;
+
             }
 
-            {{-- T15 --}}  51.36% {
-                offset-distance: -49%;
-            }
-
-            {{-- T16 --}} 52.06% {
-                offset-distance: -50.5%;
-            }
-
-            {{-- T17 --}} 55.01% {
-                offset-distance: -52%;
-            }
-
-            {{-- T18 --}} 58.36% {
+            {{-- T9 --}} 29.12% {
                 offset-distance: -54%;
             }
 
+            {{-- T10 --}} 30.92% {
+                offset-distance: -64%;
+            }
+
+            {{-- T11 --}} 32.40% {
+                offset-distance:-65%;
+            }
+
+            {{-- T12 --}} 34.10% {
+                offset-distance:-72.75%;
+            }
+
+            {{-- T13 --}} 41.61% {
+                offset-distance: -77.5%;
+            }
+
+            {{-- T14 --}} 18.61% {
+                offset-distance: -78.5%;
+            }
+
+            {{-- T15 --}}  51.36% {
+                offset-distance: -82.5%;
+            }
+
+            {{-- T16 --}} 52.06% {
+                offset-distance: -83.5%;
+            }
+
+            {{-- T17 --}} 55.01% {
+                offset-distance: -86%;
+            }
+
+            {{-- T18 --}} 58.36% {
+                offset-distance: -89.25%;
+            }
+
             {{-- T19 --}} 61.56% {
-                offset-distance: -58%;
+                offset-distance: -92%;
             }
             {{-- T20 --}} 64.34% {
-                offset-distance: -61%;
+                offset-distance: -100%;
             }
+
+            Fin Monaco
+
+
+
+
+
+
             {{-- T21 --}} 67.11% {
                 offset-distance: -67%;
             }
