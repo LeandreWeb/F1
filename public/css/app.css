@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size:62.5%
+}
+
 :root {
     --background: #242124;
     --background-light: #464046;
@@ -25,10 +29,12 @@
 
 
 
-    --header-height: 8em;
-    --footer-heaght: 12em;
+    --header-height: 12rem;
+    --footer-heaght: 16rem;
 
 }
+
+
 
 body {
     background-color: var(--background);
@@ -383,6 +389,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 1em;
+    font-size: 1.6rem;
 }
 
 footer a {
@@ -437,6 +444,7 @@ footer #title {
 
 footer h4 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .in_construction{

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DriversController;
 use App\Http\Controllers\HomePage;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ScheduleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +27,10 @@ Route::get('/standing', function(){
     return view("Standing.standing");
 })->name('standing');
 
-Route::get('/schedule', function(){
-    return view("Schedule.schedule");
-})->name('schedule');
+
+Route::prefix("schedule")->group(function() {
+    Route::get('/', [ScheduleController::class,'menu'])->name('schedule');
+});
 
 Route::get('/about', function(){
     return view("About.about");

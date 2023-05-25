@@ -1,10 +1,20 @@
 @extends('layouts.main')
 
 @section('content')
-    <main class="in_construction">
-        <h1>Calendrier</h1>
-        @include('.components.constuction')
+    <main class="schedule">
+        <h1 class="schedule_Title">Calendrier</h1>
 
+        @foreach ($GrandPrixWeekends as $gp)
+            @if ($gp->status == 'done')
+                <p class="gp-done">{{ $gp->id }}</p>
+            @endif
+            @if ($gp->status == 'cancelled')
+                <p class="gp-cancelled">{{ $gp->id }}</p>
+            @endif
+            @if ($gp->status == 'incoming')
+                <p class="gp-incoming">{{ $gp->id }}</p>
+            @endif
+        @endforeach
 
         {{-- @include('.svg.CalendarTracks.Circuit International de Bahrain')
         @include('.svg.CalendarTracks.Circuit de la corniche de Djeddah')
@@ -37,4 +47,27 @@
 
 
     </main>
+
+
+    <style>
+        .schedule_Title {
+            text-align: center;
+            font-size: 5.6rem;
+            margin-top: 1rem;
+            -webkit-text-stroke: .1rem var(--accent);
+            color: transparent;
+
+        }
+
+        .gp-done {
+            color: green
+        }
+        .gp-cancelled {
+            color: red
+        }
+        .gp-incoming {
+            color: orchid
+        }
+
+    </style>
 @endsection
