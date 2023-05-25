@@ -5,15 +5,7 @@
         <h1 class="schedule_Title">Calendrier</h1>
 
         @foreach ($GrandPrixWeekends as $gp)
-            @if ($gp->status == 'done')
-                <p class="gp-done">{{ $gp->id }}</p>
-            @endif
-            @if ($gp->status == 'cancelled')
-                <p class="gp-cancelled">{{ $gp->id }}</p>
-            @endif
-            @if ($gp->status == 'incoming')
-                <p class="gp-incoming">{{ $gp->id }}</p>
-            @endif
+            @include('Schedule.Components.event--' .$gp->status ,compact("gp"))
         @endforeach
 
         {{-- @include('.svg.CalendarTracks.Circuit International de Bahrain')
