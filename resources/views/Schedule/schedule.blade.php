@@ -6,7 +6,7 @@
         @include('.components.constuction')
 
 
-        @include('.svg.CalendarTracks.Circuit International de Bahrain')
+        {{-- @include('.svg.CalendarTracks.Circuit International de Bahrain')
         @include('.svg.CalendarTracks.Circuit de la corniche de Djeddah')
         @include('.svg.CalendarTracks.Circuit parcs Albert')
         @include('.svg.CalendarTracks.Circuit ville de Baku')
@@ -21,6 +21,14 @@
         @include('.svg.CalendarTracks.Circuit de Spa-Francorchamps')
         @include('.svg.CalendarTracks.Circuit Zandvoort')
         @include('.svg.CalendarTracks.Autodrome National de Monza')
+        @include('.svg.CalendarTracks.Circuit Rural de Marina Bay')
+        @include('.svg.CalendarTracks.Circuit International de Suzuka')
+        @include('.svg.CalendarTracks.Circuit International de Lusail')
+        @include('.svg.CalendarTracks.Circuit des Amériques')
+        @include('.svg.CalendarTracks.Autodrome Hermanos Rodriguez')
+        @include('.svg.CalendarTracks.Autodrome José Carlos Pace')
+        @include('.svg.CalendarTracks.Las Vegas')
+        @include('.svg.CalendarTracks.Circuit Yas Marina') --}}
 
     </main>
 @endsection
