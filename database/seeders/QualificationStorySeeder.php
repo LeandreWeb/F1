@@ -117,6 +117,34 @@ class QualificationStorySeeder extends Seeder
       "conclusion" => "En somme, les qualifications de la 2eme édition de F1 à Miami ont été riches en rebondissements et en surprises. Si les erreurs de Verstappen et Leclerc ont hypothéqué leurs chances de pole position, Perez et Alonso ont su tirer leur épingle du jeu pour se qualifier en tête de la grille. La fin de la session de qualifications, brutalement interrompue par l'accident de Leclerc, a ajouté une touche dramatique à l'événement. Tout est donc possible pour cette course inédite qui s'annonce pleine de suspense et d'émotions. Les fans de F1 sont impatients de voir ce que cette course à Miami leur réserve",
       "extra" => null
     ];
+    $qualificationStory[] = [
+      "id" => 7,
+      "catchphrase" => "Bataille pour la pole",
+      "intro" => "
+      Les qualifications de Monaco sont souvent considérées comme la session la plus importante de l'année dans le monde de la Formule 1. Le tracé étroit et sinueux de ce circuit emblématique rend les dépassements extrêmement difficiles, ce qui confère à la séance de qualification une importance cruciale pour les pilotes.
+
+      Cette année, l'équilibre des forces semble être légèrement différent. Bien que Red Bull Racing ait dominé les courses précédentes, l'avantage ne semble pas être entièrement en leur faveur à Monaco. Les équipes telles qu'Aston Martin, Ferrari et Mercedes ont montré une compétitivité accrue, avec des voitures capables de rivaliser pour la pole position.",
+      "q1" => "
+À mi-chemin de la séance de Q1, un incident spectaculaire s'est produit lorsque la Red Bull a violemment heurté les barrières de sécurité du premier virage, provoquant un drapeau rouge. Cet événement inattendu a semé la panique parmi les équipes, notamment Mercedes et Ferrari, dont les pilotes Hamilton et Sainz luttaient pour se hisser dans le top 5 depuis le bas du classement. Malgré la pression, ils ont réussi à se qualifier pour la session de Q2 grâce à leurs derniers tours.
+
+Un fait impressionnant lors de cette séance a été la performance du top trois. Verstappen, en tant que favori, était attendu en haut du classement, mais la surprise est venue de Tsunoda, qui a réalisé un temps remarquable. De plus, Alex Albon a également réalisé une performance notable.",
+      "q2" => "La séance de Q2 à Monaco a été relativement calme, mais quelques incidents ont marqué la fin de la session. Lando Norris a connu une mésaventure en percutant le mur du virage 11, ce qui a entraîné la rupture de sa suspension avant gauche. Malheureusement, il a également heurté le mur extérieur du virage 12. Malgré ces difficultés, Norris a réussi à ramener sa voiture aux stands. Cependant, il reste incertain s'il pourra participer à la Q3 avec sa voiture endommagée.
+
+      D'autre part, une surprise est survenue lors de cette séance de Q2, car Lance Stroll et son Aston Martin n'ont pas réussi à se qualifier pour la Q3. Cette élimination inattendue a été décevante pour l'équipe et le pilote, qui espéraient obtenir une meilleure performance sur ce circuit légendaire.",
+      "q3" => "Un grand bravo à l'équipe McLaren qui a réalisé un exploit en réparant la voiture de Norris en moins de 10 minutes, lui permettant ainsi de participer à la Q3. La fin de la session de qualification a été extrêmement excitante, avec Ferrari, Aston Martin, Red Bull et même Alpine se disputant le meilleur tour et les secteurs les plus rapides.
+
+      À un moment donné, tout semblait indiquer que Fernando Alonso allait décrocher la pole position, mais dans les dernières secondes, Max Verstappen a réalisé un dernier tour époustouflant. Il a été en mesure de compléter un dernier secteur incroyable, lui permettant de s'emparer de la pole position.",
+      "conclusion" => "En conclusion, les qualifications de Monaco 2023 ont été à la fois intenses et pleines de surprises. Dès les premières séances, les enjeux étaient élevés, avec des pilotes et des équipes déterminés à décrocher une position avantageuse sur la grille de départ. Les possibilités de dépassement étant extrêmement limitées sur ce tracé légendaire, chaque tour comptait et la moindre erreur pouvait être fatale.
+
+      Des incidents tels que les accidents de la Red Bull de Q1 et la collision de Lando Norris en Q2 ont ajouté des rebondissements inattendus à la séance de qualification. Les équipes ont fait preuve d'une grande réactivité pour réparer les voitures endommagées et permettre à leurs pilotes de continuer à se battre pour une place en Q3.
+
+      La Q3 a été un véritable spectacle, avec des échanges de meilleurs tours et de secteurs rapides entre plusieurs équipes. La lutte pour la pole position était féroce, et finalement, c'est Max Verstappen qui a réalisé un dernier tour époustouflant pour s'emparer de la première place sur la grille.
+
+      Cependant, la course de Monaco est réputée pour être imprévisible et exigeante. La position de départ n'est pas toujours synonyme de victoire, car des stratégies, des dépassements audacieux et des conditions de course particulières peuvent changer la donne. Les qualifications ont seulement posé les bases pour la bataille qui se déroulera sur le célèbre circuit de Monaco.
+
+      Ainsi, les qualifications de Monaco 2023 ont offert un avant-goût de l'intensité et de l'excitation à venir lors de la course. Les pilotes et les équipes devront redoubler d'efforts et de stratégie pour réussir dans cette course exigeante. Les passionnés de Formule 1 attendent avec impatience l'affrontement sur cette piste mythique, où chaque virage, chaque freinage représente un défi pour les compétiteurs.",
+      "extra" => null
+    ];
 
 
     Db::table('qualification_stories')->delete();
