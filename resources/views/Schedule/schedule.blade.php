@@ -83,8 +83,17 @@
             aspect-ratio: 2/1;
             padding: 1rem;
             position: relative;
+            box-shadow: var(--card-shadow);
 
         }
+
+        .event_container--incoming p {
+            font-size: 2.4rem;
+            color: var(--accent)
+        }
+
+
+
 
         .event_track {
             flex: 1;
@@ -116,7 +125,22 @@
 
         .event_info_title {
             font-size: 4rem;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
             text-align: end;
+        }
+
+        .event_info_title_cancelled{
+            font-size: 2.4rem;
+            width: fit-content;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            color: var(--text);
+            border: solid .2rem var(--danger);
+
+
         }
 
         .event_info_events {

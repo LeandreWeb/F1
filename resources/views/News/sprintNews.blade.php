@@ -108,8 +108,8 @@
             object-fit: cover;
             aspect-ratio: 16/9;
             min-width: 300px;
-            padding: 2em;
             border-radius: 50px;
+            box-shadow: var(--card-shadow);
         }
 
         .sprint_content {
@@ -144,6 +144,7 @@
             width: 100%;
             height: 100%;
             border-radius: inherit;
+            box-shadow: var(--card-shadow);
 
         }
 
@@ -212,6 +213,7 @@
             object-fit: cover;
             border-radius: 15px;
             max-width: 1500px;
+            box-shadow: var(--card-shadow);
         }
 
         @media screen and (max-width: 675px) {

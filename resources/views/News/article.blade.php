@@ -72,8 +72,8 @@
             object-fit: cover;
             aspect-ratio: 16/9;
             min-width: 300px;
-            padding: 2em;
             border-radius: 50px;
+            box-shadow: var(--card-shadow);
         }
 
         .article_content {
@@ -164,6 +164,7 @@
         .conclusion_photo {
             display: grid;
             place-items: center;
+            box-shadow: var(--card-shadow);
         }
 
         .article_text p {
@@ -176,6 +177,7 @@
             object-fit: cover;
             border-radius: 15px;
             max-width: 1500px;
+            box-shadow: var(--card-shadow);
         }
 
         @media screen and (max-width: 675px) {

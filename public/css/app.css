@@ -14,6 +14,8 @@ html{
     --background-light: #464046;
     --text: #fefefa;
     --accent: #68fe9a;
+    --danger:#ef233c;
+    --confirmation:#6096BA;
 
     --Red-Bull: #3671C6;
     --Mercedes:#6CD3BF;
@@ -28,7 +30,7 @@ html{
 
 
 
-
+    --card-shadow:5px 5px 20px 0px #000;
     --header-height: 12rem;
     --footer-heaght: 16rem;
 
@@ -319,6 +321,7 @@ main {
     display: flex;
     justify-content: center;
     color: var(--text);
+    box-shadow: var(--card-shadow);
 }
 
 .top-news:hover .news-title {
@@ -474,6 +477,7 @@ footer h4 {
 
     .driver-card{
         width: auto;
+        
     }
 
   }
