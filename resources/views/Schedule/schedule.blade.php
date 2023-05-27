@@ -53,17 +53,7 @@
 
         }
 
-        .gp-done {
-            color: green
-        }
 
-        .gp-cancelled {
-            color: red
-        }
-
-        .gp-incoming {
-            color: orchid
-        }
 
         .schedule_container {
             display: grid;
@@ -83,8 +73,33 @@
             aspect-ratio: 2/1;
             padding: 1rem;
             position: relative;
+            box-shadow: var(--card-shadow);
 
         }
+
+        .event_container--incoming p {
+            font-size: 2.4rem;
+            color: var(--accent);
+            text-align: end;
+        }
+
+        .event_container--current {
+            grid-column: 1 / span 2;
+            max-width: none;
+            width: 95%;
+            aspect-ratio: 4/1;
+            box-shadow: 0px 0px 30px -5px var(--confirmation);
+            margin: 5rem 0;
+        }
+
+        .event_container--current p {
+
+            font-weight: 800;
+            text-align: end;
+        }
+
+
+
 
         .event_track {
             flex: 1;
@@ -94,6 +109,7 @@
             width: 100%;
             height: 100%;
             padding: .5rem;
+            min-width: 2.3rem;
 
         }
 
@@ -116,12 +132,27 @@
 
         .event_info_title {
             font-size: 4rem;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
             text-align: end;
+        }
+
+        .event_info_title_cancelled {
+            font-size: 2.4rem;
+            width: fit-content;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            color: var(--text);
+            border: solid .2rem var(--danger);
+            box-shadow: 0px 0px 20px -5px var(--danger);
         }
 
         .event_info_events {
             display: flex;
             flex-direction: column;
+
 
             align-items: flex-end;
         }
@@ -156,6 +187,75 @@
             transform: translateY(-50%);
             color: var(--accent);
             font-size: 6.4rem;
+        }
+
+        .event_status {
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            transform: translateY(-50%);
+            color: var(--confirmation);
+            font-size: 3.2rem;
+        }
+
+        @media screen and (max-width: 1325px) {
+            .event_info_title {
+                font-size: 2.6rem;
+            }
+
+            .event_round {
+                font-size: 4rem;
+            }
+
+            .event_infos {
+                font-size: 2.4rem;
+            }
+
+            .event_info_title_cancelled {
+                font-size: 1.2rem
+            }
+        }
+
+        @media screen and (max-width: 1090px) {
+            .event_container {
+                flex-direction: column;
+                aspect-ratio: auto;
+                width: 100%;
+            }
+
+            .event_container--current {
+                aspect-ratio: 3/1;
+                flex-direction: row;
+
+
+            }
+            @media screen and (max-width: 665px){
+                .event_container--current {
+                aspect-ratio: 2/1;
+                flex-direction: row;
+
+
+            }
+
+            }
+
+            @media screen and (max-width: 525px) {
+                .event_container--current {
+                    flex-direction: column;
+                    aspect-ratio: auto;
+                    grid-column: 1;
+
+                }
+
+                .schedule_container {
+
+                    grid-template-columns: 1fr;
+                }
+                .event_status{
+                  font-size: 3vw;
+                }
+
+            }
         }
     </style>
 @endsection

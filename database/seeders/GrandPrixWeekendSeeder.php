@@ -95,7 +95,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>7,
         "name"=>"Grand Prix de Monaco",
-        "status"=>"incoming",
+        "status"=>"current",
         "country_id"=>7,
         'race_id'=>7,
         'qualification_id'=>7,

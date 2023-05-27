@@ -48,6 +48,7 @@ $formattedDate = $date->translatedFormat('j F ');
     justify-content: center;
     padding-top: 2em;
     padding: 2em;
+    box-shadow: var(--card-shadow);
 }
 
 .next-race-infos{

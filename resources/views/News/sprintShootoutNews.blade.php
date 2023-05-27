@@ -189,8 +189,8 @@
             object-fit: cover;
             aspect-ratio: 16/9;
             min-width: 300px;
-            padding: 2em;
             border-radius: 50px;
+            box-shadow: var(--card-shadow);
         }
 
         .sprintShootout_content {
@@ -233,7 +233,8 @@
         .sprintShootout_outs {
             background-color: #1E1E1E;
             display: flex;
-            flex-direction: column
+            flex-direction: column;
+            box-shadow: var(--card-shadow);
         }
 
         .sprintShootout_times {
@@ -294,6 +295,7 @@
             object-fit: cover;
             border-radius: 15px;
             object-position: top;
+            box-shadow: var(--card-shadow);
         }
 
         .race_link {
@@ -327,6 +329,7 @@
             align-self: center;
             max-width: 1000px;
             width: 100%;
+            box-shadow: var(--card-shadow);
 
 
             border-radius: 15px;

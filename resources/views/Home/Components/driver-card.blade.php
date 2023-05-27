@@ -22,10 +22,11 @@
     justify-content: space-between;
     padding: 10px ;
     border-radius: 20px ;
-    box-shadow: 0px 0px 3px var(--text);
     
+    box-shadow: var(--card-shadow);
 
-    
+
+
 }
  .driver-info{
     display: flex;
@@ -48,7 +49,7 @@
  .driver-photo{
     display: flex;
     justify-content: flex-end;
-    
+
  }
 
  .driver-photo img{
@@ -69,7 +70,7 @@
    top:10%;
    aspect-ratio:2/1;
    right: 0px;
-  
+
    opacity: .4;
  }
 
@@ -82,7 +83,7 @@
  }
 
  @media screen and (max-width: 500px) {
-    
+
     .driver-card {
         flex-direction: column;
         width: 100%;
@@ -95,9 +96,9 @@
    aspect-ratio:2/1;
    right: 0px;
    left: 0px;
-  
+
    opacity: .4;
  }
-    
+
   }
 </style>
