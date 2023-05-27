@@ -6,7 +6,8 @@
 }
 
 html{
-    font-size:62.5%
+    font-size:62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -30,7 +31,7 @@ html{
 
 
 
-    --card-shadow:5px 5px 20px 0px #000;
+    --card-shadow:0px 0px 30px -5px #000;
     --header-height: 12rem;
     --footer-heaght: 16rem;
 
@@ -477,7 +478,7 @@ footer h4 {
 
     .driver-card{
         width: auto;
-        
+
     }
 
   }
