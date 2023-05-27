@@ -57,7 +57,7 @@ class qualificationsSeeder extends Seeder
             "id"=>7,
             "date"=>'2023-05-27',
             "start"=>'10:00:00',
-            'qualification_story_id'=>null
+            'qualification_story_id'=>7
         ];
         $qualifications[]=[
             "id"=>8,
