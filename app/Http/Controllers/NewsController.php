@@ -18,7 +18,7 @@ class NewsController extends Controller
     {
         $race = Race::where("id", $id)->first();
 
-        if ($race->grandPrixWeekend->status == "done") {
+        if ($race->grandPrixWeekend->status == "done"||$race->grandPrixWeekend->status == "current") {
 
             $raceStory = $race->raceStory;
 

@@ -24,16 +24,29 @@ class pointsSeeder extends Seeder
 
         $fastestLapsPoint=[];
 
+
+
         for ($i=0; $i < $racesDones; $i++) {
             $fastestLap=RaceResult::where("race_id",$i+1)->min("best_lap");
-            $fastestdriver=RaceResult::select("driver_id","position")->where("race_id",$i+1)->where("best_lap",$fastestLap)->get();
 
-
-            if ($fastestdriver[0]->position>10){
-                $fastestdriver[0]->driver_id=0;
+            if($fastestLap){
+                $fastestdriver=RaceResult::select("driver_id","position")->where("race_id",$i+1)->where("best_lap",$fastestLap)->get();
+            }
+            else{
+                $fastestdriver[0]=null;
             }
 
-            $fastestLapsPoint[]=$fastestdriver[0];
+            if ($fastestdriver[0]) {
+                if ($fastestdriver[0]->position>10){
+                    $fastestdriver[0]->driver_id=0;
+                }
+                $fastestLapsPoint[]=$fastestdriver[0];
+
+
+        
+            }
+
+
         }
 
 
