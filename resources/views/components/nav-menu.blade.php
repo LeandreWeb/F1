@@ -146,4 +146,16 @@
             font-size: 32px
         }
     }
+
+    @media screen and (max-height: 700px) {
+        .nav-container-hamburger a{
+            font-size: 6.4rem;
+        }
+    }
+
+    @media screen and (max-height: 500px) {
+        .nav-container-hamburger a{
+            font-size: 3.2rem;
+        }
+    }
 </style>
