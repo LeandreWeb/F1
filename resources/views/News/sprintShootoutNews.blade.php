@@ -116,14 +116,18 @@
             </div>
             <p>{{ $sprintShootoutStory->conclusion }}</p>
 
-            <a class="quali_link" href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">Qualifications
+
+        </section>
+
+        <section class="links">
+            <a class="quali_link link" href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">Qualifications
                 -></a>
 
             @if ($sprintShootout->grandPrixWeekend->sprint->sprint_story_id)
-                <a class="sprint_link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">Sprint -></a>
+                <a class="sprint_link link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">Sprint -></a>
             @endif
             @if ($sprintShootout->grandPrixWeekend->race->race_story_id)
-                <a class="race_link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
+                <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
             @endif
         </section>
 
@@ -362,6 +366,35 @@
             border-radius: 0 0 10px 10px;
             padding: 0 15px 15px 15px;
             border-top: solid 2px var(--background-light)
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 3rem
+        }
+
+        .link {
+            font-size: 25px;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--accent);
+            width: fit-content;
+        }
+
+        .link::after {
+            display: block;
+            content: "";
+            width: 0%;
+            height: 5px;
+            background-color: var(--accent);
+            transition: .5s
+        }
+
+        .link:hover::after {
+            width: 100%;
         }
 
 

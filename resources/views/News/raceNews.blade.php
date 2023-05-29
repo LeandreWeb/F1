@@ -220,6 +220,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            padding: 0 3rem
         }
 
         .link {

@@ -167,6 +167,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            padding: 0 3rem
         }
 
         .link {
@@ -175,6 +176,7 @@
             text-decoration: none;
             color: var(--accent);
             width: fit-content;
+
         }
 
         .link::after {
