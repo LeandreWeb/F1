@@ -2,12 +2,13 @@
 
 @section('content')
     <main class="schedule">
-        <h1 class="schedule_Title">Calendrier</h1>
+        <h2 class="schedule_Title">Calendrier</h2>
         <div class="schedule_container">
             @foreach ($GrandPrixWeekends as $gp)
                 @include('Schedule.Components.event--' . $gp->status, compact('gp'))
             @endforeach
         </div>
+        return view("Schedule.schedule",compact('GrandPrixWeekends'));
 
 
         {{-- @include('.svg.CalendarTracks.Circuit International de Bahrain')
