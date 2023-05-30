@@ -8,7 +8,6 @@
                 @include('Schedule.Components.event--' . $gp->status, compact('gp'))
             @endforeach
         </div>
-        return view("Schedule.schedule",compact('GrandPrixWeekends'));
 
 
         {{-- @include('.svg.CalendarTracks.Circuit International de Bahrain')
