@@ -15,11 +15,11 @@
 
     <style>
         .teams_container{
-          padding: 2rem;
+          padding: 5rem 2rem;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 4rem;
+          gap: 10rem;
         }
 
 
@@ -34,11 +34,12 @@
           display: flex;
           flex-direction: column;
           width: 80%;
-          aspect-ratio:4/1;
+          aspect-ratio:5/1;
           justify-content: space-between;
           overflow: hidden;
           padding:  0 0  1rem 0;
           border-radius: 2rem;
+
         }
 
         .team_container:nth-child(even){
@@ -48,7 +49,7 @@
             .team_car{
                 left: auto;
                 right: -100%;
-                
+
                 & img{
                     transform: scaleX(-1);
                 }
@@ -70,6 +71,9 @@
         .team_infos{
           display: flex;
           justify-content: space-between;
+
+          border-radius: 0 0 1rem 1rem;
+          border: 0 0  1rem 0 solid var(--Ferarri)
         }
         .team_infos_name{
             font-size: 3.2rem;
@@ -114,7 +118,7 @@
             height: 60%;
             position: absolute;
             right:  60%;
-            top: 10%;
+            top: 20%;
             z-index: -1;
 
             justify-content: space-around;

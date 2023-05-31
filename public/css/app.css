@@ -176,7 +176,7 @@ header{
     fill: var(--Ferrari);
 }
 .team_1--border{
-
+    border: solid 2px var(--Ferrari);
     box-shadow: 0px 0px 3rem 0px var(--Ferrari) ;
 }
 .team_2--text{
@@ -192,6 +192,7 @@ header{
 }
 
 .team_2--border{
+    border: solid 2px var(--Red-Bull);
 
     box-shadow: 0px 0px 3rem 0px var(--Red-Bull) ;
 }
@@ -201,6 +202,7 @@ header{
 }
 
 .team_3--background{
+
     background-color: var(--Aston-Martin);
 }
 
@@ -208,6 +210,8 @@ header{
     fill: var(--Aston-Martin);
 }
 .team_3--border{
+
+    border: solid 2px var(--Aston-Martin);
 
     box-shadow: 0px 0px 3rem 0px var(--Aston-Martin) ;
 }
@@ -225,6 +229,7 @@ header{
 }
 
 .team_4--border{
+    border: solid 2px var(--Mercedes);
 
     box-shadow: 0px 0px 3rem 0px var(--Mercedes) ;
 }
@@ -241,6 +246,7 @@ header{
     fill: var(--Alfa-Romeo);
 }
 .team_5--border{
+    border: solid 2px var(--Alfa-Romeo);
 
     box-shadow: 0px 0px 3rem 0px var(--Alfa-Romeo) ;
 }
@@ -257,6 +263,7 @@ header{
     fill: var(--Alpine);
 }
 .team_6--border{
+    border: solid 2px var(--Alpine);
 
     box-shadow: 0px 0px 3rem 0px var(--Alpine) ;
 }
@@ -272,6 +279,8 @@ header{
     fill: var(--Williams);
 }
 .team_7--border{
+    border: solid 2px var(--Williams);
+
 
     box-shadow: 0px 0px 3rem 0px var(--Williams) ;
 }
@@ -287,6 +296,7 @@ header{
     fill: var(--AlphaTauri);
 }
 .team_8--border{
+    border: solid 2px var(--AlphaTauri);
 
     box-shadow: 0px 0px 3rem 0px var(--AlphaTauri) ;
 }
@@ -302,6 +312,7 @@ header{
     fill: var(--Hass);
 }
 .team_9--border{
+    border: solid 2px var(--Hass);
 
     box-shadow: 0px 0px 3rem 0px var(--Hass) ;
 }
@@ -317,6 +328,7 @@ header{
     fill: var(--Mclaren);
 }
 .team_10--border{
+    border: solid 2px var(--Mclaren);
 
     box-shadow: 0px 0px 3rem 0px var(--Mclaren) ;
 }
