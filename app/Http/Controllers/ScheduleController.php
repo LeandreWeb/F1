@@ -14,9 +14,6 @@ class ScheduleController extends Controller
 
         $GrandPrixWeekends = GrandPrixWeekend::all();
 
-
-       
-
         return view("Schedule.schedule",compact('GrandPrixWeekends'));
     }
 }

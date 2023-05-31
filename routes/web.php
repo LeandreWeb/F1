@@ -5,6 +5,7 @@ use App\Http\Controllers\DriversController;
 use App\Http\Controllers\HomePage;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\TeamsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,39 +20,40 @@ use App\Http\Controllers\ScheduleController;
 
 Route::get('/', [HomePage::class, "home"])->name('home');
 
-Route::get('/Teams', function () {
-  return view("Teams.teams");
-})->name('teams');
+Route::get(
+    '/Teams',
+    [TeamsController::class, 'menu']
+)->name('teams');
 
 Route::get('/standing', function () {
-  return view("Standing.standing");
+    return view("Standing.standing");
 })->name('standing');
 
 
 Route::prefix("schedule")->group(function () {
-  Route::get('/', [ScheduleController::class, 'menu'])->name('schedule');
+    Route::get('/', [ScheduleController::class, 'menu'])->name('schedule');
 });
 
 Route::get('/about', function () {
-  return view("About.about");
+    return view("About.about");
 })->name('about');
 
 Route::prefix("drivers")->group(function () {
-  Route::get('/', [DriversController::class, 'index'])->name('allDrivers');
+    Route::get('/', [DriversController::class, 'index'])->name('allDrivers');
 });
 
 
 Route::get('/team/{id}', function ($id) {
 
-  return "Team" . $id;
+    return "Team" . $id;
 })->name('team');
 
 Route::prefix("news")->group(function () {
-  Route::get('/race{id}', [NewsController::class, "race"])->name('raceNews');
-  Route::get('/quali{id}', [NewsController::class, "quali"])->name('qualificationNews');
-  Route::get('/sprintShootout{id}', [NewsController::class, "sprintShootout"])->name('sprint shootoutNews');
-  Route::get('/sprint{id}', [NewsController::class, "sprint"])->name('sprintNews');
-  Route::get('/article{id}', [NewsController::class, "article"])->name('articleNews');
+    Route::get('/race{id}', [NewsController::class, "race"])->name('raceNews');
+    Route::get('/quali{id}', [NewsController::class, "quali"])->name('qualificationNews');
+    Route::get('/sprintShootout{id}', [NewsController::class, "sprintShootout"])->name('sprint shootoutNews');
+    Route::get('/sprint{id}', [NewsController::class, "sprint"])->name('sprintNews');
+    Route::get('/article{id}', [NewsController::class, "article"])->name('articleNews');
 });
 
 
@@ -59,5 +61,5 @@ Route::prefix("news")->group(function () {
 
 
 Route::fallback(function () {
-  return "<h1>404 Page not Found</h1> ";
+    return "<h1>404 Page not Found</h1> ";
 });
