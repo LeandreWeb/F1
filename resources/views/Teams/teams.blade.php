@@ -85,7 +85,8 @@
         }
 
         .team_infos_name img{
-            height: 8rem;
+            height: 6rem;
+
         }
 
         .team_info_points{
@@ -106,6 +107,10 @@
             position: absolute;
             left: -100%;
             transition: 1s;
+            height: 100%;
+        }
+
+        .team_car img{
             height: 100%;
         }
 
