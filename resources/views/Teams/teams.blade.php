@@ -46,6 +46,9 @@
         .team_container:nth-child(even) {
             .team_infos {
                 flex-direction: row-reverse;
+                .team_info_points {
+                border-radius: 0 0 1rem 0;
+            }
             }
 
             .team_car {
@@ -217,6 +220,7 @@
                     text-align: end;
                 }
 
+
                 .visible {
                     .team_car {
                         left: auto;
@@ -230,13 +234,14 @@
 
             }
         }
+
         @media screen and (max-width: 525px) {
-          .team_container {
+            .team_container {
                 aspect-ratio: 1/1;
             }
 
-            .team_animation{
-              height: 7rem;
+            .team_animation {
+                height: 7rem;
             }
         }
     </style>
