@@ -87,7 +87,7 @@ class SprintResult01Seeder extends Seeder
             "sprint_id"=>4,
             "total_time"=>"00:33:38.424", //+73.753
             "position"=>9,
-            "points"=>2
+            "points"=>0
         ];
         $sprintResults[]=[
             "id"=> 410,
@@ -95,7 +95,7 @@ class SprintResult01Seeder extends Seeder
             "sprint_id"=>4,
             "total_time"=>"00:33:40.518", //+89.774
             "position"=>10,
-            "points"=>1
+            "points"=>0
         ];
         $sprintResults[]=[
             "id"=> 411,
