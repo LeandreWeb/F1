@@ -1,0 +1,91 @@
+# Monaco
+
+            {{-- T1 --}} 5.33% {
+                offset-distance: -17.25%;
+            }
+
+            {{-- T2 --}} 14.46% {
+                offset-distance: -19.5%;
+            }
+
+            {{-- T3 --}} 18.09% {
+                offset-distance: -25%;
+            }
+
+            {{-- T4 --}} 21.88% {
+                offset-distance: -35.5%;
+            }
+
+            {{-- T5 --}}  30.28% {
+                offset-distance: -45%;
+            }
+
+            {{-- T6 --}} 35.78% {
+                offset-distance: -51%;
+            }
+
+            {{-- T7 --}} 41.54% {
+                offset-distance: 54%;
+
+            }
+
+            {{-- T8 --}} 44.81% {
+                offset-distance: -55.5%;
+
+            }
+
+            {{-- T9 --}} 54.69% {
+                offset-distance: -54%;
+            }
+
+            {{-- T10 --}} 61.96% {
+                offset-distance: -74%;
+            }
+
+            {{-- T11 --}} 64.31% {
+                offset-distance:-77%;
+            }
+
+            {{-- T12 --}} 70.09% {
+                offset-distance:-80.5%;
+            }
+
+            {{-- T13 --}} 75.63% {
+                offset-distance: -87%;
+            }
+
+            {{-- T14 --}} 76.68% {
+                offset-distance: -92.75%;
+            }
+
+
+            Fin Catalunia
+
+
+
+
+
+
+            {{-- T21 --}} 67.11% {
+                offset-distance: -67%;
+            }
+            {{-- T22 --}} 70.35% {
+                offset-distance: -70%;
+                        }
+            {{-- T23 --}} 72.26% {
+                offset-distance: -72%;
+                        }
+            {{-- T24 --}} 74.70% {
+                offset-distance: -74%;
+                        }
+            {{-- T25 --}} 78.05% {
+                offset-distance: -78%;
+                        }
+            {{-- T26 --}} 85.17% {
+                offset-distance: -84%;
+                        }
+            {{-- T27 --}} 89.97%
+            {
+                 offset-distance: -90.75%;
+            }
+
