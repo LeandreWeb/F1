@@ -5,6 +5,7 @@ use App\Http\Controllers\DriversController;
 use App\Http\Controllers\HomePage;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\StandingController;
 use App\Http\Controllers\TeamsController;
 
 /*
@@ -25,9 +26,7 @@ Route::get(
     [TeamsController::class, 'menu']
 )->name('teams');
 
-Route::get('/standing', function () {
-    return view("Standing.standing");
-})->name('standing');
+Route::get('/standing', [StandingController::class, 'menu'])->name('standing');
 
 
 Route::prefix("schedule")->group(function () {
