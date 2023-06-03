@@ -37,13 +37,6 @@ class StandingController extends Controller
             $team->{'points'} = $points;
         }
 
-
-
-
-
-
-
-
         return view("Standing.standing", compact('drivers', 'teams'));
     }
 }
