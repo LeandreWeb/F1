@@ -5,15 +5,11 @@
             stroke="black" stroke-width="15" />
         <path id="startline" d="M692.154 451.061L715.809 412.209" stroke="white" stroke-width="8"
             stroke-linecap="round" />
-        <circle class="driver_circle--Circuit_ville_de_Baku" r="12" />
+        <circle class="driver_circle--Circuit_ville_de_Baku" />
     </g>
 
 
     <style>
-        svg {
-            padding: 25px;
-
-        }
 
         svg:hover .driver_circle--Circuit_ville_de_Baku {
             animation-play-state: running;

@@ -93,12 +93,9 @@
         }
 
         .event_container--current p {
-
             font-weight: 800;
             text-align: end;
         }
-
-
 
 
         .event_track {
@@ -110,11 +107,14 @@
             height: 100%;
             padding: .5rem;
             min-width: 2.3rem;
-
         }
 
         .event_track svg #circuit {
             stroke-width: 20;
+        }
+
+        .event_track svg circle {
+            r:20;
         }
 
 
@@ -152,8 +152,6 @@
         .event_info_events {
             display: flex;
             flex-direction: column;
-
-
             align-items: flex-end;
         }
 
