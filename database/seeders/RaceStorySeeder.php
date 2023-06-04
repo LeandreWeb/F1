@@ -193,7 +193,7 @@ class RaceStorySeeder extends Seeder
         ];
         $raceStories[] = [
             "id" => 8,
-            "catchphrase" => "Vertappen domine , Mercedes 2 et 3",
+            "catchphrase" => "Verstappen domine , Mercedes 2 et 3",
             "intro" => "Avec des qualifications décevantes pour des pilotes tels que Leclerc, Perez et Russell, la course s'annonce riche en dépassements et en excitations. Il sera particulièrement intéressant de voir si Carlos Sainz parviendra à dépasser Max Verstappen pour avoir une chance de remporter son Grand Prix national. Les attentes sont élevées et les enjeux encore plus grands alors que les pilotes s'apprêtent à en découdre sur le circuit. Les fans sont impatients d'assister à un spectacle palpitant et à des manœuvres audacieuses alors que les meilleurs pilotes du monde s'affrontent pour la victoire en Espagne.",
             "first_part" => "La course débute avec Max Verstappen réalisant un excellent départ, conservant ainsi sa première position. Cependant, dès le virage 2, un léger contact se produit entre les deux pilotes britanniques, Lewis Hamilton et Lando Norris. Malheureusement, ce contact endommage l'aileron de Norris, l'obligeant à rentrer aux stands pour le faire changer.\n\n
             Au fil des 20 premiers tours, George Russell se hisse à la troisième place, tandis que Sergio Perez occupe la quatrième position. En revanche, Charles Leclerc fait face à des difficultés et se retrouve en 15ème position. La performance des deux Mercedes est une véritable surprise, les plaçant tous deux dans le top 5 de la course.",
