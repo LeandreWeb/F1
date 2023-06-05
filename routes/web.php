@@ -38,7 +38,7 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::prefix("drivers")->group(function () {
-    Route::get('/', [DriversController::class, 'index'])->name('allDrivers');
+    Route::get('/', [DriversController::class, 'menu'])->name('allDrivers');
 });
 
 
