@@ -1,4 +1,4 @@
-# Monaco
+
 
             {{-- T1 --}} 5.33% {
                 offset-distance: -17.25%;
