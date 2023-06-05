@@ -1,5 +1,5 @@
 @php
-    $drivers = $team->driver;
+    $drivers = $team->drivers;
     $teampoints = 0;
     foreach ($drivers as $driver) {
         $teampoints += $driver->points;

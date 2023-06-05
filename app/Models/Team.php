@@ -16,10 +16,13 @@ class Team extends Model
     public function teamChief(){
         return $this->hasOne(TeamChief::class);
     }
-    public function driver(){
+    public function drivers(){
         return $this->hasMany(Driver::class);
     }
     public function country(){
         return $this->belongsTo(Country::class);
+    }
+    public function points(){
+        return $this->hasMany(Driver::class);
     }
 }

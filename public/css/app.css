@@ -13,10 +13,15 @@ html{
 :root {
     --background: #242124;
     --background-light: #464046;
+    --background-dark:#3B373B;
     --text: #fefefa;
     --accent: #68fe9a;
     --danger:#ef233c;
     --confirmation:#6096BA;
+
+    --gold:#FFD700;
+    --silver:#C0C0C0;
+    --bronze:#CD7F32;
 
     --Red-Bull: #3671C6;
     --Mercedes:#6CD3BF;
