@@ -25,7 +25,5 @@
         display: flex;
         gap: 1rem;
     }
-    .standing__driver h3{
-        font-size: 3.2rem;
-    }
+    
 </style>

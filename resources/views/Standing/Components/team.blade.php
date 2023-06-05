@@ -35,7 +35,5 @@
         display: flex;
         gap: 1rem;
     }
-    .standing__team h3{
-        font-size: 3.2rem;
-    }
+    
 </style>
