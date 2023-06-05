@@ -7,15 +7,12 @@ use  App\Models\Driver;
 
 class DriversController extends Controller
 {
-    public function Index( )
+    public function menu( )
     {
-        // $drivers = [
-        //     1=> ["name"=> "Fernando","Lastname"=>"Alonso"],
-        //     2=> ["name"=> "Lance","Lastname"=>"Stroll"],
-        // ];
 
-        $drivers = Driver::all();
 
-        return view('Drivers.allDrivers',['drivers'=> $drivers]);
+        $drivers = Driver::all()->sortBy('Lastname');
+
+        return view('Drivers.Drivers',compact('drivers'));
     }
 }
