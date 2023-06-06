@@ -60,5 +60,5 @@ Route::prefix("news")->group(function () {
 
 
 Route::fallback(function () {
-    return "<h1>404 Page not Found</h1> ";
+    return view("components.404");
 });
