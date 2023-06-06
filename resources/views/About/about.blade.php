@@ -34,7 +34,10 @@
                 </div>
             </div>
             <div class="about__image">
-
+              <div class="about__images__container">
+                <img src="{{asset('Images/About/Selphie.png')}}" alt="">
+                <img src="{{asset('Images/About/Decoration.svg')}}" alt="">
+              </div>
 
             </div>
         </div>
@@ -44,6 +47,8 @@
     <style>
         .about__container {
             display: flex;
+            flex-wrap: wrap-reverse;
+
         }
 
         .about__container h2 {
@@ -73,8 +78,8 @@
 
         .about__infos {
             flex: 1 0 0;
-            
-            padding: 1rem;
+
+            padding: 1rem 1rem 1rem 5rem;
         }
 
         .about__title{
@@ -119,7 +124,35 @@
 
 
         .about__image {
-            flex: 1 0 0;
+            flex: 1 0 55rem;
+
+            display: flex;
+            justify-content: center;
+
         }
+        .about__images__container{
+          height: 60rem;
+          width: 60rem;
+          position: relative;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+        .about__image img{
+            aspect-ratio:1/1;
+            position: absolute;
+            top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%)
+        }
+
+
+
+
+
+
+
     </style>
 @endsection
