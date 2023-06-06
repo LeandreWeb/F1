@@ -7,7 +7,7 @@
             <div class="fooot-nav">
                 <h3>Navigation</h3>
                 <div class="nav-container">
-                    <a  href="{{route('home')}}">Acceuil</a>
+                    <a  href="{{route('home')}}">Accueil</a>
                     <a  href="{{route('teams')}}">Équipes</a>
                     <a  href="{{route('standing')}}">Classement</a>
                     <a  href="{{route('schedule')}}">Calendrier</a>
