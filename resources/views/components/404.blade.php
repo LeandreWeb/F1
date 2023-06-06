@@ -4,7 +4,7 @@
           <div class="page404__wrapper">
             @include("svg.Errors.Logo404")
           <h2 class="page404__message">Cette page n'existe pas.</h2>
-          <a href="{{ route('home') }}" >Page d'acceuil</a>
+          <a href="{{ route('home') }}" >Page d'accueil</a>
         </div>
 
     </main>
