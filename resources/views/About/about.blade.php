@@ -11,11 +11,11 @@
                 <div class="about__texts">
                     <p>Je suis un développeur web a la recherche d'un emploi pour améliorer et transmettre mes connaissance
                         sur
-                        le marcher du travail.</p>
-                    <p>Voici mon site web The F1 Web Project , le but principale de se site a été d'apprendre Laravel et
-                        PHP. J'ai fait la décision de faire se site a cause de ma passion de la F1 </p>
+                        le marché du travail.</p>
+                    <p>Voici mon site web The F1 Web Project , le but principal de ce site a été d'apprendre Laravel et
+                        PHP. J'ai décisidé de faire ce site a cause de ma passion de la F1 </p>
                     <p>J'ai été inspirer par des organisation tel que wtf1, P1 with Matt & Tommy et the Race. </p>
-                    <p>Le site est loin d'être fii , mais je compte le faire évoluer petit a petit.</p>
+                    <p>Le site est loin d'être fini , mais je compte le faire évoluer petit a petit.</p>
                 </div>
                 <a class="about__portfolio" href="https://leandreweb.github.io/index.html">Portfolio</a>
                 <div class="about__contacts__container">
@@ -97,7 +97,24 @@
         .about__infos .about__portfolio {
           color: var(--accent);
           margin: 3rem 0;
+
         }
+
+        .about__portfolio::after{
+          content: "";
+          width: 0;
+          transition: .5s;
+          height: .25rem;
+          background-color: var(--accent);
+          display: block;
+        }
+
+        .about__portfolio:hover::after{
+          width: 18rem;
+        }
+
+
+
 
         .about__contacts__container{
           margin: 3rem 0;
@@ -140,12 +157,22 @@
           align-items: center;
 
         }
+
+        .about__images__container:hover.about__images__container img:last-child{
+          animation: rotate infinite .5s linear;
+        }
         .about__image img{
             aspect-ratio:1/1;
             position: absolute;
             top: 50%;
           left: 50%;
-          transform: translate(-50%,-50%)
+          transform: translate(-50%,-50%);
+
+        }
+        .about__image img:last-child{
+          transform-origin:top left;
+          animation: rotate 2 .5s linear;
+
         }
 
         @media screen and (max-width: 1050px){
@@ -158,6 +185,8 @@
         }
         .about__image img:last-child{
           height: 30rem;
+
+
         }
       }
 
@@ -189,8 +218,25 @@
             font-size: .8rem;
         }
         .about__infos {
-        
+
             padding: 1rem;
+        }
+      }
+
+      @keyframes rotate{
+        0%{
+          rotate: 0deg;
+        }
+        50%{
+          translate: 0-.5rem ;
+        }
+        75%{
+          translate:  0.5rem;
+        }
+        100%{
+          rotate: 360deg;
+          translate:  0 0rem;
+
         }
       }
 
