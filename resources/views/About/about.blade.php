@@ -148,6 +148,55 @@
           transform: translate(-50%,-50%)
         }
 
+        @media screen and (max-width: 1050px){
+          .about__images__container{
+          height: 30rem;
+          width: 30rem;}
+
+        .about__image img:first-child{
+          height: 20rem;
+        }
+        .about__image img:last-child{
+          height: 30rem;
+        }
+      }
+
+      @media screen and (max-width: 600px){
+          .about__image {
+              flex: 1 0 auto;
+          }
+        .about__container h2 {
+            font-size: 4.6rem;
+        }
+
+        .about__container h3 {
+            font-size: 1.8rem;
+        }
+
+        .about__container p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .about__container a {
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .about__container h4 {
+            font-size: .8rem;
+        }
+        .about__infos {
+        
+            padding: 1rem;
+        }
+      }
+
+
+
+
 
 
 
