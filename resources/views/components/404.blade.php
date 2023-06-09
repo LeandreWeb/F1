@@ -27,7 +27,7 @@
   }
 
   .page404__container a{
-    color: var(--text);
+    color: var(--background);
     background-color: var(--accent);
     text-decoration: none;
     border-radius: 1rem;
@@ -35,6 +35,19 @@
     font-weight: 600;
     padding: 1.5rem 1rem;
     margin-top: 1rem;
+    box-shadow: 0px 0px 10px -5px var(--accent);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .page404__container a:hover{
+    background-color: var(--accent-darker);
+    box-shadow: 0px 0px 20px -5px var(--accent-darker);
+
+  }
+
+  .page404__container a:active{
+    transform: translateY(.15rem);
+    box-shadow: 0px 0px 30px -5px var(--accent-darker);
+
   }
 
   @media screen and (max-width: 1000px){
