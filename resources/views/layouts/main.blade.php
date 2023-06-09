@@ -49,6 +49,7 @@
       media="(prefers-color-scheme: light)"
     />
     <link rel="manifest" href="{{asset('favicon_light/site.webmanifest')}}"/>
+    <script src="https://kit.fontawesome.com/23ad99ebdd.js" crossorigin="anonymous"></script>
     <script src="{{asset('js/main.js')}}" defer></script>
     <title>The F1 Web Project</title>
 </head>
