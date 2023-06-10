@@ -11,7 +11,7 @@ class DriversSeeder extends Seeder
 {
 
     /**
-     * Run the database seeds. 
+     * Run the database seeds.
      */
     public function run(): void
     {
@@ -37,7 +37,7 @@ class DriversSeeder extends Seeder
             "id"=>1,
             "team_id"=>2,
             "FirstName"=>"Max",
-            "LastName"=>"Verstapen",
+            "LastName"=>"Verstappen",
             "country_id"=>14,
             "Number"=>1
         ];

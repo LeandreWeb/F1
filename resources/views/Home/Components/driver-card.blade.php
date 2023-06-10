@@ -17,12 +17,12 @@
 .driver-card{
     position: relative;
     background-color: var(--background-light);
-    width: 375px;
+    width: 37.5rem;
     display: flex;
     justify-content: space-between;
-    padding: 10px ;
-    border-radius: 20px ;
-    
+    padding: 1rem ;
+    border-radius: 2rem ;
+
     box-shadow: var(--card-shadow);
 
 
@@ -35,15 +35,16 @@
     flex: 1;
     font-weight: 700;
     z-index: 1;
+
  }
  .driver-points{
-    font-size: 40px
+    font-size: 4rem
  }
  .driver-firstname{
-    font-size: 24px;
+    font-size: 2.4rem;
  }
  .driver-lastname{
-    font-size: 32px;
+    font-size: 3rem;
  }
 
  .driver-photo{
@@ -60,7 +61,7 @@
  .driver-photo img:first-child{
    background-color:transparent;
    z-index: 1;
-   margin-bottom: -10px;
+   margin-bottom: -1rem;
  }
 
  .driver-team {
@@ -78,7 +79,7 @@
     position: absolute;
     top: 0px;
     right: 10px;
-    font-size: 128px;
+    font-size: 12.8rem;
     font-weight: 800;
  }
 
