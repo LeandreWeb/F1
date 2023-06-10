@@ -65,6 +65,14 @@
 
         }
 
+        .event_wrapper{
+            padding: 4rem 0;
+            grid-column: 1 / span 2;
+            width: 100%;
+            display: grid;
+            place-items: center;
+              }
+
         .event_container {
             border-radius: 1.5rem;
             background-color: var(--background-light);
@@ -84,12 +92,11 @@
         }
 
         .event_container--current {
-            grid-column: 1 / span 2;
+
             max-width: none;
             width: 95%;
             aspect-ratio: 4/1;
             box-shadow: 0px 0px 30px -5px var(--confirmation);
-            margin: 5rem 0;
         }
 
         .event_container--current p {
@@ -241,8 +248,12 @@
                 .event_container--current {
                     flex-direction: column;
                     aspect-ratio: auto;
-                    grid-column: 1;
 
+
+                }
+
+                .event_wrapper{
+                    grid-column: 1;
                 }
 
                 .schedule_container {
