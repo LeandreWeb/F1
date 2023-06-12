@@ -30,7 +30,7 @@
         top: 50%;
         transform: translate(-50%,-50%);
         z-index: -1;
-        animation: slideLeft 1s ease-in-out 5.5s forwards;
+        animation: slideLeft 1s ease-in-out 4.5s forwards;
     }
 
 
