@@ -13,9 +13,6 @@ class TeamController extends Controller
         $team=Team::where("id",$id)->first();
 
 
-        echo $team;
-
-
         return view("Team.TeamPage",compact('team'));
 
 

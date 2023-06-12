@@ -54,3 +54,10 @@ window.addEventListener("resize", () => {
         navMenu.classList.add("nav-closed");
     }
 });
+
+var path = document.querySelector('#horse');
+
+console.log(path);
+
+// var length = path.getTotalLength();
+
