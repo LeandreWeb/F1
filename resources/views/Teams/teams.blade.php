@@ -40,7 +40,16 @@
             overflow: hidden;
             padding: 0 0 1rem 0;
             border-radius: 2rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: .1s
 
+        }
+        .team_container:hover{
+            scale: 1.05;
+        }
+        .team_container:active{
+            scale: .98;
         }
 
         .team_container:nth-child(even) {
@@ -78,9 +87,7 @@
         .team_infos {
             display: flex;
             justify-content: space-between;
-
             border-radius: 0 0 1rem 1rem;
-            border: 0 0 1rem 0 solid var(--Ferarri)
         }
 
         .team_infos_name {
