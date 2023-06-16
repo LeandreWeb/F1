@@ -1,4 +1,4 @@
-<section class="team__presentation__container" id="presentation">
+<section class="team__presentation__container team__presentation--{{$team->Name}}" id="presentation">
     <div class="team__presentation__name__container">
         <h2 class="team__presentation__name">{{$team->Name}}</h2>
     </div>
@@ -6,3 +6,7 @@
 
 
 </section>
+
+<style>
+    
+</style>
