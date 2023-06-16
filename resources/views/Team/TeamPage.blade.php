@@ -3,6 +3,7 @@
 @section('content')
 <main>
     @include('Team.Components.TeamPresentation',compact("team"))
+    @include('Team.Components.TeamDrivers',compact("team"))
 </main>
 <style>
     .team__presentation__container{
@@ -13,7 +14,7 @@
         position: relative;
         overflow: hidden;
     }
-    
+
 </style>
 
 @endsection
