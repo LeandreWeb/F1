@@ -36,7 +36,7 @@ class qualification_results09Seeder extends Seeder
         ];
         $qualificationResults[]=[
             "id"=>903,
-            "driver_id"=>3,
+            "driver_id"=>14,
             'qualification_id'=>9,
             "q1"=>73.295,
             "q2"=>72.776,
