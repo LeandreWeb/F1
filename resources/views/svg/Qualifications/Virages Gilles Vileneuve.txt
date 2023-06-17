@@ -1,0 +1,64 @@
+
+
+            {{-- T1 --}} 5.33% {
+                offset-distance: -6%;
+            }
+
+            {{-- T2 --}} 14.46% {
+                offset-distance: -8.25%;
+            }
+
+            {{-- T3 --}} 18.09% {
+                offset-distance: -17%;
+            }
+
+            {{-- T4 --}} 21.88% {
+                offset-distance: -18.25%;
+            }
+
+            {{-- T5 --}}  30.28% {
+                offset-distance: -24%;
+            }
+
+            {{-- T6 --}} 35.78% {
+                offset-distance: -29%;
+            }
+
+            {{-- T7 --}} 41.54% {
+                offset-distance: -31%;
+
+            }
+
+            {{-- T8 --}} 44.81% {
+                offset-distance: -46.25%;
+
+            }
+
+            {{-- T9 --}} 54.69% {
+                offset-distance: -47.75%;
+            }
+
+            {{-- T10 --}} 61.96% {
+                offset-distance: -61.5%;
+            }
+
+            {{-- T11 --}} 64.31% {
+                offset-distance:-64.5%;
+            }
+
+            {{-- T12 --}} 70.09% {
+                offset-distance:-73.5%;
+            }
+
+            {{-- T13 --}} 75.63% {
+                offset-distance: -89.75%;
+            }
+
+            {{-- T14 --}} 76.68% {
+                offset-distance: -90.75%;
+            }
+
+
+            Fin Catalunia
+
+
