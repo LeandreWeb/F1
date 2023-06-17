@@ -22,88 +22,88 @@ class qualification_results09Seeder extends Seeder
             'qualification_id'=>9,
             "q1"=>73.615,
             "q2"=>72.760,
-            "q3"=>72.272,
+            "q3"=>85.858,
             "position"=>1
         ];
         $qualificationResults[]=[
             "id"=>902,
-            "driver_id"=>55,
+            "driver_id"=>27,
             'qualification_id'=>9,
             "q1"=>73.411,
             "q2"=>72.790,
-            "q3"=>72.734,
+            "q3"=>87.102,
             "position"=>2
         ];
         $qualificationResults[]=[
             "id"=>903,
-            "driver_id"=>4,
+            "driver_id"=>3,
             'qualification_id'=>9,
             "q1"=>73.295,
             "q2"=>72.776,
-            "q3"=>72.792,
+            "q3"=>87.286,
             "position"=>3
         ];
         $qualificationResults[]=[
             "id"=>904,
-            "driver_id"=>10,
+            "driver_id"=>44,
             'qualification_id'=>9,
             "q1"=>73.471,
             "q2"=>73.186,
-            "q3"=>72.816,
+            "q3"=>87.627,
             "position"=>4
         ];
         $qualificationResults[]=[
             "id"=>905,
-            "driver_id"=>44,
+            "driver_id"=>63,
             'qualification_id'=>9,
             "q1"=>72.937,
             "q2"=>72.999,
-            "q3"=>72.818,
+            "q3"=>87.893,
             "position"=>5
         ];
         $qualificationResults[]=[
             "id"=>906,
-            "driver_id"=>18,
+            "driver_id"=>31,
             'qualification_id'=>9,
             "q1"=>73.766,
             "q2"=>73.082,
-            "q3"=>72.994,
+            "q3"=>87.945,
             "position"=>6
         ];
         $qualificationResults[]=[
             "id"=>907,
-            "driver_id"=>31,
+            "driver_id"=>4,
             'qualification_id'=>9,
             "q1"=>73.433,
             "q2"=>73.001,
-            "q3"=>73.083,
+            "q3"=>88.046,
             "position"=>7
         ];
         $qualificationResults[]=[
             "id"=>908,
-            "driver_id"=>27,
+            "driver_id"=>55,
             'qualification_id'=>9,
             "q1"=>73.420,
             "q2"=>73.283,
-            "q3"=>73.229,
+            "q3"=>89.294,
             "position"=>8
         ];
         $qualificationResults[]=[
             "id"=>909,
-            "driver_id"=>14,
+            "driver_id"=>81,
             'qualification_id'=>9,
             "q1"=>73.747,
             "q2"=>73.098,
-            "q3"=>73.507,
+            "q3"=>91.349,
             "position"=>9
         ];
         $qualificationResults[]=[
             "id"=>910,
-            "driver_id"=>81,
+            "driver_id"=>23,
             'qualification_id'=>9,
             "q1"=>73.691,
             "q2"=>73.059,
-            "q3"=>73.682,
+            "q3"=>null,
             "position"=>10
         ];
         $qualificationResults[]=[
