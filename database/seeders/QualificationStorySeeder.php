@@ -164,6 +164,16 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         La Formule 1 en Espagne nous réserve donc un spectacle intense et captivant, avec des batailles en perspective sur la piste. Les passionnés de sport automobile peuvent s'attendre à une course palpitante où tout peut arriver. Rendez-vous demain pour vivre l'action au rythme des moteurs vrombissants et des stratégies audacieuses, car la compétition dans ce sport exigeant est plus féroce que jamais.",
         "extra" => null
       ];
+      $qualificationStory[] = [
+        "id" => 9,
+        "catchphrase" => "Montréal sous la pluie",
+        "intro" => "Sous les caprices du ciel de Montréal, la pluie a ajouté une dose supplémentaire d'incertitude et de défi lors des séances d'essais libres. Alors que les gouttes d'eau tambourinaient sur le circuit, les équipes de Formule 1 ont rivalisé pour trouver la meilleure configuration sous ces conditions changeantes. Parmi elles, les Red Bulls, les Ferraris et les Aston Martin se sont révélées particulièrement performantes, montrant leur capacité à maîtriser les éléments. Cependant, l'équipe Mercedes semble être en difficulté lorsque la pluie s'invite, cherchant à trouver la bonne harmonie entre puissance et adhérence dans ces conditions humides. Les qualifications promettent donc d'être passionnantes, avec des pilotes et des équipes qui devront repousser leurs limites pour conquérir la pole position sur ce circuit trempé de Montréal.",
+        "q1" => "",
+        "q2" => "",
+        "q3" => "",
+        "conclusion" => "",
+        "extra" => null
+      ];
 
 
 
