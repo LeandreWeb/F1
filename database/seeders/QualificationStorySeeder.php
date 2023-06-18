@@ -174,7 +174,9 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         "conclusion" => "En conclusion, les qualifications pour le Grand Prix du Canada 2023 ont été marquées par des conditions météorologiques imprévisibles et des rebondissements inattendus. La pluie a joué un rôle clé, rendant les choix stratégiques cruciaux pour les équipes et les pilotes. Les séances de qualification ont été ponctuées de drapeaux rouges et d'incidents, mettant à l'épreuve la maîtrise des pilotes sur une piste glissante.
         Max Verstappen s'est révélé une fois de plus redoutable dans des conditions pluvieuses, décrochant la pole position malgré la pluie battante en Q3. Nico Hülkenberg a également brillé en saisissant l'opportunité de réaliser un excellent tour avant le drapeau rouge, lui permettant de se hisser à la deuxième place sur la grille.
         Cependant, certaines équipes et pilotes n'ont pas réussi à tirer parti des circonstances et ont été contrariés par des incidents ou des choix de pneus moins favorables. Les qualifications ont donc offert un spectacle riche en rebondissements et ont préparé le terrain pour une course passionnante où les conditions météorologiques pourraient continuer à jouer un rôle déterminant.",
-        "extra" => null
+        "extra" => "
+        Dans les heures qui ont suivi la course, de nouvelles informations ont émergé concernant les pénalités infligées à certains pilotes. Nico Hülkenberg, Carlos Sainz et Yuki Tsunoda ont tous écopé d'une pénalité de trois places sur la grille de départ pour la prochaine course. Cette situation bouleverse considérablement les positions initiales des pilotes.
+        Ainsi, Yuki Tsunoda, qui avait initialement qualifié à la 16e position, se voit rétrogradé à la 19e place sur la grille. Carlos Sainz, quant à lui, descend de la 8e à la 11e position, tandis que Nico Hülkenberg, qui avait brillamment obtenu la 2e place lors des qualifications, perd sa place sur la première ligne et se retrouve désormais en 5e position au départ."
       ];
 
 
