@@ -1,7 +1,8 @@
-<section class="team__drivers__container">
-  <h2 class="team__drivers--titles team_{{$team->id}}--text">
+<section class="team__drivers__wrapper">
+  <h2 class="team__drivers--title team_{{$team->id}}--text">
     Pilotes
   </h2>
+  <div class="team__drivers__container">
     @foreach ($team->drivers as $driver)
         <div class="team__driver__card__container ">
             <img src="{{ asset('Images/Drivers/Side-profil/' . $driver->Lastname . '.avif') }}" alt=""
@@ -20,41 +21,44 @@
             <img src="{{asset('Images/Drivers/Number/'.$driver->Lastname.'.avif')}}" alt="" class="team__driver--number">
         </div>
     @endforeach
+  </div>
+
 
 </section>
 
 
 <style>
 
-    .team__drivers__container {
+    .team__drivers__wrapper {
         height: 100vh;
         display: flex;
         flex-direction: column;
         padding: 0 4rem;
         justify-content: space-evenly;
         background-color: var(--background-dark);
-        align-items: center;
+
     }
 
-    .team__drivers--titles{
+    .team__drivers--title{
       font-size: 6.4rem;
-      flex: .3 0 auto;
       font-weight: 900;
+    }
+
+    .team__drivers__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+
     }
 
     .team__driver__card__container {
         flex: 1 0 auto;
         display: flex;
-        padding: 10rem;
         justify-content: center;
 
     }
 
-    .team__driver__card__container:hover,
-    .team__driver__card__container:active {
-        box-shadow: none;
 
-    }
 
     .team__driver__photo {
         aspect-ratio: 1/1;
@@ -69,22 +73,20 @@
         height: fit-content;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 1rem;
-        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
         flex: 0 0 80rem;
     }
 
     .team__driver__info--container {
         width: fit-content;
         height: fit-content;
-        font-size: 2.4rem;
+        font-size: 3.2rem;
         overflow: hidden;
     }
 
     .team__driver__info--container span {
         display: inline-block;
         transform: translateY(100%);
-
         transition: .75s;
         font-weight: 800;
     }
