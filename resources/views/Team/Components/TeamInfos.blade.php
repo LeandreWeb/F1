@@ -3,6 +3,7 @@
     foreach ($team->drivers as $driver) {
         $teamPoints += $driver->points;
     }
+    $socials = $team->socials
 
 @endphp
 <section class="team__infos--wrapper">
@@ -21,22 +22,14 @@
                         src="{{ asset('Images/Flags/' . $team->country->name . '.jpg') }}" alt=""></span></p>
         </div>
         <div class="team__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat, doloremque sit hic veniam,
-            consectetur voluptatum voluptate amet enim necessitatibus fugiat expedita. Veritatis at optio delectus esse
-            magni quam quia.
-            Eum, blanditiis est! Maxime sapiente nihil recusandae magnam ex cumque veniam commodi at libero ab harum
-            voluptatem debitis inventore atque soluta, aspernatur quas aliquam sint tenetur perspiciatis voluptates
-            ullam hic.
-            Dicta commodi facilis corrupti distinctio accusamus amet dolore quo pariatur culpa rerum numquam voluptates,
-            porro optio? Numquam, sint vitae! Saepe incidunt quam consequatur dignissimos soluta itaque voluptatibus,
-            sequi recusandae asperiores!
+            {{$socials->teamText}}
         </div>
     </div>
     <div class="team__socials">
-        <div class="team__social"><i class="fa-brands fa-twitter team_{{ $driver->team->id }}--text "></i>Twitter: <a
-                href="#">{{ $team->Name }}</a></div>
-        <div class="team__social"><i class="fa-brands fa-instagram team_{{ $driver->team->id }}--text"></i>Instagram: <a href="#">{{ $team->Name }}</a></div>
-        <div class="team__social"><i class="fa-solid fa-globe team_{{ $driver->team->id }}--text"></i></i>Site-Web: <a href="#">{{ $team->Name }}</a></div>
+        <div class="team__social"><i class="fa-brands fa-twitter team_{{ $driver->team->id }}--text "></i><a
+                href="{{$socials->twitterLink}}">{{ $socials->twitterName }}</a></div>
+        <div class="team__social"><i class="fa-brands fa-instagram team_{{ $driver->team->id }}--text"></i> <a href="{{$socials->instagramLink}}">{{ $socials->instagramName }}</a></div>
+        <div class="team__social"><i class="fa-solid fa-globe team_{{ $driver->team->id }}--text"></i></i><a href="{{$socials->websiteLink}}">{{ $socials->websiteName }}</a></div>
     </div>
 
 
@@ -60,7 +53,7 @@
     }
 
     .team__infos__datas {
-        flex: 1 0 20rem;
+        flex: 2 0 20rem;
     }
 
     .team__infos__data {
