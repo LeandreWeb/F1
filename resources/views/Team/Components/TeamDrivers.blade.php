@@ -1,5 +1,5 @@
 <section class="team__drivers__wrapper">
-  <h2 class="team__drivers--title team_{{$team->id}}--text">
+  <h2 class="team--title team_{{$team->id}}--text">
     Pilotes
   </h2>
   <div class="team__drivers__container">
@@ -39,10 +39,7 @@
 
     }
 
-    .team__drivers--title{
-      font-size: 6.4rem;
-      font-weight: 900;
-    }
+
 
     .team__drivers__container{
         display: flex;
