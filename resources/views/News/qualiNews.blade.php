@@ -137,6 +137,13 @@
             </div>
         </section>
 
+        @if($qualiStory->extra)
+        <section class="quali_extra">
+            <h2>Mise a Jour</h2>
+            <p>{{$qualiStory->extra}}</p>
+        </section>
+        @endif
+
 
 
 
@@ -273,6 +280,20 @@
             gap: 1em;
             margin: 5em 0
         }
+
+        .quali_extra {
+            padding: 4rem;
+            border: solid var(--attention) 2px;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 1rem 0px var(--attention) ;
+        }
+
+        .quali_extra h2{
+            font-size: 3.2rem;
+            color: var(--attention);
+        }
+
 
         .conclusion_photo {
 

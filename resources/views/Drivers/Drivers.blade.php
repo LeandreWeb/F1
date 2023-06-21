@@ -50,8 +50,9 @@
             z-index: 1;
         }
 
-        .driver-points {
-            font-size: 4rem
+        .driver-number {
+            font-size: 4.8rem;
+            font-weight: 900;
         }
 
         .driver-firstname {
