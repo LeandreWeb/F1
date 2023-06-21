@@ -22,6 +22,9 @@ class Team extends Model
     public function country(){
         return $this->belongsTo(Country::class);
     }
+    public function socials(){
+        return $this->belongsTo(Socials::class);
+    }
     public function points(){
         return $this->hasMany(Driver::class);
     }
