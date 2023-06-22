@@ -118,4 +118,88 @@
       align-self: flex-end;
       width: 20rem;
     }
+
+    @media screen and (max-width: 1225px) {
+        .team__driver__info--container{
+            font-size: 2.4rem;
+        }
+        .team__driver__infos{
+            flex: 1 1 20rem;
+        }
+        .team__driver__photo{
+            width: 20rem;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .team__driver__infos{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 775px) {
+        .team__driver__info--container{
+            font-size: 1.6rem;
+        }
+        .team__driver__photo{
+            width: 15rem;
+        }
+
+        .team__driver--number{
+            width: 10rem;
+        }
+        .team__driver__info--container span img{
+            height: 1rem;
+        }
+    }
+    @media screen and (max-width: 515px) {
+        .team__driver__card__container{
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .team__drivers__container{
+            gap: 5rem;
+        }
+
+        .team__driver__photo,.team__driver--number,.team__driver__infos{
+            align-self: initial;
+        }
+        .team__driver__infos{
+            flex: 1 1 auto;
+            border-top: solid black .2rem;
+        }
+        .team__driver--number{
+            width: 5rem;
+        }
+    }
+
+    @media screen and (max-height: 700px) {
+        .team__driver__photo{
+            width: 10rem;
+        }
+        .team__driver--number{
+            width: 5rem;
+
+        }
+        .team__driver__info--container{
+            font-size: 1.6rem;
+
+
+        }
+        .team__driver__infos{
+
+            gap: 0.25rem;
+            flex: auto auto auto;
+        }
+        .team__driver__info--container span img{
+            height: 1rem;
+        }
+        .team__drivers__container{
+            gap: 2rem;
+        }
+    }
 </style>

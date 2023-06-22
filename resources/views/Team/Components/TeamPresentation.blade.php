@@ -115,4 +115,9 @@
 
         }
     }
+    @media screen and (max-height: 850px) {
+        .team__animated__logo{
+            width: 20rem;
+        }
+    }
 </style>

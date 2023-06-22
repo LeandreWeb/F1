@@ -12,7 +12,17 @@
       font-size: 6.4rem;
       font-weight: 900;
     }
-    
+    @media screen and (max-width: 475px) {
+        .team--title{
+            font-size: 3.2rem;
+        }
+    }
+    @media screen and (max-height: 500px) {
+        .team--title{
+            font-size: 3.2rem;
+        }
+    }
+
 
 
 </style>
