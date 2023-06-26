@@ -2,16 +2,20 @@
 
 @section('content')
 <script src="{{ asset('js/team.js') }}" defer></script>
-<main>
+<main class="scrool-snap" dir="ltr">
     @include('Team.Components.TeamPresentation',compact("team"))
     @include('Team.Components.TeamInfos',compact("team"))
     @include('Team.Components.TeamDrivers',compact("team"))
 </main>
 <style>
+    html {
+        scroll-snap-type: y proximity ;
+    }
     .team--title{
       font-size: 6.4rem;
       font-weight: 900;
     }
+
     @media screen and (max-width: 475px) {
         .team--title{
             font-size: 3.2rem;

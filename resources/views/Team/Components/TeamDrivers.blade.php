@@ -36,6 +36,7 @@
         padding: 0 4rem;
         justify-content: space-evenly;
         background-color: var(--background-dark);
+        
 
     }
 

@@ -48,6 +48,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: var(--background-darker);
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+
 
     }
 
@@ -57,6 +61,7 @@
         place-items: center;
         flex-wrap: wrap;
         gap: 2rem;
+
     }
 
     .team__infos__datas {
