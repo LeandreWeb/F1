@@ -7,7 +7,7 @@
 @endphp
 
 
-<div class="team_container team_{{$team->id}}--border">
+<a href="{{ route('team', ['id' => $team->id]) }}#presentation" class="team_container team_{{$team->id}}--border">
     <div class="team_infos">
         <div class="team_infos_name">
             <img src="{{asset('Images/Teams/'.$team->Name.' black.png')}}" alt="">
@@ -28,4 +28,4 @@
         </div>
     </div>
 
-</div>
+</a>

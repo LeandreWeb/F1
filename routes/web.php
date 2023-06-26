@@ -6,6 +6,7 @@ use App\Http\Controllers\HomePage;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\StandingController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TeamsController;
 
 /*
@@ -42,10 +43,7 @@ Route::prefix("drivers")->group(function () {
 });
 
 
-Route::get('/team/{id}', function ($id) {
-
-    return "Team" . $id;
-})->name('team');
+Route::get('/team/{id}',[TeamController::class,'team'])->name('team');
 
 Route::prefix("news")->group(function () {
     Route::get('/race{id}', [NewsController::class, "race"])->name('raceNews');
