@@ -6,6 +6,7 @@
     @include('Team.Components.TeamPresentation',compact("team"))
     @include('Team.Components.TeamInfos',compact("team"))
     @include('Team.Components.TeamDrivers',compact("team"))
+    @include('Team.Components.TeamMap',compact("team"))
 </main>
 <style>
     html {
