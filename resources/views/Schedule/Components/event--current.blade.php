@@ -34,11 +34,11 @@
                         Qualification: {{ $formattedDatequali }}{{ $gp->qualification->start }}
                     </p>
                 @endif
-                @if ($gp->sprint_shootout)
-                    @if ($gp->sprint_shootout->sprint_shootout_story_id)
+                @if ($gp->sprintShootout)
+                    @if ($gp->sprintShootout->sprint_shootout_story_id)
                         <a href="{{ route('sprintNews', ['id' => $gp->id]) }}">Sprint</a>
                     @else
-                        <p>Sprint Shootout {{ $formattedDateSprintShootout }} {{ $gp->sprint_shootout->start }}</p>
+                        <p>Sprint Shootout {{ $formattedDateSprintShootout }} {{ $gp->sprintShootout->start }}</p>
                     @endif
                 @endif
                 @if ($gp->sprint)

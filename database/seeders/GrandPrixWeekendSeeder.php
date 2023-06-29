@@ -119,7 +119,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>9,
         "name"=>"Grand Prix du Canada",
-        "status"=>"current",
+        "status"=>"done",
         "country_id"=>9,
         'race_id'=>9,
         'qualification_id'=>9,
@@ -131,7 +131,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>10,
         "name"=>"Grand Prix d'Autriche",
-        "status"=>"incoming",
+        "status"=>"current",
         "country_id"=>10,
         'race_id'=>10,
         'qualification_id'=>10,

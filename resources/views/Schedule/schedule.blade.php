@@ -234,12 +234,17 @@
 
 
             }
+            .event_infos {
+                font-size: 1.8rem;
+            }
             @media screen and (max-width: 665px){
                 .event_container--current {
                 aspect-ratio: 2/1;
                 flex-direction: row;
+            }
 
-
+            .event_infos {
+                font-size: 1.6rem;
             }
 
             }
