@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('Name');
             $table->foreignId('socials_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('factory_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('Power-Unit')->comment("The Power-Unit Manifacturer");
 
         });

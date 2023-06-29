@@ -25,6 +25,9 @@ class Team extends Model
     public function socials(){
         return $this->belongsTo(Socials::class);
     }
+    public function factory(){
+        return $this->belongsTo(Factory::class);
+    }
     public function points(){
         return $this->hasMany(Driver::class);
     }
