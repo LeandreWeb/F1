@@ -28,7 +28,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Red Bull Racing',
             'country_id'=>11,
             'socials_id'=>2,
-            'factory_id'=>1,
+            'factory_id'=>2,
             'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [

@@ -25,7 +25,7 @@
         .team--title{
             font-size: 3.2rem;
         }
-    }
+    }mapbox://styles/leandrebb/cljfzjb6c00i801ozcwii2nkm
 
 
 
