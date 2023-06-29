@@ -9,23 +9,23 @@
         'pk.eyJ1IjoibGVhbmRyZWJiIiwiYSI6ImNsZThveXlkbjBocHQzeHIxZmpoOTBqMGIifQ.xRK99WKbAjKkTH2M9jZCpg';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/leandrebb/cljelhyf300av01p5cm7p76cv',
+        style: <?php echo json_encode($team->factory->map_link, JSON_HEX_TAG); ?>,
         center: [
-            10.862881800444768,
-            44.53224809926337
+            <?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
+            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
         ],
         zoom: 17
     });
     const marker = new mapboxgl.Marker({ "color": "#F91536" })
         .setLngLat([
-            10.862881800444768,
-            44.53224809926337
+            <?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
+            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
         ])
         .addTo(map);
     map.on('load', () => {
         map.jumpTo({
-            center: [10.862881800444768,
-                44.53224809926337
+            center: [<?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
+            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
             ]
         });
     })
