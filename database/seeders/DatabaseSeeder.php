@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(countriesSeeder::class);
         $this->call(SocialsSeeder::class);
+        $this->call(FactorySeeder::class);
         $this->call(TeamsSeeder::class);
         $this->call(DriversSeeder::class);
         $this->call(TeamChiefsSeeder::class);
