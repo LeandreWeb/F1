@@ -180,7 +180,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
       ];
       $qualificationStory[] = [
         "id" => 10,
-        "catchphrase" => "Montréal sous la pluie",
+        "catchphrase" => "Red Bulls Pole a la Maison",
         "intro" => "Alors que le deuxième week-end de sprint de la saison bat son plein en Autriche, l'excitation est à son comble. Après une séance d'entraînement prometteuse, les Red Bulls semblent en excellente forme sur leur propre piste. Cependant, leurs rivaux de chez Mercedes et Aston Martin ne sont pas en reste, exhibant également des voitures rapides et prêtes à en découdre. Avec une compétition aussi féroce, les qualifications s'annoncent d'une intensité inégalée, offrant aux fans de Formule 1 un spectacle captivant à ne pas manquer.",
         "q1" => "Au tout début de la session, une situation dramatique s'est produite lorsque Valtteri Bottas a perdu le contrôle de son Alpha Tauri dans le virage 1, entraînant l'arrêt complet de son moteur. Cette situation a rapidement déclenché un drapeau rouge, interrompant temporairement les qualifications. Heureusement pour Bottas, il a réussi à trouver le moyen de redémarrer sa voiture et est retourné aux stands afin de pouvoir reprendre sa participation aux qualifications.
         Malgré cet incident, le reste de la Q1 s'est déroulé dans une relative tranquillité, avec quelques moments de frayeur pour George Russell, qui se retrouvait initialement en bas du classement. Cependant, Russell a su rassembler son talent et son sang-froid pour réaliser un dernier tour impressionnant, lui permettant de se qualifier pour la Q2 et de surmonter ainsi ces petites inquiétudes.",
