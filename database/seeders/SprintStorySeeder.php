@@ -29,6 +29,14 @@ class SprintStorySeeder extends Seeder
 
             "extra"=>null,
         ];
+        $SprintStory[]=[
+            "id"=>10,
+            "catchphrase"=>"",
+            "first_part"=>"",
+            "last_part"=>"",
+            "conclusion"=>"",
+            "extra"=>null,
+        ];
 
         Db::table('sprint_stories')->delete();
         Db::table('sprint_stories')->insert($SprintStory);
