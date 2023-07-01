@@ -43,7 +43,7 @@
 <style>
     .team__infos--wrapper {
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         padding: 2rem 4rem 4rem 4rem;
         display: flex;
         flex-direction: column;
