@@ -36,7 +36,7 @@
                 @endif
                 @if ($gp->sprintShootout)
                     @if ($gp->sprintShootout->sprint_shootout_story_id)
-                        <a href="{{ route('sprintNews', ['id' => $gp->id]) }}">Sprint</a>
+                        <a href="{{ route('sprint shootoutNews', ['id' => $gp->id]) }}">Sprint Shootout</a>
                     @else
                         <p>Sprint Shootout {{ $formattedDateSprintShootout }} {{ $gp->sprintShootout->start }}</p>
                     @endif
