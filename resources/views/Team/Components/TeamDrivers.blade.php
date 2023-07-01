@@ -30,13 +30,13 @@
 <style>
 
     .team__drivers__wrapper {
-        height: 100vh;
+        height: 100dvh;
         display: flex;
         flex-direction: column;
         padding: 0 4rem;
         justify-content: space-evenly;
         background-color: var(--background-dark);
-        
+
 
     }
 
