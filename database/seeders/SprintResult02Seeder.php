@@ -178,8 +178,6 @@ class SprintResult02Seeder extends Seeder
             "points"=>null
         ];
 
-
-        Db::table('sprint_results')->delete();
         Db::table('sprint_results')->insert($sprintResults);
     }
 }
