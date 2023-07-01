@@ -26,7 +26,7 @@ class SprintShootoutSeeder extends Seeder
             "id"=>10,
             "date"=>'2023-07-01',
             "start"=>'06:30:00',
-            "sprint_shootout_story_id"=>null
+            "sprint_shootout_story_id"=>10
         ];$sprintsShootout[]=[
             "id"=>13,
             "date"=>'2023-07-29',
