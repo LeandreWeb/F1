@@ -64,7 +64,7 @@ class NewsController extends Controller
 
         $sprintShootoutStory = SprintShootoutStory::where("id", $id)->first();
 
-        return view('News.sprintShootoutnews', compact('sprintShootoutStory'));
+        return view('News.sprintShootoutNews', compact('sprintShootoutStory'));
     }
 
     public function sprint($id)
