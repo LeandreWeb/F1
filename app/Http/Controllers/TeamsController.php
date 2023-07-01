@@ -11,7 +11,7 @@ class TeamsController extends Controller
     public function menu (){
 
 
-        $teams=Team::all();
+        $teams=Team::all()->sortBy('Name');
 
 
         return view("Teams.teams",compact('teams'));
