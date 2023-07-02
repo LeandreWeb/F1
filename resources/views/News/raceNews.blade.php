@@ -45,9 +45,11 @@
             <p>{{ $raceStory->conclusion }}</p>
         </section>
 
-        @if ($raceStory->update)
-            <section class="race_update">
 
+        @if ($raceStory->extra)
+            <section class="race_extra">
+                <h2>Mise a Jour</h2>
+                <p>{{ $raceStory->extra}}</p>
             </section>
         @endif
 
@@ -194,6 +196,20 @@
             flex-direction: column;
             gap: 1em;
             margin: 5em 0
+        }
+
+
+        .race_extra {
+            padding: 4rem;
+            border: solid var(--attention) 2px;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 1rem 0px var(--attention) ;
+        }
+
+        .race_extra h2{
+            font-size: 3.2rem;
+            color: var(--attention);
         }
 
         .conclusion_photo {
