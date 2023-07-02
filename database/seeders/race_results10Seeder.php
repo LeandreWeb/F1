@@ -46,82 +46,82 @@ class race_results10Seeder extends Seeder
         ];
         $raceResults[]=[
             "id"=>1004,
-            "driver_id"=>55,
-            "race_id"=>10,
-            "total_time"=>"01:25:54.984",
-            "best_lap"=>69.348,
-            "position"=>4,
-            "points"=>12,
-        ];
-        $raceResults[]=[
-            "id"=>1005,
             "driver_id"=>4,
             "race_id"=>10,
             "total_time"=>"01:25:59.934",
             "best_lap"=>69.877,
-            "position"=>5,
+            "position"=>4,
             "points"=>10,
         ];
         $raceResults[]=[
-            "id"=>1006,
+            "id"=>1005,
             "driver_id"=>14,
             "race_id"=>10,
             "total_time"=>"01:26:03.924",
             "best_lap"=>69.512,
-            "position"=>6,
+            "position"=>5,
             "points"=>8,
         ];
         $raceResults[]=[
-            "id"=>1007,
-            "driver_id"=>44,
+            "id"=>1006,
+            "driver_id"=>55,
             "race_id"=>10,
-            "total_time"=>"01:26:13.803",
-            "best_lap"=>70.457,
-            "position"=>7,
-            "points"=>6
+            "total_time"=>"01:26:04.984",
+            "best_lap"=>69.348,
+            "position"=>6,
+            "points"=>12,
         ];
         $raceResults[]=[
-            "id"=>1008,
+            "id"=>1007,
             "driver_id"=>63,
             "race_id"=>10,
             "total_time"=>"01:26:23.010 ",
             "best_lap"=>70.160,
-            "position"=>8,
+            "position"=>7,
             "points"=>4
         ];
         $raceResults[]=[
-            "id"=>1009,
-            "driver_id"=>10,
+            "id"=>1008,
+            "driver_id"=>44,
             "race_id"=>10,
-            "total_time"=>"01:26:32.274",
-            "best_lap"=>70.344,
-            "position"=>9,
-            "points"=>2
+            "total_time"=>"01:26:23.803",
+            "best_lap"=>70.457,
+            "position"=>8,
+            "points"=>6
         ];
         $raceResults[]=[
-            "id"=>1010,
+            "id"=>1009,
             "driver_id"=>18,
             "race_id"=>10,
             "total_time"=>"01:26:34.650",
             "best_lap"=>69.340,
-            "position"=>10,
+            "position"=>9,
             "points"=>1
+        ];
+        $raceResults[]=[
+            "id"=>1010,
+            "driver_id"=>10,
+            "race_id"=>10,
+            "total_time"=>"01:26:42.274",
+            "best_lap"=>70.344,
+            "position"=>10,
+            "points"=>2
         ];
         $raceResults[]=[
             "id"=>1011,
             "driver_id"=>23,
             "race_id"=>10,
-            "total_time"=>"01:26:44.374",
+            "total_time"=>"01:26:54.374",
             "best_lap"=>70.604,
             "position"=>11,
             "points"=>0
         ];
         $raceResults[]=[
             "id"=>1012,
-            "driver_id"=>31,
+            "driver_id"=>24,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
-            "best_lap"=>70.043,
+            "best_lap"=>70.753,
             "position"=>12,
             "points"=>0
         ];
@@ -136,57 +136,57 @@ class race_results10Seeder extends Seeder
         ];
         $raceResults[]=[
             "id"=>1014,
-            "driver_id"=>22,
+            "driver_id"=>31,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
-            "best_lap"=>70.753,
+            "best_lap"=>70.043,
             "position"=>14,
             "points"=>0
         ];
         $raceResults[]=[
             "id"=>1015,
-            "driver_id"=>24,
+            "driver_id"=>77,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
-            "best_lap"=>70.697,
+            "best_lap"=>70.092,
             "position"=>15,
             "points"=>0
         ];
         $raceResults[]=[
             "id"=>1016,
-            "driver_id"=>77,
+            "driver_id"=>81,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
-            "best_lap"=>70.092,
+            "best_lap"=>70.006,
             "position"=>16,
             "points"=>0
         ];
         $raceResults[]=[
             "id"=>1017,
-            "driver_id"=>81,
+            "driver_id"=>24,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
-            "best_lap"=>70.006,
+            "best_lap"=>70.697,
             "position"=>17,
             "points"=>0
         ];
         $raceResults[]=[
             "id"=>1018,
-            "driver_id"=>22,
-            "race_id"=>10,
-            "total_time"=>"00:00:00.01",
-            "best_lap"=>70.372,
-            "position"=>18,
-            "points"=>0
-        ];
-        $raceResults[]=[
-            "id"=>1019,
             "driver_id"=>20,
             "race_id"=>10,
             "total_time"=>"00:00:00.01",
             "best_lap"=>71.516,
-            "position"=>19,
+            "position"=>18,
             "points"=>null
+        ];
+        $raceResults[]=[
+            "id"=>1019,
+            "driver_id"=>22,
+            "race_id"=>10,
+            "total_time"=>"00:00:00.01",
+            "best_lap"=>70.372,
+            "position"=>19,
+            "points"=>0
         ];
         $raceResults[]=[
             "id"=>1020,
