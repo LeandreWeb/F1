@@ -36,7 +36,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Aston Martin',
             'country_id'=>11,
             'socials_id'=>3,
-            'factory_id'=>1,
+            'factory_id'=>3,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
@@ -44,7 +44,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Mercedes',
             'country_id'=>11,
             'socials_id'=>4,
-            'factory_id'=>1,
+            'factory_id'=>4,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
@@ -52,7 +52,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Alfa Romeo',
             'country_id'=>27,
             'socials_id'=>5,
-            'factory_id'=>1,
+            'factory_id'=>5,
             'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
@@ -60,7 +60,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Alpine',
             'country_id'=>11,
             'socials_id'=>6,
-            'factory_id'=>1,
+            'factory_id'=>6,
             'Power-Unit'=>'Renauld'
         ];
         $teams[]= [
@@ -68,7 +68,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Williams',
             'country_id'=>11,
             'socials_id'=>7,
-            'factory_id'=>1,
+            'factory_id'=>7,
             'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
@@ -76,7 +76,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'AlphaTauri',
             'country_id'=>6,
             'socials_id'=>8,
-            'factory_id'=>1,
+            'factory_id'=>8,
             'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [
@@ -84,7 +84,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'Hass',
             'country_id'=>5,
             'socials_id'=>9,
-            'factory_id'=>1,
+            'factory_id'=>9,
             'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
@@ -92,7 +92,7 @@ class TeamsSeeder extends Seeder
             'Name'=>'McLaren',
             'country_id'=>11,
             'socials_id'=>10,
-            'factory_id'=>1,
+            'factory_id'=>10,
             'Power-Unit'=>'Mercedes'
         ];
         DB::table('teams')->delete();
