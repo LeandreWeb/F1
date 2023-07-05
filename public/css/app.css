@@ -193,6 +193,9 @@ header{
 .team_1--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Ferrari) ;
 }
+.team_1--textStoke{
+    -webkit-text-stroke:.2rem var(--Ferrari); ;
+}
 
 .team_2--text{
     color: var(--Red-Bull);
@@ -214,6 +217,9 @@ header{
 
 .team_2--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Red-Bull) ;
+}
+.team_2--textStoke{
+    -webkit-text-stroke:.2rem var(--Red-Bull); ;
 }
 
 .team_3--text{
@@ -237,6 +243,9 @@ header{
 .team_3--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Aston-Martin) ;
 }
+.team_3--textStoke{
+    -webkit-text-stroke:.2rem var(--Aston-Martin); ;
+}
 
 .team_4--text{
     color: var(--Mercedes);
@@ -258,6 +267,9 @@ header{
 .team_4--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Mercedes) ;
 }
+.team_4--textStoke{
+    -webkit-text-stroke:.2rem var(--Mercedes); ;
+}
 
 .team_5--text{
     color: var(--Alfa-Romeo);
@@ -277,6 +289,9 @@ header{
 }
 .team_5--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Alfa-Romeo) ;
+}
+.team_5--textStoke{
+    -webkit-text-stroke:.2rem var(--Alfa-Romeo); ;
 }
 
 .team_6--text{
@@ -298,6 +313,14 @@ header{
 .team_6--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Alpine) ;
 }
+
+.team_6--textStoke{
+    -webkit-text-stroke:.2rem var(--Alpine); ;
+}
+
+
+
+
 .team_7--text{
     color: var(--Williams);
 }
@@ -318,6 +341,10 @@ header{
 .team_7--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Williams) ;
 }
+
+.team_7--textStoke{
+    -webkit-text-stroke:.2rem var(--Williams); ;
+}
 .team_8--text{
     color: var(--AlphaTauri);
 }
@@ -336,6 +363,9 @@ header{
 }
 .team_8--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--AlphaTauri) ;
+}
+.team_8--textStoke{
+    -webkit-text-stroke:.2rem var(--AlphaTauri); ;
 }
 .team_9--text{
     color: var(--Hass);
@@ -356,6 +386,9 @@ header{
 .team_9--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Hass) ;
 }
+.team_9--textStoke{
+    -webkit-text-stroke:.2rem var(--Hass); ;
+}
 .team_10--text{
     color: var(--Mclaren);
 }
@@ -374,6 +407,9 @@ header{
 }
 .team_10--border:hover{
     box-shadow: 0px 0px 3rem 5px var(--Mclaren) ;
+}
+.team_10--textStoke{
+    -webkit-text-stroke:.2rem var(--Mclaren); ;
 }
 
 

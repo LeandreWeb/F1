@@ -21,7 +21,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>6,
             'socials_id'=>1,
             'factory_id'=>1,
-            'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>2,
@@ -29,7 +28,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>2,
             'factory_id'=>2,
-            'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [
             "id"=>3,
@@ -37,7 +35,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>3,
             'factory_id'=>3,
-            'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>4,
@@ -45,7 +42,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>4,
             'factory_id'=>4,
-            'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>5,
@@ -53,7 +49,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>27,
             'socials_id'=>5,
             'factory_id'=>5,
-            'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>6,
@@ -61,7 +56,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>6,
             'factory_id'=>6,
-            'Power-Unit'=>'Renauld'
         ];
         $teams[]= [
             "id"=>7,
@@ -69,7 +63,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>7,
             'factory_id'=>7,
-            'Power-Unit'=>'Mercedes'
         ];
         $teams[]= [
             "id"=>8,
@@ -77,7 +70,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>6,
             'socials_id'=>8,
             'factory_id'=>8,
-            'Power-Unit'=>'Red Bull Powertrain'
         ];
         $teams[]= [
             "id"=>9,
@@ -85,7 +77,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>5,
             'socials_id'=>9,
             'factory_id'=>9,
-            'Power-Unit'=>'Ferrari'
         ];
         $teams[]= [
             "id"=>10,
@@ -93,7 +84,6 @@ class TeamsSeeder extends Seeder
             'country_id'=>11,
             'socials_id'=>10,
             'factory_id'=>10,
-            'Power-Unit'=>'Mercedes'
         ];
         DB::table('teams')->delete();
         DB::table('teams')->insert($teams);
