@@ -31,4 +31,10 @@ class Team extends Model
     public function points(){
         return $this->hasMany(Driver::class);
     }
+    public function car(){
+        return $this->hasOne(Car::class);
+    }
+    public function cars(){
+        return $this->hasMany(Car::class);
+    }
 }

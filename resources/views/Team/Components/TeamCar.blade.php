@@ -4,11 +4,11 @@
     </h2>
     <div class="team__car--container">
         <div class="team__car--card">
-            <h3 class="team__car--title">C43</h3>
+            <h3 class="team__car--title team_{{ $team->id }}--textStoke">{{$team->car->name}}</h3>
             <img src="{{ asset('Images/Car/'.$team->Name.'.avif') }}" alt="">
         </div>
-        <div class="team__car--infos">
-            <h3>Moteur: <span>Ferrari</span></h3>
+        <div class="team__car--infos team_{{ $team->id }}--text">
+            <h3>Moteur: <span>{{$team->car->power_unit}}</span></h3>
         </div>
 
 
@@ -40,14 +40,13 @@
     }
     .team__car--title{
         font-size: 18.8rem;
-        -webkit-text-stroke:.2rem var(--Alfa-Romeo);
+        
         color: transparent;
         z-index: -1;
     }
 
     .team__car--infos{
         font-size: 2.4rem;
-        color: var(--Alfa-Romeo)
     }
 
 </style>
