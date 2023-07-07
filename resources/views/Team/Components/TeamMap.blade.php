@@ -22,7 +22,9 @@
         ],
         zoom: 17
     });
-    const marker = new mapboxgl.Marker({ "color": "#68fe9a" })
+    const marker = new mapboxgl.Marker({
+            "color": "#68fe9a"
+        })
         .setLngLat([
             <?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
             <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
@@ -31,7 +33,7 @@
     map.on('load', () => {
         map.jumpTo({
             center: [<?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
-            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
+                <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
             ]
         });
     })
@@ -50,9 +52,51 @@
         width: 100%;
         height: 50dvh;
         padding: 4rem;
+        display: flex;
+        flex-direction: column;
     }
-    .map__container{
+
+    .map__container {
         display: flex;
         justify-content: center;
+    }
+
+    @media screen and (max-width: 530px) {
+        .team__map--wrapper {
+            height: 100dvh;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        .map__container {
+            display: flex;
+            height: 100%;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            border-radius: .4rem;
+        }
+
+    }
+    @media screen and (max-height: 750px) {
+        .team__map--wrapper {
+            height: 100dvh;
+        }
+
+        .map__container {
+            display: flex;
+            height: 100%;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            border-radius: .4rem;
+        }
+
     }
 </style>
