@@ -208,7 +208,9 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         "q3" => "Après la première sortie, Max Verstappen réalise un temps impressionnant, se plaçant en tête du classement, suivi de près par Lewis Hamilton et Robert Piastry. La bataille pour la pole position est déjà intense entre ces pilotes de talent.
         Cependant, la surprise vient de l'équipe McLaren lorsque Lando Norris parvient à réaliser un temps exceptionnel, lui permettant de prendre provisoirement la pole position. Les fans de McLaren commencent à espérer une performance exceptionnelle pour leur équipe.
         Mais à la toute fin de la séance, Max Verstappen lance une attaque féroce et réussit à voler la pole position à Norris. Son tour rapide lui permet de s'installer en première position sur la grille de départ pour le Grand Prix Britannique de Formule 1",
-        "conclusion" => "",
+        "conclusion" => "En conclusion, le Grand Prix Britannique de Formule 1 nous a offert des qualifications pleines de rebondissements et de moments palpitants. Les conditions changeantes de la piste, la lutte acharnée entre les pilotes et les performances exceptionnelles ont créé une ambiance électrisante.
+        Max Verstappen a confirmé sa position de favori en volant la pole position à la toute fin de la séance de qualifications. L'équipe McLaren a également fait forte impression, avec Lando Norris réalisant un temps incroyable, lui permettant de se placer temporairement en pole position avant d'être détrôné par Verstappen.
+        Ces qualifications nous ont donné un aperçu des enjeux de la course à venir, avec des pilotes prêts à tout donner pour atteindre la victoire. Les stratégies, les dépassements audacieux et la maîtrise des conditions de piste joueront un rôle déterminant dans la quête du podium.",
         "extra" => null
       ];
 
