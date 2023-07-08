@@ -194,6 +194,23 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         Les qualifications ont été un aperçu passionnant de la bataille qui se déroulera lors de la course à venir. Les enjeux sont élevés, avec des pilotes comme Sergio Perez et George Russell cherchant à se racheter après des performances décevantes. La compétition reste ouverte et l'imprévisibilité de la course automobile offre toujours la possibilité de surprises.",
         "extra" => null
       ];
+      $qualificationStory[] = [
+        "id" => 11,
+        "catchphrase" => "Surprises Britaniques",
+        "intro" => "Bienvenue au Grand Prix Britannique de Formule 1 ! Alors que nous nous préparons pour une course palpitante sur le célèbre circuit de Silverstone, le ciel est rempli de nuages menaçants. La pluie, bien que non légère, pourrait bien être le facteur clé de cette course et apporter des stratégies intéressantes en matière de pneus. Les pilotes et les équipes devront faire preuve de finesse et de prudence pour maîtriser ces conditions météorologiques changeantes. ",
+        "q1" => "Après avoir quitté les stands, les pilotes ont jugé que les pneus les plus adaptés étaient les pneus tendres (softs). Cependant, la piste était légèrement humide, ce qui s'est avéré être un défi, comme l'a découvert Lewis Hamilton au virage 15. Il a perdu le contrôle de sa voiture, effectuant quelques têtes-à-queue. Heureusement pour lui, il a réussi à éviter les barrières et à poursuivre ses qualifications.
+        Cependant, à moins de 3 minutes et 11 secondes de la fin de la Q1, la voiture de Kevin Magnussen s'est arrêtée à la sortie du virage 15 en raison d'un problème mécanique, ce qui a entraîné la sortie du drapeau rouge. Pendant la suspension de la session, les conditions de piste se sont améliorées, et à la reprise, les temps au tour se sont améliorés pour tous les pilotes.
+        Cependant, une surprise de taille est survenue lorsque Sergio Perez n'a pas réussi à se qualifier pour la Q2. De plus, la voiture d'Valtteri Bottas de l'équipe AlphaRomeo s'est arrêtée sur la piste, mais grâce à son tour précédent, il est tout de même parvenu à se qualifier pour la Q2.",
+        "q2" => "La piste est toujours sèche, et le soleil pointe enfin son nez, offrant des conditions idéales pour les pilotes. Tous les pilotes sortent avec des pneus tendres (softs), à l'exception de Valtteri Bottas, qui reste dans les stands en raison de son problème mécanique persistant.
+        Au fur et à mesure que la session progresse, les pilotes repoussent leurs limites pour réaliser des temps rapides. Contrairement à la fin de la Q1, il n'y a aucun incident majeur sur la piste cette fois-ci. Les équipes ont bien préparé leurs voitures et les pilotes démontrent leur habileté à négocier chaque virage avec précision.
+        La compétition s'intensifie alors que les dernières minutes de la Q2 approchent. Les équipes surveillent attentivement les temps réalisés par leurs concurrents directs, cherchant à établir la meilleure stratégie pour la suite des qualifications et la course.
+        Les conditions de piste restent optimales jusqu'à la fin de la session, offrant aux pilotes la possibilité d'améliorer leurs temps au tour.",
+        "q3" => "Après la première sortie, Max Verstappen réalise un temps impressionnant, se plaçant en tête du classement, suivi de près par Lewis Hamilton et Robert Piastry. La bataille pour la pole position est déjà intense entre ces pilotes de talent.
+        Cependant, la surprise vient de l'équipe McLaren lorsque Lando Norris parvient à réaliser un temps exceptionnel, lui permettant de prendre provisoirement la pole position. Les fans de McLaren commencent à espérer une performance exceptionnelle pour leur équipe.
+        Mais à la toute fin de la séance, Max Verstappen lance une attaque féroce et réussit à voler la pole position à Norris. Son tour rapide lui permet de s'installer en première position sur la grille de départ pour le Grand Prix Britannique de Formule 1",
+        "conclusion" => "",
+        "extra" => null
+      ];
 
 
 
