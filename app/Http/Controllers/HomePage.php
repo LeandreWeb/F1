@@ -43,7 +43,7 @@ class HomePage extends Controller
         } else if ($qualification->qualification_story_id) {
             return view('Home.home', compact('top3', 'qualification', 'nextRace'));
         } else if ($lastRace->race_story_id) {
-            $nextRace = Sprint::where("id",$lastRace->id+1)->first();
+            $nextRace = Race::where("id",$lastRace->id+1)->first();
             return view('Home.home', compact('top3', 'lastRace', 'nextRace'));
         } else {
 
