@@ -20,8 +20,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1101,
             "driver_id"=>1,
             'qualification_id'=>11,
-            "q1"=>65.116,
-            "q2"=>64.951,
+            "q1"=>89.428,
+            "q2"=>87.702,
             "q3"=>86.720,
             "position"=>1
         ];
@@ -29,8 +29,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1102,
             "driver_id"=>4,
             'qualification_id'=>11,
-            "q1"=>65.577,
-            "q2"=>65.087,
+            "q1"=>88.917,
+            "q2"=>88.042,
             "q3"=>86.961,
             "position"=>2
         ];
@@ -38,8 +38,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1103,
             "driver_id"=>81,
             'qualification_id'=>11,
-            "q1"=>65.339,
-            "q2"=>64.975,
+            "q1"=>89.874,
+            "q2"=>87.845,
             "q3"=>87.092,
             "position"=>3
         ];
@@ -47,8 +47,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1104,
             "driver_id"=>16,
             'qualification_id'=>11,
-            "q1"=>65.617,
-            "q2"=>65.038,
+            "q1"=>89.143,
+            "q2"=>88.361,
             "q3"=>87.136,
             "position"=>4
         ];
@@ -56,8 +56,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1105,
             "driver_id"=>55,
             'qualification_id'=>11,
-            "q1"=>65.673,
-            "q2"=>65.188,
+            "q1"=>89.865,
+            "q2"=>88.265,
             "q3"=>87.148,
             "position"=>5
         ];
@@ -65,8 +65,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1106,
             "driver_id"=>63,
             'qualification_id'=>11,
-            "q1"=>65.710,
-            "q2"=>65.121,
+            "q1"=>89.412,
+            "q2"=>88.782,
             "q3"=>87.155,
             "position"=>6
         ];
@@ -74,8 +74,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1107,
             "driver_id"=>44,
             'qualification_id'=>11,
-            "q1"=>65.655,
-            "q2"=>65.181,
+            "q1"=>89.415,
+            "q2"=>88.545,
             "q3"=>87.211,
             "position"=>7
         ];
@@ -83,8 +83,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1108,
             "driver_id"=>23,
             'qualification_id'=>11,
-            "q1"=>65.740,
-            "q2"=>65.301,
+            "q1"=>89.466,
+            "q2"=>88.067,
             "q3"=>87.530,
             "position"=>8
         ];
@@ -92,8 +92,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1109,
             "driver_id"=>14,
             'qualification_id'=>11,
-            "q1"=>65.515,
-            "q2"=>65.084,
+            "q1"=>89.949,
+            "q2"=>88.368,
             "q3"=>87.659,
             "position"=>9
         ];
@@ -101,8 +101,8 @@ class qualification_results11Seeder extends Seeder
             "id"=>1110,
             "driver_id"=>10,
             'qualification_id'=>11,
-            "q1"=>65.673,
-            "q2"=>65.387,
+            "q1"=>89.533,
+            "q2"=>88.751,
             "q3"=>87.689,
             "position"=>10
         ];
