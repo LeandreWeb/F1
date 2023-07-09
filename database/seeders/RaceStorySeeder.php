@@ -249,12 +249,25 @@ class RaceStorySeeder extends Seeder
         ];
         $raceStories[] = [
             "id" => 11,
-            "catchphrase" => "",
-            "intro" => "",
-            "first_part" => "",
-            "middle_part" => "",
-            "last_part" => "",
-            "conclusion" => "",
+            "catchphrase" => "11 de victoires de suites pour Red Bulls",
+            "intro" => "Après des qualifications haletantes, tous les regards se tournent désormais vers l'équipe McLaren. Lando Norris et son coéquipier Oscar Piasrty ont réalisé des performances impressionnantes lors des qualifications, se plaçant respectivement en deuxieme et troisième position sur la grille de départ.
+            Maintenant, l'objectif de McLaren est de traduire ces fantastiques résultats en un nombre important de points lors de la course. Ils espèrent capitaliser sur leur position avantageuse sur la grille pour se battre aux avant-postes et se mêler à la bataille pour les premières positions.",
+            "first_part" => "Dès le départ, Lando Norris a réalisé un superbe départ en dépassant Max Verstappen avant le premier virage, prenant ainsi la tête de la course. Son coéquipier chez McLaren, Oscar Piastri, a également été un protagoniste majeur en défiant Verstappen pour la deuxième position.
+            Cependant, Verstappen n'a pas tardé à réagir et a rapidement repris la première place après quelques tours. La bataille entre les trois pilotes a été intense et a offert un spectacle captivant aux spectateurs présents dans les tribunes.
+            Au tour 15, des nuages gris ont commencé à se former au-dessus du circuit, annonçant l'arrivée de quelques gouttes de pluie. Les conditions météorologiques changeantes ajoutent une dimension supplémentaire à la course, obligeant les pilotes à s'adapter rapidement aux variations de grip et à revoir leurs stratégies de pneus.",
+            "middle_part" => "Plusieurs batailles se sont déroulées sur la piste, ajoutant du suspense et de l'excitation à l'événement. Une de ces batailles a opposé George Russell à Charles Leclerc. Russell a réussi un superbe dépassement à l'extérieur du virage 7, montrant son talent et sa détermination.
+            Cependant, au tour 33, la voiture de Kevin Magnussen s'est arrêtée peu après le virage 5, émettant des flammes de son engin. Cette situation a entraîné la sortie du Virtual Safety Car (VSC), ralentissant la course et incitant les pilotes à réduire leur vitesse.
+            Au tour 34, la voiture de sécurité est entrée en piste pour garantir la sécurité des pilotes et des équipes. Cela a été une occasion en or pour plusieurs pilotes de faire un arrêt aux stands et de changer leurs pneus, notamment Max Verstappen, Lando Norris et Lewis Hamilton.
+            L'arrêt aux stands de Hamilton s'est avéré être bénéfique, car il lui a permis de dépasser Oscar Piastri sur la piste. Les stratégies de pneus et les décisions prises lors de cette période sous voiture de sécurité peuvent avoir un impact significatif sur le déroulement de la course et sur la bataille pour les premières positions.",
+            "last_part" => "La voiture de sécurité rentre au tour 39, ce qui marque le début d'une superbe bataille de dépassements entre Lando Norris et Lewis Hamilton. Norris défend brillamment sa position et parvient à garder la deuxième place face aux assauts incessants d'Hamilton. C'est un exploit remarquable de la part du jeune pilote de McLaren, montrant sa résilience et son talent sur la piste.
+            Un peu plus loin dans le peloton, une bataille acharnée pour la 10eme position  a lieu entre Alex Albon, Charles Leclerc, Carlos Sainz et Sergio Perez. Ces pilotes se livrent une lutte sans merci, se dépassant les uns les autres et tentant de gagner la moindre place disponible.
+            Cependant, au tour 46, la malchance frappe Pierre Gasly lorsqu'il entre en contact avec Lance Stroll, provoquant une casse de la suspension arrière de sa voiture. Malheureusement, cela le force à abandonner la course. Ce fut un week-end décevant pour l'équipe Alpine, car leurs deux voitures n'ont pas pu terminer la course.
+            Finalement, Max Verstappen réalise une course exceptionnelle. Il a su gérer la pression et a maintenu une performance solide du début à la fin. Il franchit la ligne d'arrivée en première position, remportant ainsi le Grand Prix Britannique de Formule 1.",
+            "conclusion" => "En conclusion, le Grand Prix Britannique de Formule 1 a été une course époustouflante, remplie d'action, de dépassements audacieux et de rebondissements passionnants. La bataille entre les pilotes a été féroce, avec des duels palpitants tout au long de la course.
+            Lando Norris a livré une performance exceptionnelle en défendant avec succès sa deuxième position face aux attaques de Lewis Hamilton. Sa détermination et sa maîtrise de la piste lui ont permis de repousser les assauts du champion en titre.
+            La lutte pour la dernière position a également été féroce, avec Alex Albon, Charles Leclerc, Carlos Sainz et Sergio Perez se disputant chaque centimètre de la piste. Ces batailles serrées ont ajouté une dose supplémentaire d'excitation à la course.
+            Malheureusement, l'équipe Alpine a connu un week-end difficile, avec les deux voitures contraintes à l'abandon. Cependant, leur détermination reste intacte pour les prochaines courses.
+            La victoire finale revient à Max Verstappen, qui a réalisé une course impressionnante et stratégique. Sa maîtrise de la pression et sa performance solide lui ont permis de franchir la ligne d'arrivée en première position, décrochant ainsi une victoire précieuse pour Red Bull Racing.",
             "extra" => "",
         ];
 
