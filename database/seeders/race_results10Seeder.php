@@ -51,7 +51,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:25:59.934",
             "best_lap"=>69.877,
             "position"=>4,
-            "points"=>10,
+            "points"=>12,
         ];
         $raceResults[]=[
             "id"=>1005,
@@ -60,7 +60,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:03.924",
             "best_lap"=>69.512,
             "position"=>5,
-            "points"=>8,
+            "points"=>10,
         ];
         $raceResults[]=[
             "id"=>1006,
@@ -69,7 +69,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:04.984",
             "best_lap"=>69.348,
             "position"=>6,
-            "points"=>12,
+            "points"=>8,
         ];
         $raceResults[]=[
             "id"=>1007,
@@ -78,7 +78,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:23.010 ",
             "best_lap"=>70.160,
             "position"=>7,
-            "points"=>4
+            "points"=>6
         ];
         $raceResults[]=[
             "id"=>1008,
@@ -87,7 +87,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:23.803",
             "best_lap"=>70.457,
             "position"=>8,
-            "points"=>6
+            "points"=>4
         ];
         $raceResults[]=[
             "id"=>1009,
@@ -96,7 +96,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:34.650",
             "best_lap"=>69.340,
             "position"=>9,
-            "points"=>1
+            "points"=>2
         ];
         $raceResults[]=[
             "id"=>1010,
@@ -105,7 +105,7 @@ class race_results10Seeder extends Seeder
             "total_time"=>"01:26:42.274",
             "best_lap"=>70.344,
             "position"=>10,
-            "points"=>2
+            "points"=>1
         ];
         $raceResults[]=[
             "id"=>1011,

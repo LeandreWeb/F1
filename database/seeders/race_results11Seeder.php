@@ -51,7 +51,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:24.714",
             "best_lap" => 90.941,
             "position" => 4,
-            "points" => 10,
+            "points" => 12,
         ];
         $raceResults[] = [
             "id" => 1105,
@@ -60,7 +60,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:28.144",
             "best_lap" => 91.433,
             "position" => 5,
-            "points" => 8,
+            "points" => 10,
         ];
         $raceResults[] = [
             "id" => 1106,
@@ -69,7 +69,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:29.820",
             "best_lap" => 91.188,
             "position" => 6,
-            "points" => 12,
+            "points" => 8,
         ];
         $raceResults[] = [
             "id" => 1107,
@@ -78,7 +78,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:34.131",
             "best_lap" => 91.711,
             "position" => 7,
-            "points" => 4
+            "points" => 6
         ];
         $raceResults[] = [
             "id" => 1108,
@@ -87,7 +87,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:34.816",
             "best_lap" => 91.809,
             "position" => 8,
-            "points" => 6
+            "points" => 4
         ];
         $raceResults[] = [
             "id" => 1109,
@@ -96,7 +96,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:35.727 ",
             "best_lap" => 92.257,
             "position" => 9,
-            "points" => 1
+            "points" => 2
         ];
         $raceResults[] = [
             "id" => 1110,
@@ -105,7 +105,7 @@ class race_results11Seeder extends Seeder
             "total_time" => "01:25:36.486",
             "best_lap" => 91.880,
             "position" => 10,
-            "points" => 2
+            "points" => 1
         ];
         $raceResults[] = [
             "id" => 1111,

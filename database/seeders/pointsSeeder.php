@@ -43,7 +43,7 @@ class pointsSeeder extends Seeder
                 $fastestLapsPoint[]=$fastestdriver[0];
 
 
-        
+
             }
 
 
@@ -53,6 +53,7 @@ class pointsSeeder extends Seeder
 
         foreach($drivers as $driver){
 
+            echo "\n \n" . $driver->Lastname . "\n" ;
             $totalPoints=0;
             $bestLap=0;
 
@@ -60,20 +61,28 @@ class pointsSeeder extends Seeder
 
             $sprintResults=$driver->sprintResult;
 
-
+            echo "RacePoints \n";
 
             foreach($raceResults as $raceResult){
                 if($raceResult->points){
                     $totalPoints+=$raceResult->points;
+                    echo"--". $raceResult->points. "--\n" ;
                 }
 
             }
+
+            echo "SprintPoints\n";
+
 
             foreach($sprintResults as $sprintResult){
                 if ($sprintResult->points) {
                     $totalPoints+=$sprintResult->points;
+                    echo"--". $sprintResult->points. "--\n" ;
+
                 }
             }
+
+            echo "Fastestlap";
 
             foreach($fastestLapsPoint as $fastestLap){
 
@@ -82,6 +91,7 @@ class pointsSeeder extends Seeder
                 if($fastestLap->driver_id == $driver->id)
                 {
                     $totalPoints+=1;
+                    echo "+1";
                 }
             }
 
