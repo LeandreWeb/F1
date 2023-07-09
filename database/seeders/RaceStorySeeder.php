@@ -247,6 +247,16 @@ class RaceStorySeeder extends Seeder
             Parmi les pilotes les plus touchés par ces pénalités, Carlos Sainz a écopé d'une pénalité de 10 secondes, ce qui l'a fait rétrograder de la 4e à la 6e position. Hamilton a été relégué de la 7e à la 8e place, tandis que Gasly est passé de la 9e à la 10e position.
             Cependant, certains pilotes ont bénéficié de ces pénalités et ont grimpé dans le classement final. Lando Norris a ainsi gagné une place, passant de la 5e à la 4e position. Fernando Alonso a également progressé, passant de la 6e à la 5e place. George Russell a réussi à grimper d'une position, passant de la 8e à la 7e place, tandis que Lance Stroll a également gagné une position, passant de la 10e à la 9e place.",
         ];
+        $raceStories[] = [
+            "id" => 11,
+            "catchphrase" => "",
+            "intro" => "",
+            "first_part" => "",
+            "middle_part" => "",
+            "last_part" => "",
+            "conclusion" => "",
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
