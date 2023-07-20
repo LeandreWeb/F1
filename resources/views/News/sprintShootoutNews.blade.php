@@ -141,7 +141,7 @@
                 <button class="start--animation">Démarrer</button>
                 <h3>{{ $sprintShootout->winner[0]->q3 }} s</h3>
                 <h3 class="driver_pole team_{{ $sprintShootout->winner[0]->driver->team->id }}--text">
-                    {{ $sprintShootout->winner[0]->driver->FirstName }} {{ $sprintShootout->winner[0]->driver->Lastname }}
+                    {{ $sprintShootout->winner[0]->driver->Firstname }} {{ $sprintShootout->winner[0]->driver->Lastname }}
                 </h3>
             </div>
         </section>

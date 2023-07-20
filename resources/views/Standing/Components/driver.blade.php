@@ -1,7 +1,7 @@
 @foreach ($drivers as $position=>$driver)
     <li class="standing__driver position--{{$position+1}}">
         <div class="standing__driver--fullname">
-            <h3 class="standing__driver__firstname">{{$driver->FirstName}}</h3>
+            <h3 class="standing__driver__firstname">{{$driver->Firstname}}</h3>
             <h3 class="standing__driver__lastname">{{$driver->Lastname}}  </h3>
         </div>
         <h3 class="standing__driver--points">{{$driver->points}}</h3>
@@ -25,5 +25,5 @@
         display: flex;
         gap: 1rem;
     }
-    
+
 </style>

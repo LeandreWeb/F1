@@ -2,7 +2,7 @@
     <div class="driver-info">
         <div class="driver-points">{{$driver->points}} Points</div>
         <div class="driver-fullname">
-            <h4 class="driver-firstname">{{$driver->FirstName}}</h4>
+            <h4 class="driver-firstname">{{$driver->Firstname}}</h4>
             <h3 class= "driver-lastname">{{$driver->Lastname}}</h3>
         </div>
     </div>
