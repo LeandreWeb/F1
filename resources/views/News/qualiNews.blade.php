@@ -133,7 +133,7 @@
                 <button class="start--animation">Démarrer</button>
                 <h3>{{ $quali->winner[0]->q3 }} s</h3>
                 <h3 class="driver_pole team_{{ $quali->winner[0]->driver->team->id }}--text">
-                    {{ $quali->winner[0]->driver->FirstName }} {{ $quali->winner[0]->driver->Lastname }}</h3>
+                    {{ $quali->winner[0]->driver->Firstname }} {{ $quali->winner[0]->driver->Lastname }}</h3>
             </div>
         </section>
 

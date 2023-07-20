@@ -23,7 +23,8 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Charles",
             "LastName"=>"Leclerc",
             "country_id"=>7,
-            "Number"=>16
+            "Number"=>16,
+            "status"=>'active'
         ];
         $drivers[]=[
             "id"=>55,
@@ -31,7 +32,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Carlos",
             "LastName"=>"Sainz",
             "country_id"=>8,
-            "Number"=>55
+            "Number"=>55,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>1,
@@ -39,7 +42,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Max",
             "LastName"=>"Verstappen",
             "country_id"=>14,
-            "Number"=>1
+            "Number"=>1,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>11,
@@ -47,7 +52,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Sergio",
             "LastName"=>"Perez",
             "country_id"=>18,
-            "Number"=>11
+            "Number"=>11,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>14,
@@ -55,7 +62,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Fernando",
             "LastName"=>"Alonso",
             "country_id"=>8,
-            "Number"=>14
+            "Number"=>14,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>18,
@@ -63,7 +72,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Lance",
             "LastName"=>"Stroll",
             "country_id"=>9,
-            "Number"=>18
+            "Number"=>18,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>44,
@@ -71,7 +82,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Lewis",
             "LastName"=>"Hamilton",
             "country_id"=>11,
-            "Number"=>44
+            "Number"=>44,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>63,
@@ -79,7 +92,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"George",
             "LastName"=>"Russel",
             "country_id"=>11,
-            "Number"=>63
+            "Number"=>63,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>77,
@@ -87,7 +102,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Valtteri",
             "LastName"=>"Bottas",
             "country_id"=>21,
-            "Number"=>77
+            "Number"=>77,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>24,
@@ -95,7 +112,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Zhou",
             "LastName"=>"Guanyu",
             "country_id"=>26,
-            "Number"=>24
+            "Number"=>24,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>10,
@@ -103,7 +122,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Pierre",
             "LastName"=>"Gasly",
             "country_id"=>22,
-            "Number"=>10
+            "Number"=>10,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>31,
@@ -111,7 +132,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Esteban",
             "LastName"=>"Ocon",
             "country_id"=>22,
-            "Number"=>31
+            "Number"=>31,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>23,
@@ -119,7 +142,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Alexander",
             "LastName"=>"Albon",
             "country_id"=>24,
-            "Number"=>23
+            "Number"=>23,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>2,
@@ -127,7 +152,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Logan",
             "LastName"=>"Sargeant",
             "country_id"=>5,
-            "Number"=>2
+            "Number"=>2,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>22,
@@ -135,7 +162,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Yuki",
             "LastName"=>"Tsunoda",
             "country_id"=>16,
-            "Number"=>22
+            "Number"=>22,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>21,
@@ -143,7 +172,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Nyck",
             "LastName"=>"De Vries",
             "country_id"=>14,
-            "Number"=>21
+            "Number"=>21,
+            "status"=>'replaced'
+
         ];
         $drivers[]=[
             "id"=>27,
@@ -151,7 +182,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Nico",
             "LastName"=>"Hulkenberg",
             "country_id"=>25,
-            "Number"=>27
+            "Number"=>27,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>20,
@@ -159,7 +192,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Kevin",
             "LastName"=>"Magnussen",
             "country_id"=>23,
-            "Number"=>20
+            "Number"=>20,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>4,
@@ -167,7 +202,9 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Lando",
             "LastName"=>"Norris",
             "country_id"=>11,
-            "Number"=>4
+            "Number"=>4,
+            "status"=>'active'
+
         ];
         $drivers[]=[
             "id"=>81,
@@ -175,7 +212,17 @@ class DriversSeeder extends Seeder
             "FirstName"=>"Oscar",
             "LastName"=>"Piastry",
             "country_id"=>3,
-            "Number"=>81
+            "Number"=>81,
+            "status"=>'active'
+        ];
+        $drivers[]=[
+            "id"=>3,
+            "team_id"=>8,
+            "FirstName"=>"Daniel",
+            "LastName"=>"Ricciardo",
+            "country_id"=>3,
+            "Number"=>3,
+            "status"=>'active'
         ];
 
 

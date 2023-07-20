@@ -14,14 +14,15 @@ return new class extends Migration
         Schema::create('drivers', function (Blueprint $table) {
             $table->id();
             $table->foreignId('team_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string('FirstName');
+            $table->string('Firstname');
             $table->string("Lastname");
             $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('Number');
             $table->integer("points")->nullable();
+            $table->string("status");
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
-            
+
         });
     }
 
