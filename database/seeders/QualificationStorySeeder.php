@@ -213,6 +213,16 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         Ces qualifications nous ont donné un aperçu des enjeux de la course à venir, avec des pilotes prêts à tout donner pour atteindre la victoire. Les stratégies, les dépassements audacieux et la maîtrise des conditions de piste joueront un rôle déterminant dans la quête du podium.",
         "extra" => null
       ];
+      $qualificationStory[] = [
+        "id" => 12,
+        "catchphrase" => "",
+        "intro" => "",
+        "q1" => "",
+        "q2" => "",
+        "q3" => "",
+        "conclusion" => "",
+        "extra" => null
+      ];
 
 
 
