@@ -1,8 +1,10 @@
 <svg class="svg" viewBox="0 0 917 515" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path id="circuit"
+
     d=""
+
     stroke="black" stroke-width="13" />
-    
+
     <path id="start-line" d="M648.063 340.645L661.679 360.754" stroke="white" stroke-width="3"/>
 
     <circle class="circle-path" r="12.5">
