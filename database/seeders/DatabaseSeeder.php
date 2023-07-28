@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder
         $this->call(qualification_results10Seeder::class);
         $this->call(qualification_results11Seeder::class);
         $this->call(qualification_results12Seeder::class);
+        $this->call(qualification_results13Seeder::class);
         $this->call(race_results01Seeder::class);
         $this->call(race_results02Seeder::class);
         $this->call(race_results03Seeder::class);
