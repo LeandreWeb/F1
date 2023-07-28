@@ -230,6 +230,17 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         La diversité des équipes présentes aux premières positions de la grille, avec Red Bull Racing, Mercedes, McLaren et Aston Martin, annonce une course palpitante, où chaque équipe tentera de tirer parti de sa stratégie et de ses performances pour décrocher de précieux points au championnat.",
         "extra" => null
       ];
+      $qualificationStory[] = [
+        "id" => 13,
+        "catchphrase" =>"",
+        "intro" => "Le rugissement des moteurs retentit à nouveau alors que le paddock de la Formule 1 converge vers le légendaire circuit de Spa-Francorchamps pour une autre épreuve inoubliable. En cette saison captivante, les pilotes et les équipes se préparent à affronter un week-end de sprint haletant en Belgique, un rendez-vous incontournable du calendrier de la F1.
+        Après une unique session d'essais pour peaufiner leurs réglages, les équipes se préparent à relever le défi sur ce tracé mythique. Spa-Francorchamps est connu pour ses caractéristiques uniques, offrant un mélange exaltant de lignes droites dévastatrices et de virages serpentins exigeants, mettant ainsi à l'épreuve les compétences et le courage de chaque pilote.",
+        "q1" => "",
+        "q2" => "",
+        "q3" => "",
+        "conclusion" => "",
+        "extra" => null
+      ];
 
 
 
