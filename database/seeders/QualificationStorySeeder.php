@@ -235,7 +235,8 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         "catchphrase" =>"",
         "intro" => "Le rugissement des moteurs retentit à nouveau alors que le paddock de la Formule 1 converge vers le légendaire circuit de Spa-Francorchamps pour une autre épreuve inoubliable. En cette saison captivante, les pilotes et les équipes se préparent à affronter un week-end de sprint haletant en Belgique, un rendez-vous incontournable du calendrier de la F1.
         Après une unique session d'essais pour peaufiner leurs réglages, les équipes se préparent à relever le défi sur ce tracé mythique. Spa-Francorchamps est connu pour ses caractéristiques uniques, offrant un mélange exaltant de lignes droites dévastatrices et de virages serpentins exigeants, mettant ainsi à l'épreuve les compétences et le courage de chaque pilote.",
-        "q1" => "",
+        "q1" => "Au cours de la Q1, les qualifications ont débuté avec un léger retard de 10 minutes afin de permettre à la piste de sécher partiellement. Malgré cette courte attente, les pilotes se retrouvent contraints de chausser les pneus intermédiaires en raison des conditions changeantes. C'est un moment de malheur pour Hulkenberg, qui éprouve des problèmes techniques avec sa monoplace Haas, l'empêchant de rejoindre la piste à temps pour réaliser un tour sous les meilleures conditions.
+        Sous une pluie persistante, la Q1 s'avère être un véritable défi pour les écuries et les pilotes. Les résultats sont extrêmement serrés entre les équipes de pointe telles que Ferrari, Red Bull, Mercedes, McLaren et Aston Martin. ",
         "q2" => "",
         "q3" => "",
         "conclusion" => "",
