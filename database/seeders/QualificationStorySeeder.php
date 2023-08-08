@@ -232,7 +232,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
       ];
       $qualificationStory[] = [
         "id" => 13,
-        "catchphrase" =>"",
+        "catchphrase" =>"1-2 Bulls et conditions mixtes",
         "intro" => "Le rugissement des moteurs retentit à nouveau alors que le paddock de la Formule 1 converge vers le légendaire circuit de Spa-Francorchamps pour une autre épreuve inoubliable. En cette saison captivante, les pilotes et les équipes se préparent à affronter un week-end de sprint haletant en Belgique, un rendez-vous incontournable du calendrier de la F1.
         Après une unique session d'essais pour peaufiner leurs réglages, les équipes se préparent à relever le défi sur ce tracé mythique. Spa-Francorchamps est connu pour ses caractéristiques uniques, offrant un mélange exaltant de lignes droites dévastatrices et de virages serpentins exigeants, mettant ainsi à l'épreuve les compétences et le courage de chaque pilote.",
         "q1" => "La séance de qualifications a débuté avec un léger retard de 10 minutes afin de permettre à la piste de sécher partiellement après une pluie intermittente. Cependant, malgré cette attente, les conditions restaient délicates, obligeant les pilotes à composer avec les pneus intermédiaires pour affronter le tracé exigeant de Spa-Francorchamps.
