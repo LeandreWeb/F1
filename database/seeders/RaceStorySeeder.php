@@ -292,6 +292,34 @@ class RaceStorySeeder extends Seeder
             Le Grand Prix de Hongrie 2023 a été une véritable démonstration du talent, de la compétitivité et de la passion des pilotes de Formule 1. Chaque seconde a compté sur la piste, et chaque décision a eu un impact sur le déroulement de la course.",
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 13,
+
+            "catchphrase" => "8 de suite pour Max",
+
+            "intro" => "Après un week-end marqué par des conditions météorologiques pluvieuses qui ont testé les compétences des pilotes et les stratégies des équipes, le moment tant attendu est enfin arrivé : la course sur le légendaire circuit de Spa-Francorchamps. Les cieux se sont éclaircis, laissant derrière eux les averses et l'humidité, pour offrir aux pilotes une piste sèche et un terrain de jeu optimal.",
+
+            "first_part" => "Le coup d'envoi de la course a été donné avec un départ spectaculaire de Charles Leclerc, lequel a rapidement pris la tête du peloton dès les premiers mètres. Cependant, à peine derrière lui, Carlos Sainz et Oscar Piastri se sont retrouvés impliqués dans un accrochage regrettable. Les conséquences de la collision ont été particulièrement néfastes pour Piastri, dont la monoplace a subi des dommages sérieux, l'obligeant à se retirer de la compétition et à se retrouver en dernière position.
+            Malheureusement pour Leclerc, sa position de tête n'a pas duré longtemps, car le leader de la pole, Sergio Perez, a réussi à le dépasser au virage 5. Perez a exploité sa position avantageuse pour effectuer une manœuvre audacieuse et prendre les commandes de la course, démontrant ainsi sa détermination à s'imposer sur le légendaire circuit de Spa-Francorchamps.
+            En revanche, les dégâts subis par Piastri ont eu des répercussions plus graves, le contraignant à abandonner la course. Carlos Sainz, également touché par l'accident, a vu ses performances dégradées, ce qui l'a fait glisser progressivement dans le classement. Les premiers tours de la course ont donc été marqués par des moments intenses, où les pilotes ont dû jongler avec des changements de positions rapides et des retournements de situation inattendus.",
+
+            "middle_part" => " Max Verstappen, ayant démarré depuis la 5e position en raison d'un changement de boîte de vitesses, s'est lancé dans une quête ardente pour se frayer un chemin vers la victoire. Dès le 6e tour, Verstappen a réussi à dépasser Lewis Hamilton, prenant ainsi la 4e position et affirmant sa détermination à remporter la course.
+            Pendant les tours suivants, Verstappen a continué son ascension fulgurante. Au 9e tour, il a dépassé Charles Leclerc pour s'emparer de la 2e position, mettant en avant son talent et son audace sur la piste. Cependant, l'histoire ne s'arrête pas là. Au tour 17, Verstappen a pris la première place, surpassant son coéquipier Sergio Perez après que tous deux aient effectué un changement de pneus stratégique.
+            Malheureusement, la course a été moins clémente pour Carlos Sainz. Suite aux dégâts subis lors du premier tour, Sainz a été contraint de retirer sa voiture de la compétition au 24e tour, ce qui a mis fin à ses espoirs de réaliser une performance marquante sur le tracé belge.",
+
+            "last_part" => "À mesure que la course touchait à sa fin, les dépassements et les actions spectaculaires continuaient de s'enchaîner sur la piste du Hungaroring.
+            Lewis Hamilton, le pilote de Mercedes, a continué à montrer sa détermination en effectuant un dépassement sur Oscar Piastri de McLaren au tour 58, lui permettant de prendre la 4ème position. Le Britannique avait à cœur de récupérer des points précieux pour le championnat, et chaque position gagnée comptait.
+            Mais c'était George Russell, le pilote de Mercedes, qui a attiré l'attention lors de la fin de la course. Parti de la 18ème position, Russell a fait preuve d'une incroyable détermination et d'un talent éblouissant. Au tour 65, il a réussi à dépasser Carlos Sainz de Ferrari pour prendre la 7ème position. La Mercedes semblait être dans une forme impressionnante, et Russell n'avait pas l'intention de s'arrêter là.
+            Au tour 70, Russell était à moins de 5 secondes de Charles Leclerc de Ferrari. Profitant de la pénalité infligée à Leclerc, il a su saisir l'opportunité pour le dépasser et s'emparer de la 6ème position. Une remontée spectaculaire pour le jeune pilote britannique qui a su tirer le meilleur parti de sa voiture et de son talent.
+            Cependant, personne ne pouvait rivaliser avec la puissance de Max Verstappen de Red Bull Racing. Le Néerlandais a été intraitable tout au long de la course, et sa domination était indéniable. Il a franchi la ligne d'arrivée avec une avance impressionnante de plus de 30 secondes sur Lando Norris de McLaren, remportant ainsi une victoire écrasante et incontestable.",
+
+            "conclusion" => " Les conditions changeantes, les dépassements audacieux, les stratégies tactiques et les performances exceptionnelles des pilotes ont créé un spectacle captivant pour les fans du sport automobile.
+            L'équipe Red Bull Racing a dominé la journée avec un doublé impressionnant de Max Verstappen et Sergio Perez, tandis que Charles Leclerc a brillé en complétant le podium malgré les obstacles rencontrés en début de course.
+            Le circuit emblématique de Spa-Francorchamps a une fois de plus démontré pourquoi il est l'un des tracés les plus vénérés du calendrier de la Formule 1, offrant un cadre spectaculaire pour les exploits des pilotes et les moments de tension intense.
+            Alors que les feux se sont éteints sur ce Grand Prix, les fans restent en haleine pour la suite de la saison, avec de nouvelles courses, de nouveaux défis et de nouvelles rivalités à découvrir.",
+
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
