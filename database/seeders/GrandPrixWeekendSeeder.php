@@ -167,7 +167,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>13,
         "name"=>"Grand Prix de la Belgique",
-        "status"=>"current",
+        "status"=>"done",
         "country_id"=>13,
         'race_id'=>13,
         'qualification_id'=>13,
