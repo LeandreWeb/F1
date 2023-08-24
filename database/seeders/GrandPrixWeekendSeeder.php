@@ -179,7 +179,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>14,
         "name"=>"Grand Prix Néerlandais",
-        "status"=>"incoming",
+        "status"=>"current",
         "country_id"=>14,
         'race_id'=>14,
         'qualification_id'=>14,
