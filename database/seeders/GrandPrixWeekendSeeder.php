@@ -178,7 +178,7 @@ class GrandPrixWeekendSeeder extends Seeder
       ];
      $grandPrixWeekends[]=[
         "id"=>14,
-        "name"=>"Grand Prix Néerlandais",
+        "name"=>"Grand Prix des Pays-Bas",
         "status"=>"current",
         "country_id"=>14,
         'race_id'=>14,
