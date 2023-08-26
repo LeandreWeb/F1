@@ -279,7 +279,10 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             Des séances initiales sous la pluie aux moments de tension suscités par les drapeaux rouges, chaque phase des qualifications a apporté son lot de surprises et de moments inoubliables. Les nouveaux venus, tels que Liam Lawson et Logan Sargeant, ont démontré leur potentiel et leur détermination, tandis que des noms familiers tels que Charles Leclerc et Lewis Hamilton ont été rappelés à l'ordre par les caprices du circuit.
             Cependant, c'est Max Verstappen qui a captivé l'attention de tous. Maîtrisant la pression et se nourrissant de l'énergie de ses fans, Verstappen a décroché la pole position, affirmant sa domination sur ses rivaux et ajoutant une dose d'excitation supplémentaire à la course à venir.",
 
-            "extra" => null
+            "extra" => "Peu de temps après la fin des qualifications. Yuki Tsunoda, pilote de l'écurie AlphaTauri, a été reconnu coupable d'avoir gêné Lewis Hamilton à la fin des Q2, entraînant une pénalité qui a chamboulé la grille de départ.
+            Initialement qualifié en 14e position, Tsunoda se voit désormais infliger une rétrogradation à la 17e place. Cette sanction a engendré une série de réajustements pour d'autres pilotes, créant ainsi une toile complexe de changements.
+            Nico Hülkenberg , Zhou Guanyu et Esteban Ocon, ont profité de la situation  en gagnant une place sur la grille
+            "
         ];
 
 
