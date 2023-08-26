@@ -264,7 +264,10 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             Au milieu de ce ballet délicat, un nouvel acteur a fait une entrée remarquée. Liam Lawson, effectuant ses premiers pas en qualifications de F1, a réussi à se classer à la 20e position, une réalisation tout à fait louable pour un rookie qui n'a eu qu'une seule séance d'essais libres pour se familiariser avec la piste.
             Cependant, même les pilotes chevronnés ont eu du mal à dompter le mélange de pluie et de goudron. Charles Leclerc, au volant de sa monoplace, a éprouvé des difficultés à enchaîner les virages dans ces conditions glissantes. Sa détermination a toutefois payé dans les derniers instants de la session : son ultime tour réussi lui a permis de se hisser hors de la zone d'élimination, un soulagement pour le pilote Ferrari qui avait été mis à rude épreuve.",
 
-            "q2" => "",
+            "q2" => "Alors que le soleil est réapparu pour la séance de Q2, le jeu de la météo a continué d'influencer les décisions stratégiques des équipes. Malgré les communications des pilotes suggérant que la piste s'asséchait rapidement, les pneus slicks n'ont pas encore fait leur apparition, laissant les monoplaces chausser leurs gommes intermédiaires pour affronter un asphalte encore piégé.
+            Un développement encore plus inattendu est venu du côté de Lewis Hamilton. Le septuple champion du monde, généralement associé à des performances éblouissantes en qualifications, a trébuché à un moment crucial. Son absence dans la Q3 est une surprise en soi, avec sa monoplace se classant 13e sur la grille de départ. C'est un rappel fort que même les meilleurs pilotes ne sont pas à l'abri des aléas et des défis que présente le sport automobile.
+            Parmi les récits positifs de la séance, on trouve Logan Sargeant, qui a émergé en Q3 pour la première fois de sa carrière en F1. Cette percée représente une étape importante pour le jeune talent et souligne le potentiel de croissance dans un domaine compétitif où chaque progression est à célébrer.
+            ",
 
             "q3" => "",
 

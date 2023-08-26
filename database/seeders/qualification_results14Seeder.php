@@ -108,10 +108,10 @@ class qualification_results14Seeder extends Seeder
         ];
         $qualificationResults[]=[
             "id"=>1411,
-            "driver_id"=>22,
+            "driver_id"=>18,
             'qualification_id'=>14,
-            "q1"=>119.044,
-            "q2"=>113.148,
+            "q1"=>81.570,
+            "q2"=>80.121,
             "q3"=>null,
             "position"=>11
         ];
@@ -119,35 +119,35 @@ class qualification_results14Seeder extends Seeder
             "id"=>1412,
             "driver_id"=>10,
             'qualification_id'=>14,
-            "q1"=>119.511,
-            "q2"=>113.671,
+            "q1"=>81.735,
+            "q2"=>80.128,
             "q3"=>null,
             "position"=>12
         ];
         $qualificationResults[]=[
             "id"=>1413,
-            "driver_id"=>20,
+            "driver_id"=>44,
             'qualification_id'=>14,
-            "q1"=>120.020,
-            "q2"=>114.160,
+            "q1"=>81.919,
+            "q2"=>80.151,
             "q3"=>null,
             "position"=>13
         ];
         $qualificationResults[]=[
             "id"=>1414,
-            "driver_id"=>77,
+            "driver_id"=>22,
             'qualification_id'=>14,
-            "q1"=>119.484,
-            "q2"=>114.694,
+            "q1"=>81.781,
+            "q2"=>80.230,
             "q3"=>null,
             "position"=>14
         ];
         $qualificationResults[]=[
             "id"=>1415,
-            "driver_id"=>31,
+            "driver_id"=>27,
             'qualification_id'=>14,
-            "q1"=>119.511,
-            "q2"=>116.372,
+            "q1"=>81.891,
+            "q2"=>80.250,
             "q3"=>null,
             "position"=>15
         ];
