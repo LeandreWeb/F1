@@ -255,7 +255,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         $qualificationStory[] = [
             "id" => 14,
 
-            "catchphrase" => "",
+            "catchphrase" => "Pole a la maison pour Max",
 
             "intro" => "Après une pause estivale bien méritée, les yeux du monde sont rivés sur les Pays-Bas, où se dérouleront les qualifications palpitantes qui détermineront la grille de départ pour la prochaine course électrisante.        Lors des séances d'essais libres, deux écuries se détachent clairement comme les favorites : Mercedes et Red Bull. Les équipes ont utilisé ce temps précieux pour affiner leurs réglages, cherchant à maximiser les performances de leurs monoplaces et à gagner l'avantage décisif pour la course à venir.
             Cependant, un revirement de situation a apporté une touche d'incertitude à l'atmosphère chargée d'excitation. Au sein de l'écurie Alpha Tauri, une ombre plane sur la participation de Daniel Ricciardo. Une collision avec le mur durant la pratique 2 a laissé l'Australien avec une main fracturée, l'obligeant à déclarer forfait pour les qualifications ainsi que la course à venir. Dans un acte de résilience et de détermination, l'équipe a rapidement fait appel au jeune prodige Liam Lawson pour prendre le relais de Ricciardo. Toute l'attention se porte maintenant sur ce jeune remplaçant, alors qu'il se prépare à faire ses preuves au plus haut niveau de la compétition automobile.",
@@ -269,7 +269,15 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             Parmi les récits positifs de la séance, on trouve Logan Sargeant, qui a émergé en Q3 pour la première fois de sa carrière en F1. Cette percée représente une étape importante pour le jeune talent et souligne le potentiel de croissance dans un domaine compétitif où chaque progression est à célébrer.
             ",
 
-            "q3" => "",
+            "q3" => "Sous un ciel désormais clair, la tension montait alors que les pilotes s'élançaient en piste pour la phase finale des qualifications, équipés de pneus tendres pour décrocher les meilleures positions sur la grille de départ.
+            Cependant, quelques minutes après le début de la session, un destin cruel a frappé Logan Sargeant. Alors qu'il cherchait à exploiter au maximum son potentiel, le jeune pilote a perdu le contrôle de sa Williams, heurtant violemment le mur au virage numéro 2. Les drapeaux rouges ont immédiatement été agités, marquant une interruption abrupte de la session.
+            Après la reprise de la session, une fois la piste dégagée, un deuxième coup du sort s'est abattu, cette fois sur Charles Leclerc. La Ferrari du pilote monégasque a glissé en sous-virage au virage 9, conduisant à un impact contre le mur et à un deuxième drapeau rouge.
+            Malgré ces incidents, la séance a repris pour un sprint final sous haute pression. Les pilotes savaient qu'ils ne disposaient que d'un seul tour pour se démarquer. Lando Norris, George Russell et Alexander Albon ont tous réalisé des performances solides
+            Cependant, la vedette incontestée de cette session a été Max Verstappen. Le pilote local, porté par les encouragements de la foule néerlandaise, a réussi à faire taire la concurrence en signant un temps imbattable. Malgré les drapeaux rouges et les défis imprévus, Verstappen a confirmé sa maîtrise en obtenant la pole position, propulsant ainsi sa Red Bull au sommet de la grille de départ pour la course à venir.",
+
+            "conclusion" =>"Les qualifications pour le Grand Prix des Pays-Bas en 2023 se sont révélées être bien plus qu'une simple séance de classement. Sur une piste changeante et exigeante, les pilotes ont affronté des défis météorologiques et techniques, mettant en lumière leurs compétences, leur courage et leur adaptabilité.
+            Des séances initiales sous la pluie aux moments de tension suscités par les drapeaux rouges, chaque phase des qualifications a apporté son lot de surprises et de moments inoubliables. Les nouveaux venus, tels que Liam Lawson et Logan Sargeant, ont démontré leur potentiel et leur détermination, tandis que des noms familiers tels que Charles Leclerc et Lewis Hamilton ont été rappelés à l'ordre par les caprices du circuit.
+            Cependant, c'est Max Verstappen qui a captivé l'attention de tous. Maîtrisant la pression et se nourrissant de l'énergie de ses fans, Verstappen a décroché la pole position, affirmant sa domination sur ses rivaux et ajoutant une dose d'excitation supplémentaire à la course à venir.",
 
             "extra" => null
         ];
