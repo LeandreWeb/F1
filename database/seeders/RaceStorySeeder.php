@@ -320,6 +320,32 @@ class RaceStorySeeder extends Seeder
 
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 14,
+
+            "catchphrase" => "",
+
+            "intro" => "Le suspense est à son comble alors que les projecteurs se posent sur Max Verstappen, le prodige néerlandais qui a conquis la pole position pour la troisième année consécutive sur son circuit natal. Cette réalisation impressionnante soulève la question inévitable : le jeune pilote Red Bull parviendra-t-il à décrocher une troisième victoire consécutive sur ses terres ?",
+
+            "first_part" => "Alors que les feux s'éteignent pour marquer le début du Grand Prix, tous les pilotes ont pris le départ avec des pneus secs, anticipant une course sans pluie à l'horizon. Cependant, les caprices de la météo se sont révélés dès le tour de formation, avec quelques gouttes sur les visières des pilotes, semant un doute subtil quant aux conditions à venir.
+            Max Verstappen a illuminé le départ en réalisant un envol impressionnant, créant rapidement de l'espace entre lui et ses poursuivants. Fernando Alonso, affichant toute sa maîtrise, a également livré une performance de départ remarquable, gagnant deux places pour s'installer à la troisième position dès le virage 3.
+            Pourtant, alors que Verstappen abordait l'avant-dernier virage du circuit, une pluie soudaine a commencé à tomber de façon intense. Certains pilotes ont rapidement réagi et sont passés aux pneus intermédiaires, parmi lesquels Perez, Zhou et Leclerc.
+            La stratégie des pneus intermédiaires semblait s'avérer judicieuse. Avant même la fin du deuxième tour, Sergio Perez avait réussi à se rapprocher du peloton de tête. Tandis que Verstappen et Alonso ont choisi de passer par les stands au deuxième tour, Norris et Russell ont choisi de rester en piste avec leurs pneus secs
+            Cependant, Perez n'a pas tardé à prendre les devants. Rapidement, il a dépassé Norris pour prendre la tête au troisième tour
+            Mais Verstappen n'était pas prêt à abandonner sa position si facilement. Remontant le peloton après son arrêt aux stands, le pilote Red Bull a montré sa détermination et a repris la première place après les arrêts aux stands des Red Bull Racing au 13e tour.
+            Cependant, au tour 16, le destin a pris un tournant cruel pour Logan Sargeant, qui a perdu le contrôle de sa voiture et a heurté le mur, mettant fin à sa course et provoquant la sortie de la voiture de sécurité.",
+
+            "middle_part" => "Avec le retrait de la voiture de sécurité, Max Verstappen a parfaitement négocié le redémarrage de la course, consolidant sa position en tête. Fernando Alonso, quant à lui, a tenté de dépasser Perez pour la deuxième place, mais malgré une tentative courageuse, il n'a pas réussi à se frayer un chemin devant le pilote Red Bull. La lutte pour les positions de pointe a continué de faire rage, avec des batailles acharnées en arrière-plan.
+            Les derniers points en jeu ont suscité une bataille féroce entre plusieurs pilotes déterminés à maximiser leurs résultats. Norris, Tsunoda, Hamilton et Piastri se sont tous affrontés pour gagner chaque position, ajoutant un élément de rivalité dans les rangs du peloton.
+            Cependant, la course a continué à prendre son tribut. Au 42e tour, Charles Leclerc a été contraint de retourner aux stands, mettant fin à sa journée en raison de dommages sur sa voiture. ans les derniers passages aux stands, un retournement de situation poignant a secoué le déroulement de la course. Fernando Alonso, en lice pour la troisième place sur le podium, a été confronté à un problème avec son pneu avant gauche lors de son arrêt. Cette infortune a coûté cher au pilote espagnol, permettant à Carlos Sainz de lui subtiliser la précieuse troisième position.
+            Pourtant, la détermination d'Alonso ne connaissait pas de limites. Au 52e tour, il a réussi à reprendre sa place sur le podium.Tandis que les pilotes se battaient pour les positions, les communications radio étaient animées de discussions intenses, annonçant une nouvelle averse de pluie imminente.",
+
+            "last_part" => "",
+
+            "conclusion" => "",
+
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
