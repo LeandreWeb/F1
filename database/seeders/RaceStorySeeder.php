@@ -323,7 +323,7 @@ class RaceStorySeeder extends Seeder
         $raceStories[] = [
             "id" => 14,
 
-            "catchphrase" => "",
+            "catchphrase" => "Verstapen égale le record de Vettel",
 
             "intro" => "Le suspense est à son comble alors que les projecteurs se posent sur Max Verstappen, le prodige néerlandais qui a conquis la pole position pour la troisième année consécutive sur son circuit natal. Cette réalisation impressionnante soulève la question inévitable : le jeune pilote Red Bull parviendra-t-il à décrocher une troisième victoire consécutive sur ses terres ?",
 
@@ -340,9 +340,17 @@ class RaceStorySeeder extends Seeder
             Cependant, la course a continué à prendre son tribut. Au 42e tour, Charles Leclerc a été contraint de retourner aux stands, mettant fin à sa journée en raison de dommages sur sa voiture. ans les derniers passages aux stands, un retournement de situation poignant a secoué le déroulement de la course. Fernando Alonso, en lice pour la troisième place sur le podium, a été confronté à un problème avec son pneu avant gauche lors de son arrêt. Cette infortune a coûté cher au pilote espagnol, permettant à Carlos Sainz de lui subtiliser la précieuse troisième position.
             Pourtant, la détermination d'Alonso ne connaissait pas de limites. Au 52e tour, il a réussi à reprendre sa place sur le podium.Tandis que les pilotes se battaient pour les positions, les communications radio étaient animées de discussions intenses, annonçant une nouvelle averse de pluie imminente.",
 
-            "last_part" => "",
+            "last_part" => "Au tour 61, alors que le Grand Prix entrait dans ses derniers moments, la pluie s'est abattue sur la piste, changeant le cours de la course une fois de plus. Les voitures se sont précipitées aux stands pour chausser les pneus intermédiaires, mettant en place un scénario final palpitant. Au tour 63, alors que la tension montait, Perez a commis une erreur dans un virage, permettant à Fernando Alonso de saisir l'occasion et de s'emparer de la deuxième place. Mais l'action ne s'est pas arrêtée là.Peu de temps après, Zhou Guanyu a heurté le mur, provoquant un drapeau rouge et une nouvelle interruption de la course. Le scénario semblait de plus en plus imprévisible à mesure que les pilotes se préparaient pour le redémarrage.
+            Alonso, plein de détermination, a donné une pression intense à Max Verstappen dès la reprise de la course. Cependant, Verstappen s'est montré à la hauteur, protégeant sa position avec maestria et refusant de céder face à la pression du double champion du monde. Pendant ce temps, le coéquipier de Verstappen, Sergio Perez, a été sanctionné d'une pénalité de cinq secondes pour excès de vitesse dans les stands, modifiant ainsi l'équilibre de la bataille en tête.
+            Plus loin dans le peloton, George Russell a subi une crevaison malheureuse, le reléguant en dernière position.
+            Finalement, rien ne pouvait arrêter Max Verstappen. Avec une détermination inébranlable et une maîtrise exceptionnelle, il a franchi la ligne d'arrivée en tête, remportant sa neuvième victoire consécutive et égalant ainsi le record établi par Sebastian Vettel. Verstappen a célébré sa victoire devant ses fans en délire, confirmant son statut de héros local et de force dominante sur le circuit.
+            Le podium final a vu Verstappen accompagné de Fernando Alonso, qui a fait preuve de sa classe et de son expérience en montant sur la deuxième marche. Pierre Gasly a profité de la pénalité de Perez pour décrocher la troisième place, ajoutant une touche de surprise à la célébration finale.",
 
-            "conclusion" => "",
+            "conclusion" => " Au-delà de la piste pavée de Zandvoort, une histoire captivante s'est déroulée, mêlant adrénaline, stratégies calculées et compétition féroce.
+            Max Verstappen, le héros local, a offert une performance mémorable, égalant le record de victoires consécutives de Sebastian Vettel. Sa maîtrise inébranlable et sa détermination à briller devant ses fans ont fait de lui une figure emblématique de la course automobile, laissant sa marque indélébile sur le circuit.
+            Les conditions météorologiques changeantes ont ajouté une dose d'imprévisibilité, obligeant les équipes et les pilotes à jongler avec les choix de pneus et les stratégies. Les moments de pluie et les arrêts aux stands ont créé un scénario dynamique, mettant en lumière la capacité des pilotes à s'adapter et à prendre des décisions cruciales sous pression.
+            Les luttes en piste, les dépassements audacieux et les batailles pour les points ont alimenté l'excitation de bout en bout. Fernando Alonso, le vétéran déterminé, a rappelé au monde sa maîtrise en remontant sur le podium, tandis que d'autres pilotes ont montré une résilience exceptionnelle face aux défis.
+            Le Grand Prix des Pays-Bas 2023 a également été le théâtre d'une série de rebondissements. Les pénalités, les incidents et les drapeaux rouges ont tous ajouté une couche de complexité, rendant chaque instant imprévisible et chaque mouvement crucial.",
 
             "extra" => "",
         ];
