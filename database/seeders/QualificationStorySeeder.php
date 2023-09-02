@@ -293,7 +293,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "q1" => "La Q1 s'est déroulée sans encombre pour la plupart des équipes, mais une surprise de taille a secoué le paddock. Les deux voitures Alpine, qui avaient montré un potentiel prometteur tout au long de la saison, ont échoué à se qualifier pour la Q2. Cette inattendue élimination précoce a laissé les fans perplexes et suscité de nombreuses questions dans les stands. Les pilotes et les ingénieurs d'Alpine seront certainement en train de passer en revue leur stratégie et de rechercher les raisons de cette performance en deçà de leurs attentes, alors que la compétition à Monza continue de s'intensifier.",
 
-            "q2" => "",
+            "q2" => "Malgré des efforts acharnés, les deux voitures AlphaTauri n'ont pas réussi à se qualifier pour la Q3 sur leur course nationale. C'est un moment difficile pour l'équipe italienne et ses supporters, car ils espéraient voir leurs pilotes briller à Monza. Néanmoins, le niveau de compétition en Formule 1 est extrêmement élevé, et il ne fait aucun doute que l'équipe AlphaTauri reviendra plus forte pour les prochaines courses et continuera à représenter dignement l'Italie sur la scène mondiale de la course automobile.",
 
             "q3" => "",
 
