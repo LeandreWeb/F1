@@ -289,9 +289,9 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "catchphrase" => "",
 
-            "intro" => "",
+            "intro" => "La Formule 1 débarque à Monza, marquant ainsi son retour en Italie après l'annulation du Grand Prix d'Émilie-Romagne Cette année, tous les yeux sont rivés sur Max Verstappen, le talentueux pilote néerlandais de Red Bull Racing. Il tente de briser la malédiction qui plane sur lui à Monza, espérant ainsi s'inscrire dans l'histoire en décrochant une dixième victoire consécutive sur ce circuit légendaire. L'ambiance est électrique, et les enjeux sont plus élevés que jamais. ",
 
-            "q1" => "",
+            "q1" => "La Q1 s'est déroulée sans encombre pour la plupart des équipes, mais une surprise de taille a secoué le paddock. Les deux voitures Alpine, qui avaient montré un potentiel prometteur tout au long de la saison, ont échoué à se qualifier pour la Q2. Cette inattendue élimination précoce a laissé les fans perplexes et suscité de nombreuses questions dans les stands. Les pilotes et les ingénieurs d'Alpine seront certainement en train de passer en revue leur stratégie et de rechercher les raisons de cette performance en deçà de leurs attentes, alors que la compétition à Monza continue de s'intensifier.",
 
             "q2" => "",
 
