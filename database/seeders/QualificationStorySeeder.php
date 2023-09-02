@@ -284,6 +284,23 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             Nico Hülkenberg , Zhou Guanyu et Esteban Ocon, ont profité de la situation  en gagnant une place sur la grille
             "
         ];
+        $qualificationStory[] = [
+            "id" => 15,
+
+            "catchphrase" => "",
+
+            "intro" => "",
+
+            "q1" => "",
+
+            "q2" => "",
+
+            "q3" => "",
+
+            "conclusion" =>"",
+
+            "extra" => ""
+        ];
 
 
 
