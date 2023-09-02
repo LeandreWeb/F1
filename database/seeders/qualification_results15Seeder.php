@@ -108,46 +108,46 @@ class qualification_results15Seeder extends Seeder
         ];
         $qualificationResults[]=[
             "id"=>1511,
-            "driver_id"=>18,
+            "driver_id"=>22,
             'qualification_id'=>15,
             "q1"=>81.570,
-            "q2"=>80.121,
+            "q2"=>81.594,
             "q3"=>null,
             "position"=>11
         ];
         $qualificationResults[]=[
             "id"=>1512,
-            "driver_id"=>10,
+            "driver_id"=>40,
             'qualification_id'=>15,
             "q1"=>81.735,
-            "q2"=>80.128,
+            "q2"=>81.758,
             "q3"=>null,
             "position"=>12
         ];
         $qualificationResults[]=[
             "id"=>1513,
-            "driver_id"=>44,
+            "driver_id"=>27,
             'qualification_id'=>15,
             "q1"=>81.919,
-            "q2"=>80.151,
+            "q2"=>81.776,
             "q3"=>null,
             "position"=>13
         ];
         $qualificationResults[]=[
             "id"=>1514,
-            "driver_id"=>22,
+            "driver_id"=>77,
             'qualification_id'=>15,
             "q1"=>81.781,
-            "q2"=>80.230,
+            "q2"=>81.940,
             "q3"=>null,
             "position"=>14
         ];
         $qualificationResults[]=[
             "id"=>1515,
-            "driver_id"=>27,
+            "driver_id"=>2,
             'qualification_id'=>15,
             "q1"=>81.891,
-            "q2"=>80.250,
+            "q2"=>81.944,
             "q3"=>null,
             "position"=>15
         ];
