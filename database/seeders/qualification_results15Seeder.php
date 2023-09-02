@@ -154,7 +154,7 @@ class qualification_results15Seeder extends Seeder
         $qualificationResults[]=[
             "id"=>1516,
             "driver_id"=>24,
-            'qualification_id'=>24,
+            'qualification_id'=>15,
             "q1"=>82.390,
             "q2"=>null,
             "q3"=>null,
