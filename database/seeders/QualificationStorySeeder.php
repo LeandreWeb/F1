@@ -287,7 +287,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         $qualificationStory[] = [
             "id" => 15,
 
-            "catchphrase" => "",
+            "catchphrase" => "Pole pour les tifosi",
 
             "intro" => "La Formule 1 débarque à Monza, marquant ainsi son retour en Italie après l'annulation du Grand Prix d'Émilie-Romagne Cette année, tous les yeux sont rivés sur Max Verstappen, le talentueux pilote néerlandais de Red Bull Racing. Il tente de briser la malédiction qui plane sur lui à Monza, espérant ainsi s'inscrire dans l'histoire en décrochant une dixième victoire consécutive sur ce circuit légendaire. L'ambiance est électrique, et les enjeux sont plus élevés que jamais. ",
 
@@ -295,9 +295,17 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "q2" => "Malgré des efforts acharnés, les deux voitures AlphaTauri n'ont pas réussi à se qualifier pour la Q3 sur leur course nationale. C'est un moment difficile pour l'équipe italienne et ses supporters, car ils espéraient voir leurs pilotes briller à Monza. Néanmoins, le niveau de compétition en Formule 1 est extrêmement élevé, et il ne fait aucun doute que l'équipe AlphaTauri reviendra plus forte pour les prochaines courses et continuera à représenter dignement l'Italie sur la scène mondiale de la course automobile.",
 
-            "q3" => "",
+            "q3" => "Dès la première sortie, Carlos Sainz a surpris tout le monde en prenant la première position, suivi de près par son coéquipier Charles Leclerc. Les acclamations des tifosi ont retenti dans les tribunes alors que les Ferrari dominaient la séance de qualification.
 
-            "conclusion" =>"",
+            Mais la vraie action s'est déroulée lors de la dernière sortie. Les temps des Ferrari et de Max Verstappen étaient incroyablement serrés. Charles Leclerc a été le premier à franchir la ligne, réussissant à s'emparer de la pole position provisoire. Cependant, Max Verstappen a répliqué avec une performance exceptionnelle, volant presque la pole à Leclerc. L'excitation était à son comble dans les stands.
+            
+            Finalement, Carlos Sainz a réalisé une performance époustouflante en signant un temps incroyable, ce qui lui a permis de sécuriser sa deuxième pole position en Formule 1. L'euphorie parmi les tifosi était indescriptible, car ils pouvaient à nouveau espérer une victoire à domicile. La lutte en tête s'annonce intense pour la course à Monza, avec Sainz, Verstappen et Leclerc prêts à en découdre pour la victoire.",
+
+            "conclusion" =>"En conclusion, les qualifications pour le Grand Prix de Monza 2023 ont été un spectacle à couper le souffle, laissant les fans de Formule 1 comblés d'émotions. La séance de qualification a débuté avec une surprise alors que les deux Alpine n'ont pas réussi à se qualifier pour la Q2, marquant un moment difficile pour l'équipe. Cependant, le vrai suspens est venu lors de la Q3.
+
+            Carlos Sainz a créé l'événement en décrochant la pole position, mettant ainsi les tifosi italiens dans une joie débordante. Charles Leclerc et Max Verstappen se sont battus jusqu'au bout pour la pole, créant des moments palpitants. Au final, c'est Carlos Sainz qui a réussi à sécuriser la pole position, sa deuxième en carrière, rendant les tifosi exaltés.
+            
+            La course qui s'annonce promet d'être inoubliable, avec un trio de tête composé de Sainz, Verstappen et Leclerc qui se disputeront la victoire à Monza. Les enjeux sont élevés, l'atmosphère est électrique, et les tifosi sont prêts à soutenir leurs pilotes italiens.",
 
             "extra" => ""
         ];
