@@ -21,6 +21,8 @@ return new class extends Migration
             $table->foreignId('sprint_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('sprint_shootout_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('track_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

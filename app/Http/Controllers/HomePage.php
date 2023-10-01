@@ -21,10 +21,26 @@ class HomePage extends Controller
     {
         $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
-        $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();;
+        $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         $currentGp = GrandPrixWeekend::where("status","current")->first();
 
-        
+        $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+
+        if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
+
+            $nextRace->grandPrixWeekend->status= "current";
+
+            $nextRace->grandPrixWeekend->save();
+
+            $currentGp->status="done";
+
+            $currentGp->save();
+
+            $currentGp = $nextRace;
+            //$driver->save();
+        }
+
+
 
         if ($currentGp->race->date <= now()) {
             $lastGp=$currentGp;
