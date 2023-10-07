@@ -3,7 +3,7 @@
         <a class="nav-menu-links" href="{{ route('home') }}">Accueil</a>
         <a class="nav-menu-links" href="{{ route('teams') }}">Équipes</a>
         <a class="nav-menu-links" href="{{ route('standing') }}">Classement</a>
-        <a class="nav-menu-links" href="{{ route('schedule') }}">Calendrier</a>
+        <a class="nav-menu-links" href="{{ route('schedule') }}#current">Calendrier</a>
         <a class="nav-menu-links" href="{{ route('allDrivers') }}">Pilotes</a>
 
     </div>
