@@ -42,7 +42,6 @@ Route::prefix("drivers")->group(function () {
     Route::get('/', [DriversController::class, 'menu'])->name('allDrivers');
 });
 
-
 Route::get('/team/{id}',[TeamController::class,'team'])->name('team');
 
 Route::prefix("news")->group(function () {
@@ -52,10 +51,6 @@ Route::prefix("news")->group(function () {
     Route::get('/sprint{id}', [NewsController::class, "sprint"])->name('sprintNews');
     Route::get('/article{id}', [NewsController::class, "article"])->name('articleNews');
 });
-
-
-
-
 
 Route::fallback(function () {
     return view("components.404");

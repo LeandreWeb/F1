@@ -10,7 +10,9 @@ use App\Models\QualificationStory;
 use App\Models\Race;
 use  App\Models\RaceStory;
 use App\Models\SprintShootoutStory;
+use App\Models\SprintShootout;
 use App\Models\SprintStory;
+use App\Models\Sprint;
 
 class NewsController extends Controller
 {
@@ -18,60 +20,82 @@ class NewsController extends Controller
     {
         $race = Race::where("id", $id)->first();
 
-        if ($race->grandPrixWeekend->status == "done"||$race->grandPrixWeekend->status == "current") {
+        if ($race) {
+            if ($race->grandPrixWeekend->status == "done"||$race->grandPrixWeekend->status == "current") {
+                
+                $raceStory = $race->raceStory;
 
-            $raceStory = $race->raceStory;
+                if($raceStory){
+                    return view('News.raceNews', compact("raceStory"));
+                }
+            }    
+            elseif ($race->grandPrixWeekend->status == "cancelled") {
 
-            return view('News.raceNews', compact("raceStory"));
+                $article = $race->grandPrixWeekend->article;
+    
+                return to_route('articleNews', ['id' => $article->id]);
+            }
         }
-
-        if ($race->grandPrixWeekend->status == "cancelled") {
-
-
-            $article = $race->grandPrixWeekend->article;
-
-            return to_route('articleNews', ['id' => $article->id]);
-
-
-        }
+        return view("components.404");
     }
 
     public function quali($id)
     {
-
         $quali = Qualification::where("id", $id)->first();
 
-        if ($quali->grandPrixWeekend->status == "done") {
+        if($quali){
+            if ($quali->grandPrixWeekend->status == "done") {
 
-            $qualiStory = $quali->qualificationStory;
-
-            return view('News.qualiNews', compact("qualiStory"));
+                $qualiStory = $quali->qualificationStory;
+    
+                if($qualiStory){
+                    return view('News.qualiNews', compact("qualiStory"));
+                }
+    
+                
+            }
+            elseif ($quali->grandPrixWeekend->status == "cancelled") {
+    
+                $article = $quali->grandPrixWeekend->article;
+    
+                return to_route('articleNews', ['id' => $article->id]);
+            }
         }
-
-        if ($quali->grandPrixWeekend->status == "cancelled") {
-
-            $article = $quali->grandPrixWeekend->article;
-
-            return to_route('articleNews', ['id' => $article->id]);
-        }
-
-        $qualiStory = QualificationStory::where("id", $id)->first();
-
-        return view('News.qualiNews', compact('qualiStory'));
+        return view("components.404");
     }
     public function sprintShootout($id)
     {
 
-        $sprintShootoutStory = SprintShootoutStory::where("id", $id)->first();
+        $sprintShootout = SprintShootout::where("id", $id)->first();
+        
 
-        return view('News.sprintShootoutNews', compact('sprintShootoutStory'));
+        if($sprintShootout){
+            
+            $sprintShootoutStory = $sprintShootout->sprintShootoutStory;
+
+            
+            if($sprintShootout->grandPrixWeekend->status =="done"){
+                return view('News.sprintShootoutNews', compact('sprintShootoutStory'));
+            }
+        }
+
+        return view("components.404");
+
+        
     }
 
     public function sprint($id)
     {
-        $sprintStory = SprintStory::where("id", $id)->first();
+        $sprint = Sprint::where("id", $id)->first();
 
-        return view('News.sprintNews', compact("sprintStory"));
+        if($sprint){
+            $sprintStory = $sprint->sprintStory;
+            if($sprint->grandPrixWeekend->status == "done")
+            return view('News.sprintNews', compact("sprintStory"));
+
+        }
+        return view("components.404");
+
     }
     public function article($id)
     {

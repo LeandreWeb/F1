@@ -196,7 +196,6 @@ class SprintShootoutResult02Seeder extends Seeder
             "position"=>20
         ];
 
-        Db::table('sprint_shootout_results')->delete();
         Db::table('sprint_shootout_results')->insert($sprintShootoutResults);
     }
 }

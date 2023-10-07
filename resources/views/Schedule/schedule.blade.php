@@ -162,13 +162,19 @@
             align-items: flex-end;
         }
 
-        .event_info_events a {
+        .event_info_events a ,.article_to_do  {
             color: var(--accent);
             text-decoration: none;
             font-weight: 800;
             position: relative;
             overflow: hidden;
         }
+
+        .article_to_do{
+            opacity: .5;
+            filter: blur(1px)
+            
+        } 
 
         .event_info_events a::after {
             content: "";

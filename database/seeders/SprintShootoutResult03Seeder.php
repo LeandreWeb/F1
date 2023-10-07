@@ -195,8 +195,6 @@ class SprintShootoutResult03Seeder extends Seeder
             "q3"=>null,
             "position"=>20
         ];
-
-        Db::table('sprint_shootout_results')->delete();
         Db::table('sprint_shootout_results')->insert($sprintShootoutResults);
     }
 }
