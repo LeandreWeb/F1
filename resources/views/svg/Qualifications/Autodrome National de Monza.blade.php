@@ -36,8 +36,52 @@
             {{-- Start --}} 0% {
                 offset-distance: 0%;
             }
+            
+            {{-- T1 --}} 14.19% {
+                offset-distance: -18%;
+            }
 
+            {{-- T2 --}} 16.29% {
+                offset-distance: -19%;
+            }
 
+            {{-- T3 --}} 28.94% {
+                offset-distance: -27%;
+            }
+
+            {{-- T4 --}} 37.92% {
+                offset-distance: -39%;
+            }
+
+            {{-- T5 --}}  39.48% {
+                offset-distance: -40%;
+            }
+
+            {{-- T6 --}} 47.73% {
+                offset-distance: -46%;
+            }
+
+            {{-- T7 --}} 53.80% {
+                offset-distance: -52%;
+
+            }
+
+            {{-- T8 --}} 70.40% {
+                offset-distance: -71%;
+
+            }
+
+            {{-- T9 --}} 72.63% {
+                offset-distance: -72.25%;
+            }
+
+            {{-- T10 --}} 74.06% {
+                offset-distance: -73.5%;
+            }
+
+            {{-- T11 --}} 89.51% {
+                offset-distance: -91%;
+            }
 
             {{-- End --}} 100% {
                 motion-offset: -100%;
