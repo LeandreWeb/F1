@@ -22,7 +22,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 1,
             "race_id" => 15,
             "total_time" => "01:13:41.143",
-            "best_lap" => 73.889,
+            "best_lap" => 85.240,
             "position" => 1,
             "points" => 25,
         ];
@@ -31,7 +31,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 11,
             "race_id" => 15,
             "total_time" => "02:24:08.155",
-            "best_lap" => 73.837,
+            "best_lap" => 85.522,
             "position" => 2,
             "points" => 18,
         ];
@@ -40,7 +40,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 55,
             "race_id" => 15,
             "total_time" => "02:24:11.469",
-            "best_lap" => 74.441,
+            "best_lap" => 85.501,
             "position" => 3,
             "points" => 15,
         ];
@@ -49,7 +49,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 16,
             "race_id" => 15,
             "total_time" => "02:24:14.479 ",
-            "best_lap" => 74.231,
+            "best_lap" => 85.580,
             "position" => 4,
             "points" => 12,
         ];
@@ -58,7 +58,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 63,
             "race_id" => 15,
             "total_time" => "02:24:16.952",
-            "best_lap" => 74.934,
+            "best_lap" => 85.847,
             "position" => 5,
             "points" => 10,
         ];
@@ -67,7 +67,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 44,
             "race_id" => 15,
             "total_time" => "02:24:17.620",
-            "best_lap" => 73.904,
+            "best_lap" => 85.582,
             "position" => 6,
             "points" => 8,
         ];
@@ -76,7 +76,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 23,
             "race_id" => 15,
             "total_time" => "02:24:17.643",
-            "best_lap" => 74.390,
+            "best_lap" => 86.389,
             "position" => 7,
             "points" => 6
         ];
@@ -85,7 +85,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 4,
             "race_id" => 15,
             "total_time" => "02:24:19.566",
-            "best_lap" => 74.468,
+            "best_lap" => 86.144,
             "position" => 8,
             "points" => 4
         ];
@@ -94,7 +94,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 14,
             "race_id" => 15,
             "total_time" => "02:24:20.991",
-            "best_lap" => 74.299,
+            "best_lap" => 86.105,
             "position" => 9,
             "points" => 2
         ];
@@ -103,7 +103,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 77,
             "race_id" => 15,
             "total_time" => "02:24:22.757",
-            "best_lap" => 74.570,
+            "best_lap" => 85.983,
             "position" => 10,
             "points" => 1
         ];
@@ -112,7 +112,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 40,
             "race_id" => 15,
             "total_time" => "02:24:24.498",
-            "best_lap" => 75.171,
+            "best_lap" => 85.842,
             "position" => 11,
             "points" => 0
         ];
@@ -121,7 +121,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 81,
             "race_id" => 15,
             "total_time" => "02:24:25.251",
-            "best_lap" => 14.001,
+            "best_lap" => 85.072,
             "position" => 12,
             "points" => 0
         ];
@@ -130,7 +130,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 2,
             "race_id" => 15,
             "total_time" => "02:24:30.558",
-            "best_lap" => 74.820,
+            "best_lap" => 86.840,
             "position" => 13,
             "points" => 0
         ];
@@ -139,7 +139,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 24,
             "race_id" => 15,
             "total_time" => "02:24:30.921",
-            "best_lap" => 75.489,
+            "best_lap" => 85.983,
             "position" => 14,
             "points" => 0
         ];
@@ -148,7 +148,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 10,
             "race_id" => 15,
             "total_time" => "02:24:31.799",
-            "best_lap" => 74.698,
+            "best_lap" => 85.758,
             "position" => 15,
             "points" => 0
         ];
@@ -157,7 +157,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 18,
             "race_id" => 15,
             "total_time" => "02:24:34.304",
-            "best_lap" => 76.253,
+            "best_lap" => 86.617,
             "position" => 16,
             "points" => 0
         ];
@@ -166,7 +166,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 27,
             "race_id" => 15,
             "total_time" => "02:24:59.165",
-            "best_lap" => 75.124,
+            "best_lap" => 85.894,
             "position" => 17,
             "points" => 0
         ];
@@ -175,7 +175,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 20,
             "race_id" => 15,
             "total_time" => "02:24:59.165",
-            "best_lap" => 75.417,
+            "best_lap" => 86.278,
             "position" => 18,
             "points" => null
         ];
@@ -184,7 +184,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 31,
             "race_id" => 15,
             "total_time" => null,
-            "best_lap" => 77.277,
+            "best_lap" => 86.963,
             "position" => 19,
             "points" => null
         ];
@@ -193,7 +193,7 @@ class race_results15Seeder extends Seeder
             "driver_id" => 22,
             "race_id" => 15,
             "total_time" => null,
-            "best_lap" => 75.124,
+            "best_lap" => null,
             "position" => 20,
             "points" => null
         ];
