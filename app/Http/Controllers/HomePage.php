@@ -59,12 +59,13 @@ class HomePage extends Controller
 
         }
 
-
+        
         
         if ($lastGp->status == "cancelled") {
             return view('Home.home', compact('top3', 'article', 'nextRace'));
         } else if ($lastGp->race->race_story_id) {
-            return view('Home.home', compact('top3', 'lastGp', 'nextRace'));
+            $race = $lastGp->race;
+            return view('Home.home', compact('top3', 'race', 'nextRace'));
         } else if ($lastGp->sprint->sprint_story_id ?? null) {
             $sprint=$lastGp->sprint;
             return view('Home.home', compact('top3', 'sprint', 'nextRace'));
