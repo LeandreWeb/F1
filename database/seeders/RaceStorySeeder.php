@@ -355,6 +355,36 @@ class RaceStorySeeder extends Seeder
             "extra" => "",
         ];
 
+        $raceStories[] = [
+            "id" => 15,
+
+            "catchphrase" => "Red bulls vs Ferrari",
+
+            "intro" => "Après des qualifications passionnantes qui ont vu Carlos Sainz décrocher la pole position au volant de sa Ferrari, les tifosi italiens sont en effervescence, car ils espèrent voir leur équipe Ferrari briller sur leur circuit national emblématique. 
+            Cependant, la compétition s'annonce intense, avec Max Verstappen et Charles Leclerc, respectivement aux deuxième et troisième places sur la grille de départ, prêts à tout pour décrocher la victoire",
+
+            "first_part" => "Le Grand Prix de Monza 2023 a débuté sous des auspices inhabituels. Lors du tour de formation, malheur pour Yuki Tsunoda, car un problème mécanique inattendu a forcé le pilote d'AlphaTauri à se retirer de la course avant même qu'elle ne commence. Sa voiture a été évacuée du dernier virage, causant un délai de 22 minutes avant que la course ne puisse finalement commencer.
+
+            Une fois les feux éteints, le départ de la course s'est déroulé sans encombre pour les deux Ferrari, Carlos Sainz et Charles Leclerc, qui ont réussi à conserver leurs positions aux avant-postes. Carlos Sainz a maintenu un bon rythme de course, mais au tour 15, Max Verstappen, après plusieurs tentatives de dépassement, a finalement réussi à le surpasser. Cette bataille entre les deux pilotes de pointe a captivé l'attention de tous les spectateurs, laissant présager une course palpitante à Monza.",
+
+            "middle_part" => "Dans la deuxième partie de la course du Grand Prix de Monza 2023, les arrêts aux stands ont joué un rôle déterminant dans le déroulement de la course. Après ces arrêts, Charles Leclerc a réussi à rattraper son coéquipier Carlos Sainz et a entrepris de le dépasser pour prendre la tête. Cependant, Sainz a résisté à l'assaut de Leclerc, repoussant chaque tentative de dépassement avec brio
+            Pendant ce temps, la lutte acharnée entre les deux Ferrari a permis à Max Verstappen d'accroître son écart en tête de la course, tandis que son coéquipier Sergio Perez a progressivement comblé l'écart qui le séparait des Ferrari. Au tour 32, Perez a réussi à prendre la troisième position, profitant de l'intensité de la bataille en cours entre les deux pilotes de la Scuderia Ferrari.",
+
+            "last_part" => "Plus loin dans la course, des batailles captivantes ont émaillé le Grand Prix de Monza 2023. Alex Albon et Lando Norris se sont livrés à une lutte acharnée pour la sixième position, avec des dépassements et des contre-attaques impressionnantes qui ont animé la course.
+            Un peu plus loin, Lewis Hamilton et Oscar Piastri se sont affrontés pour la neuvième place. Au tour 41, Hamilton a tenté de dépasser Piastri, mais malheureusement, leurs voitures sont entrées en contact. L'aileron avant de Piastri a été endommagé dans l'incident, le forçant à perdre sa place dans le top 10. Hamilton, de son côté, a réussi à se sortir indemne de l'incident et a continué sa progression.
+            Dans un dernier effort, Hamilton a réussi à dépasser Norris, Albon, et d'autres concurrents pour finalement se classer en sixième position, réalisant une remontée impressionnante. Cependant, malgré toutes ces batailles et les rebondissements de la course, personne n'a été en mesure de défier la suprématie de Max Verstappen, qui a remporté sa dixième victoire consécutive. Un exploit mémorable pour le pilote Red Bull, qui consolide ainsi sa position de leader du championnat.",
+
+            "conclusion" => "Le Grand Prix de Monza 2023 a offert un spectacle inoubliable aux fans de Formule 1. La course a été marquée par des moments palpitants, des batailles intenses et des rebondissements dramatiques.
+
+            La bataille en tête entre les deux pilotes Ferrari, Carlos Sainz et Charles Leclerc, a tenu en haleine les tifosi italiens, mais c'est Max Verstappen qui a finalement triomphé, remportant sa dixième victoire consécutive et consolidant sa position de leader du championnat.
+            
+            Au-delà de la lutte en tête, des duels passionnants ont émaillé la course, notamment celui entre Alex Albon et Lando Norris pour la sixième position, ainsi que l'incident entre Lewis Hamilton et Oscar Piastri, qui a coûté cher au jeune pilote australien.
+            
+            Le Grand Prix de Monza reste fidèle à sa réputation en offrant un spectacle de course captivant sur un circuit légendaire. Les pilotes, les équipes et les fans ont une fois de plus célébré l'esprit de la Formule 1 et l'émotion qu'elle génère.",
+
+            "extra" => "",
+        ];
+
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
     }

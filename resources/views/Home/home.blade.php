@@ -15,8 +15,8 @@
 @isset ($sprint)
     @include('Home.Components.news',compact('top3','sprint'),['event'=>$sprint,"eventType"=>"sprint"])
 @endif
-@isset ($lastRace)
-    @include('Home.Components.news',compact('top3','lastRace'),['event'=>$lastRace,"eventType"=>"race"])
+@isset ($race)
+    @include('Home.Components.news',compact('top3','race'),['event'=>$race,"eventType"=>"race"])
 @endif
 
 
