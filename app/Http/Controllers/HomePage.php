@@ -95,7 +95,7 @@ class HomePage extends Controller
             $dateDiff =  (int)now()->diff($race->date)->format('%d');
 
 
-            if ($dateDiff >= 3 && $race->grandPrixWeekend->status != "done") {
+            if ($dateDiff >= 3 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
 
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();

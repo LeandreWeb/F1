@@ -18,6 +18,12 @@ class ScheduleController extends Controller
         $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
         $currentGp = GrandPrixWeekend::where("status","current")->first();
 
+        if(!$currentGp){
+            $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
+            $currentGp->status="current";
+            $currentGp->save();
+        }
+
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
             
             $currentGp = GrandPrixWeekend::where("status","current")->first();
@@ -46,7 +52,7 @@ class ScheduleController extends Controller
         foreach ($RacesDones as $race) {
             $dateDiff =  (int)now()->diff($race->date)->format('%d');
 
-            if ($dateDiff >= 3 && $race->grandPrixWeekend->status != "done") {
+            if ($dateDiff >= 3 && ($race->grandPrixWeekend->status != "done"&& $race->grandPrixWeekend->status != "cancelled")) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
             }
