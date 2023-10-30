@@ -28,6 +28,10 @@ class HomePage extends Controller
 
         $this->SetRacesToDone();
 
+        // $allRaces = GrandPrixWeekend::get();
+
+        // dd($allRaces);
+
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
 
             $nextRace->grandPrixWeekend->status= "current";
@@ -41,6 +45,11 @@ class HomePage extends Controller
             }
 
             //$driver->save();
+        }
+        if(!$currentGp){
+            $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
+            $currentGp->status="current";
+            $currentGp->save();
         }
 
         if($currentGp)
@@ -59,7 +68,7 @@ class HomePage extends Controller
 
         }
 
-        
+ 
         
         if ($lastGp->status == "cancelled") {
             return view('Home.home', compact('top3', 'article', 'nextRace'));
@@ -84,6 +93,7 @@ class HomePage extends Controller
 
         foreach ($RacesDones as $race) {
             $dateDiff =  (int)now()->diff($race->date)->format('%d');
+
 
             if ($dateDiff >= 3 && $race->grandPrixWeekend->status != "done") {
 
