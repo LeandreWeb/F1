@@ -309,6 +309,29 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "extra" => ""
         ];
+        $qualificationStory[] = [
+            "id" => 16,
+
+            "catchphrase" => "2 en 2 Sainz",
+
+            "intro" => "Après des séances de pratiques pour les Red Bulls qui laissaient beaucoup à désirer, l'atmosphère est tendue à Singapour en ce weekend de course. L'équipe Red Bull Racing, pourtant réputée pour sa compétitivité, semble connaître des difficultés inhabituelles. Les performances de Max Verstappen, le pilote principal de l'équipe et candidat au titre de champion du monde, ont également laissé place à des incertitudes",
+
+            "q1" => "Alors que la piste devient de plus en plus rapide, les pilotes se livrent une bataille acharnée pour décrocher le meilleur temps possible. Malheureusement, le sort en a décidé autrement pour Lance Stroll. Dans un ultime effort pour améliorer son temps, il pousse un peu trop fort et perd le contrôle de sa voiture dans le dernier virage, heurtant violemment le mur. Cet accident a contraint les organisateurs à interrompre immédiatement la session.
+            Cet incident est d'autant plus malheureux pour Oscar Piastry, qui était en bonne position pour se qualifier en Q2.",
+
+            "q2" => "Une séance qui a réservé bien des surprises et des déceptions pour l'équipe Red Bull Racing. Après avoir complété leurs tours, les deux pilotes de l'équipe semblaient en difficulté. Sergio Perez, pourtant réputé pour ses performances, ne parvient pas à décrocher une place en Q3, laissant les fans de Red Bull abasourdis.
+            Pendant ce temps, Max Verstappen, le fer de lance de l'équipe, se retrouve en dixième position, bien loin de ce à quoi les fans et les experts étaient habitués. Les espoirs de Red Bull semblaient diminuer au fur et à mesure que la session avançait. Mais alors que le temps s'écoulait inexorablement, un jeune prodige, Liam Lawson, réussit à réaliser un tour exceptionnel dans les ultimes minutes de la Q2. Sa performance impressionnante relègue Max Verstappen à la onzième position, le privant d'une place en Q3.",
+
+            "q3" => "L'intensité monte d'un cran alors que les meilleures équipes de la grille se disputent férocement la pole position. Les Ferrari, les Mercedes et Lando Norris se livrent une bataille acharnée, échangeant les secteurs les plus rapides, chacun cherchant à prendre l'avantage.
+
+            Finalement, c'est l'Espagnol Carlos Sainz qui réussit à s'emparer de la pole position avec un temps époustouflant de 1 minute, 30 secondes et 984 millièmes de seconde. La Scuderia Ferrari, qui avait connu des saisons mitigées ces dernières années, est de retour sous les feux de la rampe, tandis que Sainz inscrit son nom en lettres d'or dans l'histoire de la Formule 1 en s'assurant de la première place sur la grille de départ.",
+
+            "conclusion" =>" les qualifications du Grand Prix de Formule 1 de Singapour 2023 se sont avérées être un spectacle inoubliable, marqué par des rebondissements imprévisibles et des performances extraordinaires. Les qualifications ont  été empreintes de surprises, dès les premières minutes de la Q1 jusqu'à l'excitation de la bataille pour la pole position en Q3.
+
+            Les difficultés rencontrées par l'équipe Red Bull Racing ont jeté un doute inattendu sur sa domination habituelle, tandis que l'ascension du jeune prodige Liam Lawson a éclipsé Max Verstappen en Q2. Dans un final palpitant, Carlos Sainz et la Scuderia Ferrari ont brillé en décrochant la pole position, montrant que la Formule 1 peut toujours réserver des moments de pure magie.",
+
+            "extra" => ""
+        ];
 
 
 
