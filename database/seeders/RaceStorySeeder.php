@@ -385,6 +385,32 @@ class RaceStorySeeder extends Seeder
             "extra" => "",
         ];
 
+        $raceStories[] = [
+            "id" => 16,
+
+            "catchphrase" => "Sainz le stratege",
+
+            "intro" => "Après des qualifications riches en surprises, tous les regards sont tournés vers Carlos Sainz, le poleman du jour. Il a l'opportunité en or de devenir le premier vainqueur de la saison 2023, en dehors des pilotes de l'équipe Red Bull, qui ont dominé le début de l'année. Les fans de Formule 1 attendent avec impatience de voir si Sainz pourra transformer sa position de tête en une victoire mémorable.
+            Pourtant, cette course à Singapour est déjà marquée par l'absence de Lance Stroll, suite à son accident majeur en qualifications. ",
+
+            "first_part" => "Charles Leclerc a fait preuve d'une stratégie audacieuse en choisissant de partir avec des pneus softs, lui permettant de prendre rapidement la deuxième position dès le début de la course. Cette décision offrait à Ferrari des options stratégiques intéressantes pour la suite de la course, et Leclerc a su exploiter au mieux cette opportunité.
+            Cependant, au virage 14 du premier tour, le destin a pris une tournure dramatique. Yuki Tsunoda et Sergio Perez sont entrés en contact, obligeant Tsunoda à abandonner la course prématurément.Au tour 19, le jeune pilote Logan Sargeant a heurté un mur, endommageant gravement son aileron avant. La sévérité des dégâts a contraint les organisateurs à déployer la voiture de sécurité, ce qui a incité la majorité des pilotes à profiter de l'occasion pour effectuer un changement de pneus.",
+
+            "middle_part" => "Lors des arrêts aux stands, Charles Leclerc a malheureusement été bloqué par l'équipe Mercedes, ce qui a permis à George Russell de prendre la deuxième position, suivi de près par Lando Norris, qui s'est emparé de la troisième place. Cela a placé Leclerc en quatrième position.Cependant, le tournant majeur de cette partie de la course est survenu au tour 43. Esteban Ocon, qui avait brillé en occupant la sixième position après de belles batailles avec Fernando Alonso et Sergio Perez, a dû se retirer de la course en raison d'un ennui mécanique. Cette situation a provoqué le déploiement d'une voiture de sécurité virtuelle (VSC), obligeant George Russell à risquer sa deuxième position en changeant de pneus. Lewis Hamilton a suivi la même stratégie en rentrant aux stands.",
+
+            "last_part" => "La stratégie des Mercedes a porté ses fruits dans cette dernière phase du Grand Prix de Singapour 2023. Les flèches d'argent ont montré une vitesse impressionnante, rattrapant rapidement Charles Leclerc et le dépassant sans attendre. Avec moins de quatre tours restants dans la course, les Mercedes ont réussi à se rapprocher de Lando Norris, actuellement en deuxième position. Si elles parviennent à le dépasser, elles auront une excellente chance de prendre la victoire.
+            Cependant, Carlos Sainz a su utiliser astucieusement Lando Norris pour sa défense. Il a gardé Norris dans sa zone de DRS (Système de Réduction de Trainée) pour offrir un avantage stratégique à son ancien coéquipier dans la bataille contre les Mercedes. Cela a compliqué la tâche des flèches d'argent, qui cherchaient désespérément à s'emparer de la deuxième place.
+            Malheureusement pour George Russell, au dernier tour, après une bataille féroce avec Lando Norris, il a heurté un mur, brisant sa suspension arrière et obligeant son abandon. Cette situation a eu des conséquences importantes sur le classement final de la course.
+            Carlos Sainz a finalement réussi à s'imposer grâce à une excellente stratégie, remportant le Grand Prix de Singapour 2023. Il est ainsi devenu le premier vainqueur de la saison, à l'exception des pilotes de l'équipe Red Bull. Lando Norris a résisté à la pression et décroché la deuxième place, tandis que Lewis Hamilton a complété le podium.",
+
+            "conclusion" => "Carlos Sainz, partant de la pole position, a su résister à la pression constante des Mercedes, tout en utilisant à son avantage Lando Norris, pour défendre sa position. Cette stratégie astucieuse lui a permis de décrocher la victoire, devenant ainsi le premier vainqueur de la saison, autre que les pilotes de l'équipe Red Bull.
+            La course a été marquée par des rebondissements, des batailles féroces et des incidents dramatiques, tels que l'accrochage de George Russell au dernier tour. Ces événements ont rappelé à tous à quel point la Formule 1 est un sport exigeant, où chaque décision et chaque virage peuvent changer le cours d'une course.
+            Le Grand Prix de Singapour 2023 a également souligné la nature imprévisible de la discipline, où la stratégie et la performance individuelle jouent un rôle crucial. Les fans peuvent désormais attendre avec impatience la prochaine étape de la saison, sachant que chaque course est une opportunité de vivre des émotions fortes et des résultats surprenants.
+            Cette course urbaine sous les projecteurs de Singapour restera dans les annales de la Formule 1 comme un événement mémorable, où le talent, la stratégie, et le courage des pilotes ont été mis à rude épreuve.",
+
+            "extra" => "",
+        ];
+
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
     }
