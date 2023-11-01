@@ -332,6 +332,25 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "extra" => ""
         ];
+        $qualificationStory[] = [
+            "id" => 17,
+
+            "catchphrase" => "Red Bulls en forme",
+
+            "intro" => "Le pays du soleil levant s'apprête à accueillir l'une des courses les plus attendues de l'année : le Grand Prix du Japon 2023.Les essais libres ont déjà dévoilé un tableau intrigant, avec les Red Bulls qui semblent avoir retrouvé leur mordant après un week-end difficile à Singapour. Cette résurgence ravit non seulement les fans de l'écurie autrichienne, mais aussi son partenaire moteur, Honda, dont l'origine japonaise fait de cette course un événement particulièrement spécial.",
+
+            "q1" => "Dès le début de la Q1, l'excitation était à son comble sur le circuit de Suzuka. Malheureusement, la séance a été marquée par un incident malheureux pour le jeune pilote de l'écurie Williams, Logan Sargeant. Alors qu'il entamait son premier tour lancé, Sargeant a subi une perte de contrôle de sa monoplace dans le dernier virage, la propulsant directement contre les barrières de sécurité. L'impact a été suffisamment grave pour déclencher le drapeau rouge et interrompre temporairement la séance. Heureusement, le pilote a rapidement été confirmé comme étant indemne, bien que certainement secoué par cet accident.
+            Quant au reste de la Q1, il n'y a pas eu de surprises majeures. Les pilotes éliminés, parmi lesquels on retrouve Valtteri Bottas, Lance Stroll, Nico Hülkenberg, Guanyu Zhou et Logan Sargeant, ne sont pas parvenus à atteindre le temps nécessaire pour passer à la phase suivante des qualifications.",
+
+            "q2" => "Le moment le plus marquant de la Q2 a été la performance de Yuki Tsunoda, le seul pilote japonais de la grille cette année. Devant son public passionné, Tsunoda a réalisé une performance exceptionnelle, se hissant parmi les dix meilleurs pilotes et assurant ainsi sa place en Q3. Son exploit a été salué par les fans japonais présents dans les tribunes, qui ont chaleureusement applaudi leur compatriote.",
+
+            "q3" => " Max Verstappen, au volant de sa Red Bull, a tout simplement ébloui avec des secteurs violets affichés sur l'ensemble de la piste de Suzuka. Le Néerlandais a affiché une maîtrise impressionnante de sa monoplace, montrant sa détermination à décrocher la pole position.
+            Cependant, la bataille pour les places suivantes a également été intense. Deux jeunes talents, Oscar Piastri et Lando Norris, tous deux au sein de l'équipe McLaren, se sont livrés à une lutte acharnée pour la deuxième position sur la grille de départ. Finalement, c'est Piastri, le rookie, qui a réalisé une performance remarquable en s'assurant la deuxième place, dépassant même son coéquipier Norris, qui a dû se contenter de la troisième position.",
+
+            "conclusion" =>"La grille de départ pour le Grand Prix du Japon 2023 est désormais établie, avec Max Verstappen en pole position, suivi de près par les jeunes talents de McLaren. Les attentes pour la course de demain sont à leur comble, car les pilotes se préparent à en découdre sur ce magnifique circuit de Suzuka. Le Grand Prix du Japon 2023 s'annonce d'ores et déjà comme un événement épique de la saison de Formule 1.",
+
+            "extra" => ""
+        ];
 
 
 
