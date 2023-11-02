@@ -34,14 +34,85 @@
 
         @keyframes followpath {
             {{-- Start --}} 0% {
-                offset-distance: 0%;
+                offset-distance: 2.25%;
+            }
+            {{-- T1 --}} 8.68% {
+                offset-distance: 14%;
             }
 
+            {{-- T2 --}} 11.71% {
+                offset-distance: 18%;
+            }
 
+            {{-- T3 --}} 16.77% {
+                offset-distance: 22%;
+            }
 
+            {{-- T4 --}} 18.46% {
+                offset-distance: 24%;
+            }
+
+            {{-- T5 --}}  20.95% {
+                offset-distance: 27%;
+            }
+
+            {{-- T6 --}} 24.05% {
+                offset-distance: 29.5%;
+            }
+
+            {{-- T7 --}} 28.27% {
+                offset-distance: 33.5%;
+
+            }
+
+            {{-- T8 --}} 36.56% {
+                offset-distance: 42%;
+
+            }
+
+            {{-- T9 --}} 39.58% {
+                offset-distance: 45%;
+            }
+
+            {{-- T10 --}} 45.47% {
+                offset-distance: 50.5%;
+            }
+
+            {{-- T11 --}} 48.56% {
+                offset-distance: 53.5%;
+            }
+
+            {{-- T12 --}} 60.32% {
+                offset-distance: 62%;
+            }
+
+            {{-- T13 --}} 64% {
+                offset-distance: 68.5%;
+            }
+
+            {{-- T14 --}} 68.17% {
+                offset-distance: 72%;
+            }
+
+            {{-- T15 --}} 83.31% {
+                offset-distance: 89%;
+            }
+
+            {{-- T16 --}} 90.53% {
+                offset-distance: 95.5%;
+            }
+
+            {{-- T17 --}} 92.71% {
+                offset-distance: 97%;
+            }
+
+            {{-- T18 --}} 95.86% {
+                offset-distance: 99%;
+            }
+            
             {{-- End --}} 100% {
-                motion-offset: -100%;
-                offset-distance: -100%;
+                motion-offset: 102.25%;
+                offset-distance: 102.25%;
             }
 
         }
