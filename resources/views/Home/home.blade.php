@@ -19,10 +19,12 @@
     @include('Home.Components.news',compact('top3','race'),['event'=>$race,"eventType"=>"race"])
 @endif
 
+@empty($nextRace)
+    @include('Home.Components.next-race__empty')
+@else
+    @include('Home.Components.next-race',compact('nextRace'))
 
-
-@include('Home.Components.next-race',compact('nextRace'))
-
+@endif
 </main>
 
 
