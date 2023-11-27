@@ -15,20 +15,35 @@ class ScheduleController extends Controller
         
         $this->SetRacesToDone();
 
-        $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+        if($nextRace)
+        {
+            $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+        }
+        else
+        {
+            $dateDiff = 4;
+        }
+
         $currentGp = GrandPrixWeekend::where("status","current")->first();
 
         if(!$currentGp){
             $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
-            $currentGp->status="current";
-            $currentGp->save();
+            if($currentGp){
+                $currentGp->status="current";
+                $currentGp->save();
+            }
+
         }
 
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
             
             $currentGp = GrandPrixWeekend::where("status","current")->first();
-            $nextRace->grandPrixWeekend->status= "current";
-            $nextRace->grandPrixWeekend->save();
+            
+            if($nextRace){
+                $nextRace->grandPrixWeekend->status= "current";
+                $nextRace->grandPrixWeekend->save();
+            }
+            
             
             if($currentGp){
                 $currentGp->status="done";
