@@ -115,7 +115,7 @@ class racesSeeder extends Seeder
             "id"=>17,
             "date"=>'2023-09-24',
             "start"=>'01:00:00',
-            'race_story_id'=>null
+            'race_story_id'=>17
         ];
         $races[]=[
             "id"=>18,

@@ -410,6 +410,31 @@ class RaceStorySeeder extends Seeder
 
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 17,
+
+            "catchphrase" => "2 McLaren sur le podium.",
+
+            "intro" => "Avec Max Verstappen en pole position, la tension est à son comble, et les fans sont prêts à vivre des moments inoubliables au rythme frénétique des moteurs rugissants. Attachez vos ceintures, car la course promet d'être intense et pleine de rebondissements sur ce circuit emblématique. Bienvenue au Grand Prix du Japon 2023 !",
+
+            "first_part" => "Aux premiers virages de Suzuka, l'adrénaline était à son comble. Lando Norris, en quête de la première position, a tenté de dépasser Max Verstappen, mais ce dernier a brillamment défendu sa place, conservant ainsi la tête de la course. Cependant, l'arrière du peloton a été le théâtre de plusieurs contacts délicats. Un véritable carambolage a impliqué Lewis Hamilton et Sergio Perez, ainsi qu'Alexander Albon et Valtteri Bottas. Les débris jonchant la piste ont rapidement contraint les officiels à déployer la voiture de sécurité.
+            Profitant de cette neutralisation, Sergio Perez a plongé dans les stands pour changer son aileron avant endommagé dans la collision initiale.Cependant, les ennuis n'étaient pas encore terminés. Au cinquième tour, Valtteri Bottas a perdu le contrôle de son Alpha Romeo à l'épingle après avoir été percuté par Logan Sargeant. Les dommages cumulés des incidents du premier tour et de celui-ci ont finalement contraint Bottas à abandonner la course.",
+
+            "middle_part" => "Au lendemain d'un départ difficile, Sergio Perez a entrepris une remontée acharnée pour regagner des places perdues. Au douzième tour, le pilote mexicain a tenté un dépassement audacieux sur Kevin Magnussen à la boucle, dans une manœuvre risquée. Malheureusement, l'impact entre les deux voitures a conduit à une pénalité de 5 secondes infligée à Perez. Cette sanction a incontestablement compliqué la tâche du pilote Red Bull dans sa quête de remonter dans le classement.
+            Cependant, les déboires de Perez ne se sont pas arrêtés là. Au tour 15, confronté à plusieurs dégâts sur sa voiture, le Mexicain a pris la décision de se retirer de la course. Une décision difficile mais nécessaire compte tenu des circonstances.
+            Pendant ce temps, les deux Mercedes se sont engagées dans une bataille acharnée pour la cinquième position. Une lutte qui a captivé l'attention des spectateurs, avec Lewis Hamilton et George Russel s'affrontant roue contre roue sur le tracé exigeant de Suzuka.",
+
+            "last_part" => "Étonnamment, au 40e tour, Sergio Perez fait un retour sur la piste. Bien qu'ayant accumulé plusieurs tours de retard, sa présence ajoute une touche inattendue à la course. Toutefois, il est clair qu'il ne pourra pas gagner de places.. Cependant, une tâche importante reste à accomplir : la pénalité de 5 secondes que Perez n'avait pas encore purgée au cours de la course. Il décide donc de servir cette pénalité stratégiquement, évitant ainsi de subir une sanction pour la prochaine course.
+            La bataille sur la piste a atteint son paroxysme entre les Mercedes et les Ferrari. Charles Leclerc, au terme d'une lutte acharnée, a réussi à s'emparer de la quatrième position, suivi de près par Lewis Hamilton. Carlos Sainz et George Russell ont également été les acteurs d'une confrontation intense, complétant ainsi le groupe de tête.
+            Pendant ce temps, Max Verstappen a maintenu sa domination tout au long de la course pour retrouver sa place bien méritée sur la plus haute marche du podium. Il est rejoint par les deux pilotes McLaren, Lando Norris à la deuxième place et le rookie Oscar Piastri à une impressionnante troisième place.",
+
+            "conclusion" => "Depuis les premiers virages mouvementés jusqu'au drapeau à damier, Suzuka a été le théâtre d'une compétition acharnée entre les meilleurs pilotes du monde.
+            Les qualifications ont été le prélude d'une course palpitante, avec Max Verstappen montrant une domination incontestable en s'emparant de la pole position. Cependant, les péripéties du départ ont apporté leur lot de surprises, avec des accrochages impliquant des pilotes de renom comme Hamilton, Perez, Albon, et Bottas, altérant le déroulement prévu de la course.
+            La remontée spectaculaire de Sergio Perez, bien que brève, a ajouté une touche de suspense, tandis que la bataille féroce entre les Mercedes et les Ferrari a captivé l'attention des spectateurs. Max Verstappen a su maintenir son avance, montrant une maîtrise exceptionnelle et décrochant la victoire tant convoitée.
+            Félicitations à l'équipe Red Bull et à Verstappen pour leur performance exceptionnelle. Les étoiles montantes, Lando Norris et Oscar Piastri, ont également brillé avec leurs places sur le podium, laissant entrevoir un avenir prometteur pour la Formule 1.",
+
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
