@@ -5,7 +5,7 @@
 
 
         <div class="track-container">
-           <h2>La saison est terminer </h2>
+           <h2>La saison est terminée</h2>
            <h3>De retour en <span>2024</span></h3>
         </div>
     </div>
