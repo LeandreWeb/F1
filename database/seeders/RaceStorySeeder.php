@@ -410,6 +410,23 @@ class RaceStorySeeder extends Seeder
 
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 17,
+
+            "catchphrase" => "2 McLaren sur le podium.",
+
+            "intro" => "Avec Max Verstappen en pole position, la tension est à son comble, et les fans sont prêts à vivre des moments inoubliables au rythme frénétique des moteurs rugissants. Attachez vos ceintures, car la course promet d'être intense et pleine de rebondissements sur ce circuit emblématique. Bienvenue au Grand Prix du Japon 2023 !",
+
+            "first_part" => "",
+
+            "middle_part" => "",
+
+            "last_part" => "",
+
+            "conclusion" => "",
+
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
