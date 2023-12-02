@@ -49,7 +49,7 @@ class race_results23Seeder extends Seeder
             "driver_id" => 11,
             "race_id" => 23,
             "total_time" => "1:27:24.077",
-            "best_lap" => 74.231,
+            "best_lap" => 87.493,
             "position" => 4,
             "points" => 12,
         ];

@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 
-class SprintShootoutResult03Seeder extends Seeder
+class SprintShootoutResult05Seeder extends Seeder
 {
     /**
      * Run the database seeds.

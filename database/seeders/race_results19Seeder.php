@@ -76,7 +76,7 @@ class race_results19Seeder extends Seeder
             "driver_id" => 18,
             "race_id" => 19,
             "total_time" => "01:36:10.058",
-            "best_lap" => 74.390,
+            "best_lap" => 99.908,
             "position" => 7,
             "points" => 6
         ];
