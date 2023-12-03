@@ -352,6 +352,26 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             "extra" => ""
         ];
 
+        $qualificationStory[] = [
+            "id" => 18,
+
+            "catchphrase" => "Problemes de limites",
+
+            "intro" => "Après une première incursion en 2021, le circuit qatari nous ouvre à nouveau ses portes pour une deuxième édition palpitante.",
+
+            "q1" => "Une constante émerge avec une quatrième déception consécutive pour Lance Stroll, qui ne parvient toujours pas à accéder à la Q2. La surprise du moment réside dans la performance de Logan Sargeànt, qui frôle de peu une qualification plus élevée que son coéquipier pour la première fois. Cependant, c'est Alexander Albon qui réalise une prouesse impressionnante en se qualifiant pour la Q2 avec un tour décisif lors des ultimes instants de la séance. ",
+
+            "q2" => "Deux surprises majeures. Tout d'abord, Carlos Sainz déçoit en ne parvenant pas à se qualifier pour la Q3, démontrant que même les pilotes chevronnés peuvent être pris au dépourvu sur ce tracé exigeant du Qatar. Ensuite, une éclatante performance de Sergio Perez est annulée, alors qu'il réussit à obtenir un temps suffisant pour accéder à la Q3. Cependant, la cruelle réalité frappe lorsque son tour est invalidé en raison du dépassement des limites de la piste au virage 5.  ",
+
+            "q3" => "Dans cette session cruciale de la Q3, l'étroitesse du circuit joue un rôle déterminant, causant l'élimination de plusieurs pilotes et chamboulant le classement prévu. Oscar Piastri en fait les frais, voyant son tour compromis alors qu'il visait la cinquième position. Malheureusement, il se retrouve à la sixième place à la suite de cette contrainte. Cependant, la déception la plus poignante frappe son coéquipier, qui, malgré un temps prometteur pour la deuxième position, ne parvient pas à compléter un tour en Q3 et se qualifie finalement en dixième position.
+            Au milieu de ces hauts et bas, c'est Max Verstappen qui émerge triomphant, réussissant à décrocher la pole position.",
+
+            "conclusion" =>" Le circuit étroit du Qatar a joué un rôle décisif, éliminant certains pilotes de manière inattendue et ajoutant une dose d'incertitude au classement final. La déception a touché des pilotes talentueux, mais elle a également ouvert la voie à des performances éblouissantes.
+            Max Verstappen a émergé en tant que leader, conquérant la pole position dans une compétition acharnée. Cependant, la compétition promet d'être féroce lors de la course principale, avec des pilotes déterminés à surmonter les obstacles et à s'affirmer sur ce tracé exigeant.",
+
+            "extra" => ""
+        ];
+
 
 
         Db::table('qualification_stories')->delete();
