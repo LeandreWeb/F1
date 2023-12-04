@@ -66,6 +66,27 @@ class SprintShootoutStorySeeder extends Seeder
             Au terme de cette journée de qualifications, c'est finalement Max Verstappen qui a réussi à décrocher la pole position, s'imposant avec un temps infime d'avance sur ses rivaux. L'excitation est à son comble alors que les pilotes se préparent à se battre pour la victoire lors du Sprint Shootout, qui promet d'être une course spectaculaire et imprévisible.",
             "extra" => null
         ];
+        $SprintShootoutStory[] = [
+            "id" => 18,
+
+            "catchphrase" => "Sprint Pole Piastry",
+
+            "intro" => " Pour surmonter les défis liés aux limites de piste, des mesures audacieuses ont été prises, avec l'élargissement de certains virages pour garantir une compétition équitable et sans compromis. Dans ce contexte, les pilotes s'apprêtent à redéfinir la notion de vitesse et de précision, prêts à exploiter chaque modification du tracé pour garantir leur place en pole position.",
+
+            "q1" => "Plongeons dans les premiers instants du Sprint Qualifying (SQ), où la SQ1 n'a pas réservé de surprises majeures. Cependant, un motif récurrent persiste avec la déception de Lance Stroll, qui une fois de plus échoue à se hisser au niveau de la SQ2. Malgré une compétition acharnée, le défi demeure pour Stroll, soulignant la rigueur de la concurrence dans cette nouvelle formule de qualification.",
+
+            "q2" => "La tension monte d'un cran dans la SQ2, une session encore marquée par la suppression de plusieurs temps en raison des limites du circuit. Cependant, la surprise la plus frappante survient avec la performance inattendue de Lewis Hamilton, qui ne parvient pas à se qualifier pour la suite de la session, se classant à une décevante 12e position.",
+
+            "q3" => "Après cette première salve, les deux McLaren s'emparent des deux premières positions, créant un éclatant coup d'éclat. Lors de sa deuxième tentative, Max Verstappen, en quête d'un temps plus rapide, se lance à l'assaut, mais il ne parvient pas à surpasser les performances impressionnantes des pilotes McLaren.
+            C'est cependant Oscar Piastri, au volant d'une McLaren, qui réalise un exploit remarquable en signant un tour encore plus rapide pour s'adjuger la pole position. De son côté, son coéquipier Lando Norris, affichant des secteurs impressionnants, voit ses espoirs d'amélioration anéantis par un dérapage dans les derniers virages.
+            Ainsi, la grille de départ pour la course sprint est scellée avec l'inattendu doublé McLaren, plaçant Piastri en position de tête.",
+
+            "conclusion" => "La séance de qualification Sprint au Qatar nous a offert des rebondissements captivants, mais l'éclat particulier de cette journée appartient au jeune prodige, Oscar Piastri. Le rookie au volant de sa McLaren a ébloui le paddock en signant une performance extraordinaire, décrochant la pole position avec une assurance et une précision qui défient son statut de débutant.
+            La séquence impressionnante du pilote australien, particulièrement dans le contexte d'une équipe où son coéquipier a également brillé, souligne le talent brut et la maturité exceptionnelle de Piastri. Sa capacité à maintenir la tête froide et à réaliser un tour parfait, même sous la pression intense de la SQ3, témoigne d'un avenir prometteur dans le monde de la Formule 1.
+            Avec une pole position inattendue, Piastri a inscrit son nom en lettres lumineuses sur la grille de départ, laissant présager une course sprint explosive où les regards seront inévitablement tournés vers ce jeune prodige. Cette performance exceptionnelle dans le désert qatari souligne que le présent et l'avenir de la Formule 1 peuvent être réécrits par les nouveaux venus audacieux et talentueux comme Oscar Piastri.",
+
+            "extra" => null
+        ];
 
 
         Db::table('sprint_shootout_stories')->delete();
