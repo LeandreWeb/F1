@@ -216,7 +216,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>17,
         "name"=>"Grand Prix du Japon",
-        "status"=>"current",
+        "status"=>"done",
         "country_id"=>16,
         'race_id'=>17,
         'qualification_id'=>17,
@@ -228,7 +228,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>18,
         "name"=>"Grand Prix de Qatar",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>17,
         'race_id'=>18,
         'qualification_id'=>18,
@@ -240,7 +240,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>19,
         "name"=>"Grand Prix des États Unis",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>5,
         'race_id'=>19,
         'qualification_id'=>19,
@@ -252,7 +252,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>20,
         "name"=>"Grand Prix du Mexique",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>18,
         'race_id'=>20,
         'qualification_id'=>20,
@@ -264,7 +264,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>21,
         "name"=>"Grand Prix du Bresil",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>19,
         'race_id'=>21,
         'qualification_id'=>21,
@@ -276,7 +276,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>22,
         "name"=>"Grand Prix de Las Vegas",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>5,
         'race_id'=>22,
         'qualification_id'=>22,
@@ -288,7 +288,7 @@ class GrandPrixWeekendSeeder extends Seeder
      $grandPrixWeekends[]=[
         "id"=>23,
         "name"=>"Grand Prix d'Abu Dhabi",
-        "status"=>"incoming",
+        "status"=>"done",
         "country_id"=>20,
         'race_id'=>23,
         'qualification_id'=>23,

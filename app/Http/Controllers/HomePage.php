@@ -40,7 +40,7 @@ class HomePage extends Controller
 
         // dd($allRaces);
 
-        if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
+        if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current" && $nextRace != null){
 
             $nextRace->grandPrixWeekend->status= "current";
             $nextRace->grandPrixWeekend->save();
@@ -55,8 +55,12 @@ class HomePage extends Controller
             //$driver->save();
         }
         if(!$currentGp){
+            
             $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
-            if($currentGp){
+            $currentGpDatediff= (int)now()->diff($currentGp->date)->format('%d');
+            
+            if($currentGp && $currentGpDatediff >= 3){
+                dd($currentGp);
                 $currentGp->status="current";
                 $currentGp->save();
             }
