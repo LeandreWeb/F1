@@ -26,7 +26,7 @@ class ScheduleController extends Controller
 
         $currentGp = GrandPrixWeekend::where("status","current")->first();
 
-        if(!$currentGp){
+        if(!$currentGp && $nextRace != null ){
             $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
             if($currentGp){
                 $currentGp->status="current";
@@ -38,8 +38,10 @@ class ScheduleController extends Controller
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
             
             $currentGp = GrandPrixWeekend::where("status","current")->first();
+            $currentGpDatediff= (int)now()->diff($currentGp->date)->format('%d');
             
-            if($nextRace){
+
+            if($nextRace && $currentGpDatediff >= 3){
                 $nextRace->grandPrixWeekend->status= "current";
                 $nextRace->grandPrixWeekend->save();
             }
