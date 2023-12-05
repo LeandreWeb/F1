@@ -78,6 +78,27 @@ class SprintStorySeeder extends Seeder
 
             "extra" => null,
         ];
+        $SprintStory[] = [
+            "id" => 18,
+
+            "catchphrase" => "Super Rookie",
+
+            "intro" => "Avec la pole position inattendue d'Oscar Piastri, le rookie sensationnel de McLaren, la grille de départ promet une compétition féroce et des dépassements audacieux. Les lumières prêtes à s'éteindre, les moteurs rugissants, chaque virage devient une opportunité d'écrire une nouvelle page de l'histoire de la Formule 1",
+
+            "first_part" => "Le sprint au Qatar débute sur les chapeaux de roues, avec un départ éblouissant pour Oscar Piastri, qui réussit à conserver sa première position dans les premiers tours de cette course effrénée. Cependant, la course n'est pas sans tumultes, car son coéquipier chez McLaren perd plusieurs positions au départ, compromettant sa position initiale.
+            Un peu plus loin sur la piste, le jeune prodige Liam Lawson perd le contrôle de son AlphaTauri, échouant dans le sable et déclenchant ainsi l'intervention de la voiture de sécurité. Au troisième tour, George Russell, après un départ exceptionnel où il a réussi à dépasser Norris et Verstappen, s'empare du contrôle du sprint en dépassant Piastri. L'action continue à s'intensifier lorsque, plus tard dans la course, Logan Sargeant répète l'incident de Lawson, entraînant une deuxième intervention de la voiture de sécurité.",
+
+            "last_part" => "Au tour 9, Max Verstappen déclenche sa remontée impressionnante en dépassant Charles Leclerc et Carlos Sainz pour s'emparer de la troisième place. L'action continue à s'intensifier au tour 11 lorsque Piastri, équipé de pneus Medium en meilleur état que ceux de Russell en Soft, réussit à reprendre la tête de la course. Cependant, le spectacle prend une tournure dramatique plus loin sur la piste, alors que Perez, Hulkenberg et Ocon entrent en collision, provoquant leur retrait de la course et déclenchant une nouvelle intervention de la voiture de sécurité.
+            Avec le malheur de Perez entraînant un abandon (DNF), Max Verstappen réussit à sécuriser son troisième titre mondial consécutif. Au tour 16, Verstappen continue son ascension en dépassant Russell pour prendre la deuxième position et commence à chasser Piastri en tête de course. Malgré la pression intense, Piastri conserve son sang-froid et réussit à franchir la ligne d'arrivée en tête, décrochant ainsi sa première victoire en Sprint en Formule 1.
+            Une course émaillée d'actions, de dépassements et d'incidents imprévus a abouti à une conclusion époustouflante. Oscar Piastri, avec une performance exceptionnelle, écrit une nouvelle page de son ascension fulgurante dans le monde de la Formule 1.",
+
+            "conclusion" => "Le Sprint au Qatar a tenu toutes ses promesses, offrant une course électrisante qui restera gravée dans les annales de la Formule 1. Les rebondissements constants, les dépassements audacieux et les incidents inattendus ont créé un spectacle captivant du début à la fin.
+            Oscar Piastri, le jeune rookie de McLaren, a émerveillé le paddock en remportant sa première victoire en Sprint, démontrant une maîtrise exceptionnelle malgré la pression intense de ses concurrents. La remontée impressionnante de Max Verstappen et sa sécurisation du troisième titre mondial consécutif ont ajouté une dimension épique à cette course sprint.
+            Cependant, la course n'a pas été exempte de drames, avec les incidents impliquant Perez, Hulkenberg et Ocon, qui ont entraîné leur retrait et suscité l'intervention de la voiture de sécurité à plusieurs reprises. Ces moments forts soulignent la nature imprévisible et impitoyable de la compétition en Formule 1.
+            Le Sprint au Qatar a réaffirmé que chaque virage peut changer le cours d'une course, que chaque pilote, du rookie au vétéran, peut être le héros du jour. ",
+
+            "extra" => null,
+        ];
 
         Db::table('sprint_stories')->delete();
         Db::table('sprint_stories')->insert($SprintStory);
