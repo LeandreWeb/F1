@@ -105,22 +105,23 @@
         .team__presentation__name{
             font-size: 6.4rem;
         }
-        .team__animated__logo{
+        .team__animated__logo svg{
             width: 40rem;
         }
     }
     @media screen and (max-width: 850px) {
+        
         .team__presentation__name__container{
             animation: slideTop .75s ease-in-out 4.5s forwards;
         }
-        .team__animated__logo{
+        .team__animated__logo {
             animation: slideDown .75s ease-in-out 4.5s forwards;
 
         }
-    }
-    @media screen and (max-height: 850px) {
-        .team__animated__logo{
+        .team__animated__logo svg {
             width: 20rem;
         }
     }
+   
+        
 </style>
