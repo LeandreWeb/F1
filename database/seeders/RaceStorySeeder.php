@@ -435,6 +435,28 @@ class RaceStorySeeder extends Seeder
 
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 18,
+
+            "catchphrase" => "Max the Champ",
+
+            "intro" => "Après un Sprint électrisant qui a couronné Oscar Piastri, le rookie impressionnant, la grille de départ est prête à s'animer avec les meilleures équipes et les pilotes les plus aguerris. Attendez-vous à une confrontation féroce entre les géants de la Formule 1, prêts à rivaliser pour la gloire sur ce tracé exigeant.",
+
+            "first_part" => "Le Grand Prix du Qatar débute avec un départ spectaculaire de Lewis Hamilton, montrant sa détermination à prendre d'assaut la tête de la course dès le premier virage. Cependant, la malchance frappe au premier virage lorsque Hamilton, dans sa tentative audacieuse, entre en collision avec son coéquipier George Russell, entraînant la perte d'une roue pour le septuple champion du monde. L'incident infortuné contraint le déploiement de la voiture de sécurité et plonge Hamilton dans une position délicate, marquant un tournant dramatique dans la course.
+            D'un autre côté, Russell, relégué à la 15e place après l'accident, ne se laisse pas décourager. Affichant un rythme de course impressionnant, il entame une remontée dès le sixième tour, dépassant Sergio Perez et s'emparant ainsi de la 13e position.",
+
+            "middle_part" => "George Russell poursuit sa percée impressionnante. Il franchit rapidement Zhou, Hulkenberg et Gasly, s'installant ainsi solidement dans la zone des points. Russell démontre non seulement sa maîtrise du rythme de course, mais aussi sa capacité à effectuer des dépassements judicieux, renforçant sa position et ses chances de récolter des points précieux pour son équipe.
+            Simultanément, Lando Norris orchestre une performance similaire. Parti de la huitième position, Norris dépasse rapidement Ocon, Leclerc, et avec une stratégie de stands bien orchestrée, il réussit à dépasser Alonso pour se hisser au troisième rang. La bataille dans le peloton intermédiaire devient de plus en plus intense, chaque manœuvre stratégique pouvant influencer significativement le résultat final de la course.",
+
+            "last_part" => "Au tour 40, le jeune pilote de Williams, Logan Sargeant, prend la décision courageuse d'abandonner la course en raison de problèmes de santé, les températures extrêmes poussant les limites des pilotes au maximum. Les conditions difficiles mettent en lumière les défis physiques et mentaux auxquels sont confrontés les compétiteurs sur le Circuit International de Losail.
+            La fin de la course se déroule relativement calmement, à l'exception d'une bataille acharnée à trois pour la 9e position entre Stroll, Perez et Gasly. Toutefois, personne ne peut ébranler la domination de Max Verstappen, qui traverse la ligne d'arrivée en vainqueur, consolidant ainsi sa position au sommet du classement mondial. Il est rejoint sur le podium par Oscar Piastri, le jeune talent de McLaren, et Lando Norris, confirmant la forte performance de l'écurie britannique tout au long de la course.",
+
+            "conclusion" => " Les températures extrêmes et le circuit exigeant de Losail ont mis à l'épreuve les compétences des pilotes, créant un environnement de course intense et implacable.
+            La décision courageuse de Logan Sargeant d'abandonner en raison des conditions difficiles souligne les défis physiques auxquels les pilotes sont confrontés, même au plus haut niveau de la compétition. Les batailles acharnées sur la piste, comme celle entre Stroll, Perez et Gasly, ont ajouté une dimension tactique à la course, mettant en évidence la nécessité de gérer soigneusement les ressources tout au long de la journée.
+            Max Verstappen, indéfectible, a triomphé une fois de plus, ajoutant une victoire de plus à sa saison impressionnante. Le podium partagé avec Oscar Piastri et Lando Norris a mis en lumière la compétitivité croissante de McLaren.",
+
+            "extra" => "",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
