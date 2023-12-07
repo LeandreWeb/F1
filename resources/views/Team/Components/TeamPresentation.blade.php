@@ -2,8 +2,10 @@
     <div class="team__presentation__name__container">
         <h2 class="team__presentation__name">{{$team->Name}}</h2>
     </div>
-    <img loading="eager" class="team__animated__logo" src="{{ asset('Images/Teams/Animated/'.$team->Name.'.svg') }}" alt="">
-
+    {{-- <img loading="eager" class="team__animated__logo" src="{{ asset('Images/Teams/Animated/'.$team->Name.'.svg') }}" alt=""> --}}
+    <div class="team__animated__logo">
+        @include('svg.Animated.'.$team->Name)
+    </div>
 
 </section>
 
