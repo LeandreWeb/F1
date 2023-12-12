@@ -372,6 +372,28 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             "extra" => ""
         ];
 
+        $qualificationStory[] = [
+            "id" => 19,
+
+            "catchphrase" =>"Le Retour Triomphant de Ricciardo à Austin",
+
+            "intro" => "Après une série de courses ratées en raison d'une blessure au poignet, Daniel Ricciardo fait son retour sur la piste au volant de son AlphaTauri, et ce, sur l'un de ses circuits favoris à Austin. Ce comeback tant attendu promet d'apporter un nouveau souffle à la compétition, alors que nous entamons le 7e week-end de sprint de la saison.",
+
+            "q1" => "La séance de qualification à Austin a réservé son lot de surprises dès la Q1, avec les deux voitures d'Aston Martin qui ont connu des difficultés inattendues. Lance Stroll, au volant de l'une des Aston Martin, a été confronté à des problèmes de freins, compromettant ainsi ses chances de progression dans les tours qualificatifs. Pour la première fois de l'année, Fernando Alonso ne parvient pas à atteindre les Q2, malgré les améliorations apportées à sa voiture pour ce Grand Prix texan. Les espoirs placés dans ces ajustements n'ont malheureusement pas porté leurs fruits, laissant les fans de Formule 1 surpris par ces développements inattendus.",
+
+            "q2" => "La phase de qualification Q2 à Austin s'est déroulée relativement calmement, mais quelques surprises ont émaillé le tableau avec des éliminations inattendues. Les restrictions liées aux limites de piste à l'avant-dernier virage ont causé des soucis à plusieurs pilotes, dont Daniel Ricciardo qui, malgré son retour attendu et son historique prometteur, se qualifie à la 15e place.",
+
+            "q3" => "La compétition atteint son paroxysme dès la première sortie en Q3, avec une féroce bataille pour la pole position. Charles Leclerc se positionne en tête, suivi de près par Lewis Hamilton, suivi à son tour par Max Verstappen.
+            Lors de leur dernière tentative, Leclerc réussit à améliorer son temps, mais quelques secondes plus tard, Verstappen parvient à battre le chrono de Leclerc de justesse. Cependant, le tour de Verstappen est invalidé, car il a franchi les limites à l'avant-dernier virage. Une situation qui le relègue à la 5e place sur la grille de départ malgré sa performance impressionnante.
+            Une autre révélation de cette séance est la performance exceptionnelle de Lando Norris, qui réalise un tour époustouflant pour se qualifier entre Hamilton et Leclerc.",
+
+            "conclusion" =>" Alors que la compétition débutait avec une intensité palpable, c'est Charles Leclerc qui a réussi à décrocher la pole position, malgré la forte pression exercée par Lewis Hamilton et les performances impressionnantes de Max Verstappen, malheureusement invalidées.
+            La détermination de Verstappen et la rapidité de Norris ont ajouté une dose de suspense à une séance déjà riche en émotions. Daniel Ricciardo, de retour après des courses écourtées, a dû se contenter d'une position au milieu du peloton.
+            La grille de départ se dessine ainsi avec des surprises inattendues, promettant une course palpitante où les pilotes devront déployer tout leur talent pour briller sur le circuit texan. ",
+
+            "extra" => ""
+        ];
+
 
 
         Db::table('qualification_stories')->delete();
