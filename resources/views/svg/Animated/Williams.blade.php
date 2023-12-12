@@ -1,4 +1,4 @@
-<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg  viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Export">
 <g id="Williams-black" clip-path="url(#clip0_12_81)">
 <g id="Group">
