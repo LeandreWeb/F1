@@ -45,7 +45,15 @@
         transform: translate(-50%,0);
         z-index: -1;
         animation: slideRigth .75s ease-in-out 4.5s forwards;
+        height: fit-content;
     }
+
+    .team__animated__logo svg{
+        width: 500px;
+        aspect-ratio: 1 /1;
+        max-height: 80dvh;
+    }
+
 
 
     @keyframes slideIn {
@@ -78,7 +86,7 @@
 
     @keyframes slideTop{
         to{
-            top:15%;
+            top:20%;
             transform: translate(-50%,0);
 
         }
@@ -88,12 +96,10 @@
     @keyframes slideDown{
         0%{
             left: 50%;
-            top:0;
         }
         100%{
             left:50%;
-            top:50%;
-            transform: translate(-50%,10%);
+            top:40%;
         }
     }
      @media screen and (max-width: 1550px) {
@@ -110,6 +116,8 @@
         }
     }
     @media screen and (max-width: 850px) {
+
+
         
         .team__presentation__name__container{
             animation: slideTop .75s ease-in-out 4.5s forwards;
@@ -118,9 +126,15 @@
             animation: slideDown .75s ease-in-out 4.5s forwards;
 
         }
-        .team__animated__logo svg {
-            width: 20rem;
+
+        .team__animated__logo{
+            top: 25%;
+
+            & svg {
+                width: 20rem;
+            }
         }
+        
     }
    
         
