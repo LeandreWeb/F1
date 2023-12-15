@@ -88,6 +88,27 @@ class SprintShootoutStorySeeder extends Seeder
             "extra" => null
         ];
 
+        $SprintShootoutStory[] = [
+            "id" => 19,
+
+            "catchphrase" => " Lutte pour la Pole",
+
+            "intro" => "Après des qualifications riches en rebondissements, l'effervescence ne faiblit pas à Austin, alors que les regards se tournent désormais vers le Sprint Shootout. Cette session de qualification spéciale promet d'ajouter une couche supplémentaire d'excitation à un week-end déjà palpitant. Les pilotes, auréolés des résultats de la journée précédente, se préparent à en découdre sur le circuit texan, cherchant à s'assurer la meilleure position de départ pour le Sprint à venir.",
+
+            "q1" => "La Sprint Qualifying 1 à Austin n'a peut-être pas été marquée par des événements spectaculaires, mais elle a réservé son lot de déceptions pour certains pilotes. Nico Hülkenberg, Kevin Magnussen, Valtteri Bottas, Yuki Tsunoda et Logan Sargent n'ont malheureusement pas réussi à décrocher leur ticket pour la SQ2, faisant face à des éliminations qui s'avèrent décevantes pour ces compétiteurs chevronnés. ",
+
+            "q2" => "La SQ2 à Austin a réservé son lot de surprises, rappelant le sort d'Aston Martin lors des qualifications précédentes. Les deux pilotes de l'écurie n'ont pas réussi à se hisser en SQ3, un développement inattendu qui souligne les défis auxquels l'équipe est actuellement confrontée.
+            Une autre note inédite a été ajoutée à la session lorsque le champion en titre, Max Verstappen, a commis une rare erreur en effectuant un tête-à-queue pendant l'un de ses tours. Un moment surprenant, mettant en lumière la complexité du tracé texan et la pression constante qui pèse sur les épaules des pilotes.",
+
+            "q3" => "La tension était à son paroxysme lors de la Sprint Qualifying 3 à Austin, alors que la lutte pour la pole position atteignait des sommets. Les performances extraordinaires de Lando Norris, Max Verstappen, Lewis Hamilton et Charles Leclerc ont captivé les spectateurs, créant une séance incroyablement serrée.
+            À la fin de cette lutte intense, le classement du top 4 était séparé de seulement 0.101 seconde, témoignant de la compétitivité féroce entre les pilotes. Finalement, c'est Max Verstappen qui a réussi à triompher dans le Sprint Shootout, s'assurant ainsi la position de tête sur la grille de départ. Charles Leclerc et Lewis Hamilton ont suivi de près, tandis que Lando Norris a complété le quatuor de tête.",
+
+            "conclusion" => "Les surprises ne manquaient pas, avec les déboires d'Aston Martin et les rares erreurs de Max Verstappen, qui ont ajouté un suspense supplémentaire à un week-end déjà riche en rebondissements. La Sprint Qualification 3 a été le point culminant, avec une lutte féroce pour la pole position entre Norris, Verstappen, Hamilton et Leclerc, qui ont offert des performances extraordinaires.
+            Au final, c'est Max Verstappen qui a triomphé dans ce Sprint Shootout, s'adjugeant la position de tête sur la grille de départ. Leclerc, Hamilton et Norris ont complété le quatuor de tête, préparant ainsi le terrain pour un Grand Prix d'Austin 2023 qui s'annonce intense et passionnant.",
+
+            "extra" => null
+        ];
+
 
         Db::table('sprint_shootout_stories')->delete();
         Db::table('sprint_shootout_stories')->insert($SprintShootoutStory);
