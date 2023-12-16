@@ -457,6 +457,34 @@ class RaceStorySeeder extends Seeder
 
             "extra" => "",
         ];
+        $raceStories[] = [
+            "id" => 19,
+
+            "catchphrase" => "Stratégies Cruciales et Déceptions",
+
+            "intro" => "Le moment tant attendu est enfin arrivé sur le Circuit des Amériques à Austin. Charles Leclerc, fort de sa brillante performance lors des qualifications, s'élance en pole position pour le Grand Prix d'Austin 2023. Les regards du monde entier sont fixés sur le Monégasque, qui devra défendre sa position en tête contre les assauts de ses rivaux acharnés.",
+
+            "first_part" => "La première partie du Grand Prix d'Austin a débuté avec une entrée en scène époustouflante de Lando Norris, qui a pris la tête dès le premier virage après avoir démarré en deuxième position. Le jeune pilote britannique a démontré son agressivité et sa détermination pour s'emparer de la première place.
+            Cependant, derrière lui, des étincelles ont éclaté entre les coéquipiers chez Alpine. Oscar Piastri et Esteban Ocon se sont livrés à une bataille féroce au deuxième virage, résultant en un accrochage qui a ajouté une dose de drame aux premiers tours de la course.
+            Lewis Hamilton, déterminé à rattraper son retard, a montré une rapidité impressionnante. Au tour 4, il a réussi à dépasser Carlos Sainz pour s'emparer de la troisième place. Pendant ce temps, Max Verstappen a entamé sa remontée, dépassant Sainz au tour 5 pour s'installer à la quatrième position.
+            La lutte pour les premières positions a atteint son apogée au tour 6, lorsque Hamilton a réussi à dépasser Charles Leclerc pour s'emparer de la deuxième position. La hiérarchie sur la piste est en constante évolution, promettant un spectacle palpitant pour la suite du Grand Prix d'Austin.",
+
+            "middle_part" => "Au tour 7, Esteban Ocon, déjà impliqué dans un accrochage au premier tour, a été contraint d'abandonner la course, ajoutant un sixième abandon à sa saison, le plus élevé parmi tous les pilotes. Une journée difficile pour le pilote d'Alpine.
+            Quelques tours plus tard, au tour 10, Oscar Piastri de McLaren a également été contraint à l'abandon, conséquence de la collision avec Ocon au premier tour. Une double déception pour l'écurie britannique.
+            Pendant ce temps, Max Verstappen poursuivait sa montée en puissance. Au tour 11, il a réussi à dépasser Charles Leclerc pour s'emparer de la troisième position, se rapprochant ainsi du duo de tête composé de Lando Norris et Lewis Hamilton.
+            La tournure de la course a atteint son point culminant au tour 28 lorsque Verstappen a finalement réussi à prendre la première position à Norris. La bataille en tête de la course reste intense, avec les trois premiers pilotes se livrant à une compétition serrée. ",
+
+            "last_part" => " Lewis Hamilton, en raison d'une stratégie d'équipe jugée peu optimale, s'est retrouvé en quatrième position après son dernier passage aux stands au tour 40. Malgré ce revers, le pilote britannique a immédiatement entamé une remontée impressionnante.
+            Au tour 43, Hamilton a dépassé Charles Leclerc, qui optait pour une stratégie à un arrêt, contrairement aux autres concurrents ayant choisi une stratégie à deux arrêts. Cette manœuvre a propulsé Hamilton à la deuxième position, alors que Max Verstappen maintenait sa domination en tête de la course.
+            Au tour 48, Lance Stroll a réussi à prendre la 10e position à Yuki Tsunoda, apportant un soulagement bienvenu à l'équipe Aston Martin en plaçant les deux voitures dans le top 10, avec son coéquipier Fernando Alonso à la 9e place. Cependant, la journée a pris un tournant sombre pour Alonso au tour 51, lorsqu'il a été contraint de retirer sa voiture, ajoutant à la déception de l'équipe.
+            Malgré les efforts de Hamilton pour réduire l'écart avec Verstappen, ce dernier a maintenu son avance pour franchir la ligne d'arrivée en tête, remportant ainsi le Grand Prix d'Austin 2023. ",
+
+            "conclusion" => "La course principale a été un festival de stratégies, de dépassements et de rebondissements. Lando Norris a ébloui avec un départ fulgurant, tandis que Verstappen a affirmé sa domination après une remontée impressionnante. Les déceptions ont touché certaines équipes, notamment Alpine et McLaren, tandis qu'Aston Martin a trouvé un certain réconfort avec des performances encourageantes de Lance Stroll.",
+
+            "extra" => "Le scénario après-course à Austin a pris une tournure inattendue avec l'annonce de la FIA. Suite à une inspection approfondie des voitures de Lewis Hamilton et Charles Leclerc, des irrégularités sur l'usure de la planche ont été détectées, conduisant à leur disqualification.
+            Ces désqualifications ont eu des répercussions significatives sur le classement final. Lando Norris, initialement troisième, hérite désormais de la deuxième place, tandis que Carlos Sainz monte sur la troisième marche du podium.
+            Pour Yuki Tsunoda, cette décision représente une avancée bienvenue, passant de la 10e à la 8e place, marquant des points précieux dans une saison où chaque position compte dans le classement serré. Une autre histoire heureuse émerge avec Logan Sargent, qui se hisse désormais à la 10e place, lui offrant son premier point en Formule 1, et cela dans son pays d'origine.",
+        ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
