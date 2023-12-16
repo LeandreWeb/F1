@@ -12,6 +12,13 @@ class DriversSeeder extends Seeder
 
     /**
      * Run the database seeds.
+     * 
+     * Status
+     * - active
+     * - out
+     * - reserve
+     * - injured
+     * - retired
      */
     public function run(): void
     {
@@ -19,7 +26,6 @@ class DriversSeeder extends Seeder
 
         $drivers[]=[
             "id"=>16,
-            "team_id"=>1,
             "FirstName"=>"Charles",
             "LastName"=>"Leclerc",
             "country_id"=>7,
@@ -28,7 +34,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>55,
-            "team_id"=>1,
             "FirstName"=>"Carlos",
             "LastName"=>"Sainz",
             "country_id"=>8,
@@ -38,7 +43,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>1,
-            "team_id"=>2,
             "FirstName"=>"Max",
             "LastName"=>"Verstappen",
             "country_id"=>14,
@@ -48,7 +52,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>11,
-            "team_id"=>2,
             "FirstName"=>"Sergio",
             "LastName"=>"Perez",
             "country_id"=>18,
@@ -58,7 +61,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>14,
-            "team_id"=>3,
             "FirstName"=>"Fernando",
             "LastName"=>"Alonso",
             "country_id"=>8,
@@ -68,7 +70,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>18,
-            "team_id"=>3,
             "FirstName"=>"Lance",
             "LastName"=>"Stroll",
             "country_id"=>9,
@@ -78,7 +79,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>44,
-            "team_id"=>4,
             "FirstName"=>"Lewis",
             "LastName"=>"Hamilton",
             "country_id"=>11,
@@ -88,7 +88,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>63,
-            "team_id"=>4,
             "FirstName"=>"George",
             "LastName"=>"Russel",
             "country_id"=>11,
@@ -98,7 +97,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>77,
-            "team_id"=>5,
             "FirstName"=>"Valtteri",
             "LastName"=>"Bottas",
             "country_id"=>21,
@@ -108,7 +106,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>24,
-            "team_id"=>5,
             "FirstName"=>"Zhou",
             "LastName"=>"Guanyu",
             "country_id"=>26,
@@ -118,7 +115,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>10,
-            "team_id"=>6,
             "FirstName"=>"Pierre",
             "LastName"=>"Gasly",
             "country_id"=>22,
@@ -128,7 +124,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>31,
-            "team_id"=>6,
             "FirstName"=>"Esteban",
             "LastName"=>"Ocon",
             "country_id"=>22,
@@ -138,7 +133,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>23,
-            "team_id"=>7,
             "FirstName"=>"Alexander",
             "LastName"=>"Albon",
             "country_id"=>24,
@@ -148,7 +142,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>2,
-            "team_id"=>7,
             "FirstName"=>"Logan",
             "LastName"=>"Sargeant",
             "country_id"=>5,
@@ -158,7 +151,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>22,
-            "team_id"=>8,
             "FirstName"=>"Yuki",
             "LastName"=>"Tsunoda",
             "country_id"=>16,
@@ -168,17 +160,15 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>21,
-            "team_id"=>8,
             "FirstName"=>"Nyck",
             "LastName"=>"De Vries",
             "country_id"=>14,
             "Number"=>21,
-            "status"=>'replaced'
+            "status"=>'out'
 
         ];
         $drivers[]=[
             "id"=>27,
-            "team_id"=>9,
             "FirstName"=>"Nico",
             "LastName"=>"Hulkenberg",
             "country_id"=>25,
@@ -188,7 +178,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>20,
-            "team_id"=>9,
             "FirstName"=>"Kevin",
             "LastName"=>"Magnussen",
             "country_id"=>23,
@@ -198,7 +187,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>4,
-            "team_id"=>10,
             "FirstName"=>"Lando",
             "LastName"=>"Norris",
             "country_id"=>11,
@@ -208,7 +196,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>81,
-            "team_id"=>10,
             "FirstName"=>"Oscar",
             "LastName"=>"Piastry",
             "country_id"=>3,
@@ -217,7 +204,6 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>3,
-            "team_id"=>8,
             "FirstName"=>"Daniel",
             "LastName"=>"Ricciardo",
             "country_id"=>3,
@@ -226,12 +212,11 @@ class DriversSeeder extends Seeder
         ];
         $drivers[]=[
             "id"=>40,
-            "team_id"=>8,
             "FirstName"=>"Liam",
             "LastName"=>"Lawson",
             "country_id"=>3,
             "Number"=>40,
-            "status"=>'replaced'
+            "status"=>'reserve'
         ];
 
 

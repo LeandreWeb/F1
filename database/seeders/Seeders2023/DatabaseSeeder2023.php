@@ -20,8 +20,8 @@ class DatabaseSeeder2023 extends Seeder
         $this->call(GrandPrixWeekendSeeder2023::class);
         $this->call(ArticleSeeder2023::class);
         $this->call(CarSeeder2023::class);
-        
-        
-    
+        $this->call(SeasonTeamsSeeder2023::class);
+        $this->call(TeamPrincipalsSeeder2023::class);
+        $this->call(TeamDriversSeeder2023::class);
     }
 }

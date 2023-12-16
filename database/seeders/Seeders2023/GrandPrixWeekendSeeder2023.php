@@ -27,6 +27,7 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
         'track_id'=>1,
+        'season_id'=>2023
 
      ];
      $grandPrixWeekends[]=[
@@ -39,6 +40,7 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
         'track_id'=>2,
+        'season_id'=>2023
 
 
       ];
@@ -51,7 +53,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202303,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>3
+        'track_id'=>3,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -63,7 +66,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202304,
         'sprint_id'=>202304,
         'sprint_shootout_id'=>202304,
-        'track_id'=>4
+        'track_id'=>4,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -75,7 +79,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202305,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>5
+        'track_id'=>5,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -87,7 +92,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202306,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>6
+        'track_id'=>6,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -99,7 +105,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202307,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>7
+        'track_id'=>7,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -111,7 +118,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202308,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>8
+        'track_id'=>8,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -123,7 +131,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202309,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>9
+        'track_id'=>9,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -135,7 +144,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202310,
         'sprint_id'=>202310,
         'sprint_shootout_id'=>202310,
-        'track_id'=>10
+        'track_id'=>10,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -147,7 +157,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202311,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>11
+        'track_id'=>11,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -159,7 +170,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202312,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>12
+        'track_id'=>12,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -171,7 +183,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202313,
         'sprint_id'=>202313,
         'sprint_shootout_id'=>202313,
-        'track_id'=>13
+        'track_id'=>13,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -183,7 +196,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202314,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>14
+        'track_id'=>14,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -195,7 +209,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202315,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>15
+        'track_id'=>15,
+        'season_id'=>2023
 
       ];
 
@@ -208,7 +223,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202316,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>16
+        'track_id'=>16,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -220,7 +236,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202317,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>17
+        'track_id'=>17,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -232,7 +249,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202318,
         'sprint_id'=>202318,
         'sprint_shootout_id'=>202318,
-        'track_id'=>18
+        'track_id'=>18,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -244,7 +262,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202319,
         'sprint_id'=>202319,
         'sprint_shootout_id'=>202319,
-        'track_id'=>19
+        'track_id'=>19,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -256,7 +275,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202320,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>20
+        'track_id'=>20,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -268,7 +288,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202321,
         'sprint_id'=>202321,
         'sprint_shootout_id'=>202321,
-        'track_id'=>21
+        'track_id'=>21,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -280,7 +301,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202322,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>22
+        'track_id'=>22,
+        'season_id'=>2023
 
       ];
      $grandPrixWeekends[]=[
@@ -292,7 +314,8 @@ class GrandPrixWeekendSeeder2023 extends Seeder
         'qualification_id'=>202323,
         'sprint_id'=>null,
         'sprint_shootout_id'=>null,
-        'track_id'=>23
+        'track_id'=>23,
+        'season_id'=>2023
 
       ];
 

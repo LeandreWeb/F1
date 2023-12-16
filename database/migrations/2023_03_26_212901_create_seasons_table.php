@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('team_chiefs', function (Blueprint $table) {
+        Schema::create('seasons', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('team_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string("firstname");
-            $table->string("Lastname");
+            $table->timestamps();
         });
     }
 
@@ -24,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('team_chiefs');
+        Schema::dropIfExists('seasons');
     }
 };

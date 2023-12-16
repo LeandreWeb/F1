@@ -14,13 +14,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(SeasonsSeeder::class);
         $this->call(countriesSeeder::class);
         $this->call(SocialsSeeder::class);
         $this->call(FactorySeeder::class);
         $this->call(TeamsSeeder::class);
         $this->call(TrackSeeder::class);
         $this->call(DriversSeeder::class);
-        $this->call(TeamChiefsSeeder::class);
+        $this->call(PrincipalSeeder::class);
 
         $this->call(\Database\Seeders\Seeders2023\DatabaseSeeder2023::class);
 
