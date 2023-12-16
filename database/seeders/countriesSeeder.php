@@ -129,14 +129,6 @@ class countriesSeeder extends Seeder
             "name"=>"Nouvelle-Zélande"
         ];
 
-
-
-
-
-
-
-
-
         DB::table("countries")->delete();
         DB::table("countries")->insert($countries);
     }
