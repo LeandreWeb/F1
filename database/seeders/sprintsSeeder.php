@@ -43,7 +43,7 @@ class sprintsSeeder extends Seeder
             "id"=>19,
             "date"=>'2023-10-21',
             "start"=>'18:00:00',
-            'sprint_story_id'=>null
+            'sprint_story_id'=>19
         ];
         $sprints[]=[
             "id"=>21,

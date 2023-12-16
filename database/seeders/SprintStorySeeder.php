@@ -99,6 +99,27 @@ class SprintStorySeeder extends Seeder
 
             "extra" => null,
         ];
+        $SprintStory[] = [
+            "id" => 19,
+
+            "catchphrase" => "Heha Sprint Max",
+
+            "intro" => "Les positions de départ ont été déterminées lors du Sprint Shootout, où Max Verstappen a brillé, s'octroyant la pole position. Cependant, la course sprint représente une opportunité pour les pilotes de gagner des points cruciaux.Les amateurs de Formule 1 attendent avec impatience de voir comment les stratégies se déploieront sur cette courte mais intense course.",
+
+            "first_part" => "Le coup d'envoi du Sprint à Austin a été marqué par un départ fulgurant de Charles Leclerc, déterminé à prendre la tête de la course. Cependant, Max Verstappen a réagi de manière agressive, fermant la porte avec détermination et refusant à Leclerc la possibilité de s'emparer de la première place.
+            Cette lutte féroce a profité à Lewis Hamilton, qui a su capitaliser sur la bataille en cours, s'insinuant entre Leclerc et Verstappen pour prendre la deuxième position. Pendant ce temps, Carlos Sainz a réalisé un dépassement spectaculaire sur Lando Norris un peu plus tard dans le tour, s'emparant de la quatrième place.
+            L'intrigue s'est poursuivie au 10e tour, lorsque Norris a réussi à reprendre sa position à Sainz, grâce à une gestion plus efficace de ses pneus mediums, moins dégradés que les pneus softs de Sainz. ",
+
+            "last_part" => "Austin a vu une bataille acharnée entre George Russell et Carlos Sainz, alors que Russell tentait de prendre la 6e place à Sainz, qui connaissait des difficultés avec des pneus en mauvais état. Malgré les efforts de Russell, Sainz a défendu sa position avec ténacité, repoussant les assauts du pilote britannique.
+            Au tour 17, une ombre sombre a plané sur Aston Martin lorsque Lance Stroll a été contraint de retirer sa voiture de la course. Cet abandon est venu s'ajouter aux déceptions précédentes de l'équipe, marquant un nouveau revers dans un week-end difficile pour Aston Martin.
+            Finalement, après 19 tours intenses, Max Verstappen a maintenu son leadership avec brio pour franchir la ligne d'arrivée en tête, ajoutant une victoire supplémentaire à sa saison déjà impressionnante.",
+
+            "conclusion" => "Max Verstappen a brillé de bout en bout, maintenant une performance exceptionnelle pour remporter la victoire et s'assurer une position de départ de choix pour le Grand Prix.
+            Cependant, la journée a été moins clémente pour l'équipe Aston Martin, confrontée à des déboires persistants. Lance Stroll a dû abandonner, ajoutant une touche amère à un week-end difficile pour l'écurie.
+            La lutte acharnée entre les pilotes, les dépassements et les scénarios de stratégie ont offert aux fans un avant-goût excitant de ce qui les attend lors du Grand Prix proprement dit.",
+
+            "extra" => null,
+        ];
 
         Db::table('sprint_stories')->delete();
         Db::table('sprint_stories')->insert($SprintStory);
