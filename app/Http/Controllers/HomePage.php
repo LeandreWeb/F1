@@ -12,17 +12,29 @@ use App\Models\Qualification;
 use  App\Models\QualificationResult;
 use App\Models\RaceResult;
 use App\Models\RaceStory;
+use App\Models\Season;
 use App\Models\Sprint;
 use App\Models\SprintShootout;
+use App\Models\TeamDriver;
 
 class HomePage extends Controller
 {
     public function home()
     {
+        $year = date('Y');
+
+        $season = Season::where("id",(int)$year)->first();
+
+        dd($season->Drivers());
+
+        
+
         $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         $currentGp = GrandPrixWeekend::where("status","current")->first();
+
+        dd($top3);
 
         if($nextRace)
         {

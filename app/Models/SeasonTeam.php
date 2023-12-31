@@ -5,7 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Seasons extends Model
+class SeasonTeam extends Model
 {
     use HasFactory;
+
+    public function teamDrivers(){
+        return $this->hasMany(TeamDriver::class);
+    }
 }
