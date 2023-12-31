@@ -394,6 +394,28 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             "extra" => ""
         ];
 
+        $qualificationStory[] = [
+            "id" => 20,
+
+            "catchphrase" =>"",
+
+            "intro" => "Après deux week-ends successifs de sprints effrénés, les équipes de Formule 1 et les passionnés de course se sont donné rendez-vous au Mexique pour une fin de semaine marquée par un format de compétition plus traditionnel. L'atmosphère vibrante du circuit, alliée à l'enthousiasme des supporters, a créé une toile de fond exceptionnelle pour ce Grand Prix.",
+
+            "q1" => "La Q1 du Grand Prix de F1 du Mexique a réservé son lot de surprises, en particulier pour les fans de l'écurie McLaren. Lando Norris, l'un des favoris du week-end, a connu des difficultés inattendues dès le début de la séance.
+            Dès sa première sortie, Norris a fait une erreur qui a compromis ses chances d'obtenir un résultat favorable. Les regards avides des supporters ont été surpris par le classement peu flatteur de la McLaren, jetant un voile d'incertitude sur la suite des qualifications.
+            Lando Norris a cependant tenté de se rattraper lors de son dernier tour, mais la cruelle ironie du destin s'est abattue sur lui. Au deuxième virage, un drapeau jaune a été agité, résultat d'une perte de contrôle spectaculaire de l'Aston Martin de Fernando Alonso. ",
+
+            "q2" => "Parmi les révélations de la Q2, on compte Daniel Ricciardo de l'écurie AlphaTauri et Alexander Albon de Williams, qui ont tous deux réussi des performances exceptionnelles, se qualifiant pour la Q3. Leurs résultats ont créé une atmosphère électrique dans les stands, les équipes rivalisant pour trouver la meilleure stratégie pour les tours cruciaux à venir.
+            Cependant, la FIA a jeté une ombre sur le parcours d'Alexander Albon lors de la Q2. Après une révision minutieuse, son tour rapide a été annulé en raison des limites de la piste, le privant ainsi de la possibilité de participer à la Q3. Cette décision a laissé une note amère dans le camp de Williams, soulignant l'importance cruciale du respect des règles strictes de la FIA.
+            Malheureusement, Fernando Alonso, pour la deuxième course consécutive, n'a pas réussi à atteindre la Q3.",
+
+            "q3" => "",
+
+            "conclusion" =>"",
+
+            "extra" => ""
+        ];
+
 
 
         Db::table('qualification_stories')->delete();
