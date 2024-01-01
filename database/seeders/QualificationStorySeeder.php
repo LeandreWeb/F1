@@ -397,7 +397,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         $qualificationStory[] = [
             "id" => 20,
 
-            "catchphrase" =>"",
+            "catchphrase" =>"Surprise Ricciardo",
 
             "intro" => "Après deux week-ends successifs de sprints effrénés, les équipes de Formule 1 et les passionnés de course se sont donné rendez-vous au Mexique pour une fin de semaine marquée par un format de compétition plus traditionnel. L'atmosphère vibrante du circuit, alliée à l'enthousiasme des supporters, a créé une toile de fond exceptionnelle pour ce Grand Prix.",
 
@@ -409,9 +409,12 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             Cependant, la FIA a jeté une ombre sur le parcours d'Alexander Albon lors de la Q2. Après une révision minutieuse, son tour rapide a été annulé en raison des limites de la piste, le privant ainsi de la possibilité de participer à la Q3. Cette décision a laissé une note amère dans le camp de Williams, soulignant l'importance cruciale du respect des règles strictes de la FIA.
             Malheureusement, Fernando Alonso, pour la deuxième course consécutive, n'a pas réussi à atteindre la Q3.",
 
-            "q3" => "",
-
-            "conclusion" =>"",
+            "q3" => "Dès la première sortie en Q3, les Ferrari ont créé l'événement en prenant les deux premières positions. Les fans ont été étonnés de voir la Scuderia signer un doublé, montrant ainsi la performance accrue de l'écurie italienne sur le tracé mexicain. La lutte pour la pole position s'est intensifiée avec Max Verstappen, qui s'est positionné à la troisième place, et une performance exceptionnelle de Daniel Ricciardo qui a pris la quatrième position, démontrant la compétitivité de son AlphaTauri.
+            Lors de la deuxième sortie en Q3, la majorité des véhicules n'ont pas réussi à améliorer leurs temps, créant une atmosphère de suspense palpable. Max Verstappen a réussi à améliorer son chrono, mais cela n'a pas suffi pour lui permettre de décrocher la première ligne. C'est finalement Charles Leclerc qui a décroché la pole position de manière spectaculaire, ajoutant une nouvelle victoire à sa carrière et propulsant Ferrari au sommet du classement de qualifications.",
+            "conclusion" =>"La séance de qualifications du Grand Prix de F1 du Mexique s'est avérée être un spectacle palpitant, façonné par des moments de tension, des surprises inattendues et des performances exceptionnelles. Les pilotes et les équipes ont dû jongler avec les défis du tracé mexicain, marqué par des virages techniques et des lignes droites propices aux dépassements.
+            Les qualifications ont révélé la force renouvelée de Ferrari, avec une impressionnante première ligne décrochée par Charles Leclerc, suivi de près par son coéquipier. Cependant, la concurrence féroce de Red Bull et d'AlphaTauri, incarnée par Max Verstappen et Daniel Ricciardo, a ajouté une couche d'incertitude passionnante à la grille de départ.
+            Les moments de tension vécus par Lando Norris de McLaren et Alexander Albon de Williams lors des phases éliminatoires ont souligné l'importance de chaque instant dans le monde de la Formule 1, où une fraction de seconde peut faire la différence entre la gloire et la déception.
+            Avec la grille de départ désormais établie, l'excitation monte pour le Grand Prix lui-même. Les amateurs de sport automobile peuvent anticiper une course dynamique et pleine de rebondissements, où chaque écurie et chaque pilote tentera de capitaliser sur sa position stratégique pour atteindre le sommet du podium.",
 
             "extra" => ""
         ];
