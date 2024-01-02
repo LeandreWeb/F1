@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
-    public function grandPrixWeekend(){
+
+    protected $table ="articles";
+
+    public function grandPrix(){
         return $this->belongsTo(GrandPrixWeekend::class);
     }
 }

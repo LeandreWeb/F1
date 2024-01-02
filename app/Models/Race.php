@@ -10,14 +10,20 @@ class Race extends Model
 {
     use HasFactory;
 
+    protected $table ="races";
+
     public function grandPrixWeekend(){
         return $this->hasOne(GrandPrixWeekend::class);
     }
-    public function raceResult(){
+    public function raceResults(){
         return $this->hasMany(RaceResult::class);
     }
     public function raceStory(){
         return $this->belongsTo(RaceStory::class);
+    }
+
+    public function fastestLap(){
+        return $this->raceResults()->where("best_lap","!=","null")->orderBy('best_lap')->first();
     }
     
 }

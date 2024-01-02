@@ -9,16 +9,8 @@ class Team extends Model
 {
     use HasFactory;
 
-    // protected $table = "tables";
+    protected $table = "teams";
 
-    // protected $primaryKey = "_id"
-
-    public function teamChief(){
-        return $this->hasOne(TeamChief::class);
-    }
-    public function drivers(){
-        return $this->hasMany(Driver::class);
-    }
     public function country(){
         return $this->belongsTo(Country::class);
     }
@@ -28,13 +20,7 @@ class Team extends Model
     public function factory(){
         return $this->belongsTo(Factory::class);
     }
-    public function points(){
-        return $this->hasMany(Driver::class);
-    }
-    public function car(){
-        return $this->hasOne(Car::class);
-    }
-    public function cars(){
-        return $this->hasMany(Car::class);
+    public function seasonTeams(){
+        return $this->hasMany(SeasonTeam::class);
     }
 }

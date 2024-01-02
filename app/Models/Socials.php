@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Socials extends Model
 {
     use HasFactory;
+
+    protected $table = 'socials';
+    
     public function Teams(){
-        return $this->hasMany(Team::class);
+        return $this->hasOne(Team::class);
     }
 }

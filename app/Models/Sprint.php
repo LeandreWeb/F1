@@ -9,8 +9,10 @@ class Sprint extends Model
 {
     use HasFactory;
 
+    protected $table ="sprints";
 
-    public function sprintResult(){
+
+    public function sprintResults(){
         return $this->hasMany(SprintResult::class);
     }
     public function grandPrixWeekend(){

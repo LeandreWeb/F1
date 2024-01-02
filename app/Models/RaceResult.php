@@ -10,7 +10,7 @@ class RaceResult extends Model
     use HasFactory;
 
     
-    
+    protected $table ="race_results";
 
     public function driver(){
         return $this->belongsTo(Driver::class);

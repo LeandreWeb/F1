@@ -9,7 +9,9 @@ class Track extends Model
 {
     use HasFactory;
 
-    public function Grand_Prix(){
-        return $this->hasOne(GrandsPrix::class);
+    protected $table ="tracks";
+
+    public function grandPrix(){
+        return $this->hasOne(GrandPrixWeekend::class);
     }
 }

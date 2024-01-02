@@ -9,6 +9,8 @@ class SprintShootout extends Model
 {
     use HasFactory;
 
+    protected $table ="sprint_shootouts";
+
 
     public function grandPrixWeekend(){
         return $this->hasOne(GrandPrixWeekend::class);

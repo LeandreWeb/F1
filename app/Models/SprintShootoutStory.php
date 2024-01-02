@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class SprintShootoutStory extends Model
 {
+    protected $table ="sprint_shootout_stories";
+
     public function sprintShootout(){
         return $this->hasOne(SprintShootout::class);
     }

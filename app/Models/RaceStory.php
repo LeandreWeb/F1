@@ -9,6 +9,8 @@ class RaceStory extends Model
 {
     use HasFactory;
 
+    protected $table ="race_stories";
+
     public function race(){
         return $this->hasOne(Race::class);
     }

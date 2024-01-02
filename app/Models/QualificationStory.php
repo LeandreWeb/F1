@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class QualificationStory extends Model
 {
+
+    protected $table ="qualification_stories";
     public function qualification(){
         return $this->hasOne(Qualification::class);
     }

@@ -9,6 +9,8 @@ class Qualification extends Model
 {
     use HasFactory;
 
+    protected $table ="qualifications";
+
     public function grandPrixWeekend(){
         return $this->hasOne(GrandPrixWeekend::class);
     }

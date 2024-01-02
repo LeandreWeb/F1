@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class SprintShootoutResult extends Model
 {
+    protected $table ="sprint_shootout_results";
+
+
     public function sprintShootout(){
         return $this->belongsTo(SprintShootout::class);
     }

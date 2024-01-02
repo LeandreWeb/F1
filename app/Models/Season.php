@@ -17,6 +17,28 @@ class Season extends Model
     {
         return $this->hasMany(SeasonTeam::class);
     }
+
+    public function grandPrix(){
+        return $this->hasMany(GrandPrixWeekend::class);
+    }
+
+    public function drivers(){
+
+        return $this->seasonTeams->flatMap(function ($seasonTeam) {
+            return $seasonTeam->teamDrivers->pluck('driver');
+        });
+    }
+
+    public function top3Drivers(){
+        $drivers=$this->drivers();
+
+        for ($i=0; $i < count($drivers); $i++) { 
+            echo($drivers[$i]->country);
+        }
+
+        return $drivers;
+
+    }
 }
 
 

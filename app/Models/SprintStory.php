@@ -9,6 +9,9 @@ class SprintStory extends Model
 {
     use HasFactory;
 
+    protected $table ="sprint_stories";
+
+
     public function sprint(){
         return $this->hasOne(Sprint::class);
     }
