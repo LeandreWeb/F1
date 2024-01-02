@@ -9,6 +9,8 @@ class Driver extends Model
 {
     use HasFactory;
 
+    protected $table = 'drivers';
+
 
 
     public function raceResult()
@@ -22,11 +24,11 @@ class Driver extends Model
     public function sprintResult(){
         return $this->hasMany(SprintResult::class);
     }
-    public function team(){
-        return $this->belongsTo(Team::class);
-    }
     public function Country(){
         return $this->belongsTo(Country::class);
+    }
+    public function teamDriver(){
+        return $this->hasMany(TeamDriver::class);
     }
     
 

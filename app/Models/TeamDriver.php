@@ -9,7 +9,13 @@ class TeamDriver extends Model
 {
     use HasFactory;
 
-    public function Drivers(){
-        return $this->hasMany(Driver::class);
+    protected $table = 'team_drivers';
+
+    public function driver(){
+        return $this->belongsTo(Driver::class);
+    }
+    
+    public function seasonTeam(){
+        return $this->belongsTo(SeasonTeam::class);
     }
 }

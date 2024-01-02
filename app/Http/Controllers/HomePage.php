@@ -21,13 +21,27 @@ class HomePage extends Controller
 {
     public function home()
     {
-        $year = date('Y');
+        $year = date('Y') ;
 
-        $season = Season::where("id",(int)$year)->first();
 
-        dd($season->Drivers());
+        //dd($season->Drivers());
+        $season2 = Season::with('seasonTeams.teamDrivers.driver')->find($year);
 
-        
+        $drivers3 = $season2->seasonTeams->flatMap(function ($seasonTeam) {
+            return $seasonTeam->teamDrivers->pluck('driver');
+        });
+
+        foreach ($drivers3  as $d){
+            echo ($d);
+        }
+
+
+
+        dd($season2);
+
+        foreach ($season->Drivers2 as $driver){
+            echo ($driver);
+        }
 
         $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
