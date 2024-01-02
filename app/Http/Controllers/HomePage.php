@@ -21,7 +21,7 @@ class HomePage extends Controller
 {
     public function home()
     {
-        $year = date('Y') ;
+        $year = date('Y')-1 ;
 
 
         //dd($season->Drivers());
@@ -32,16 +32,12 @@ class HomePage extends Controller
         });
 
         foreach ($drivers3  as $d){
-            echo ($d);
+            echo ($d->Lastname. "\n");
         }
 
 
 
-        dd($season2);
-
-        foreach ($season->Drivers2 as $driver){
-            echo ($driver);
-        }
+        
 
         $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
