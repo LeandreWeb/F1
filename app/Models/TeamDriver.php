@@ -50,9 +50,11 @@ class TeamDriver extends Model
                 }
 
         }
-    
 
-    echo($totalPoints);
+        if($totalPoints = null){
+
+            $totalPoints = 0;
+        }
 
     return $totalPoints;
     }

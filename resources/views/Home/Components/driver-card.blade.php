@@ -1,15 +1,15 @@
 <div class="driver-card">
     <div class="driver-info">
-        <div class="driver-points">{{$driver->points}} Points</div>
+        <div class="driver-points">{{$teamDriver->points()}} Points</div>
         <div class="driver-fullname">
-            <h4 class="driver-firstname">{{$driver->Firstname}}</h4>
-            <h3 class= "driver-lastname">{{$driver->Lastname}}</h3>
+            <h4 class="driver-firstname">{{$teamDriver->driver->Firstname}}</h4>
+            <h3 class= "driver-lastname">{{$teamDriver->driver->Lastname}}</h3>
         </div>
     </div>
     <div class="driver-photo">
-        <img src="{{asset('Images/Drivers/Side-profil/'.$driver->Lastname.".avif")}}" alt="">
+        <img src="{{asset('Images/Drivers/Side-profil/'.$teamDriver->driver->Lastname.".avif")}}" alt="">
         <h2 class="driver-position">{{$position+1}}</h2>
-        <img src="{{asset('Images/Teams/'.$driver->team->Name.' black.png')}}" class="driver-team" src="" alt="">
+        <img src="{{asset('Images/Teams/'.$teamDriver->seasonTeam->team->Name.' black.png')}}" class="driver-team" src="" alt="">
     </div>
 </div>
 

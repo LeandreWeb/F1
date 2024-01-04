@@ -21,29 +21,28 @@ class HomePage extends Controller
 {
     public function home()
     {
-        $year = date('Y')-1 ;
+        $year = date('Y') ;
 
 
         //dd($season->Drivers());
-        $season = Season::with('seasonTeams.teamDrivers.driver')->find($year);
+        $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
-        $drivers = $season->seasonTeams->flatMap(function ($seasonTeam) {
-            return $seasonTeam->teamDrivers->pluck('driver');
-        });
+        // $drivers = $season->seasonTeams->flatMap(function ($seasonTeam) {
+        //     return $seasonTeam->teamDrivers->pluck('driver');
+        // });
 
         
         $teamDriver = TeamDriver::where("driver_id",1)->first();
 
-        dd($teamDriver->points());
-
+        
         //dd($season->drivers()); 
 
-        foreach ($season->drivers()  as $d){
-            echo ($d->country. "\n");
-        }
+        // foreach ($season->teamDrivers()  as $d){
+        //     echo ($d. "\n");
+        // }
 
 
-        $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
+        $top3 = $season->top3Drivers();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         $currentGp = GrandPrixWeekend::where("status","current")->first();

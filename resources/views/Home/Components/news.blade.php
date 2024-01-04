@@ -37,14 +37,16 @@
         </div>
     </a>
 
+    @isset($top3[0])
     <div class="top3">
         <h2>Top 3</h2>
         <div class="top3-drivers"->
-            @for ($i = 0; $i < 3; $i++)
-                @include('Home.Components.driver-card', ['position' => $i, 'driver' => $top3[$i]])
-            @endfor
+                @for ($i = 0; $i < 3; $i++)
+                @include('Home.Components.driver-card', ['position' => $i, 'teamDriver' => $top3[$i]])
+                @endfor
         </div>
     </div>
+    @endisset ()
 </section>
 
 

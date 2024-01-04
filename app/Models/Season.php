@@ -22,21 +22,56 @@ class Season extends Model
         return $this->hasMany(GrandPrixWeekend::class);
     }
 
-    public function drivers(){
+    public function teamDrivers(){
 
         return $this->seasonTeams->flatMap(function ($seasonTeam) {
-            return $seasonTeam->teamDrivers->pluck('driver');
+            return $seasonTeam->teamdrivers;
         });
     }
 
     public function top3Drivers(){
-        $drivers=$this->drivers();
+        $drivers=$this->teamDrivers();
+
+        $driver1points= -1;
+        $driver2points= -1;
+        $driver3points= -1;
+
+        $driver1= null;
+        $driver2= null;
+        $driver3= null;
+
 
         for ($i=0; $i < count($drivers); $i++) { 
-            echo($drivers[$i]->country);
+            
+            $driverpoint = $drivers[$i]->points();
+
+            if ($driverpoint > $driver1points) {
+                $driver3=$driver2;
+                $driver3points = $driver2points;
+                $driver2=$driver1;
+                $driver2points = $driver1points;
+                $driver1 = $drivers[$i];
+                $driver1points = $drivers[$i]->points();
+                
+            }
+            elseif($driverpoint > $driver2points){
+                $driver3=$driver2;
+                $driver3points = $driver2points;
+                $driver2 = $drivers[$i];
+                $driver2points = $drivers[$i]->points();
+            }
+            elseif($driverpoint > $driver3points){
+                $driver3 = $drivers[$i];
+                $driver3points = $drivers[$i]->points();
+            }
+
+
         }
 
-        return $drivers;
+
+        $top3 = [$driver1, $driver2, $driver3];
+
+        return $top3;
 
     }
 }
