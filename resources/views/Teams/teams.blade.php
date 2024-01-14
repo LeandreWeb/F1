@@ -4,8 +4,8 @@
     <main class="teams">
         <h2 class="teams_title">Équipes</h2>
         <div class="teams_container">
-            @foreach ($teams as $team)
-                @include('Teams.Components.teamBanner', compact('team'))
+            @foreach ($seasonTeams as $seasonTeam)
+                @include('Teams.Components.teamBanner', compact('seasonTeam'))
             @endforeach
         </div>
 

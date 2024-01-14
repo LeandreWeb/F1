@@ -30,4 +30,19 @@ class SeasonTeam extends Model
     public function season(){
         return $this->belongsTo(Season::class);
     }
+
+    public function points(){
+        $drivers= $this->teamDrivers;
+
+        $points= 0;
+
+        foreach ($drivers as $driver){
+            $points += $driver->points();
+
+        }
+
+        
+
+        return $points;
+    }
 }

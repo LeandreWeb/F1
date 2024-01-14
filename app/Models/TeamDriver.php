@@ -29,6 +29,8 @@ class TeamDriver extends Model
         ->where('race_results.driver_id',$driverId )
         ->sum('points');
 
+        
+
         $sprintPoints = SprintResult::join('sprints', 'sprint_results.sprint_id', '=', 'sprints.id')
         ->join('grand_prix_weekends', 'sprints.id', '=', 'grand_prix_weekends.id')
         ->where('grand_prix_weekends.Season_id', $year)
@@ -51,12 +53,12 @@ class TeamDriver extends Model
 
         }
 
-        if($totalPoints = null){
+        if($totalPoints == null){
 
             $totalPoints = 0;
         }
 
-    return $totalPoints;
+        return $totalPoints;
     }
 
 }
