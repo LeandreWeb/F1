@@ -15,7 +15,7 @@ class SeasonTeam extends Model
         return $this->hasMany(TeamDriver::class);
     }
 
-    public function teamPrincipal(){
+    public function teamPrincipals(){
         return $this->hasMany(TeamPrincipals::class);
     }
 
@@ -29,6 +29,13 @@ class SeasonTeam extends Model
 
     public function season(){
         return $this->belongsTo(Season::class);
+    }
+
+    public function activeTeamPrincipal(){
+        return Principal::join('team_principals',"team_principals.principal_id", "=" ,'principals.id')
+        ->where('team_principals.status' , "active")
+        ->where('team_principals.season_team_id',$this->id)
+        ->first();
     }
 
     public function points(){

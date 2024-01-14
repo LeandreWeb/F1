@@ -1,5 +1,5 @@
 
-<a href="{{ route('team', ['id' => $seasonTeam->id]) }}#presentation" class="team_container team_{{$seasonTeam->team->id}}--border">
+<a href="{{ route('team', ['teamName' => $seasonTeam->team->Name]) }}#presentation" class="team_container team_{{$seasonTeam->team->id}}--border">
     <div class="team_infos">
         <div class="team_infos_name">
             <img src="{{asset('Images/Teams/'.$seasonTeam->team->Name.' black.png')}}" alt="">

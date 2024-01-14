@@ -1,14 +1,14 @@
 <section class="team__car--wrapper">
-    <h2 class="team--title team_{{ $team->id }}--text">
+    <h2 class="team--title team_{{ $seasonTeam->team->id }}--text">
         Voiture
     </h2>
     <div class="team__car--container">
         <div class="team__car--card">
-            <h3 class="team__car--title team_{{ $team->id }}--textStoke">{{ $team->car->name }}</h3>
-            <img src="{{ asset('Images/Car/' . $team->Name . '.avif') }}" alt="">
+            <h3 class="team__car--title team_{{ $seasonTeam->team->id }}--textStoke">{{ $seasonTeam->car->name }}</h3>
+            <img src="{{ asset('Images/Car/' . $seasonTeam->Name . '.avif') }}" alt="">
         </div>
-        <div class="team__car--infos team_{{ $team->id }}--text">
-            <h3>Moteur: <span>{{ $team->car->power_unit }}</span></h3>
+        <div class="team__car--infos team_{{ $seasonTeam->team->id }}--text">
+            <h3>Moteur: <span>{{ $seasonTeam->car->power_unit }}</span></h3>
         </div>
 
 

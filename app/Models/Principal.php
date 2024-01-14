@@ -9,7 +9,7 @@ class Principal extends Model
 {
     use HasFactory;
 
-    protected $table = "principal";
+    protected $table = "principals";
 
     public function teamPrincipals(){
         return $this->hasMany(TeamPrincipals::class);

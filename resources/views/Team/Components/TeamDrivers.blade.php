@@ -1,27 +1,27 @@
 <section class="team__drivers__wrapper">
-    <h2 class="team--title team_{{ $team->id }}--text">
+    <h2 class="team--title team_{{ $seasonTeam->team->id }}--text">
         Pilotes
     </h2>
     <div class="team__drivers__container">
-        @foreach ($team->drivers as $driver)
-            @if ($driver->status == 'active')
+        @foreach ($seasonTeam->teamDrivers as $teamDriver)
+            @if ($teamDriver->status == 'active')
                 <div class="team__driver__card__container ">
-                    <img src="{{ asset('Images/Drivers/Side-profil/' . $driver->Lastname . '.avif') }}" alt=""
+                    <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->driver->Lastname . '.avif') }}" alt=""
                         class="team__driver__photo">
                     <div class="team__driver__infos">
                         <div class="team__driver--firstname team__driver__info--container">Prénom: <span
-                                class="team_{{ $driver->team->id }}--text">{{ $driver->Firstname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->Firstname }}</span></div>
                         <div class="team__driver--points team__driver__info--container">Points: <span
-                                class="team_{{ $driver->team->id }}--text">{{ $driver->points }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->points() }}</span></div>
                         <div class="team__driver--lastname team__driver__info--container">Nom de Famille: <span
-                                class="team_{{ $driver->team->id }}--text">{{ $driver->Lastname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->Lastname }}</span></div>
                         <div class="team__driver--country team__driver__info--container">Pays: <span
-                                class="team_{{ $driver->team->id }}--text">{{ $driver->country->name }}</span><span><img
-                                    src="{{ asset('Images/Flags/' . $driver->country->name . '.jpg') }}"
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->country->name }}</span><span><img
+                                    src="{{ asset('Images/Flags/' . $teamDriver->driver->country->name  . '.jpg') }}"
                                     alt=""></span></div>
-                        <div class="team__driver__infos--line team_{{ $driver->team->id }}--background"></div>
+                        <div class="team__driver__infos--line team_{{ $seasonTeam->team->id }}--background"></div>
                     </div>
-                    <img src="{{ asset('Images/Drivers/Number/' . $driver->Lastname . '.avif') }}" alt=""
+                    <img src="{{ asset('Images/Drivers/Number/' . $teamDriver->driver->Lastname . '.avif') }}" alt=""
                         class="team__driver--number">
                 </div>
             @endif

@@ -1,40 +1,33 @@
-@php
-    $teamPoints = 0;
-    foreach ($team->drivers as $driver) {
-        $teamPoints += $driver->points;
-    }
-    $socials = $team->socials;
 
-@endphp
 <section class="team__infos--wrapper">
-    <h2 class="team--title team_{{ $team->id }}--text">
+    <h2 class="team--title team_{{ $seasonTeam->team->id }}--text">
         Informations
     </h2>
     <div class="team__infos--container">
         <div class="team__infos__datas">
             <p class="team__infos__data">Points: <span
-                    class="team_{{ $driver->team->id }}--text">{{ $teamPoints }}</span></p>
+                    class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->points() }}</span></p>
             <p class="team__infos__data">Chef-Équipe: <span
-                    class="team_{{ $driver->team->id }}--text">{{ $team->teamChief->firstname }}
-                    {{ $team->teamChief->Lastname }}</span></p>
+                    class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->activeTeamPrincipal()->firstname}}
+                    {{ $seasonTeam->activeTeamPrincipal()->Lastname }}</span></p>
             <p class="team__infos__data">Pays: <span
-                    class="team_{{ $driver->team->id }}--text">{{ $team->country->name }}<img
-                        src="{{ asset('Images/Flags/' . $team->country->name . '.jpg') }}" alt=""></span></p>
+                    class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->team->country->name }}<img
+                        src="{{ asset('Images/Flags/' . $seasonTeam->team->country->name . '.jpg') }}" alt=""></span></p>
         </div>
         <div class="team__text">
-            {{ $socials->teamText }}
+            {{ $seasonTeam->team->socials->teamText }}
         </div>
     </div>
     <div class="team__socials">
-        <div class="team__social"><i class="fa-brands fa-twitter team_{{ $driver->team->id }}--text "></i><a
-                class="team_{{ $driver->team->id }}--text "
-                href="{{ $socials->twitterLink }}">{{ $socials->twitterName }}</a></div>
-        <div class="team__social"><i class="fa-brands fa-instagram team_{{ $driver->team->id }}--text"></i> <a
-                href="{{ $socials->instagramLink }}"
-                class="team_{{ $driver->team->id }}--text ">{{ $socials->instagramName }}</a></div>
-        <div class="team__social"><i class="fa-solid fa-globe team_{{ $driver->team->id }}--text"></i></i><a
-                href="{{ $socials->websiteLink }}"
-                class="team_{{ $driver->team->id }}--text ">{{ $socials->websiteName }}</a></div>
+        <div class="team__social"><i class="fa-brands fa-twitter team_{{ $seasonTeam->team->id }}--text "></i><a
+                class="team_{{ $seasonTeam->team->id }}--text "
+                href="{{ $seasonTeam->team->socials->twitterLink }}">{{ $seasonTeam->team->socials->twitterName }}</a></div>
+        <div class="team__social"><i class="fa-brands fa-instagram team_{{ $seasonTeam->team->id }}--text"></i> <a
+                href="{{ $seasonTeam->team->socials->instagramLink }}"
+                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->instagramName }}</a></div>
+        <div class="team__social"><i class="fa-solid fa-globe team_{{ $seasonTeam->team->id }}--text"></i></i><a
+                href="{{ $seasonTeam->team->socials->websiteLink }}"
+                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->websiteName }}</a></div>
     </div>
 
 
