@@ -40,7 +40,6 @@ class Season extends Model
         $driver2= null;
         $driver3= null;
 
-
         for ($i=0; $i < count($drivers); $i++) { 
             
             $driverpoint = $drivers[$i]->points();
@@ -65,13 +64,32 @@ class Season extends Model
                 $driver3points = $drivers[$i]->points();
             }
 
-
         }
-
 
         $top3 = [$driver1, $driver2, $driver3];
 
         return $top3;
+    }
+
+    public function rankedTeams(){
+
+        $sTeams = $this->seasonTeams;
+        
+        $sortedTeams = $sTeams->sortByDesc(function ($sTeams,$key){
+            return $sTeams->points();
+        });
+
+        return $sortedTeams;
+    }
+
+    public function rankedDrivers(){
+        $sDrivers = $this->teamDrivers();
+
+        $sortedDrivers = $sDrivers->sortByDesc(function ($sTeams,$key){
+            return $sTeams->points();
+        });
+
+        return $sortedDrivers;
 
     }
 }

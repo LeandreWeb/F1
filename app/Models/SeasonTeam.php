@@ -31,6 +31,8 @@ class SeasonTeam extends Model
         return $this->belongsTo(Season::class);
     }
 
+
+
     public function activeTeamPrincipal(){
         return Principal::join('team_principals',"team_principals.principal_id", "=" ,'principals.id')
         ->where('team_principals.status' , "active")
@@ -47,8 +49,6 @@ class SeasonTeam extends Model
             $points += $driver->points();
 
         }
-
-        
 
         return $points;
     }

@@ -5,37 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\Driver;
 use App\Models\Team;
 use Illuminate\Http\Request;
+use App\Models\Season;
+
 
 class StandingController extends Controller
 {
     public function menu()
     {
-        $drivers =  Driver::orderBy('points', 'desc')->get();
-        $teamsFinder =  Team::all();
 
+        $year = date('Y') ;
 
+        $season = Season::with('seasonTeams.teamDrivers')->find($year)->first();
 
-        $sortedTeams = $teamsFinder->sortByDesc(function ($team) {
-            $points = 0;
+        $teams = $season->rankedTeams();
 
-            foreach ($team->drivers as $driver) {
-                $points += $driver->points;
-            }
-
-            return $points;
-        });
-
-        $teams = $sortedTeams;
-
-        foreach ($teams as $team) {
-            $points = 0;
-
-            foreach ($team->drivers as $driver) {
-                $points += $driver->points;
-            }
-
-            $team->{'points'} = $points;
-        }
+        $drivers = $season->rankedDrivers();
 
         return view("Standing.standing", compact('drivers', 'teams'));
     }

@@ -1,20 +1,19 @@
 @php
     $position = 0;
 @endphp
-@foreach ($teams as $key => $team)
+@foreach ($teams as  $team)
 
     <li class="standing__team position--{{$position+1}}">
       <div class="standing__team--infos">
           <h3 class="standing__team--position">{{$position+1}}</h3>
-          <h3 class="standing__team--name">{{$team->Name}}</h3>
+          <h3 class="standing__team--name">{{$team->team->Name}}</h3>
       </div>
       <h3 class="standing__team--points">
-        {{$team->points}} pts
+        {{$team->points()}} pts
       </h3>
     </li>
     @php
         $position++;
-
     @endphp
 
 @endforeach
