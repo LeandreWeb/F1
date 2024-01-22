@@ -32,7 +32,7 @@ class Qualification extends Model
         return $this->hasMany(QualificationResult::class)->orderBy("position","desc")->skip(10)->take(10);
     }
     public function winner(){
-        return $this->hasMany(QualificationResult::class)->orderBy("position","asc")->take(1);
+        return $this->hasOne(QualificationResult::class)->orderBy("position","asc")->take(1);
     }
 
     // public function qualificationStory(){

@@ -126,14 +126,14 @@
         <section class="quali_visual">
 
             @include('svg.Qualifications.' . $quali->grandPrixWeekend->track->name, [
-                'time' => $quali->winner[0]->q3,
-                'teamid' => $quali->winner[0]->driver->team->id,
+                'time' => $quali->winner->q3,
+                'teamid' => $quali->winner->driver->teamDriver[0]->seasonTeam->team->id,
             ])
             <div class="quali_visual--infos">
                 <button class="start--animation">Démarrer</button>
-                <h3>{{ $quali->winner[0]->q3 }} s</h3>
-                <h3 class="driver_pole team_{{ $quali->winner[0]->driver->team->id }}--text">
-                    {{ $quali->winner[0]->driver->Firstname }} {{ $quali->winner[0]->driver->Lastname }}</h3>
+                <h3>{{ $quali->winner->q3 }} s</h3>
+                <h3 class="driver_pole team_{{ $quali->winner->driver->teamDriver[0]->seasonTeam->team->id}}--text">
+                    {{ $quali->winner->driver->Firstname }} {{ $quali->winner->driver->Lastname }}</h3>
             </div>
         </section>
 

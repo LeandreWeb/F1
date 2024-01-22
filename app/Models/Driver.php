@@ -30,6 +30,9 @@ class Driver extends Model
     public function teamDriver(){
         return $this->hasMany(TeamDriver::class);
     }
+    public function currentTeam(){
+        
+    }
     
     
 

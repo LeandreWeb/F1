@@ -34,6 +34,6 @@ class SprintShootout extends Model
         return $this->hasMany(SprintShootoutResult::class)->orderBy("position","desc")->skip(10)->take(10);
     }
     public function winner(){
-        return $this->hasMany(SprintShootoutResult::class)->orderBy("position","asc")->take(1);
+        return $this->hasOne(SprintShootoutResult::class)->orderBy("position","asc")->take(1);
     }
 }
