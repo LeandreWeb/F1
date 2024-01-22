@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(PrincipalSeeder::class);
 
         $this->call(\Database\Seeders\Seeders2023\DatabaseSeeder2023::class);
-        $this->call(\Database\Seeders\Seeders2024\DatabaseSeeder2024::class);
+        //$this->call(\Database\Seeders\Seeders2024\DatabaseSeeder2024::class);
 
         
         //$this->call(pointsSeeder::class);

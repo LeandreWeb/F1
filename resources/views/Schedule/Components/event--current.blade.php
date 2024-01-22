@@ -61,7 +61,7 @@
 
             </div>
 
-            <h2 class="event_round">Ronde {{ $gp->id }}</h2>
+            <h2 class="event_round">Ronde {{ $gp->round }}</h2>
             <h2 class="event_status">GP du Weekend</h2>
         </div>
 

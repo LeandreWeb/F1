@@ -20,6 +20,7 @@ class GrandPrixWeekendSeeder2024 extends Seeder
      $grandPrixWeekends[]=[
         "id"=>202401,
         "name"=>"Grand Prix de Bahrain",
+        "round"=>1,
         "status"=>"done",
         "country_id"=>1,
         'race_id'=>202401,
