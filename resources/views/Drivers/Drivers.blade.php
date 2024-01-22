@@ -4,8 +4,8 @@
     <main class="in_construction">
         <h2 class="drivers_Title" >Pilotes</h2>
         <div class="drivers__container">
-            @foreach ($drivers as $driver)
-                @include('Drivers.Components.Driver', compact('driver'))
+            @foreach ($teamDrivers as $teamdriver)
+                @include('Drivers.Components.Driver', compact('teamdriver'))
             @endforeach
         </div>
     </main>
