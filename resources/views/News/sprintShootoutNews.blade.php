@@ -130,7 +130,7 @@
                 <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
             @endif
         </section>
-
+        {{-- Visuel du gagnant --}}
         <section class="sprintShootout_visual">
 
             @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
@@ -145,10 +145,6 @@
                 </h3>
             </div>
         </section>
-
-
-
-
     </main>
 
     <style>

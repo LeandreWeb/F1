@@ -1,9 +1,4 @@
-@php
-    $countryName = $article->grandPrixWeekend->country->name;
-    $grandPrixName = $article->grandPrixWeekend->name;
 
-
-@endphp
 
 @extends('layouts.main')
 
@@ -15,20 +10,9 @@
             </div>
             <img src="{{ asset('Images/Articles/' . $article->id . '.jpg') }}"" alt="">
         </section>
-
-
-
-
-
         <section class="article_text">
             <p>{{ $article->text}}</p>
         </section>
-
-
-
-
-
-
     </main>
 
     <style>
