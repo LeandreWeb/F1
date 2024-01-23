@@ -12,7 +12,8 @@
             "driver": "MySQL",
             "name": "f1wp",
             "database": "f1",
-            "username": "root"
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }

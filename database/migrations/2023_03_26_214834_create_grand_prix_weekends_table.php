@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('grand_prix_weekends', function (Blueprint $table) {
             $table->id();
-            $table->string("name")->unique();
+            $table->string("name");
             $table->integer("round");
             $table->string("status");
             $table->foreignId('country_id')->constrained()->onUpdate("cascade")->onDelete("cascade");

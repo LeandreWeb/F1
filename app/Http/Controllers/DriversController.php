@@ -17,10 +17,8 @@ class DriversController extends Controller
         $season = Season::with('seasonTeams.teamDrivers')->find($year)->first();
 
 
-        $drivers = $season->teamDrivers();
+        $drivers = $season->teamDrivers(); //TODO have only the drivers of th year
 
-        
-    
         $sortedDrivers = $drivers->sortBy(function ($d,$key){
             
             return $d->driver->Lastname;

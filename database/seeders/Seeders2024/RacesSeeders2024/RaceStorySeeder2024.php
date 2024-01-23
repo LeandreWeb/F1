@@ -35,7 +35,6 @@ class RaceStorySeeder2024 extends Seeder
             "extra" => null,
         ];
 
-        Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
     }
 }

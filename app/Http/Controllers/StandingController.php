@@ -16,7 +16,7 @@ class StandingController extends Controller
         $year = date('Y') ;
 
         
-        $season = Season::with('seasonTeams.teamDrivers')->find($year)->first();
+        $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
         $teams = $season->rankedTeams();
 

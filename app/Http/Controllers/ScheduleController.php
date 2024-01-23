@@ -5,11 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use  App\Models\Race;
 use  App\Models\GrandPrixWeekend;
+use App\Models\Season;
+
 
 
 class ScheduleController extends Controller
 {
     public function menu(){
+
+        $year = date('Y') ;
+
+        
+        $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         
@@ -24,7 +31,7 @@ class ScheduleController extends Controller
             $dateDiff = 4;
         }
 
-        $currentGp = GrandPrixWeekend::where("status","current")->first();
+        $currentGp = GrandPrixWeekend::where("status","current");
 
         if(!$currentGp && $nextRace != null ){
             $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
@@ -57,7 +64,7 @@ class ScheduleController extends Controller
         }
 
 
-        $GrandPrixWeekends = GrandPrixWeekend::get();
+        $GrandPrixWeekends = $season->grandPrix;
 
         return view("Schedule.schedule",compact('GrandPrixWeekends'));
     }

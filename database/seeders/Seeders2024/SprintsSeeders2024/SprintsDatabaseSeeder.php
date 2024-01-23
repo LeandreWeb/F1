@@ -14,12 +14,8 @@ class SprintsDatabaseSeeder extends Seeder
     {
         $this->call(SprintStorySeeder2024::class);
         $this->call(sprintsSeeder2024::class);
-        // $this->call(SprintResult202401Seeder::class);
-        // $this->call(SprintResult202402Seeder::class);
-        // $this->call(SprintResult202403Seeder::class);
-        // $this->call(SprintResult202404Seeder::class);
-        // $this->call(SprintResult202405Seeder::class);
-        // $this->call(SprintResult202406Seeder::class);
+        //$this->call(SprintResult202405Seeder::class);
+        
 
         
     }

@@ -26,7 +26,6 @@ class ArticleSeeder2024 extends Seeder
         //     "created_time"=>"2024-05-20"
         // ];
 
-        DB::table("articles")->delete();
         Db::table("articles")->insert($articles);
     }
 }

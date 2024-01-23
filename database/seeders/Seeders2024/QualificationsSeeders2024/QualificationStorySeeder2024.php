@@ -397,7 +397,6 @@ class QualificationStorySeeder2024 extends Seeder
 
 
 
-        Db::table('qualification_stories')->delete();
         Db::table('qualification_stories')->insert($qualificationStory);
     }
 }

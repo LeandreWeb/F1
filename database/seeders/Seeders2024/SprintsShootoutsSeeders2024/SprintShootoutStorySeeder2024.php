@@ -33,8 +33,7 @@ class SprintShootoutStorySeeder2024 extends Seeder
             
             "extra" => null
         ];
-    
-        Db::table('sprint_shootout_stories')->delete();
+
         Db::table('sprint_shootout_stories')->insert($SprintShootoutStory);
     }
 }

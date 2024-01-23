@@ -89,7 +89,6 @@ class TeamPrincipalsSeeder2024 extends Seeder
         //     'status'=>"active"
         // ];
 
-        DB::table('team_principals')->delete();
         DB::table('team_principals')->insert($teamPrincipals);
 
     }

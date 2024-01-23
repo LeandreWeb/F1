@@ -118,18 +118,6 @@ class TeamDriversSeeder2024 extends Seeder
             'status'=>'active'
         ];
         $teamDrivers[]=[
-            'id'=>202417,
-            'driver_id'=>40,
-            'season_team_id'=>202408,
-            'status'=>'reserve'
-        ];
-        $teamDrivers[]=[
-            'id'=>202418,
-            'driver_id'=>21,
-            'season_team_id'=>202408,
-            'status'=>'fired'
-        ];
-        $teamDrivers[]=[
             'id'=>202419,
             'driver_id'=>27,
             'season_team_id'=>202409,
@@ -154,7 +142,6 @@ class TeamDriversSeeder2024 extends Seeder
             'status'=>'active'
         ];
 
-        DB::table('team_drivers')->delete();
         DB::table('team_drivers')->insert($teamDrivers);
 
     }
