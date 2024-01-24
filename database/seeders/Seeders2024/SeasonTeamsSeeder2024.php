@@ -42,7 +42,7 @@ class SeasonTeamsSeeder2024 extends Seeder
         $seasonteams[]=[
             'id'=> 202405,
             'season_id'=>2024,
-            'team_id'=>5, //TODO chang to STAKE F1 Team
+            'team_id'=>11,
             'car_id'=>202405
         ];
         $seasonteams[]=[

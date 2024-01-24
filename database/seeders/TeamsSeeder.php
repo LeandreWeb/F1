@@ -85,6 +85,13 @@ class TeamsSeeder extends Seeder
             'socials_id'=>10,
             'factory_id'=>10,
         ];
+        $teams[]= [
+            "id"=>11,
+            'Name'=>'Stake F1',
+            'country_id'=>27,
+            'socials_id'=>11,
+            'factory_id'=>5,
+        ];
         DB::table('teams')->delete();
         DB::table('teams')->insert($teams);
     }

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use  App\Models\Driver;
 use App\Models\Season;
 
 
@@ -14,19 +13,17 @@ class DriversController extends Controller
 
         $year = date('Y') ;
 
-        $season = Season::with('seasonTeams.teamDrivers')->find($year)->first();
+        $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
-
-        $drivers = $season->teamDrivers(); //TODO have only the drivers of th year
+        $drivers = $season->teamDrivers();
 
         $sortedDrivers = $drivers->sortBy(function ($d,$key){
             
             return $d->driver->Lastname;
         });
-    
+
         $teamDrivers=$sortedDrivers;
         
-
         return view('Drivers.Drivers',compact('teamDrivers'));
     }
 }
