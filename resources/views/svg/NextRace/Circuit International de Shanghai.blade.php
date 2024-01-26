@@ -55,5 +55,4 @@
 
 </style>
 
-{{-- //TODO faire le svg --}}
 

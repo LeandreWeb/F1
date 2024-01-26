@@ -60,7 +60,7 @@ class SeasonTeamsSeeder2024 extends Seeder
         $seasonteams[]=[
             'id'=> 202408,
             'season_id'=>2024,
-            'team_id'=>8,
+            'team_id'=>12,
             'car_id'=>202408
         ];
         $seasonteams[]=[

@@ -81,6 +81,19 @@ class PrincipalSeeder extends Seeder
             "LastName"=>"Famin",
             "country_id"=>12
         ];
+        $principals[]=[
+            "id"=>12,
+            "FirstName"=>"Ayao",
+            "LastName"=>"Komatsu",
+            "country_id"=>16
+        ];
+        $principals[]=[
+            "id"=>13,
+            "FirstName"=>"Laurent",
+            "LastName"=>"Mekies",
+            "country_id"=>6
+        ];
+
         DB::table("principals")->delete();
         DB::table("principals")->insert($principals);
     }

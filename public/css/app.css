@@ -37,7 +37,8 @@ html{
     --Alfa-Romeo:#C92D4B;
     --AlphaTauri:#5E8FAA;
     --Williams:#37BEDD;
-
+    --Stake-F1:#00EC00;
+    --Visa-RB:#1634CE;
 
 
     --card-shadow:0px 0px 30px -5px #000;
@@ -410,6 +411,50 @@ header{
 }
 .team_10--textStoke{
     -webkit-text-stroke:.2rem var(--Mclaren); ;
+}
+.team_11--text{
+    color: var(--Stake-F1);
+}
+
+.team_11--background{
+    background-color: var(--Stake-F1);
+}
+
+.team_11--fill{
+    fill: var(--Stake-F1);
+}
+.team_11--border{
+    border: solid 2px var(--Stake-F1);
+
+    box-shadow: 0px 0px 3rem 0px var(--Stake-F1) ;
+}
+.team_11--border:hover{
+    box-shadow: 0px 0px 3rem 5px var(--Stake-F1) ;
+}
+.team_11--textStoke{
+    -webkit-text-stroke:.2rem var(--Stake-F1); ;
+}
+.team_11--text{
+    color: var(--Stake-F1);
+}
+
+.team_11--background{
+    background-color: var(--Stake-F1);
+}
+
+.team_12--fill{
+    fill: var(--Visa-RB);
+}
+.team_12--border{
+    border: solid 2px var(--Visa-RB);
+
+    box-shadow: 0px 0px 3rem 0px var(--Visa-RB) ;
+}
+.team_12--border:hover{
+    box-shadow: 0px 0px 3rem 5px var(--Visa-RB) ;
+}
+.team_12--textStoke{
+    -webkit-text-stroke:.2rem var(--Visa-RB); ;
 }
 
 

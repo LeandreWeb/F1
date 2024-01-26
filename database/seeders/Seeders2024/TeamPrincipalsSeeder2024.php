@@ -20,7 +20,7 @@ class TeamPrincipalsSeeder2024 extends Seeder
      */ 
     public function run(): void
     {
-        $teamPrincipals=[]; //TODO checks taems principals for 2024
+        $teamPrincipals=[]; 
         
         $teamPrincipals[]=[
             'id'=>202401,
@@ -53,12 +53,6 @@ class TeamPrincipalsSeeder2024 extends Seeder
             'status'=>"active"
         ];
         $teamPrincipals[]=[
-            'id'=>202406,
-            'principal_id'=>6,
-            'season_team_id'=>202406,
-            'status'=>"fired"
-        ];
-        $teamPrincipals[]=[
             'id'=>202407,
             'principal_id'=>7,
             'season_team_id'=>202407,
@@ -66,13 +60,13 @@ class TeamPrincipalsSeeder2024 extends Seeder
         ];
         $teamPrincipals[]=[
             'id'=>202408,
-            'principal_id'=>8,
+            'principal_id'=>13,
             'season_team_id'=>202408,
             'status'=>"active"
         ];
         $teamPrincipals[]=[
             'id'=>202409,
-            'principal_id'=>9,
+            'principal_id'=>12,
             'season_team_id'=>202409,
             'status'=>"active"
         ];

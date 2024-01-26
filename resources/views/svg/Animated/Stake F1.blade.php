@@ -24,13 +24,20 @@
   stroke-dasharray: 1750;
   stroke-dashoffset: 1750;
   animation: dash 0.5s ease-in-out 1s forwards;
-  stroke:#37BEDD;
+  stroke:#00EC00;
+  stroke-width: 4;
+}
+#tak{
+  animation-delay: 1.35s;
+}
+#e{
+  animation-delay: 1.45s;
 }
 
 #F,#One,#Appo,#T,#E,#A,#M{
 opacity:0;
   animation: appear 3s ease-in-out 1.5s forwards;
-  stroke:#37BEDD;
+  stroke:#00EC00;
   stroke-width: 2;
 
 
