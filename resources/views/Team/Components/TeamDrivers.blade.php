@@ -10,11 +10,11 @@
                         class="team__driver__photo">
                     <div class="team__driver__infos">
                         <div class="team__driver--firstname team__driver__info--container">Prénom: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->Firstname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->Firstname }}</span></div>
                         <div class="team__driver--points team__driver__info--container">Points: <span
                                 class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->points() }}</span></div>
                         <div class="team__driver--lastname team__driver__info--container">Nom de Famille: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->Lastname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->Lastname }}</span></div>
                         <div class="team__driver--country team__driver__info--container">Pays: <span
                                 class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->country->name }}</span><span><img
                                     src="{{ asset('Images/Flags/' . $teamDriver->driver->country->name  . '.jpg') }}"
