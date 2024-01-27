@@ -456,6 +456,9 @@ header{
 .team_12--textStoke{
     -webkit-text-stroke:.2rem var(--Visa-RB); ;
 }
+.team_12--background{
+    background-color: var(--Visa-RB);
+}
 
 
 
