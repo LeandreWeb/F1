@@ -9,6 +9,8 @@ class SprintResult extends Model
 {
     use HasFactory;
 
+    protected $table ="sprint_results";
+
 
     public function driver(){
         return $this->belongsTo(Driver::class);

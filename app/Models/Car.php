@@ -9,7 +9,9 @@ class Car extends Model
 {
     use HasFactory;
 
-    public function team(){
-        return $this->belongsTo(Team::class);
+    protected $table ="cars";
+
+    public function seasonTeeam(){
+        return $this->hasOne(SeasonTeam::class);
     }
 }

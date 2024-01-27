@@ -1,5 +1,5 @@
 <section class="team__map--wrapper">
-    <h2 class="team--title team_{{ $team->id }}--text">
+    <h2 class="team--title team_{{$seasonTeam->team->id}}--text">
         Base
     </h2>
     <div class="map__container">
@@ -15,10 +15,10 @@
         'pk.eyJ1IjoibGVhbmRyZWJiIiwiYSI6ImNsZThveXlkbjBocHQzeHIxZmpoOTBqMGIifQ.xRK99WKbAjKkTH2M9jZCpg';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: <?php echo json_encode($team->factory->map_link, JSON_HEX_TAG); ?>,
+        style: <?php echo json_encode($seasonTeam->team->factory->map_link, JSON_HEX_TAG); ?>,
         center: [
-            <?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
-            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
+            <?php echo json_encode($seasonTeam->team->factory->longitude, JSON_HEX_TAG); ?>,
+            <?php echo json_encode($seasonTeam->team->factory->lattitude, JSON_HEX_TAG); ?>
         ],
         zoom: 17
     });
@@ -26,14 +26,14 @@
             "color": "#68fe9a"
         })
         .setLngLat([
-            <?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
-            <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
+            <?php echo json_encode($seasonTeam->team->factory->longitude, JSON_HEX_TAG); ?>,
+            <?php echo json_encode($seasonTeam->team->factory->lattitude, JSON_HEX_TAG); ?>
         ])
         .addTo(map);
     map.on('load', () => {
         map.jumpTo({
-            center: [<?php echo json_encode($team->factory->longitude, JSON_HEX_TAG); ?>,
-                <?php echo json_encode($team->factory->lattitude, JSON_HEX_TAG); ?>
+            center: [<?php echo json_encode($seasonTeam->team->factory->longitude, JSON_HEX_TAG); ?>,
+                <?php echo json_encode($seasonTeam->team->factory->lattitude, JSON_HEX_TAG); ?>
             ]
         });
     })

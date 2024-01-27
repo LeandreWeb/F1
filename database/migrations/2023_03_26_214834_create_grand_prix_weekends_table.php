@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('grand_prix_weekends', function (Blueprint $table) {
             $table->id();
-            $table->string("name")->unique();
+            $table->string("name");
+            $table->integer("round");
             $table->string("status");
             $table->foreignId('country_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('race_id')->constrained()->onUpdate("cascade")->onDelete("cascade");
@@ -21,6 +22,7 @@ return new class extends Migration
             $table->foreignId('sprint_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('sprint_shootout_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
             $table->foreignId('track_id')->nullable()->constrained()->onUpdate("cascade")->onDelete("cascade");
+            $table->foreignId('season_id')->nullable()->constrained()->onUpdate("cascade")->onDelete('cascade');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

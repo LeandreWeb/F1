@@ -42,7 +42,7 @@ Route::prefix("drivers")->group(function () {
     Route::get('/', [DriversController::class, 'menu'])->name('allDrivers');
 });
 
-Route::get('/team/{id}',[TeamController::class,'team'])->name('team');
+Route::get('/team/{teamName}',[TeamController::class,'team'])->name('team');
 
 Route::prefix("news")->group(function () {
     Route::get('/race{id}', [NewsController::class, "race"])->name('raceNews');

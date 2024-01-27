@@ -23,7 +23,7 @@
             @include('svg.NextRace.' . $nextRace->grandPrixWeekend->track->name)
         </div>
 
-        <h2 class="next_race_time"> Ronde {{ $nextRace->grandPrixWeekend->id }}</h2>
+        <h2 class="next_race_time"> Ronde {{ $nextRace->grandPrixWeekend->round }}</h2>
     </div>
 
 </section>

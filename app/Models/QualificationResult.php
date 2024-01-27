@@ -9,6 +9,8 @@ class QualificationResult extends Model
 {
     use HasFactory;
 
+    protected $table ="qualification_results";
+
     public function qualifications(){
         return $this->belongsTo(Qualification::class);
     }

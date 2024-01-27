@@ -176,6 +176,13 @@ class TrackSeeder extends Seeder
             "laps"=>58,
             "turns"=>16,
         ];
+        $tracks[]=[
+            "id"=>24,
+            "name"=>"Circuit International de Shanghai",
+            "length"=>5.451,
+            "laps"=>56,
+            "turns"=>16,
+        ];
         Db::table("tracks")->delete();
         Db::table("tracks")->insert($tracks);
     }

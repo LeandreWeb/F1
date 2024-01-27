@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class GrandPrixWeekend extends Model
 {
     use HasFactory;
-
+    
+    protected $table ="grand_prix_weekends";
 
     public function country(){
         return $this->belongsTo(Country::class);
@@ -31,6 +32,9 @@ class GrandPrixWeekend extends Model
 
     public function track(){
         return $this->belongsTo(Track::class);
+    }
+    public function season(){
+        return $this->belongsTo(Season::class);
     }
     public function article(){
         return $this->hasOne(Article::class);

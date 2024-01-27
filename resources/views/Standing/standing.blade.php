@@ -8,6 +8,9 @@
 @section('content')
     <main>
         <h2 class="standing_Title">Classement</h2>
+        <div class="year-selector">
+            @include("Drivers.Components.selector",compact('seasons'))
+        </div>
         <div class="standings">
             <ul class="standings--drivers">
                 @include('Standing.Components.driver', compact('drivers'))

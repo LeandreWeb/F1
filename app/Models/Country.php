@@ -8,16 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     use HasFactory;
-
-    public function Grand_Prix(){
-        return $this->hasMany(GrandsPrix::class);
+    protected $table ="countries";
+    
+    public function grandPrix(){
+        return $this->hasMany(GrandPrixWeekend::class);
     }
-    public function Drivers(){
+    public function drivers(){
         return $this->hasMany(Driver::class);
     }
-    public function Teams(){
+    public function teams(){
         return $this->hasMany(Team::class);
     }
-    // protected $table ="countries";
+    public function principals(){
+        return $this->hasMany(Principal::class);
+    }
+    
     // protected $primaryKey = "_id";
 }

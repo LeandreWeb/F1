@@ -14,80 +14,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(SeasonsSeeder::class);
         $this->call(countriesSeeder::class);
         $this->call(SocialsSeeder::class);
         $this->call(FactorySeeder::class);
         $this->call(TeamsSeeder::class);
-        $this->call(CarSeeder::class);
-        $this->call(DriversSeeder::class);
-        $this->call(TeamChiefsSeeder::class);
-        $this->call(RaceStorySeeder::class);
-        $this->call(QualificationStorySeeder::class);
-        $this->call(SprintShootoutStorySeeder::class);
-        $this->call(SprintStorySeeder::class);
-        $this->call(racesSeeder::class);
-        $this->call(qualificationsSeeder::class);
-        $this->call(SprintShootoutSeeder::class);
-        $this->call(sprintsSeeder::class);
         $this->call(TrackSeeder::class);
-        $this->call(GrandPrixWeekendSeeder::class);
-        $this->call(ArticleSeeder::class);
-        $this->call(qualification_results01Seeder::class);
-        $this->call(qualification_results02Seeder::class);
-        $this->call(qualification_results03Seeder::class);
-        $this->call(qualification_results04Seeder::class);
-        $this->call(qualification_results05Seeder::class);
-        $this->call(qualification_results07Seeder::class);
-        $this->call(qualification_results08Seeder::class);
-        $this->call(qualification_results09Seeder::class);
-        $this->call(qualification_results10Seeder::class);
-        $this->call(qualification_results11Seeder::class);
-        $this->call(qualification_results12Seeder::class);
-        $this->call(qualification_results13Seeder::class);
-        $this->call(qualification_results14Seeder::class);
-        $this->call(qualification_results15Seeder::class);
-        $this->call(qualification_results16Seeder::class);
-        $this->call(qualification_results17Seeder::class);
-        $this->call(qualification_results18Seeder::class);
-        $this->call(qualification_results19Seeder::class);
-        $this->call(qualification_results20Seeder::class);
-        $this->call(qualification_results21Seeder::class);
-        $this->call(qualification_results22Seeder::class);
-        $this->call(qualification_results23Seeder::class);
-        $this->call(race_results01Seeder::class);
-        $this->call(race_results02Seeder::class);
-        $this->call(race_results03Seeder::class);
-        $this->call(race_results04Seeder::class);
-        $this->call(race_results05Seeder::class);
-        $this->call(race_results07Seeder::class);
-        $this->call(race_results08Seeder::class);
-        $this->call(race_results09Seeder::class);
-        $this->call(race_results10Seeder::class);
-        $this->call(race_results11Seeder::class);
-        $this->call(race_results12Seeder::class);
-        $this->call(race_results13Seeder::class);
-        $this->call(race_results14Seeder::class);
-        $this->call(race_results15Seeder::class);
-        $this->call(race_results16Seeder::class);
-        $this->call(race_results17Seeder::class);
-        $this->call(race_results18Seeder::class);
-        $this->call(race_results19Seeder::class);
-        $this->call(race_results20Seeder::class);
-        $this->call(race_results21Seeder::class);
-        $this->call(race_results22Seeder::class);
-        $this->call(race_results23Seeder::class);
-        $this->call(SprintResult01Seeder::class);
-        $this->call(SprintResult02Seeder::class);
-        $this->call(SprintResult03Seeder::class);
-        $this->call(SprintResult04Seeder::class);
-        $this->call(SprintResult05Seeder::class);
-        $this->call(SprintResult06Seeder::class);
-        $this->call(SprintShootoutResult01Seeder::class);
-        $this->call(SprintShootoutResult02Seeder::class);
-        $this->call(SprintShootoutResult03Seeder::class);
-        $this->call(SprintShootoutResult04Seeder::class);
-        $this->call(SprintShootoutResult05Seeder::class);
-        $this->call(SprintShootoutResult06Seeder::class);
-        $this->call(pointsSeeder::class);
+        $this->call(DriversSeeder::class);
+        $this->call(PrincipalSeeder::class);
+
+        $this->call(\Database\Seeders\Seeders2023\DatabaseSeeder2023::class);
+        $this->call(\Database\Seeders\Seeders2024\DatabaseSeeder2024::class);
+
+        
+        //$this->call(pointsSeeder::class);
     }
 }

@@ -12,21 +12,36 @@ use App\Models\Qualification;
 use  App\Models\QualificationResult;
 use App\Models\RaceResult;
 use App\Models\RaceStory;
+use App\Models\Season;
 use App\Models\Sprint;
 use App\Models\SprintShootout;
+use App\Models\TeamDriver;
 
 class HomePage extends Controller
 {
     public function home()
     {
-        $top3 = Driver::orderBy("points", "desc")->limit(3)->get();
+        $year = date('Y') ;
+
+
+        $season = Season::with('seasonTeams.teamDrivers')->find($year);
+
+        
+        $teamDriver = TeamDriver::where("driver_id",1)->first();
+
+
+
+        $top3 = $season->top3Drivers();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         $currentGp = GrandPrixWeekend::where("status","current")->first();
 
+        
+
         if($nextRace)
         {
-            $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+            $interval =  now()->diff($nextRace->date);
+            $dateDiff =$interval->format('%d') + ($interval->format('%m')*30); 
         }
         else
         {
@@ -36,12 +51,7 @@ class HomePage extends Controller
 
         $this->SetRacesToDone();
 
-        // $allRaces = GrandPrixWeekend::get();
-
-        // dd($allRaces);
-
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current" && $nextRace != null){
-
             $nextRace->grandPrixWeekend->status= "current";
             $nextRace->grandPrixWeekend->save();
             
@@ -60,7 +70,7 @@ class HomePage extends Controller
             $currentGpDatediff= (int)now()->diff($currentGp->date)->format('%d');
             
             if($currentGp && $currentGpDatediff >= 3){
-                dd($currentGp);
+                dd("YP". $currentGp);
                 $currentGp->status="current";
                 $currentGp->save();
             }

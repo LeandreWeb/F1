@@ -3,11 +3,11 @@
 @section('content')
 <script src="{{ asset('js/team.js') }}" defer></script>
 <main class="scrool-snap" dir="ltr">
-    @include('Team.Components.TeamPresentation',compact("team"))
-    @include('Team.Components.TeamInfos',compact("team"))
-    @include('Team.Components.TeamDrivers',compact("team"))
-    @include('Team.Components.TeamMap',compact("team"))
-    @include('Team.Components.TeamCar',compact("team"))
+    @include('Team.Components.TeamPresentation',compact("seasonTeam"))
+    @include('Team.Components.TeamInfos',compact("seasonTeam"))
+    @include('Team.Components.TeamDrivers',compact("seasonTeam"))
+    @include('Team.Components.TeamMap',compact("seasonTeam"))
+    @include('Team.Components.TeamCar',compact("seasonTeam"))
 
 </main>
 <style>

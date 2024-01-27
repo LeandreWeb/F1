@@ -1,29 +1,25 @@
-@php
-    $drivers = $team->drivers;
-    $teampoints = 0;
-    foreach ($drivers as $driver) {
-        $teampoints += $driver->points;
-    }
-@endphp
 
-
-<a href="{{ route('team', ['id' => $team->id]) }}#presentation" class="team_container team_{{$team->id}}--border">
+<a href="{{ route('team', ['teamName' => $seasonTeam->team->Name]) }}#presentation" class="team_container team_{{$seasonTeam->team->id}}--border">
     <div class="team_infos">
         <div class="team_infos_name">
-            <img src="{{asset('Images/Teams/'.$team->Name.' black.png')}}" alt="">
-            <h3>{{ $team->Name }}</h3>
+            <img src="{{asset('Images/Teams/'.$seasonTeam->team->Name.' black.png')}}" alt="">
+            <h3>{{ $seasonTeam->team->Name }}</h3>
         </div>
-        <div class="team_info_points team_{{$team->id}}--background">
-            <h3>Pts :{{ $teampoints }}</h3>
+        <div class="team_info_points team_{{$seasonTeam->team->id}}--background">
+            <h3>Pts :{{ $seasonTeam->points() }}</h3>
         </div>
     </div>
     <div class="team_animation">
         <div class="team_car">
-            <img src="{{ asset('Images/Car/'.$team->Name.'.avif') }}" alt="">
+            @if (file_exists(public_path('Images/Car/'.$seasonTeam->team->Name.'.avif')))
+                <img src="{{ asset('Images/Car/'.$seasonTeam->team->Name.'.avif') }}" alt="">
+            @else
+                <img src="{{asset('Images/Car/default.avif')}}" alt="">
+            @endif
             <div class="team_lines">
-                <div class="team_line team_{{$team->id}}--background"></div>
-                <div class="team_line team_{{$team->id}}--background"></div>
-                <div class="team_line team_{{$team->id}}--background"></div>
+                <div class="team_line team_{{$seasonTeam->team->id}}--background"></div>
+                <div class="team_line team_{{$seasonTeam->team->id}}--background"></div>
+                <div class="team_line team_{{$seasonTeam->team->id}}--background"></div>
             </div>
         </div>
     </div>

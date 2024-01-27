@@ -32,7 +32,7 @@
                 <div class="article_to_do">race</div>
             @endif
         </div>
-        <h2 class="event_round">Ronde {{ $gp->id }}</h2>
+        <h2 class="event_round">Ronde {{ $gp->round }}</h2>
     </div>
 </div>
 

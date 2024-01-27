@@ -130,25 +130,21 @@
                 <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
             @endif
         </section>
-
+        {{-- Visuel du gagnant --}}
         <section class="sprintShootout_visual">
 
             @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
-                'time' => $sprintShootout->winner[0]->q3,
-                'teamid' => $sprintShootout->winner[0]->driver->team->id,
+                'time' => $sprintShootout->winner->q3,
+                'teamid' => $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id,
             ])
             <div class="sprintShootout_visual--infos">
                 <button class="start--animation">Démarrer</button>
-                <h3>{{ $sprintShootout->winner[0]->q3 }} s</h3>
-                <h3 class="driver_pole team_{{ $sprintShootout->winner[0]->driver->team->id }}--text">
-                    {{ $sprintShootout->winner[0]->driver->Firstname }} {{ $sprintShootout->winner[0]->driver->Lastname }}
+                <h3>{{ $sprintShootout->winner->q3 }} s</h3>
+                <h3 class="driver_pole team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
+                    {{ $sprintShootout->winner->driver->Firstname }} {{ $sprintShootout->winner->driver->Lastname }}
                 </h3>
             </div>
         </section>
-
-
-
-
     </main>
 
     <style>

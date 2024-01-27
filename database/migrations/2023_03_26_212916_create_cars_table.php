@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->string("power_unit");
-            $table->integer("year");
-            $table->foreignId('team_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

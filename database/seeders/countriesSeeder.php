@@ -128,14 +128,14 @@ class countriesSeeder extends Seeder
             "id"=>28,
             "name"=>"Nouvelle-Zélande"
         ];
-
-
-
-
-
-
-
-
+        $countries[]=[
+            "id"=>29,
+            "name"=>"Luxembourg"
+        ];
+        $countries[]=[
+            "id"=>30,
+            "name"=>"Roumanie"
+        ];
 
         DB::table("countries")->delete();
         DB::table("countries")->insert($countries);
