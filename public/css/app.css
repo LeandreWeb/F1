@@ -460,6 +460,28 @@ header{
     background-color: var(--Visa-RB);
 }
 
+/* Selectors */
+
+select{
+    padding: 1rem ;
+    background-color: transparent;
+    border-radius: 7.5px;
+    color: var(--text);
+    font-size: 3.2rem;
+    border: 2.5px solid var(--accent);
+    
+}
+option{
+    background-color: var(--background);
+}
+
+.year-selector{
+    display: flex;
+    padding: 4rem;
+    flex-direction: row-reverse;
+}
+
+
 
 
 
@@ -661,6 +683,12 @@ footer h4 {
 
     }
 
+  }
+
+  @media screen and (max-width: 700px) {
+    .year-selector{
+        justify-content: center;
+    }
   }
   @media screen and (max-width: 600px) {
 

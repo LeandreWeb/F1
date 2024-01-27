@@ -3,6 +3,9 @@
 @section('content')
     <main class="in_construction">
         <h2 class="drivers_Title" >Pilotes</h2>
+        <div class="year-selector">
+            @include("Drivers.Components.selector",compact('seasons'))
+        </div>
         <div class="drivers__container">
             @foreach ($teamDrivers as $teamdriver)
                 @include('Drivers.Components.Driver', compact('teamdriver'))

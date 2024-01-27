@@ -24,22 +24,11 @@ class HomePage extends Controller
         $year = date('Y') ;
 
 
-        //dd($season->Drivers());
         $season = Season::with('seasonTeams.teamDrivers')->find($year);
-
-        // $drivers = $season->seasonTeams->flatMap(function ($seasonTeam) {
-        //     return $seasonTeam->teamDrivers->pluck('driver');
-        // });
 
         
         $teamDriver = TeamDriver::where("driver_id",1)->first();
 
-        
-        //dd($season->drivers()); 
-
-        // foreach ($season->teamDrivers()  as $d){
-        //     echo ($d. "\n");
-        // }
 
 
         $top3 = $season->top3Drivers();
@@ -51,7 +40,8 @@ class HomePage extends Controller
 
         if($nextRace)
         {
-            $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+            $interval =  now()->diff($nextRace->date);
+            $dateDiff =$interval->format('%d') + ($interval->format('%m')*30); 
         }
         else
         {
@@ -61,12 +51,7 @@ class HomePage extends Controller
 
         $this->SetRacesToDone();
 
-        // $allRaces = GrandPrixWeekend::get();
-
-        // dd($allRaces);
-
         if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current" && $nextRace != null){
-
             $nextRace->grandPrixWeekend->status= "current";
             $nextRace->grandPrixWeekend->save();
             
@@ -85,7 +70,7 @@ class HomePage extends Controller
             $currentGpDatediff= (int)now()->diff($currentGp->date)->format('%d');
             
             if($currentGp && $currentGpDatediff >= 3){
-                dd($currentGp);
+                dd("YP". $currentGp);
                 $currentGp->status="current";
                 $currentGp->save();
             }

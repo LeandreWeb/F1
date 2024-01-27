@@ -12,8 +12,20 @@ class DriversController extends Controller
     {
 
         $year = date('Y') ;
+        
+        $seasons =Season::orderBy("id","desc")->get();
 
-        $season = Season::with('seasonTeams.teamDrivers')->find($year);
+        $seasonSelect=Season::latest()->where("id",request()->query("year_id"))->get();
+
+        if(count($seasonSelect)){
+            $season = $seasonSelect[0];
+        }
+        else{
+
+            $season = Season::with('seasonTeams.teamDrivers')->find($year);
+        }
+
+
 
         $drivers = $season->teamDrivers();
 
@@ -24,6 +36,6 @@ class DriversController extends Controller
 
         $teamDrivers=$sortedDrivers;
         
-        return view('Drivers.Drivers',compact('teamDrivers'));
+        return view('Drivers.Drivers',compact('teamDrivers','seasons'));
     }
 }

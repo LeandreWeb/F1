@@ -3,6 +3,9 @@
 @section('content')
     <main class="schedule">
         <h2 class="schedule_Title">Calendrier</h2>
+        <div class="year-selector">
+            @include("Schedule.Components.selector",compact('seasons'))
+        </div>
         <div class="schedule_container">
             @foreach ($GrandPrixWeekends as $gp)
                 @include('Schedule.Components.event--' . $gp->status, compact('gp'))
@@ -54,12 +57,11 @@
         }
 
 
-
         .schedule_container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-row-gap: 4rem;
-            grid-column-gap: 2rem;
+            grid-row-gap: 15rem;
+            grid-column-gap: 15rem;
             padding: 2rem;
             justify-items: center;
 
@@ -209,7 +211,7 @@
             font-size: 3.2rem;
         }
 
-        @media screen and (max-width: 1325px) {
+        @media screen and (max-width: 1525px) {
             .event_info_title {
                 font-size: 2.6rem;
             }
@@ -227,7 +229,7 @@
             }
         }
 
-        @media screen and (max-width: 1090px) {
+        @media screen and (max-width: 1150px) {
             .event_container {
                 flex-direction: column;
                 aspect-ratio: auto;
@@ -243,7 +245,7 @@
             .event_infos {
                 font-size: 1.8rem;
             }
-            @media screen and (max-width: 665px){
+            @media screen and (max-width: 750px){
                 .event_container--current {
                 aspect-ratio: 2/1;
                 flex-direction: row;
@@ -255,7 +257,7 @@
 
             }
 
-            @media screen and (max-width: 525px) {
+            @media screen and (max-width: 700px) {
                 .event_container--current {
                     flex-direction: column;
                     aspect-ratio: auto;
