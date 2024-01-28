@@ -10,16 +10,13 @@ class TeamController extends Controller
 {
     public function team ($teamName){
         
-        $year = date('Y')  ;
+        $year = date('Y') ;
 
-        $seasonTeam=SeasonTeam::
-        join('teams',"season_teams.team_id" , '=', 'teams.id')
-        ->join('team_principals', "season_teams.id" ,'=','team_principals.season_team_id')
-        ->where ('teams.Name',$teamName)
-        ->where('season_teams.season_id',$year)->first();
-
-        
-        
+        $seasonTeam=SeasonTeam::with("team")
+        ->where('season_id', $year)
+        ->whereHas('team', function($query) use ($teamName){
+            $query->where('Name',$teamName);
+        })->first();
 
         
 
