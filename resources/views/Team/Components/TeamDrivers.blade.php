@@ -6,7 +6,7 @@
         @foreach ($seasonTeam->teamDrivers as $teamDriver)
             @if ($teamDriver->status == 'active')
                 <div class="team__driver__card__container ">
-                    <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->driver->Lastname . '.avif') }}" alt=""
+                    <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->driver->Lastname . '.png') }}" alt=""
                         class="team__driver__photo">
                     <div class="team__driver__infos">
                         <div class="team__driver--firstname team__driver__info--container">Prénom: <span
@@ -21,7 +21,7 @@
                                     alt=""></span></div>
                         <div class="team__driver__infos--line team_{{ $seasonTeam->team->id }}--background"></div>
                     </div>
-                    <img src="{{ asset('Images/Drivers/Number/' . $teamDriver->driver->Lastname . '.avif') }}" alt=""
+                    <img src="{{ asset('Images/Drivers/Number/' . $teamDriver->driver->Lastname . '.png') }}" alt=""
                         class="team__driver--number">
                 </div>
             @endif

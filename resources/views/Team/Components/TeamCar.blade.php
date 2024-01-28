@@ -5,10 +5,10 @@
     <div class="team__car--container">
         <div class="team__car--card">
             <h3 class="team__car--title team_{{ $seasonTeam->team->id }}--textStoke">{{ $seasonTeam->car->name }}</h3>
-            @if (file_exists(public_path('Images/Car/'.$seasonTeam->team->Name.'.avif')))
-                <img src="{{ asset('Images/Car/'.$seasonTeam->team->Name.'.avif') }}" alt="">
+            @if (file_exists(public_path('Images/Car/'.$seasonTeam->team->Name.'.png')))
+                <img src="{{ asset('Images/Car/'.$seasonTeam->team->Name.'.png') }}" alt="">
             @else
-                <img src="{{asset('Images/Car/default.avif')}}" alt="">
+                <img src="{{asset('Images/Car/default.png')}}" alt="">
             @endif
         </div>
         <div class="team__car--infos team_{{ $seasonTeam->team->id }}--text">
