@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="driver-photo">
-        <img src="{{asset('Images/Drivers/Side-profil/'.$teamdriver->driver->Lastname.".avif")}}" alt="">
+        <img src="{{asset('Images/Drivers/Side-profil/'.$teamdriver->driver->Lastname.".png")}}" alt="">
         <img src="{{asset('Images/Teams/'.$teamdriver->seasonTeam->team->Name.' black.png')}}" class="driver-team" src="" alt="">
     </div>
 </div>

@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="driver-photo">
-        <img src="{{asset('Images/Drivers/Side-profil/'.$teamDriver->driver->Lastname.".avif")}}" alt="">
+        <img src="{{asset('Images/Drivers/Side-profil/'.$teamDriver->driver->Lastname.".png")}}" alt="">
         <h2 class="driver-position">{{$position+1}}</h2>
         <img src="{{asset('Images/Teams/'.$teamDriver->seasonTeam->team->Name.' black.png')}}" class="driver-team" src="" alt="">
     </div>

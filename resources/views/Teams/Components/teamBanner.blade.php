@@ -11,10 +11,10 @@
     </div>
     <div class="team_animation">
         <div class="team_car">
-            @if (file_exists(public_path('Images/Car/'.$seasonTeam->team->Name.'.avif')))
-                <img src="{{ asset('Images/Car/'.$seasonTeam->team->Name.'.avif') }}" alt="">
+            @if (file_exists(public_path('Images/Car/'.$seasonTeam->team->Name.'.png')))
+                <img src="{{ asset('Images/Car/'.$seasonTeam->team->Name.'.png') }}" alt="">
             @else
-                <img src="{{asset('Images/Car/default.avif')}}" alt="">
+                <img src="{{asset('Images/Car/default.png')}}" alt="">
             @endif
             <div class="team_lines">
                 <div class="team_line team_{{$seasonTeam->team->id}}--background"></div>
