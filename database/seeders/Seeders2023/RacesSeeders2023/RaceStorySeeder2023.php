@@ -459,7 +459,7 @@ class RaceStorySeeder2023 extends Seeder
             "extra" => "",
         ];
         $raceStories[] = [
-            "id" => 19,
+            "id" => 202319,
 
             "catchphrase" => "Stratégies Cruciales et Déceptions",
 
@@ -486,6 +486,57 @@ class RaceStorySeeder2023 extends Seeder
             Ces désqualifications ont eu des répercussions significatives sur le classement final. Lando Norris, initialement troisième, hérite désormais de la deuxième place, tandis que Carlos Sainz monte sur la troisième marche du podium.
             Pour Yuki Tsunoda, cette décision représente une avancée bienvenue, passant de la 10e à la 8e place, marquant des points précieux dans une saison où chaque position compte dans le classement serré. Une autre histoire heureuse émerge avec Logan Sargent, qui se hisse désormais à la 10e place, lui offrant son premier point en Formule 1, et cela dans son pays d'origine.",
         ];
+        $raceStories[] = [
+            "id" => 202320,
+
+            "catchphrase" => "Perez out",
+
+            "intro" => "Les qualifications ont révélé une grille de départ intrigante, avec Charles Leclerc en pole position, suivi de près par son Carlos Sainz, mais la menace persistante de Max Verstappen et d'autres prétendants talentueux plane dans l'air raréfié de Mexico City. Les pilotes sont prêts à en découdre sur le tracé exigeant de l'Autódromo Hermanos Rodríguez, où la bataille pour les points et la victoire s'annonce féroce.",
+
+            "first_part" => "Le feu s'éteint, et c'est un départ époustouflant pour Max Verstappen, déterminé à conquérir le tracé mexicain. Avec une audace remarquable, Verstappen parvient à dépasser les deux Ferrari juste avant le premier virage, s'emparant ainsi de la première position. Son coéquipier, également vif au départ, réussit à se hisser à la troisième place, promettant une bataille interne passionnante chez Red Bull.
+            Cependant, le drame frappe au cœur du peloton. Sergio Perez, le héros local, entre en contact avec Charles Leclerc, contraignant le Mexicain à abandonner prématurément en raison de dégâts majeurs. Du côté de Leclerc, bien que son aileron avant soit endommagé, il choisit de rester en piste, s'accrochant à la deuxième position.
+            Lewis Hamilton, affichant une performance solide, exerce une pression constante pour la troisième place, mettant Carlos Sainz sous pression. La lutte pour les positions du podium s'annonce intense, avec des enjeux élevés dès les premiers tours.
+            Pendant ce temps, un peu plus loin dans le peloton, Lando Norris et Yuki Tsunoda font une remontée impressionnante. Au tour 25, ils se retrouvent respectivement à la 12e et 13e position, montrant un rythme de course prometteur et laissant entrevoir des batailles passionnantes à venir.",
+
+            "middle_part" => "Au tour 29, Lando Norris démontre une fois de plus ses talents de pilote en s'emparant de la 9e position, laissant derrière lui Valtteri Bottas. Le jeune pilote britannique impressionne avec sa détermination et sa maîtrise de la piste. Dans le même temps, Yuki Tsunoda réalise une manœuvre similaire, prenant la 11e place à Lance Stroll au tour suivant.
+            La stratégie supérieure de l'équipe Mercedes commence à porter ses fruits. Au 31e tour, Lewis Hamilton, avec une série de manœuvres calculées, parvient enfin à dépasser Carlos Sainz, prenant ainsi la 3e position. La lutte pour le podium s'intensifie, et Hamilton démontre une fois de plus son expertise en gestion de course.
+            Cependant, un événement inattendu change la donne. Au tour 33, la suspension arrière de la Haas de Kevin Magnussen cède, entraînant un spectaculaire accident et provoquant le déploiement du drapeau rouge. La course est interrompue, offrant aux équipes l'opportunité de revoir leur stratégie.
+            Le départ après le drapeau rouge se déroule sans incident majeur pour l'ensemble du peloton. Cependant, Lando Norris connaît un départ difficile, perdant plusieurs positions et chutant de la 10e à la 14e place.
+            Au tour 40, Lewis Hamilton poursuit sa remontée spectaculaire en dépassant Charles Leclerc sur la ligne droite, s'emparant ainsi de la 2e position. La bataille pour la victoire reste ouverte, promettant un final haletant au Grand Prix de F1 du Mexique.",
+
+            "last_part" => "Les derniers tours du Grand Prix de F1 du Mexique ont été un véritable tourbillon d'événements, avec des pilotes luttant pour les dernières positions et des surprises inattendues.
+            Au tour 47, Lando Norris, déterminé à se remettre de son départ difficile, effectue une remontée impressionnante et prend la 10e position, dépassant la Haas de Hulkenberg. Le jeune pilote britannique montre une fois de plus sa détermination et sa capacité à revenir dans la course.
+            Le tour 49 apporte une déception pour les fans de Fernando Alonso, alors que l'Espagnol est contraint d'abandonner en raison de problèmes mécaniques. C'est le premier abandon de la saison pour Alonso, marquant un tournant inattendu dans sa campagne.
+            La lutte entre Yuki Tsunoda et Oscar Piastri pour la 7e position devient intense, mais au tour 49, les deux pilotes entrent en contact, entraînant un tête-à-queue pour Tsunoda et le reléguant en avant-dernière position. Piastri parvient à conserver sa 7e place, mais il est confronté à un échange de positions avec son coéquipier Norris quelques tours plus tard.
+            Lando Norris poursuit sa percée impressionnante, prenant la 7e position à Daniel Ricciardo de l'AlphaTauri, puis la 6e position en dépassant George Russell au 67e tour. La course devient une démonstration de talent et de stratégie pour Norris.
+            Finalement, Max Verstappen parvient à maintenir sa position en tête et franchit la ligne d'arrivée pour remporter le Grand Prix de F1 du Mexique.",
+
+            "conclusion" => " Max Verstappen, avec une maîtrise impressionnante, a conquis la piste de l'Autódromo Hermanos Rodríguez, remportant une victoire méritée dans un scénario passionnant.
+            Les premiers tours ont vu Verstappen surclasser les Ferrari pour s'emparer de la première position dès le départ, créant une dynamique captivante en tête du peloton. Cependant, le départ difficile de Lando Norris et les incidents de course, notamment l'abandon de Fernando Alonso, ont ajouté un niveau de complexité inattendu.
+            La seconde moitié de la course a été marquée par les performances éblouissantes de Norris, qui a surmonté les obstacles pour remonter dans le peloton. Les batailles entre Tsunoda, Piastri, et les échanges de positions stratégiques ont maintenu l'excitation jusqu'au drapeau à damier.
+            Finalement, Max Verstappen a défendu avec succès sa position et célébré sa victoire sous les acclamations de la foule. Le Grand Prix de F1 du Mexique a été bien plus qu'une simple course ; c'était une saga pleine de drames, de triomphes et d'émotions.",
+
+            "extra" => "",
+        ];
+
+
+        // $raceStories[] = [
+        //     "id" => 202320,
+
+        //     "catchphrase" => "",
+
+        //     "intro" => "",
+
+        //     "first_part" => "",
+
+        //     "middle_part" => "",
+
+        //     "last_part" => "",
+
+        //     "conclusion" => "",
+
+        //     "extra" => "",
+        // ];
 
         Db::table('race_stories')->delete();
         Db::table('race_stories')->insert($raceStories);
