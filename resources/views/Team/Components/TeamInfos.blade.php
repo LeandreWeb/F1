@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="team__socials">
-        <div class="team__social"><i class="fa-brands fa-twitter team_{{ $seasonTeam->team->id }}--text "></i><a
+        <div class="team__social"><i class="fa-brands fa-x-twitter team_{{ $seasonTeam->team->id }}--text "></i><a
                 class="team_{{ $seasonTeam->team->id }}--text "
                 href="{{ $seasonTeam->team->socials->twitterLink }}">{{ $seasonTeam->team->socials->twitterName }}</a></div>
         <div class="team__social"><i class="fa-brands fa-instagram team_{{ $seasonTeam->team->id }}--text"></i> <a
@@ -95,6 +95,10 @@
         font-size: 3.2rem;
     }
 
+    .team__social:hover i {
+        animation: bounce 0.9s infinite both;
+    }
+
 
     @media screen and (max-width: 475px) {
 
@@ -124,4 +128,42 @@
             font-size: 1.6rem;
         }
     }
+
+@keyframes bounce {
+  0% {
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+            transform: translateY(-8px);
+            animation-timing-function: ease-in;
+  }
+  65% {
+            transform: translateY(-8px);
+            animation-timing-function: ease-in;
+  }
+  82% {
+                transform: translateY(-3px);
+            animation-timing-function: ease-in;
+  }
+  93% {
+                transform: translateY(-2px);
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+               transform: translateY(0px);
+            animation-timing-function: ease-out;
+  }
+  100% {
+               transform: translateY(0px);
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
 </style>
