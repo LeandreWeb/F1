@@ -83,7 +83,8 @@
             aspect-ratio: 2/1;
             padding: 1rem;
             position: relative;
-            box-shadow: var(--card-shadow);
+            box-shadow: var(--card-shadow-begin);
+            animation: tilechange .5s ease-out both;
 
         }
 
@@ -277,6 +278,27 @@
                   font-size: 3vw;
                 }
 
+            }
+
+            
+        }
+
+        @keyframes tilechange{
+            0%{
+                box-shadow: var(--card-shadow--begin);
+                opacity: 0;
+                scale: .90;
+            }
+
+
+            90%{
+                box-shadow: var(--card-shadow--begin);
+            }
+
+            100% {
+            opacity:1;
+            scale: 1;
+            box-shadow: var(--card-shadow);
             }
         }
     </style>

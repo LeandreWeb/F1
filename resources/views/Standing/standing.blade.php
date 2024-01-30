@@ -49,13 +49,34 @@
 
         .standings--drivers {
             flex: 2 0 45rem;
-            ;
+            animation: standingchange .5s  ease-out both;
+            transform-origin: 100% 0%;
+
+            & .standing__driver--fullname{
+                animation: standingchangename .5s .5s ease-out both;
+            }
+
+            & .standing__driver--points{
+                animation: standingchangepoints .5s .75s ease-out both;
+            }
 
 
         }
 
         .standings--teams {
             flex: 1 0 45rem;
+            animation: standingchange .5s  ease-out both;
+            transform-origin: 0% 100%;
+
+            
+
+            & .standing__team--infos{
+                animation: standingchangename .5s .5s ease-out both;
+            }
+
+            & .standing__team--points{
+                animation: standingchangepoints .5s .75s ease-out both;
+            }
 
         }
 
@@ -128,6 +149,53 @@
                 flex-basis: auto
             }
 
+        }
+        @keyframes standingchange{
+            0%{
+                transform:scaleY(0);
+
+            }
+
+
+            100% {
+                transform:scaleY(1);
+            }
+        }
+
+        @keyframes standingchangename{
+            0%{
+                transform: translateX(15px);
+                opacity: 0;
+
+            }
+
+
+            50%{
+
+            }
+
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes standingchangepoints{
+            0%{
+                transform: translateX(-15px);
+                opacity: 0;
+
+            }
+
+
+            50%{
+
+            }
+
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
         }
     </style>
 @endsection
