@@ -396,7 +396,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
         ];
 
         $qualificationStory[] = [
-            "id" => 20,
+            "id" => 202320,
 
             "catchphrase" =>"Surprise Ricciardo",
 
@@ -412,6 +412,7 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "q3" => "Dès la première sortie en Q3, les Ferrari ont créé l'événement en prenant les deux premières positions. Les fans ont été étonnés de voir la Scuderia signer un doublé, montrant ainsi la performance accrue de l'écurie italienne sur le tracé mexicain. La lutte pour la pole position s'est intensifiée avec Max Verstappen, qui s'est positionné à la troisième place, et une performance exceptionnelle de Daniel Ricciardo qui a pris la quatrième position, démontrant la compétitivité de son AlphaTauri.
             Lors de la deuxième sortie en Q3, la majorité des véhicules n'ont pas réussi à améliorer leurs temps, créant une atmosphère de suspense palpable. Max Verstappen a réussi à améliorer son chrono, mais cela n'a pas suffi pour lui permettre de décrocher la première ligne. C'est finalement Charles Leclerc qui a décroché la pole position de manière spectaculaire, ajoutant une nouvelle victoire à sa carrière et propulsant Ferrari au sommet du classement de qualifications.",
+            
             "conclusion" =>"La séance de qualifications du Grand Prix de F1 du Mexique s'est avérée être un spectacle palpitant, façonné par des moments de tension, des surprises inattendues et des performances exceptionnelles. Les pilotes et les équipes ont dû jongler avec les défis du tracé mexicain, marqué par des virages techniques et des lignes droites propices aux dépassements.
             Les qualifications ont révélé la force renouvelée de Ferrari, avec une impressionnante première ligne décrochée par Charles Leclerc, suivi de près par son coéquipier. Cependant, la concurrence féroce de Red Bull et d'AlphaTauri, incarnée par Max Verstappen et Daniel Ricciardo, a ajouté une couche d'incertitude passionnante à la grille de départ.
             Les moments de tension vécus par Lando Norris de McLaren et Alexander Albon de Williams lors des phases éliminatoires ont souligné l'importance de chaque instant dans le monde de la Formule 1, où une fraction de seconde peut faire la différence entre la gloire et la déception.
@@ -419,6 +420,52 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
 
             "extra" => ""
         ];
+
+        $qualificationStory[] = [
+            "id" => 202321,
+
+            "catchphrase" =>"Madame Nature frappe",
+
+            "intro" => "Le Grand Prix de Formule 1 du Brésil a électrisé les passionnés de sport automobile lors d'un week-end mémorable, alliant compétition féroce, adrénaline pure et moments de suspense inoubliables. Au cœur de cette aventure palpitante se trouvaient les qualifications, l'étape cruciale où les pilotes ont cherché à imprimer leur empreinte sur la grille de départ. Sur le tracé sinueux d'Interlagos, les bolides rugissants ont défié les lois de la physique, tandis que les écuries rivalisaient pour obtenir la meilleure position possible en vue de la course dominicale.",
+
+            "q1" => "Dans l'ensemble, la Q1 s'est déroulée sans encombre, les bolides rugissant à travers les virages emblématiques du tracé brésilien. Cependant, quelques embouteillages ont ajouté une dose d'incertitude à la sortie des stands, créant des moments de tension palpable.
+            Le ciel sombre au-dessus du circuit a ajouté une note de suspense, faisant planer la possibilité imminente de précipitations pendant les sessions suivantes, Q2 et Q3. Les équipes ont dû jongler avec cette incertitude météorologique, ajustant leurs stratégies en fonction des caprices du temps. L'ombre du ciel menaçant a ajouté une dimension stratégique cruciale à cette première phase des qualifications.",
+
+            "q2" => "La séance s'est déroulée sans accroc majeur, les bolides dévalant les courbes sinueuses du circuit brésilien avec une précision millimétrique. Les équipes ont déployé leurs stratégies de manière judicieuse, optimisant le temps de piste disponible pour garantir la meilleure position possible sur la grille de départ.
+            Cependant, à la fin de la Q2, certains pilotes ont été contraints de mettre un terme à leur quête pour la pole position. Alexander Albon, Pierre Gasly, Kevin Magnussen, Esteban Ocon et Nico Hülkenberg ont vu leurs espoirs de progression s'évanouir, leurs performances n'étant pas suffisantes pour décrocher une place dans le top 10.",
+
+            "q3" => "La phase finale des qualifications, la Q3, au Grand Prix de F1 du Brésil a été marquée par des conditions météorologiques imprévisibles, créant un suspense palpable sur la piste d'Interlagos.
+            Dans un décor sombre, Max Verstappen s'est lancé en premier, délivrant une performance exceptionnelle qui a laissé tout le paddock médusé. Son tour fulgurant de 1:10.727 a établi un standard impressionnant, propulsant le pilote Red Bull en pole position provisoire.
+            Oscar Piastri, montrant des signes de rivalité avec Verstappen, semblait être le seul capable de rivaliser. Cependant, un cruel revirement de situation a frappé le jeune pilote, perdant le contrôle de sa voiture dans les derniers virages et déclenchant les drapeaux jaunes. Ces drapeaux jaunes ont affecté Sergio Perez, l'obligeant à ralentir au dernier virage et le reléguant à la 9ème place sur la grille, juste devant Piastri.
+            Le scénario a pris un tournant encore plus dramatique après le premier tour des pilotes, alors que la pluie déferlait sur le circuit avec une force impressionnante, accompagnée d'un vent puissant. Les drapeaux rouges ont été agités, signalant l'interruption immédiate de la session de qualifications. Les conditions climatiques extrêmes ont conduit les organisateurs à prendre la sage décision de ne pas relancer la séance, figeant ainsi les positions.
+            C'est dans ce contexte météorologique complexe que Max Verstappen a décroché la pole position, suivi de Charles Leclerc et de la surprise de la journée, Lance Stroll, qui a réalisé sa meilleure qualification de la saison en se hissant à la troisième place.",
+
+            "conclusion" => "Les qualifications ont débuté sous des cieux menaçants, préfigurant une compétition marquée par l'incertitude météorologique.
+            La Q1 a été le théâtre de quelques embouteillages, ajoutant une touche de suspense à une session initiale apparemment tranquille. La Q2 a vu certains pilotes écartés de la course à la pole position, tandis que d'autres affirmaient leur présence dans le top 10.
+            La Q3 a été le point culminant avec un Max Verstappen éblouissant, établissant un tour chronométré hors normes, mais la pluie capricieuse et un incident impliquant Oscar Piastri ont transformé le tableau. Sergio Perez, contraint de ralentir en raison des drapeaux jaunes, a vu ses espoirs de qualification durement touchés.
+            Finalement, la pluie torrentielle et le vent ont contraint l'annulation de la session, figeant ainsi les positions. Max Verstappen s'est emparé de la pole position, suivi de près par Charles Leclerc et la révélation du jour, Lance Stroll.
+            Le Grand Prix de F1 du Brésil s'annonce donc comme une course palpitante, où la météo instable pourrait jouer un rôle déterminant dans le dénouement de cette compétition haute en rebondissements.  ",
+
+            "extra" => ""
+        ];
+
+        // $qualificationStory[] = [
+        //     "id" => 21,
+
+        //     "catchphrase" =>"",
+
+        //     "intro" => "",
+
+        //     "q1" => "",
+
+        //     "q2" => "",
+
+        //     "q3" => "",
+
+        //     "conclusion" => " ",
+
+        //     "extra" => ""
+        // ];
 
 
 
