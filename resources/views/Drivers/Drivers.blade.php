@@ -41,6 +41,8 @@
             padding: 10px;
             border-radius: 2rem;
             overflow: hidden;
+            animation: driverstilechange .5s ease-out both;
+
 
         }
 
@@ -51,6 +53,8 @@
             flex: 1;
             font-weight: 700;
             z-index: 1;
+            animation: infotilechange .5s 1s ease-out both;
+
         }
 
         .driver-number {
@@ -72,8 +76,10 @@
 
         }
 
-        .driver-photo img {
+        .driver-photo img:last-child {
             object-fit: cover;
+            animation: teamtilechange .5s .5s ease-out both;
+
 
         }
 
@@ -124,6 +130,60 @@
             }
             .driver-firstname{
               font-size: 1.2rem
+            }
+        }
+
+        @keyframes driverstilechange{
+            0%{
+                
+                opacity: 0;
+                box-shadow: var(--card-shadow--begin);
+
+            }
+
+
+            50%{
+                box-shadow: var(--card-shadow--begin);
+            }
+
+            100% {
+                opacity:1;
+            }
+        }
+
+        @keyframes teamtilechange{
+            0%{
+                
+                opacity: 0;
+                box-shadow: var(--card-shadow--begin);
+
+            }
+
+
+            50%{
+                box-shadow: var(--card-shadow--begin);
+            }
+
+            100% {
+                opacity:.4;
+            }
+        }
+
+        @keyframes infotilechange{
+            0%{
+                transform: translateX(-15px);
+                opacity: 0;
+
+            }
+
+
+            50%{
+
+            }
+
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
             }
         }
     </style>
