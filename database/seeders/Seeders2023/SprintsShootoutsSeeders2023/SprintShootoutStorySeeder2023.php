@@ -110,6 +110,51 @@ class SprintShootoutStorySeeder2023 extends Seeder
             "extra" => null
         ];
 
+        $SprintShootoutStory[] = [
+            "id" => 202321,
+
+            "catchphrase" => "",
+
+            "intro" => "Après des qualifications tendues et imprévisibles qui ont façonné la grille de départ pour le Grand Prix de F1 du Brésil, l'excitation atteint son paroxysme avec l'avènement des Sprint Shootouts. Ces qualifications pour le Sprint promettent une dose supplémentaire de vitesse, de rivalités et de stratégies tactiques, offrant aux passionnés de Formule 1 un avant-goût palpitant de ce qui les attend lors de la course principale.
+            Les échos des performances éblouissantes de la Q3 résonnent encore dans les paddocks, et les équipes se préparent à affronter une séance de qualification différente, où les enjeux sont tout aussi élevés. ",
+
+            "q1" => "Les conditions météorologiques plus clémentes ont accueilli la session de qualification pour le Sprint Shootout au Brésil, créant un cadre idéal pour une compétition rapide et intense. Les pilotes ont entamé leurs tours rapides avec détermination, cherchant à tirer parti de chaque opportunité pour améliorer leur position sur la grille.
+            La SQ1 s'est déroulée sans accroc majeur jusqu'aux derniers instants, lorsque l'inattendu a frappé. Esteban Ocon a perdu le contrôle de sa monoplace Alpine après le Senna S, entrant en collision avec la Aston Martin de Fernando Alonso. L'impact a provoqué d'importants dégâts sur les deux voitures, obligeant les commissaires de piste à agiter le drapeau rouge et à interrompre la séance.
+            Malheureusement, cette collision a entraîné l'élimination prématurée d'Esteban Ocon, Lance Stroll, Guanyu Zhou et Logan Sargeant. Les espoirs de participer au Sprint Shootout se sont ainsi évanouis pour ces pilotes, laissant place à la déception dans les stands et ouvrant la porte à de nouvelles opportunités pour d'autres concurrents.",
+
+            "q2" => "Fernando Alonso, malgré sa qualification pour la SQ2, a dû faire face à une cruelle réalité. Les dommages subis lors de la collision précédente ont terni ses chances, le reléguant à une 15ème position décevante. Un revers inattendu pour le vétéran espagnol, dont les espoirs d'une performance majeure semblaient s'évapor
+            Parmi les éliminés, Kevin Magnussen, Nico Hülkenberg, Pierre Gasly et même Valtteri Bottas ont été contraints de se retirer prématurément de la compétition, chacun affrontant ses propres défis sur le tracé exigeant d'Interlagos.
+            Une surprise a émaillé cette séance avec la performance solide des deux pilotes de l'écurie AlphaTauri. Contre toute attente, ils ont réussi à surmonter la concurrence féroce de la SQ2, assurant ainsi leur place dans le Sprint et démontrant une fois de plus la capacité de l'équipe à tirer parti des opportunités.",
+
+            "q3" => "Le jeune prodige d'Alpine, Oscar Piastri, n'a malheureusement pas réussi à réaliser le tour exceptionnel qu'il espérait, laissant la voie libre à son coéquipier chez McLaren, Lando Norris, pour briller. Norris a livré une performance éblouissante, enregistrant un temps fulgurant de 1:10.622, plaçant ainsi sa McLaren en pole provisoire pour le Sprint.
+            Max Verstappen, le pilote Red Bull bien déterminé à contrarier les plans de McLaren, a pris la piste après Norris. Malgré une tentative acharnée, Verstappen n'a pas réussi à déloger le Britannique de la première position et s'est contenté de la deuxième place sur la grille de départ du Sprint.
+            Sergio Perez, également de l'écurie Red Bull, a complété le trio de tête en se qualifiant à la troisième place. Ces temps serrés entre les équipes de pointe promettent une course sprint palpitante, où la moindre erreur pourrait coûter cher.
+            Finalement, c'est Lando Norris qui s'empare de la pole position pour le Sprint.",
+
+            "conclusion" => "Le Sprint Shootout au Grand Prix de F1 du Brésil a couronné une session de qualifications palpitante, dévoilant des performances exceptionnelles et des rivalités électrisantes. La SQ3 a offert une bataille serrée entre les équipes McLaren et Red Bull, créant une atmosphère de suspense intense sur le tracé sinueux d'Interlagos.
+            Lando Norris de McLaren a émergé comme la figure dominante de la journée, réalisant un tour époustouflant qui lui a valu la pole position pour le Sprint. Malgré les efforts de Max Verstappen et Sergio Perez de l'écurie Red Bull, ils n'ont pas réussi à détrôner Norris, se classant respectivement en deuxième et troisième positions.",
+
+            "extra" => null
+        ];
+
+        // $SprintShootoutStory[] = [
+        //     "id" => 202321,
+
+        //     "catchphrase" => "",
+
+        //     "intro" => "",
+
+        //     "q1" => "",
+
+        //     "q2" => "",
+
+        //     "q3" => "",
+
+        //     "conclusion" => "",
+
+        //     "extra" => null
+        // ];
+
 
         Db::table('sprint_shootout_stories')->delete();
         Db::table('sprint_shootout_stories')->insert($SprintShootoutStory);

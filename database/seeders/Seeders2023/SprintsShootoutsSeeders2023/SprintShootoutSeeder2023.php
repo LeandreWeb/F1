@@ -50,7 +50,7 @@ class SprintShootoutSeeder2023 extends Seeder
             "id"=>202321,
             "date"=>'2023-11-04',
             "start"=>'10:30:00',
-            "sprint_shootout_story_id"=>null
+            "sprint_shootout_story_id"=>202321
         ];
 
         Db::table('sprint_shootouts')->delete();
