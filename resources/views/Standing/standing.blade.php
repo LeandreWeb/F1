@@ -9,7 +9,7 @@
     <main>
         <h2 class="standing_Title">Classement</h2>
         <div class="year-selector">
-            @include("Drivers.Components.selector",compact('seasons'))
+            @include("Standing.Components.selector",compact('seasons'))
         </div>
         <div class="standings">
             <ul class="standings--drivers">
@@ -40,7 +40,23 @@
             display: flex;
             padding: 2rem;
             gap: 4rem;
-            flex-wrap: wrap;
+            flex-wrap: wrap;            
+        }
+
+        .standing-loading{
+
+            
+
+            & .standings--drivers{
+                transition: opacity 2.5s, filter .5s;
+                opacity:.1;
+                filter:blur(4px)
+            }
+            & .standings--teams{
+                transition: opacity 2.5s, filter .5s;
+                opacity:.1;
+                filter:blur(4px)
+            }
         }
 
         .standings h3 {
@@ -51,6 +67,7 @@
             flex: 2 0 45rem;
             animation: standingchange .5s  ease-out both;
             transform-origin: 100% 0%;
+            opacity: 1;
 
             & .standing__driver--fullname{
                 animation: standingchangename .5s .5s ease-out both;

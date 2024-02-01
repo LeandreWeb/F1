@@ -27,6 +27,7 @@
     <link rel="manifest" href="{{ asset('favicon_light/site.webmanifest') }}" />
     <script src="https://kit.fontawesome.com/23ad99ebdd.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ asset('js/loader.js') }}" defer></script>
     <title>The F1 Web Project</title>
 </head>
 
