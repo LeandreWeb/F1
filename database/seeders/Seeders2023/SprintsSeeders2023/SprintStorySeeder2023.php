@@ -121,6 +121,29 @@ class SprintStorySeeder2023 extends Seeder
             "extra" => null,
         ];
 
+        $SprintStory[] = [
+            "id" => 202321,
+
+            "catchphrase" => "Alpha Tauri Impressione",
+
+            "intro" => "Les pilotes se sont battus avec acharnement pour définir leur position sur la grille lors des qualifications et du Sprint Shootout. Lando Norris, ayant décroché la pole position lors du Shootout, sera le leader du peloton, mais les talents tels que Max Verstappen et Sergio Perez, positionnés juste derrière, sont prêts à tout pour conquérir la première place.",
+
+            "first_part" => "Max Verstappen a réalisé un départ exceptionnel, s'emparant de la première position dès les premiers mètres de la course. Son coéquipier, cependant, a perdu deux places face aux Mercedes dans les virages initiaux.
+            George Russell a fait sensation dès le départ, réussissant à dépasser Sergio Perez dès le premier virage, suivi d'une manœuvre audacieuse pour ravir la deuxième place à Lando Norris peu de temps après. Pendant ce temps, Perez a bataillé avec brio pour récupérer la quatrième position à Lewis Hamilton dès le quatrième tour.
+            Au tour suivant, Norris a réussi à dépasser Russell pour récupérer sa deuxième place derrière Verstappen. La lutte pour les positions était intense, chaque pilote défendant ardemment sa place sur la piste.
+            Le 8ème tour a été particulièrement animé, avec Perez réussissant à reprendre la troisième position à Russell. Cependant, Russell n'a pas tardé à riposter, reprenant sa position deux virages plus tard. La bataille a atteint son paroxysme au 10ème tour, lorsque Perez a finalement réussi à compléter son dépassement sur Russell, consolidant ainsi sa troisième place.",
+
+            "last_part" => "La deuxième partie du Sprint au Grand Prix de F1 du Brésil a réservé son lot de surprises, avec les AlphaTauri de Tsunoda et Ricciardo se distinguant de manière impressionnante. Daniel Ricciardo a tenté un dépassement audacieux au 12ème tour sur Carlos Sainz pour la 8ème position, mais ce dernier a réussi à reprendre sa place à la première zone DRS. Une tentative similaire a eu lieu au 14ème tour, mais Sainz a de nouveau passé devant grâce au DRS, laissant ensuite Ricciardo se faire dépasser par Piastri.
+            Le 22ème tour a été particulièrement fructueux pour les AlphaTauri. Tsunoda a réussi à dépasser Lewis Hamilton pour la 6ème position, tandis que Ricciardo a réalisé un dépassement sur Piastri pour la 9ème position. Les performances de l'équipe ont été un point fort du week-end, ajoutant une dimension inattendue à la course.
+            Cependant, à la fin du 24ème tour, Max Verstappen a franchi la ligne d'arrivée avec une avance de plus de 4 secondes sur ses concurrents, remportant ainsi le Grand Prix de F1 du Brésil. Lando Norris, après une course impressionnante, a pris la deuxième place,",
+
+            "conclusion" => "Max Verstappen a dominé la course, franchissant la ligne d'arrivée avec une avance impressionnante, ajoutant une victoire cruciale à son palmarès.
+            La surprise du week-end a été la performance exceptionnelle des AlphaTauri de Tsunoda et de Ricciardo, qui ont démontré leur compétitivité en réussissant des dépassements stratégiques. Les batailles entre les pilotes, notamment celles entre Sainz et Ricciardo, ont ajouté une dimension captivante à la course.
+            Lando Norris a brillamment pris la deuxième place, renforçant la position de Mclaren dans le championnat. La course a été riche en rebondissements et en moments mémorables, soulignant une fois de plus l'imprévisibilité du sport automobile.",
+
+            "extra" => null,
+        ];
+
         Db::table('sprint_stories')->delete();
         Db::table('sprint_stories')->insert($SprintStory);
     }
