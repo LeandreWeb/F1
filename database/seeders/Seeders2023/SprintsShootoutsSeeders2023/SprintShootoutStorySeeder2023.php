@@ -113,7 +113,7 @@ class SprintShootoutStorySeeder2023 extends Seeder
         $SprintShootoutStory[] = [
             "id" => 202321,
 
-            "catchphrase" => "",
+            "catchphrase" => "Let's go Lando",
 
             "intro" => "Après des qualifications tendues et imprévisibles qui ont façonné la grille de départ pour le Grand Prix de F1 du Brésil, l'excitation atteint son paroxysme avec l'avènement des Sprint Shootouts. Ces qualifications pour le Sprint promettent une dose supplémentaire de vitesse, de rivalités et de stratégies tactiques, offrant aux passionnés de Formule 1 un avant-goût palpitant de ce qui les attend lors de la course principale.
             Les échos des performances éblouissantes de la Q3 résonnent encore dans les paddocks, et les équipes se préparent à affronter une séance de qualification différente, où les enjeux sont tout aussi élevés. ",
