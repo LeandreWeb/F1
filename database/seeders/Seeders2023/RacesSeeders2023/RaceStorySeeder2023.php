@@ -519,6 +519,36 @@ class RaceStorySeeder2023 extends Seeder
             "extra" => "",
         ];
 
+        $raceStories[] = [
+            "id" => 202321,
+
+            "catchphrase" => "Podium Alonso",
+
+            "intro" => " Après des qualifications palpitantes et un Sprint haletant, les pilotes s'apprêtent à en découdre pour inscrire leur nom dans l'histoire de cette édition emblématique.
+            Les enjeux sont élevés, avec les écuries luttant pour des points cruciaux au championnat des constructeurs et les pilotes cherchant à consolider leur position ou à grappiller des places au classement des pilotes. Les performances remarquables du Sprint ont créé des attentes élevées, et les amateurs de Formule 1 sont prêts à être témoins d'une course qui s'annonce aussi imprévisible que captivante.",
+
+            "first_part" => " Une rupture soudaine sur la Ferrari de Charles Leclerc l'a contraint à perdre le contrôle de sa voiture, le forçant à abandonner avant même le départ de la course. Un coup dur pour le pilote qui occupait la deuxième position sur la grille.
+            Les ennuis ne se sont pas arrêtés là, car dès le départ, un accident spectaculaire s'est produit. Alexander Albon et Kevin Magnussen sont entrés en contact, provoquant leur abandon immédiat. Pendant cet incident, Magnussen a également heurté la monoplace d'Oscar Piastri, endommageant l'aileron arrière de Daniel Ricciardo. L'ampleur de l'accident a nécessité le déploiement du drapeau rouge, offrant à Ricciardo et Piastri l'opportunité de réparer leurs voitures. Malheureusement pour eux, ils reprendront la course avec un tour de retard.
+            Le deuxième départ a été nettement plus réussi. Dès le 4ème virage, Fernando Alonso a réussi un dépassement audacieux sur Lewis Hamilton pour s'emparer de la troisième place. Pour l'une des rares fois cette saison, Max Verstappen a maintenant de la concurrence sérieuse. Au 8ème tour, Lando Norris a tenté un dépassement sur Verstappen, mais ce dernier a bien défendu sa position, maintenant ainsi sa place en tête de la course.",
+
+            "middle_part" => "la course au Grand Prix de F1 du Brésil a vu Sergio Perez s'illustrer en tant que chasseur de podium. Parti en 9ème position, le Mexicain a entamé sa remontée avec détermination.
+            Au 18ème tour, Perez a réalisé un dépassement crucial sur Lewis Hamilton pour la quatrième position. Cependant, la bataille était loin d'être terminée. Mercedes a mis en œuvre une stratégie astucieuse lors des arrêts aux stands, permettant à Hamilton de reprendre l'avantage sur Perez. Cependant, le pilote Red Bull ne s'est pas laissé décourager, reprenant sa position au 23ème tour avec une manœuvre habile.
+            Malheureusement, la malchance a frappé le pilote chinois Guanyu Zhou au 24ème tour. Des problèmes mécaniques ont contraint Zhou à se retirer de la course, mettant fin à ses espoirs de points et ajoutant une touche d'adversité à la journée.
+            Pendant ce temps, devant la course, Max Verstappen conservait sa position en tête, mais la compétition intense avec Lando Norris persistait",
+
+            "last_part" => "La malchance a continué pour Mercedes, dont les voitures semblaient souffrir d'une traînée excessive, les rendant vulnérables aux attaques des concurrents. Au 47ème tour, les voitures de l'équipe allemande occupaient respectivement la 7ème et la 11ème position.
+            Au 56ème tour, George Russell a été contraint de retirer sa voiture de la course, ajoutant à la déception de l'équipe Mercedes. Cependant, Sergio Perez, affichant une performance impressionnante, s'est rapproché d'Alonso au 59ème tour, prêt à lancer une attaque pour le podium.
+            Au 60ème tour, Perez a tenté un dépassement audacieux au premier virage, mais Alonso a fermé la porte, montrant une défense solide. Cependant, Perez ne s'est pas découragé et, dans l'avant-dernier tour, il a réussi un dépassement audacieux pour prendre la troisième place sur le podium. Le dernier tour a ajouté une dose d'adrénaline, Alonso le DRS pour reprendre sa position au 4ème virage.
+            Pendant ce temps, à l'avant, Max Verstappen complétait son dernier tour pour remporter le Grand Prix de F1 du Brésil. Cependant, l'action n'était pas terminée. Perez a tenté sa chance dans la dernière ligne droite pour reprendre la 3ème position à Alonso, mais a manqué l'opportunité par une marge infime de 0.053 secondes.",
+
+            "conclusion" => "Le Grand Prix de F1 du Brésil a offert une course époustouflante, marquée par des dépassements audacieux, des rebondissements inattendus et une compétition acharnée sur le tracé exigeant d'Interlagos. Max Verstappen a brillamment remporté la victoire, montrant sa maîtrise et sa détermination tout au long de la course.
+            Mercedes a connu des difficultés, avec des voitures qui semblaient souffrir de traînée, les reléguant à des positions moins convoitées. La bataille entre Red Bull et Aston Martin a été le point d'orgue de la journée, avec Sergio Perez réalisant des dépassements remarquables pour finalement se faire voleer sa place sur le podium par Alonso.
+            L'épreuve n'a pas manqué de moments mémorables, de l'accident initial impliquant Albon, Magnussen, et Piastri à la lutte serrée entre Perez et Alonso pour la troisième place. Chaque virage a ajouté une couche d'excitation à une course déjà intense.
+            La Formule 1 a une fois de plus captivé les fans avec ce Grand Prix du Brésil, démontrant l'imprévisibilité et la compétitivité qui font la magie de ce sport.",
+
+            "extra" => "",
+        ];
+
 
         // $raceStories[] = [
         //     "id" => 202320,
