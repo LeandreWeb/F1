@@ -449,6 +449,34 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             "extra" => ""
         ];
 
+        $qualificationStory[] = [
+            "id" => 202322,
+
+            "catchphrase" =>"Domination Ferrari",
+
+            "intro" => "L'excitation était à son comble alors que les écuries et les pilotes se préparaient à affronter les défis de ce tracé inédit, mêlant vitesse et technicité. Les essais libres ont déjà laissé entrevoir un spectacle palpitant, préfigurant des qualifications qui promettaient d'être électriques.
+            Les qualifications ont été le théâtre de rebondissements dès les premières minutes, influencées par les séances d'essais précédentes. Malheureusement, Carlos Sainz a connu un revers inattendu. Après avoir sévèrement endommagé le dessous de sa Ferrari en heurtant violemment un couvercle d'égout mal sécurisé, il a écopé d'une pénalité de 10 places sur la grille de départ. ",
+
+            "q1" => "La première phase des qualifications à Las Vegas a réservé son lot de surprises, avec l'une des équipes favorites, McLaren, qui a éprouvé des difficultés inattendues. Ni Lando Norris, positionné en 16e place, ni le jeune talent Piastri, en 19e position, n'ont réussi à décrocher leur ticket pour la Q2. Ces résultats inattendus ont semé l'étonnement dans les stands et parmi les fans, remettant en question la performance habituelle de l'écurie.
+            Esteban Ocon a également été rattrapé par cette vague de résultats décevants, se classant en 17e position. Les pilotes Zhou (18e) et Tsunoda (20e) ont complété le groupe des éliminés de la Q1. Une note particulière pour Tsunoda, dont le dernier tour aurait pu changer la donne, mais un manque de maîtrise dans le virage 5 l'a empêché de réaliser une performance optimale.",
+
+            "q2" => "La tension s'est intensifiée lors de la Q2 du Grand Prix de Las Vegas 2023, avec deux favoris, Lewis Hamilton et Sergio Perez, qui ont surpris en ne réussissant pas à se qualifier pour la Q3, se classant respectivement en 11e et 12e position. Cette tournure inattendue a ajouté un élément de suspense supplémentaire à la compétition.
+            Cependant, la véritable surprise est venue des Williams, généralement en difficulté en Q1. Les pilotes Alexander Albon et Logan Sargent ont réalisé des performances exceptionnelles en se qualifiant pour la Q3, témoignant d'une nette amélioration de la performance de l'écurie. Leur réussite a été saluée par les amateurs de sport automobile, apportant un vent de fraîcheur et démontrant que tout était possible sur ce nouveau circuit de Las Vegas.
+            Malheureusement, la Q2 a également signifié la fin de la session pour trois pilotes talentueux. Nico Hulkenberg, Lance Stroll et Daniel Ricciardo n'ont pas réussi à se hisser parmi les dix premiers, mettant ainsi fin à leurs espoirs de briller davantage lors de ce Grand Prix.",
+
+            "q3" => "La phase finale des qualifications, la Q3, a été le théâtre d'une domination sans équivoque de l'écurie Ferrari sur le nouveau circuit urbain de Las Vegas. Dès leurs premières sorties, Charles Leclerc et Carlos Sainz ont imposé leur rythme, occupant respectivement les première et deuxième positions. Leur performance initiale a placé la Scuderia en position de force pour la course à venir.
+            Cependant, la deuxième tentative a apporté une surprise supplémentaire. Charles Leclerc a réussi à améliorer son temps et à sécuriser la pole position, confirmant ainsi sa maîtrise du circuit. Malheureusement pour Carlos Sainz, une pénalité de 10 places sur la grille de départ a entaché sa performance, le reléguant loin dans le classement malgré sa deuxième place en qualifications.
+            Max Verstappen s'est intercalé entre les deux Ferrari en se positionnant en troisième place. Les spectateurs pouvaient anticiper un duel intense entre les deux principaux rivaux du championnat lors de la course principale.
+            Cependant, la séance de qualifications a également réservé une belle surprise avec les Williams. Alexander Albon et Logan Sargent ont étonnamment décroché la sixième et la septième place, démontrant une performance exceptionnelle de l'équipe.",
+
+            "conclusion" => "La session de qualifications du Grand Prix de F1 de Las Vegas 2023 a été marquée par des rebondissements et des performances inattendues. Les écuries ont été mises à l'épreuve sur le tout nouveau circuit urbain, révélant des forces et des faiblesses imprévues.
+            Ferrari a clairement affiché sa supériorité, avec Charles Leclerc décrochant la pole position après des performances impressionnantes tout au long de la Q3. Son coéquipier Carlos Sainz a également brillé, mais une pénalité de 10 places sur la grille a assombri ses chances pour la course à venir.
+            Les surprises ont été nombreuses, avec McLaren et les favoris habituels comme Lewis Hamilton et Sergio Perez ne parvenant pas à atteindre les positions convoitées de la Q3. À l'inverse, les Williams ont créé l'étonnement en se classant en sixième et septième positions, dépassant les attentes générales.
+            Avec une grille de départ où les Ferrari, menées par Leclerc, seront en première ligne, et les rebondissements inattendus chez McLaren et Williams, la course promet d'être passionnante et pleine d'incertitudes.",
+
+            "extra" => ""
+        ];
+
         // $qualificationStory[] = [
         //     "id" => 21,
 
