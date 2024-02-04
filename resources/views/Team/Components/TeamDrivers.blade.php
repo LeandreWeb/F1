@@ -21,14 +21,20 @@
                                     alt=""></span></div>
                         <div class="team__driver__infos--line team_{{ $seasonTeam->team->id }}--background"></div>
                     </div>
-                    <img src="{{ asset('Images/Drivers/Number/' . $teamDriver->driver->Lastname . '.png') }}" alt=""
+                    @if (file_exists(public_path('Images/Drivers/Number/' .$seasonTeam->season_id . $teamDriver->driver->Lastname . '.png' )))
+        
+                    <img src="{{ asset('Images/Drivers/Number/' .$seasonTeam->season_id  . $teamDriver->driver->Lastname . '.png') }}" alt=""
                         class="team__driver--number">
+                        
+                    @else
+                    <img src="{{ asset('Images/Drivers/Number/' .$seasonTeam->season_id -1  . $teamDriver->driver->Lastname . '.png') }}" alt=""
+                    class="team__driver--number">
+
+                    @endif
                 </div>
             @endif
         @endforeach
     </div>
-
-
 </section>
 
 
