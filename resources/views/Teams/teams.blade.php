@@ -67,6 +67,10 @@
                 & img {
                     transform: scaleX(-1);
                 }
+
+                & svg{
+                    transform: scaleX(-1);
+                }
             }
 
             .team_lines {
@@ -126,7 +130,7 @@
             height: 100%;
         }
 
-        .team_car img {
+        .team_car img , .team_car svg {
             height: 100%;
         }
 
@@ -216,7 +220,7 @@
 
             }
 
-            .team_car img {
+            .team_car img, .team_car svg {
                 height: 100%;
             }
 
