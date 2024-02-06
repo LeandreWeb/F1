@@ -549,6 +549,40 @@ class RaceStorySeeder2023 extends Seeder
             "extra" => "",
         ];
 
+        $raceStories[] = [
+            "id" => 202322,
+
+            "catchphrase" => "Viva Las Vegas",
+
+            "intro" => "Les préparatifs sont marqués par des changements significatifs sur la grille de départ, notamment la pénalité de 10 places infligée à Carlos Sainz, le reléguant de la 2e à la 12e position. Ce revirement inattendu jette une nouvelle lumière sur les perspectives de la course pour le pilote Ferrari.
+            De plus, un autre ajustement majeur a été effectué avec Lance Stroll écopant d'une pénalité de 5 places, le faisant glisser de la 14e à la 19e position sur la grille. Ces péripéties modifient considérablement le paysage de départ, plaçant Charles Leclerc et Max Verstappen en première ligne, mais avec de nouveaux acteurs prêts à jouer un rôle crucial dans cette bataille urbaine. ",
+
+            "first_part" => "Début de la Course : Première Partie
+            Le Grand Prix de Las Vegas a débuté sur les chapeaux de roues avec un départ impressionnant de Max Verstappen. Au premier virage, Verstappen a réussi à dépasser Charles Leclerc, mais cette manœuvre l'a contraint à sortir des limites de la piste. Le revêtement du premier virage s'est révélé particulièrement glissant, entraînant des difficultés pour plusieurs pilotes.
+            Fernando Alonso et Carlos Sainz ont été victimes de tête-à-queue en raison de ces conditions glissantes. Malheureusement, Alonso a légèrement heurté Valtteri Bottas, provoquant un carambolage qui les a tous deux relégués à l'arrière du peloton. Des morceaux de carrosserie jonchaient le premier virage, nécessitant l'activation du Virtual Safety Car (VSC).
+            Profitant de cette période sous VSC, Alonso, Bottas et Sergio Perez, ce dernier ayant également heurté Bottas, ont saisi l'opportunité de changer leurs ailerons avant endommagés, anticipant ainsi les répercussions de l'incident initial.
+            Au troisième tour, un autre coup de théâtre a secoué la course lorsque Lando Norris a violemment heurté les barrières, mettant un terme brutal à sa course. Cet accident a entraîné l'intervention de la voiture de sécurité.
+            Enfin, au tour 9, Max Verstappen a reçu une pénalité de 5 secondes pour avoir forcé Charles Leclerc hors de la piste au premier tour, ajoutant une couche de controverse à une course déjà pleine de rebondissements. La course à Las Vegas 2023 continuait sur un rythme effréné, promettant encore plus d'action et d'émotions à venir.",
+
+            "middle_part" => "Au tour 16, Charles Leclerc a exploité le DRS pour dépasser Max Verstappen, capitalisant sur le fait que Verstappen n'avait pas encore purgé sa pénalité de 5 secondes. Cette situation a offert un avantage significatif à Leclerc dans la bataille en tête de la course.
+            Au tour 17, une nouvelle dose de drame s'est ajoutée lorsque Piastri et Hamilton ont eu un léger contact, suffisant pour causer des crevaisons sur les deux voitures. Les deux pilotes ont été contraints de passer par les stands, perdant ainsi leurs positions dans le top 10 et replanifiant leur stratégie de course.
+            Au tour 25, Verstappen a tenté de dépasser George Russell, qui n'avait pas encore effectué son arrêt aux stands. Cependant, la manœuvre a conduit à un contact entre les deux, provoquant des dommages légers aux deux voitures. Le tour suivant a été marqué par l'intervention de la voiture de sécurité en raison des débris laissés par l'accident entre Verstappen et Russell.
+            Profitant de cette neutralisation, Verstappen et Perez ont plongé dans les stands pour changer de pneus, perdant ainsi quelques positions. Pendant ce temps, Leclerc a choisi de rester en piste, résistant avec ténacité malgré l'usure de ses vieux pneus.",
+
+            "last_part" => "La phase finale du Grand Prix de Las Vegas a été une véritable démonstration de compétition acharnée entre les trois leaders. Après les arrêts aux stands, Sergio Perez s'est retrouvé juste derrière Charles Leclerc, tandis que Max Verstappen occupait la cinquième position, lui conférant une position favorable pour prétendre à la victoire.
+            Au tour 32, Perez a réussi un dépassement audacieux sur Leclerc pour prendre la première position. Cependant, Leclerc n'a pas tardé à riposter et a repris la tête de la course au tour 35. Les batailles intenses entre Leclerc et Perez ont permis à Verstappen de se rapprocher des leaders.
+            Au tour 36, Verstappen a réussi à dépasser Perez pour la deuxième position. Un tour plus tard, dans un mouvement spectaculaire, il a dépassé Leclerc pour prendre la tête. Cependant, la lutte pour la victoire était loin d'être terminée.
+            Au tour 43, Perez a dépassé Leclerc pour la deuxième place après que Leclerc ait raté son virage. Aux derniers tours, Leclerc a réalisé une manœuvre exceptionnelle pour reprendre la deuxième position à Perez. Comme lors de la dernière course, Perez a perdu une position cruciale dans le dernier tour.
+            Finalement, Max Verstappen a remporté la course, bien que sa victoire ne soit pas aussi dominante que d'habitude. Perez et Leclerc ont offert des performances exceptionnelles pour la première place, démontrant leur habileté et leur détermination. ",
+
+            "conclusion" => "Le Grand Prix de Las Vegas 2023 restera gravé dans les annales de la Formule 1 en raison des batailles acharnées pour la première position qui ont animé cette course urbaine passionnante. Les spectateurs ont été témoins de dépassements audacieux, de stratégies judicieuses et de performances exceptionnelles de la part des pilotes.
+            La lutte intense entre Charles Leclerc, Max Verstappen et Sergio Perez pour la première place a captivé le public jusqu'au dernier tour. Le dépassement magistral de Leclerc sur Perez au dernier tour a été le point d'orgue d'une compétition acharnée où chaque virage avait son importance. Les pilotes ont démontré une maîtrise exceptionnelle de leurs monoplaces, repoussant constamment les limites pour gagner la position convoitée.
+            Au-delà du trio de tête, des performances remarquables ont émergé de l'arrière du peloton. Lance Stroll, parti 19e, a réalisé une impressionnante remontée pour finir à la 5e place, démontrant une conduite agressive et stratégique. De même, Esteban Ocon, qui avait débuté en 16e position, a effectué une brillante remontée pour terminer à la 4e place, mettant en avant la compétitivité de son écurie.
+            Le Grand Prix de Las Vegas 2023 a offert aux amateurs de sport automobile un spectacle mémorable, mêlant suspense, adrénaline et performances exceptionnelles. Alors que Max Verstappen a finalement croisé le drapeau à damier en tant que vainqueur, chaque moment de cette course urbaine a contribué à en faire un événement inoubliable dans le monde de la Formule 1.",
+
+            "extra" => "",
+        ];
+
 
         // $raceStories[] = [
         //     "id" => 202320,
