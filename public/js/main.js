@@ -57,7 +57,7 @@ window.addEventListener("resize", () => {
 
 var path = document.querySelector('#horse');
 
-console.log(path);
+
 
 // var length = path.getTotalLength();
 
