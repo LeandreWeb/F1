@@ -20,9 +20,13 @@ if (selectorForm) {
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
-    if (loader.classList.contains("loading")) {
-        loader.classList.remove("loading")
+    if (loader) {
+        if (loader.classList.contains("loading")) {
+            loader.classList.remove("loading")
+        }
+        
     }
+    
     if(standingDrivers){
         if (standingDrivers.parentElement.classList.contains("standing-loading")) {
             standingDrivers.parentElement.classList.remove("standing-loading")
