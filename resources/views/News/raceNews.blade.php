@@ -2,6 +2,7 @@
     $countryName = $raceStory->race->grandPrixWeekend->country->name;
     $grandPrixName = $raceStory->race->grandPrixWeekend->name;
     $race = $raceStory->race;
+    $year= $raceStory->race->grandPrixWeekend->season_id
 @endphp
 
 @extends('layouts.main')
@@ -14,33 +15,33 @@
                 <p>{{ $raceStory->intro }}</p>
                 <a class="quali_link" href="{{ route('qualificationNews', ['id' => $raceStory->id]) }}">Qualifications -></a>
             </div>
-            <img src="{{ asset('Images/Stories/Races/Main/' . $grandPrixName . '.jpg') }}"" alt="">
+            <img src="{{ asset('Images/Stories/'. $year .'/'.'Races/Main/' . $grandPrixName . '.jpg') }}"" alt="">
         </section>
 
         <section class="first_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/FirstPart/' . $grandPrixName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Races/FirstPart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->first_part }}</p>
         </section>
 
         <section class="middle_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/MiddlePart/' . $grandPrixName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Races/MiddlePart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->middle_part }}</p>
         </section>
 
         <section class="last_part race_content">
             <div>
-                <img src="{{ asset('Images/Stories/Races/LastPart/' . $grandPrixName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Races/LastPart/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->last_part }}</p>
         </section>
 
         <section class="race_conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/Races/End/' . $grandPrixName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Races/End/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $raceStory->conclusion }}</p>
         </section>

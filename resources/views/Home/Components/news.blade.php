@@ -6,20 +6,24 @@
         $catchphrase = $event->catchphrase;
         $title = $event->title;
     } elseif ($eventType == 'qualification') {
-        $imagePath = 'Images/Stories/Qualifications/Main/' . $event->grandPrixWeekend->name . '.jpg';
+        $year= $event->grandPrixWeekend->season_id;
+        $imagePath = 'Images/Stories/'. $year .'/'.'Qualifications/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $catchphrase = $event->qualificationStory->catchphrase;;
         $title = 'Qualifications';
     } elseif ($eventType == 'sprint shootout') {
+        $year= $event->grandPrixWeekend->season_id;
         $catchphrase = $event->sprintshootoutStory->catchphrase;
-        $imagePath = 'Images/Stories/SprintShootouts/Main/' . $event->grandPrixWeekend->name . '.jpg';
+        $imagePath = 'Images/Stories/'. $year .'/'.'SprintShootouts/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Sprint Shootout';
     } elseif ($eventType == 'sprint') {
+        $year= $event->grandPrixWeekend->season_id;
         $catchphrase = $event->sprintStory->catchphrase;
-        $imagePath = 'Images/Stories/Sprints/Main/' . $event->grandPrixWeekend->name . '.jpg';
+        $imagePath = 'Images/Stories/'. $year .'/'.'Sprints/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Sprint';
     } else {
+        $year= $event->grandPrixWeekend->season_id;
         $catchphrase = $event->raceStory->catchphrase;
-        $imagePath = 'Images/Stories/Races/Main/' . $event->grandPrixWeekend->name . '.jpg';
+        $imagePath = 'Images/Stories/'. $year .'/'.'Races/Main/' . $event->grandPrixWeekend->name . '.jpg';
         $title = 'Course';
     }
 
