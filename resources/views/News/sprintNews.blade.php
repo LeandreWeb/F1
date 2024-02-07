@@ -2,6 +2,7 @@
     $countryName = $sprintStory->sprint->grandPrixWeekend->country->name;
     $sprint = $sprintStory->sprint;
     $grandPrixName = $sprintStory->sprint->grandPrixWeekend->name;
+    $year=$sprintStory->sprint->grandPrixWeekend->season_id
 
 
 @endphp
@@ -17,19 +18,19 @@
                 <a class="quali_link link" href="{{ route('sprint shootoutNews', ['id' => $sprintStory->id]) }}">Sprint Shootout
                     -></a>
             </div>
-            <img src="{{ asset('Images/Stories/Sprints/Main/' . $grandPrixName . '.jpg') }}"" alt="">
+            <img src="{{ asset('Images/Stories/'. $year .'/'.'Sprints/Main/' . $grandPrixName . '.jpg') }}"" alt="">
         </section>
 
         <section class="first_part sprint_content">
             <div>
-                <img src="{{ asset('Images/Stories/Sprints/FirstPart/' . $grandPrixName . '.jpg') }}" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Sprints/FirstPart/' . $grandPrixName . '.jpg') }}" alt="">
             </div>
             <p>{{ $sprintStory->first_part }}</p>
         </section>
 
         <section class="last_part sprint_content">
             <div>
-                <img src="{{ asset('Images/Stories/Sprints/LastPart/' . $grandPrixName . '.jpg') }}" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Sprints/LastPart/' . $grandPrixName . '.jpg') }}" alt="">
 
             </div>
             <p>{{ $sprintStory->last_part }}</p>
@@ -37,7 +38,7 @@
 
         <section class="sprint_conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/Sprints/End/' . $grandPrixName . '.jpg') }}"" alt="">
+                <img src="{{ asset('Images/Stories/'. $year .'/'.'Sprints/End/' . $grandPrixName . '.jpg') }}"" alt="">
             </div>
             <p>{{ $sprintStory->conclusion }}</p>
         </section>

@@ -154,7 +154,7 @@ class qualificationsSeeder2023 extends Seeder
             "id"=>202323,
             "date"=>'2023-11-25',
             "start"=>'09:00:00',
-            'qualification_story_id'=>null
+            'qualification_story_id'=>202323
         ];
 
 

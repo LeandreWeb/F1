@@ -477,6 +477,31 @@ Un fait impressionnant lors de cette séance a été la performance du top trois
             "extra" => ""
         ];
 
+        $qualificationStory[] = [
+            "id" => 202323,
+
+            "catchphrase" =>"12 pole Max",
+
+            "intro" => "Les qualifications du Grand Prix de Formule 1 d'Abu Dhabi 2023 ont marqué la dernière scène de cette saison palpitante, offrant aux passionnés de course une dernière opportunité de voir les pilotes les plus rapides s'affronter pour la pole position. Avec Max Verstappen en tête d'une saison époustouflante, les regards étaient tournés vers lui pour voir s'il pouvait conclure en beauté ou si les écuries Ferrari allaient lui voler la vedette.",
+
+            "q1" => "La première phase des qualifications du Grand Prix de Formule 1 d'Abu Dhabi 2023 a été marquée par une énorme surprise alors que l'un des favoris, Carlos Sainz, a échoué à passer en Q2. Malgré ses performances impressionnantes tout au long de la saison, Sainz n'a pas réussi à tirer le meilleur parti de sa Ferrari et a dû se contenter d'une 16ème place sur la grille de départ. Cette déception a été ressentie dans les stands et parmi les fans, car Sainz était considéré comme un prétendant sérieux pour un résultat de haut niveau.
+            Accompagnant Sainz en dehors des douze premiers qualifiés, nous avons vu Kevin Magnussen, Valtteri Bottas, Guanyu Zhou et Logan Sargent. Ces pilotes ont tous lutté pour trouver le rythme nécessaire pour rivaliser avec les meilleures écuries de la grille, et leurs performances en Q1 reflétaient cette difficulté.",
+
+            "q2" => "Les surprises ont continué à la phase Q2 des qualifications du Grand Prix de Formule 1 d'Abu Dhabi 2023, avec l'élimination choquante de Lewis Hamilton. Le septuple champion du monde, généralement habitué à se battre pour les premières positions sur la grille, a eu du mal à trouver le rythme idéal sur le tracé de Yas Marina et a dû se contenter de la 11ème place sur la grille de départ. Cette performance en deçà des attentes a sûrement déçu les fans du pilote Mercedes, qui s'attendaient à le voir rivaliser pour la pole position.
+            Aux côtés de Hamilton en dehors des dix premiers qualifiés, nous avons vu Esteban Ocon, Lance Stroll, Alexander Albon et Daniel Ricciardo. Ces pilotes, bien que talentueux, n'ont pas réussi à se qualifier dans le top 10, ce qui signifie qu'ils devront se battre dur lors de la course pour gagner des positions et marquer des points précieux pour leurs équipes respectives.",
+
+            "q3" => "La phase finale des qualifications, Q3, du Grand Prix de Formule 1 d'Abu Dhabi 2023 a été le théâtre d'une lutte intense entre les deux pilotes McLaren pour tenter de s'emparer de la deuxième place sur la grille de départ pour la course principale. Après une première sortie, c'est Lando Norris qui a pris l'avantage sur son coéquipier, mais son deuxième tour a été crucial pour tenter de décrocher la pole position.
+            Norris a poussé au maximum dans son deuxième tour, affichant un premier secteur solide, mais c'est dans les derniers virages du circuit que les choses ont pris une tournure inattendue. Malheureusement pour lui, il a légèrement surconduit sa monoplace, perdant ainsi de précieuses secondes qui lui ont coûté la chance de décrocher la pole position.
+            Cet instant d'hésitation a ouvert la voie à Oscar Piastri pour battre le temps de Norris et s'emparer de la deuxième place sur la grille de départ. Cependant, cette position n'était pas destinée à durer, car Charles Leclerc a finalement réussi à sortir un tour parfait et à prendre la deuxième position, juste derrière Max Verstappen.
+            Malgré les efforts des autres pilotes pour défier Verstappen, le pilote Red Bull a finalement réussi à décrocher sa 12ème pole position de la saison, démontrant une fois de plus sa domination impressionnante sur la grille de départ.",
+
+            "conclusion" => " Alors que Max Verstappen décrochait une fois de plus la pole position, la véritable intrigue résidait dans la bataille pour la deuxième place entre les pilotes McLaren, Lando Norris et Oscar Piastri, ainsi que l'intervention décisive de Charles Leclerc pour s'installer juste derrière Verstappen.
+            La séance de qualification a également été marquée par des déceptions pour des pilotes de renom tels que Lewis Hamilton et Carlos Sainz, qui ont dû se contenter de positions plus éloignées sur la grille que prévu. Cependant, ces défis n'ont fait que souligner la compétitivité féroce de la Formule 1 et l'importance cruciale de chaque fraction de seconde lors des qualifications.
+            Maintenant que les positions de départ ont été déterminées, tous les regards sont tournés vers la course principale, où les pilotes se battront pour chaque virage et chaque dépassement sur le circuit de Yas Marina.",
+
+            "extra" => ""
+        ];
+
         // $qualificationStory[] = [
         //     "id" => 21,
 
