@@ -152,7 +152,7 @@ class racesSeeder2023 extends Seeder
             "id"=>202323,
             "date"=>'2023-11-26',
             "start"=>'08:00:00',
-            'race_story_id'=>null
+            'race_story_id'=>202323
         ];
 
 
