@@ -583,6 +583,36 @@ class RaceStorySeeder2023 extends Seeder
             "extra" => "",
         ];
 
+        $raceStories[] = [
+            "id" => 202323,
+
+            "catchphrase" => "19 Victoires",
+
+            "intro" => " Après des qualifications pleines de rebondissements, où Max Verstappen a réussi à décrocher une pole position impressionnante, la scène est désormais prête pour une bataille épique sur le circuit de Yas Marina. Les pilotes se préparent mentalement et physiquement pour affronter les défis uniques de cette piste exigeante, où chaque virage représente une opportunité de gagner des places et de marquer des points précieux dans la lutte pour le championnat.",
+
+            "first_part" => "La première partie de la course du Grand Prix de Formule 1 d'Abu Dhabi 2023 a été marquée par une lutte intense entre Max Verstappen et Charles Leclerc pour la tête de la course. Malgré un bon départ de Leclerc, Verstappen a réussi à conserver sa première place au premier virage, repoussant habilement les tentatives de dépassement de son rival.
+            Leclerc n'a pas abandonné pour autant et a continué à mettre la pression sur Verstappen, cherchant chaque opportunité pour tenter de le dépasser. Cependant, le pilote Red Bull a su rester solide, défendant avec succès sa position à chaque tentative de dépassement.
+            Pendant ce temps, Oscar Piastri a également dû se défendre contre les attaques de George Russell pour conserver sa quatrième position. Russell a tenté plusieurs fois de prendre l'avantage, mais Piastri a montré sa détermination en maintenant sa position jusqu'au tour 11.
+            Au tour 15, une autre bataille a éclaté lorsque Russell a réussi à prendre la troisième position à Lando Norris, profitant d'un arrêt aux stands plus long que prévu pour ce dernier. Avec un arrêt de plus de 5.1 secondes, Norris a perdu un temps précieux, permettant à Russell de le dépasser et de prendre la troisième place.",
+
+            "middle_part" => "
+            La deuxième partie de la course du Grand Prix de Formule 1 d'Abu Dhabi 2023 a été caractérisée par un rythme relativement calme sur la piste, avec peu d'incidents majeurs. Cependant, quelques moments de tension ont émergé, ajoutant du piquant à la compétition.
+            Un des moments les plus marquants est survenu lorsque Fernando Alonso a tenté de défendre sa position contre Lewis Hamilton. Alonso a d'abord été dépassé par Hamilton, mais grâce à l'utilisation du DRS (système de réduction de traînée), il a réussi à récupérer sa position en repassant le Britannique dans une manœuvre audacieuse.
+            Alors qu'il tentait de se frayer un chemin à travers le peloton, Hamilton a fait un léger contact avec l'Alpine de Pierre Gasly. Bien que cet incident n'ait pas eu de conséquences graves, il a néanmoins ajouté un élément de suspense à la course.",
+
+            "last_part" => "La dernière partie de la course du Grand Prix de Formule 1 d'Abu Dhabi 2023 a été le théâtre de batailles acharnées pour des positions cruciales au championnat, avec des équipes telles que Mercedes et Ferrari luttant pour la deuxième place au classement constructeurs.
+            Au tour 47, Lewis Hamilton a réussi à sécuriser la deuxième place pour Mercedes dans le championnat des constructeurs après avoir dépassé Carlos Sainz. Cette manœuvre stratégique a permis à Mercedes de consolider sa position derrière Red Bull Racing et de terminer la saison sur une note positive malgré les défis rencontrés tout au long de l'année.
+            Pendant ce temps, Lando Norris a dû se battre pour défendre sa quatrième place au championnat des pilotes, mais il a été dépassé par Sergio Perez, perdant ainsi sa position au classement. Cette bataille a souligné l'importance cruciale des derniers tours de la saison pour déterminer les positions finales au championnat des pilotes.
+            Finalement, Max Verstappen a dominé la course de manière impressionnante, remportant sa 19ème victoire de la saison et terminant ainsi la saison sur une note positive. Sa performance impeccable a mis en lumière sa domination incontestée tout au long de l'année et a confirmé sa place en tant que champion incontesté de la saison 2023 de Formule 1.",
+
+            "conclusion" => " Alors que les pilotes s'affrontaient pour la dernière fois sur le circuit de Yas Marina, chaque tour était empreint d'émotion, de stratégie et de détermination.
+            Max Verstappen a conclu sa saison de manière magistrale, en remportant une victoire incontestée, ajoutant ainsi une 19ème victoire à son palmarès et scellant sa domination absolue sur le championnat. Son rythme impitoyable et son sang-froid sous pression ont une fois de plus confirmé sa réputation de pilote exceptionnel.
+            Mais la course n'était pas seulement une affaire de victoire pour Verstappen. Derrière lui, d'autres batailles faisaient rage, avec des équipes comme Mercedes et Ferrari se disputant les places d'honneur au classement des constructeurs. Lewis Hamilton a brillamment sécurisé la deuxième place pour Mercedes, tandis que des luttes internes chez McLaren ont vu des changements de position dans le classement des pilotes.
+            En fin de compte, le Grand Prix d'Abu Dhabi a été bien plus qu'une simple course. C'était le point culminant d'une saison passionnante, marquée par des moments de triomphe, de déception, de suspense et de jubilation. Alors que les feux à damiers se sont abaissés sur Yas Marina, la saison de Formule 1 2023 s'est achevée sur une note exaltante, laissant les fans déjà impatients de ce que réserve l'avenir pour ce sport palpitant.",
+
+            "extra" => "",
+        ];
+
 
         // $raceStories[] = [
         //     "id" => 202320,
