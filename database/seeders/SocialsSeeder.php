@@ -124,6 +124,27 @@ class SocialsSeeder extends Seeder
             'websiteLink'=>'https://stake.com/sponsorships/alfa-romeo-f1-team-stake',
             'teamText'=>"StakeF1Team est une équipe de Formule 1 dynamique, émergeant d'un partenariat stratégique avec Sauber. Avec une vision tournée vers l'avenir, StakeF1Team prévoit de marquer une nouvelle ère en 2026 en devenant une équipe phare sous la bannière d'Audi. "
         ];
+        $socials[]=[
+            'id'=>12,
+            'twitterName'=>'@visacashapprb',
+            'twitterLink'=>'https://twitter.com/visacashapprb',
+            'instagramName'=>'visacashapprb',
+            'instagramLink'=>'https://www.instagram.com/visacashapprb/',
+            'websiteName'=>'visacashapprb.com',
+            'websiteLink'=>'https://www.visacashapprb.com/en/',
+            'teamText'=>"Née des cendres d'AlphaTauri, l'écurie Visa Cash App RB débarque sur la grille de Formule 1 pour la saison 2024. Propulsée par le groupe Red Bull et affichant une livrée bleu électrique flamboyante, elle se présente comme l'ambitieuse petite sœur de l'écurie championne du monde."
+        ];
+        
+        // $socials[]=[
+        //     'id'=>11,
+        //     'twitterName'=>'',
+        //     'twitterLink'=>'',
+        //     'instagramName'=>'',
+        //     'instagramLink'=>'',
+        //     'websiteName'=>'',
+        //     'websiteLink'=>'',
+        //     'teamText'=>""
+        // ];
 
         DB::table('socials')->delete();
         DB::table('socials')->insert($socials);

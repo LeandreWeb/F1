@@ -95,7 +95,7 @@ class TeamsSeeder extends Seeder
             "id"=>12,
             'Name'=>'Visa RB',
             'country_id'=>27,
-            'socials_id'=>8, //TODO a changer apres un changeement de leur socials
+            'socials_id'=>12, //TODO a changer apres un changeement de leur socials
             'factory_id'=>8,
         ];
         DB::table('teams')->delete();
