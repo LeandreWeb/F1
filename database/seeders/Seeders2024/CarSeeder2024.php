@@ -46,7 +46,7 @@ class CarSeeder2024 extends Seeder
             "power_unit"=>"Mercedes",
         ];$cars[]=[
             "id"=>202408,
-            "name"=>"RB01",
+            "name"=>"VCARB 01",
             "power_unit"=>"Honda RBPT",
         ];$cars[]=[
             "id"=>202409,
