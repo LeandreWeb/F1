@@ -42,6 +42,7 @@
             border-radius: 2rem;
             overflow: hidden;
             animation: driverstilechange .5s ease-out both;
+            text-decoration: none;
 
 
         }
