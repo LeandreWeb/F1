@@ -10,6 +10,8 @@ class DriverController extends Controller
 {
     public function driver($id){
         $driver = Driver::find($id);
-        dd($driver);
+        
+        return view('Driver.Driver', compact('driver'));
+
     }
 }
