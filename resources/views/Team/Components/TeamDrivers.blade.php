@@ -33,11 +33,11 @@
                                     alt=""></span></div>
                         <div class="team__driver__infos--line team_{{ $seasonTeam->team->id }}--background"></div>
                     </div>
-                    @if (file_exists(public_path('Images/Drivers/Number/' . $seasonTeam->season_id . $teamdriver->driver->Lastname . '.png')))
-                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id . $teamdriver->driver->Lastname . '.png') }}"
+                    @if (file_exists(public_path('Images/Drivers/Number/' . $seasonTeam->season_id ."/". $teamdriver->driver->Lastname . '.png')))
+                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id ."/". $teamdriver->driver->Lastname . '.png') }}"
                             alt="" class="team__driver--number">
                     @else
-                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id - 1 . $teamdriver->driver->Lastname . '.png') }}"
+                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id - 1 ."/". $teamdriver->driver->Lastname . '.png') }}"
                             alt="" class="team__driver--number">
                     @endif
                 </div>
