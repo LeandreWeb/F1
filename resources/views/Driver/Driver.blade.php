@@ -36,8 +36,7 @@
                 border-radius: 15px;
                 height: 100%;
                 backdrop-filter: blur( 4px );
-                background: linear-gradient(315deg, rgba(40,68,167,0.85) 0%, rgba(0,0,0,0.5) 100%); 
-                border: 2px solid #ffffff45;
+                /* background: linear-gradient(315deg, rgba(40,68,167,0.85) 0%, rgba(0,0,0,0.5) 100%);  */
                 /* box-shadow: 0 1px 4px 0 #ffffff45 ;             */
                 /* border-image: linear-gradient(-45deg,#2844a7, #ffffff) 30; */
 

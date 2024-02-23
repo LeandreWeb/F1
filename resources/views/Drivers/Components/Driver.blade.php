@@ -12,9 +12,3 @@
         <img src="{{asset('Images/Teams/'.$teamdriver->seasonTeam->team->Name.' black.png')}}" class="driver-team" src="" alt="">
     </div>
 </a>
-
-
-
-<style>
-
-    </style>
