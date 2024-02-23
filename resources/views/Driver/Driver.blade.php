@@ -21,8 +21,8 @@
         .driver_wrapper {
 
             place-self: center;
-            max-width: 1250px;
-            max-height: 700px;
+            max-width: 1200px;
+            max-height: 600px;
             height: 100%;
             width: 100%;
             display: grid;
