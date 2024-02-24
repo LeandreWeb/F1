@@ -8,7 +8,19 @@
         </div>
     </div>
     <div class="driver-photo">
-        <img src="{{asset('Images/Drivers/Side-profil/'.$teamdriver->driver->Lastname.".png")}}" alt="">
-        <img src="{{asset('Images/Teams/'.$teamdriver->seasonTeam->team->Name.' black.png')}}" class="driver-team" src="" alt="">
+        @if (file_exists(public_path(
+                    'Images/Drivers/Side-profil/' .
+                        $teamdriver->seasonteam->season_id .
+                        '/' .
+                        $teamdriver->driver->Lastname .
+                        '.png')))
+            <img src="{{ asset('Images/Drivers/Side-profil/' . $teamdriver->seasonteam->season_id . '/' . $teamdriver->driver->Lastname . '.png') }}"
+                alt="">
+        @else
+            <img src="{{ asset('Images/Drivers/Side-profil/' . $teamdriver->seasonteam->season_id - 1 . '/' . $teamdriver->driver->Lastname . '.png') }}"
+                alt="">
+        @endif
+        <img src="{{ asset('Images/Teams/' . $teamdriver->seasonTeam->team->Name . ' black.png') }}" class="driver-team"
+            src="" alt="">
     </div>
 </a>

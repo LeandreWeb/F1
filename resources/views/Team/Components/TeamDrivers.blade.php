@@ -3,33 +3,42 @@
         Pilotes
     </h2>
     <div class="team__drivers__container">
-        @foreach ($seasonTeam->teamDrivers as $teamDriver)
-            @if ($teamDriver->status == 'active')
+        @foreach ($seasonTeam->teamDrivers as $teamdriver)
+            @if ($teamdriver->status == 'active')
                 <div class="team__driver__card__container ">
-                    <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->driver->Lastname . '.png') }}" alt=""
-                        class="team__driver__photo">
+                    @if (file_exists(public_path(
+                                'Images/Drivers/Side-profil/' .
+                                    $teamdriver->seasonteam->season_id .
+                                    '/' .
+                                    $teamdriver->driver->Lastname .
+                                    '.png')))
+                        <img src="{{ asset('Images/Drivers/Side-profil/' . $teamdriver->seasonteam->season_id . '/' . $teamdriver->driver->Lastname . '.png') }}"
+                            alt="" class="team__driver__photo">
+                    @else
+                        <img src="{{ asset('Images/Drivers/Side-profil/' . $teamdriver->seasonteam->season_id - 1 . '/' . $teamdriver->driver->Lastname . '.png') }}"
+                            alt="" class="team__driver__photo">
+                    @endif
                     <div class="team__driver__infos">
                         <div class="team__driver--firstname team__driver__info--container">Prénom: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->Firstname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamdriver->driver->Firstname }}</span>
+                        </div>
                         <div class="team__driver--points team__driver__info--container">Points: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->points() }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamdriver->points() }}</span></div>
                         <div class="team__driver--lastname team__driver__info--container">Nom de Famille: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->Lastname }}</span></div>
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamdriver->driver->Lastname }}</span>
+                        </div>
                         <div class="team__driver--country team__driver__info--container">Pays: <span
-                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamDriver->driver->country->name }}</span><span><img
-                                    src="{{ asset('Images/Flags/' . $teamDriver->driver->country->name  . '.jpg') }}"
+                                class="team_{{ $seasonTeam->team->id }}--text">{{ $teamdriver->driver->country->name }}</span><span><img
+                                    src="{{ asset('Images/Flags/' . $teamdriver->driver->country->name . '.jpg') }}"
                                     alt=""></span></div>
                         <div class="team__driver__infos--line team_{{ $seasonTeam->team->id }}--background"></div>
                     </div>
-                    @if (file_exists(public_path('Images/Drivers/Number/' .$seasonTeam->season_id . $teamDriver->driver->Lastname . '.png' )))
-        
-                    <img src="{{ asset('Images/Drivers/Number/' .$seasonTeam->season_id  . $teamDriver->driver->Lastname . '.png') }}" alt=""
-                        class="team__driver--number">
-                        
+                    @if (file_exists(public_path('Images/Drivers/Number/' . $seasonTeam->season_id ."/". $teamdriver->driver->Lastname . '.png')))
+                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id ."/". $teamdriver->driver->Lastname . '.png') }}"
+                            alt="" class="team__driver--number">
                     @else
-                    <img src="{{ asset('Images/Drivers/Number/' .$seasonTeam->season_id -1  . $teamDriver->driver->Lastname . '.png') }}" alt=""
-                    class="team__driver--number">
-
+                        <img src="{{ asset('Images/Drivers/Number/' . $seasonTeam->season_id - 1 ."/". $teamdriver->driver->Lastname . '.png') }}"
+                            alt="" class="team__driver--number">
                     @endif
                 </div>
             @endif
