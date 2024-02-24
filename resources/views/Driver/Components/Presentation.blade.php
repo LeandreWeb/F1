@@ -3,6 +3,8 @@
 @endphp
 
 <section class="driver_presentation">
+    @include("svg.Animated.misc.blob",["id" => $team->id])
+    <div class="shadow"></div>
     <div class="driver_wrapper driver_box team_{{ $team->id }}--boxes">
         <div class="driver_photo driver_box driver_box--topleft">
             <img src="{{ asset('Images/Drivers/Bust/2024/' . $driver->Lastname . '.png') }}" alt="">

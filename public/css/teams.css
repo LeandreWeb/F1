@@ -9,6 +9,9 @@
 .team_1--fill {
     fill: var(--Ferrari);
 }
+.team_1--fill--accent {
+    fill: var(--Ferrari--accent);
+}
 .team_1--border {
     border: solid 2px var(--Ferrari);
     box-shadow: 0px 0px 3rem 0px var(--Ferrari);
@@ -67,9 +70,9 @@
             color-mix(in srgb, var(--Ferrari), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Ferrari--accent);
-    }
+    } */
 }
 
 .team_2--text {
@@ -82,6 +85,9 @@
 
 .team_2--fill {
     fill: var(--Red-Bull);
+}
+.team_2--fill--accent {
+    fill: var(--Red-Bull--accent);
 }
 
 .team_2--border {
@@ -141,9 +147,9 @@
             color-mix(in srgb, var(--Red-Bull), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Red-Bull--accent);
-    }
+    } */
 }
 
 .team_3--text {
@@ -156,6 +162,9 @@
 
 .team_3--fill {
     fill: var(--Aston-Martin);
+}
+.team_3--fill--accent {
+    fill: var(--Aston-Martin--accent);
 }
 .team_3--border {
     border: solid 2px var(--Aston-Martin);
@@ -214,9 +223,9 @@
             color-mix(in srgb, var(--Aston-Martin), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Aston-Martin--accent);
-    }
+    } */
 }
 
 .team_4--text {
@@ -229,6 +238,9 @@
 
 .team_4--fill {
     fill: var(--Mercedes);
+}
+.team_4--fill--accent {
+    fill: var(--Mercedes--accent);
 }
 
 .team_4--border {
@@ -288,9 +300,9 @@
             color-mix(in srgb, var(--Mercedes), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Mercedes--accent);
-    }
+    } */
 }
 
 .team_5--text {
@@ -303,6 +315,10 @@
 
 .team_5--fill {
     fill: var(--Alfa-Romeo);
+}
+
+.team_5--fill--accent {
+    fill: var(--Alfa-Romeo--accent);
 }
 .team_5--border {
     border: solid 2px var(--Alfa-Romeo);
@@ -361,9 +377,9 @@
             color-mix(in srgb, var(--Alfa-Romeo), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Alfa-Romeo--accent);
-    }
+    } */
 }
 
 .team_6--text {
@@ -376,6 +392,9 @@
 
 .team_6--fill {
     fill: var(--Alpine);
+}
+.team_6--fill--accent {
+    fill: var(--Alpine--accent);
 }
 .team_6--border {
     border: solid 2px var(--Alpine);
@@ -435,9 +454,9 @@
             color-mix(in srgb, var(--Alpine), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Alpine--accent);
-    }
+    } */
 }
 
 
@@ -451,6 +470,9 @@
 
 .team_7--fill {
     fill: var(--Williams);
+}
+.team_7--fill--accent {
+    fill: var(--Williams--accent);
 }
 .team_7--border {
     border: solid 2px var(--Williams);
@@ -510,9 +532,9 @@
             color-mix(in srgb, var(--Williams), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Williams--accent);
-    }
+    } */
 }
 
 .team_8--text {
@@ -525,6 +547,9 @@
 
 .team_8--fill {
     fill: var(--AlphaTauri);
+}
+.team_8--fill--accent {
+    fill: var(--AlphaTauri--accent);
 }
 .team_8--border {
     border: solid 2px var(--AlphaTauri);
@@ -583,9 +608,9 @@
             color-mix(in srgb, var(--AlphaTauri), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--AlphaTauri--accent);
-    }
+    } */
 }
 
 .team_9--text {
@@ -598,6 +623,9 @@
 
 .team_9--fill {
     fill: var(--Hass);
+}
+.team_9--fill--accent {
+    fill: var(--Hass--accent);
 }
 .team_9--border {
     border: solid 2px var(--Hass);
@@ -656,9 +684,9 @@
             color-mix(in srgb, var(--Hass), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Hass--accent);
-    }
+    } */
 }
 
 .team_10--text {
@@ -671,6 +699,9 @@
 
 .team_10--fill {
     fill: var(--Mclaren);
+}
+.team_10--fill--accent {
+    fill: var(--Mclaren--accent);
 }
 .team_10--border {
     border: solid 2px var(--Mclaren);
@@ -729,9 +760,9 @@
             color-mix(in srgb, var(--Mclaren), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Mclaren--accent);
-    }
+    } */
 }
 
 .team_11--text {
@@ -744,6 +775,9 @@
 
 .team_11--fill {
     fill: var(--Stake-F1);
+}
+.team_11--fill--accent {
+    fill: var(--Stake-F1--accent);
 }
 .team_11--border {
     border: solid 2px var(--Stake-F1);
@@ -809,13 +843,16 @@
             color-mix(in srgb, var(--Stake-F1), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Stake-F1--accent);
-    }
+    } */
 }
 
 .team_12--fill {
     fill: var(--Visa-RB);
+}
+.team_12--fill--accent {
+    fill: var(--Visa-RB--accent);
 }
 .team_12--border {
     border: solid 2px var(--Visa-RB);
@@ -880,7 +917,7 @@
             color-mix(in srgb, var(--Visa-RB), transparent 80%)
         );
     }
-    & .driver_box{
+    /* & .driver_box{
         border: solid 1px var(--Visa-RB--accent);
-    }
+    } */
 }

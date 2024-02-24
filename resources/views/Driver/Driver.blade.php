@@ -15,7 +15,19 @@
             background-position: center;
             background-size: cover;
             box-shadow: 0px 0px 20px 20px var(--background) inset;
-            background-image: url({{ asset('Images/Drivers/Background/2024/' . $driver->Lastname . '.svg') }});
+        }
+
+        .blob {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .shadow{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 20px 20px var(--background) inset;
+
         }
 
         .driver_wrapper {
