@@ -5,7 +5,6 @@
 
     <style>
         .driver_presentation {
-            margin-top: 5rem;
             width: 100%;
             height: 100dvh;
             position: relative;
@@ -15,7 +14,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            background-image: url({{ asset('Images/Drivers/Background/2024/' . $driver->Lastname . '.jpg') }});
+            box-shadow: 0px 0px 20px 20px var(--background) inset;
+            background-image: url({{ asset('Images/Drivers/Background/2024/' . $driver->Lastname . '.svg') }});
         }
 
         .driver_wrapper {
