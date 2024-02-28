@@ -1,5 +1,10 @@
 <svg viewBox="0 0 6952 4128" fill="none" class="blob "
     xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="blur">
+            <feGaussianBlur stdDeviation="2" />
+        </filter>
+    </defs>
     <g clip-path="url(#clip0_37_2)">
         <path class="team_{{$id}}--fill" >
             <animate repeatCount="indefinite" attributeName="d" dur="30s"
@@ -18,9 +23,7 @@
         </path>
 
     </g>
-    <filter id='shadow' color-interpolation-filters="sRGB">
-        <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.5"/>
-      </filter>
+
 
 </svg>
     
