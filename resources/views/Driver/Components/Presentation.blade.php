@@ -3,7 +3,7 @@
 @endphp
 
 <section class="driver_presentation">
-    @include("svg.Animated.misc.blob",["id" => $team->id])
+    @include('svg.Animated.misc.blob', ['id' => $team->id])
     <div class="shadow"></div>
     <div class="driver_wrapper driver_box team_{{ $team->id }}--boxes">
         <div class="driver_photo driver_box driver_box--topleft">
@@ -16,27 +16,32 @@
             </div>
         </div>
         <div class="driver_team driver_box driver_box--topright">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima eum
-            possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
-            adipisci.
+            <img src="{{ asset('Images/Teams/' . $team->Name . ' black.png') }}" alt="">
+            <p>{{ $team->Name }}</p>
 
         </div>
         <div class="driver_country driver_box driver_box--center ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima eum
-            possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
-            adipisci.
+            <img src="{{ asset('Images/flags/' . $driver->country->name . '.jpg') }}" alt="">
+            <p>{{ $driver->country->name }}</p>
 
         </div>
         <div class="driver_socials driver_box driver_box--right">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima eum
-            possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
-            adipisci.
-
+            <div class="twitter ">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="website">
+                <i class="fa-solid fa-globe"></i>
+            </div>
         </div>
         <div class="driver_text driver_box driver_box--bottomright">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima eum
-            possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
-            adipisci.
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima
+                eum
+                possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
+                adipisci.</p>
+
         </div>
     </div>
 
