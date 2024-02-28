@@ -68,7 +68,7 @@
 
                 & img {
                     width: 100%;
-                    height: 100%;
+                    aspect-ratio: 250/300;
                     object-fit: cover;
                     background-color: #00000040;
                     border-radius: 5px;
