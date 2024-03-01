@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('instagramLink');
             $table->string('websiteName');
             $table->string('websiteLink');
-            $table->text('teamText');
+            $table->text('smallText');
             $table->timestamps();
         });
     }
