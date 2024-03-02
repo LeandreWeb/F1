@@ -114,15 +114,15 @@ class SocialsSeeder extends Seeder
             'websiteLink' => 'https://www.mclaren.com/racing/',
             'smallText' => "L'équipe de Formule 1 McLaren est synonyme d'innovation, de tradition et de succès. Depuis des décennies, McLaren a été l'un des noms les plus respectés et les plus redoutés dans le monde de la course automobile."
         ];
-        $socials[] = [
-            'id' => 11,
-            'twitterName' => '@stakef1team',
-            'twitterLink' => 'https://twitter.com/stakef1team?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
-            'instagramName' => 'stakef1team',
-            'instagramLink' => 'https://www.instagram.com/stakef1team/',
-            'websiteName' => 'stake.com',
-            'websiteLink' => 'https://stake.com/sponsorships/alfa-romeo-f1-team-stake',
-            'smallText' => "StakeF1Team est une équipe de Formule 1 dynamique, émergeant d'un partenariat stratégique avec Sauber. Avec une vision tournée vers l'avenir, StakeF1Team prévoit de marquer une nouvelle ère en 2026 en devenant une équipe phare sous la bannière d'Audi. "
+        $socials[]=[
+            'id'=>11,
+            'twitterName'=>'@stakef1team_ks',
+            'twitterLink'=>'https://twitter.com/stakef1team_ks',
+            'instagramName'=>'stakef1team',
+            'instagramLink'=>'https://www.instagram.com/stakef1team/',
+            'websiteName'=>'stake.com',
+            'websiteLink'=>'https://stake.com/sponsorships/alfa-romeo-f1-team-stake',
+            'teamText'=>"StakeF1Team est une équipe de Formule 1 dynamique, émergeant d'un partenariat stratégique avec Sauber. Avec une vision tournée vers l'avenir, StakeF1Team prévoit de marquer une nouvelle ère en 2026 en devenant une équipe phare sous la bannière d'Audi. "
         ];
         $socials[] = [
             'id' => 12,
