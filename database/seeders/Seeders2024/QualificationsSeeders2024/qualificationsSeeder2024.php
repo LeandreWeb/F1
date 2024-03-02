@@ -20,7 +20,7 @@ class qualificationsSeeder2024 extends Seeder
             "id"=>202401,
             "date"=>'2024-03-01',
             "start"=>'09:00:00',
-            'qualification_story_id'=>null
+            'qualification_story_id'=>202401
         ];
         $qualifications[]=[
             "id"=>202402,
