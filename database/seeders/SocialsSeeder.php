@@ -238,7 +238,7 @@ class SocialsSeeder extends Seeder
             'instagramLink' => 'https://www.instagram.com/valtteribottas',
             'websiteName' => 'linktr.ee/valtteribottas',
             'websiteLink' => 'https://linktr.ee/valtteribottas',
-            'smallText' => ""
+            'smallText' => "Valtteri Bottas, connu pour son calme légendaire sous la pression, est un pilote finlandais de 35 ans qui court actuellement pour Stake F1. Il a connu un parcours remarquable en Formule 1, notamment chez Mercedes où il a glané 10 victoires et 67 podiums. Son rôle de coéquipier de Lewis Hamilton chez Mercedes a été crucial, puisqu'il a terminé vice-champion du monde derrière le Britannique à plusieurs reprises, prouvant sa vitesse constante et sa contribution à la domination de l'écurie. Avec son expérience et son talent, Bottas reste un pilote redoutable dans l'univers impitoyable de la Formule 1."
         ];
         $socials[] = [
             'id' => 4424,

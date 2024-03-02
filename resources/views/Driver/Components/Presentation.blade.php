@@ -26,22 +26,21 @@
 
         </div>
         <div class="driver_socials driver_box driver_box--right">
-            <div class="twitter ">
+            <a href="{{$driver->socials->twitterLink}}" class="twitter ">
                 <i class="fa-brands fa-x-twitter"></i>
-            </div>
-            <div class="instagram">
+                <p>{{$driver->socials->twitterName}}</p>
+            </a>
+            <a href="{{$driver->socials->instagramLink}}" class="instagram">
                 <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="website">
+                <p>{{$driver->socials->instagramName}}</p>
+            </a>
+            <a href="{{$driver->socials->websiteLink}}" class="website">
                 <i class="fa-solid fa-globe"></i>
-            </div>
+                <p>{{$driver->socials->websiteName}}</p>
+            </a>
         </div>
         <div class="driver_text driver_box driver_box--bottomright">
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam maiores impedit amet fugiat minima
-                eum
-                possimus fugit. Nam quod nostrum vitae quibusdam voluptatem, enim magnam tempora, soluta illo doloremque
-                adipisci.</p>
-
+            <p> {{$driver->socials->smallText}}</p>
         </div>
     </div>
 

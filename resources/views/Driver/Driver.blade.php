@@ -15,6 +15,16 @@
             background-position: center;
             background-size: cover;
             box-shadow: 0px 0px 20px 20px var(--background) inset;
+
+            @media (width < 1050px) {
+                height: auto;
+
+            }
+
+            @media (width < 450px) {
+                padding: 2rem;
+
+            }
         }
 
         .blob {
@@ -64,7 +74,6 @@
                 display: grid;
                 place-items: center;
                 padding-bottom: 20px;
-                aspect-ratio: 250/300;
 
                 & img {
                     width: 100%;
@@ -86,9 +95,8 @@
                 & .driver_fullname {
                     display: flex;
                     flex-direction: column;
-                    color: black;
-                    text-align: center;
-                    font-size: 30px;
+                    color: var(--text);
+                    font-size: 3.2rem;
                 }
 
 
@@ -129,11 +137,15 @@
                 }
 
                 & p {
-                    font-size: 2.4rem;
+                    font-size: clamp(1rem, 1.5vw, 2.5rem);
                     font-weight: 500;
                 }
 
-
+                @media (width < 1200px) {
+                    flex-direction: column;
+                    gap: 1rem;
+                    justify-content: center;
+                }
 
             }
 
@@ -141,24 +153,95 @@
                 grid-area: 3 / 5 / 5 / 7;
                 display: flex;
                 padding: 10px;
+
                 flex-direction: column;
                 justify-content: space-evenly;
 
-                & i {
 
-                    font-size: 2.5rem;
+                & a {
+                    display: flex;
+                    align-items: flex-end;
+                    color: var(--text);
+                    text-decoration: none;
+                    font-size: clamp(1.4rem, 1.05vw, 2.4rem);
+                    gap: 1rem;
                 }
 
-
-
-
+                & a:hover {
+                    color: var(--accent);
+                }
             }
+
+
 
             & .driver_text {
                 grid-area: 5 / 3 / 8 / 7;
+                overflow: auto;
+                scrollbar-color: var(--accent) transparent;
 
                 & p {
-                    font-size: 2rem;
+                    color: var(--text);
+                    font-size: 1.8rem;
+
+                }
+
+            }
+
+            @media (width < 1050px) {
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(4, auto);
+                height: auto;
+                max-height: none;
+
+                & .driver_photo {
+                    grid-area: 1 / 1 / 3 / 3;
+                    justify-self: center;
+                    width: 100%;
+
+                    & img {
+                        max-height: 40dvh;
+                        width: auto;
+                    }
+                }
+
+                & .driver_name {
+                    grid-area: 3/1/4/2;
+                    display: grid;
+
+                    & .driver_fullname {
+                        font-size: clamp(2rem, 2vw, 2.4rem);
+                        display:flex;
+                        justify-content: center;
+                    }
+                }
+
+
+                & .driver_team {
+                    grid-area: 4/1/5/3;
+                    & img{
+                        height: 2.5rem;
+                    }
+                }
+
+                & .driver_country {
+                    grid-area: 3/2/4/3;
+                }
+
+                & .driver_socials {
+                    grid-area: 5/1/6/3;
+
+                    & a {
+                        display: flex;
+                        align-items: flex-end;
+                        color: var(--text);
+                        text-decoration: none;
+                        font-size: clamp(2rem, 2vw, 2.4rem);
+                        gap: 1rem;
+                    }
+                }
+
+                & .driver_text {
+                    grid-area: 6/1/7/3;
                 }
 
 
