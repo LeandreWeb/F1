@@ -116,8 +116,8 @@ class SocialsSeeder extends Seeder
         ];
         $socials[]=[
             'id'=>11,
-            'twitterName'=>'@stakef1team',
-            'twitterLink'=>'https://twitter.com/stakef1team?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor',
+            'twitterName'=>'@stakef1team_ks',
+            'twitterLink'=>'https://twitter.com/stakef1team_ks',
             'instagramName'=>'stakef1team',
             'instagramLink'=>'https://www.instagram.com/stakef1team/',
             'websiteName'=>'stake.com',
