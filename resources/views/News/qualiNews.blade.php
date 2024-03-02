@@ -2,7 +2,8 @@
     $quali = $qualiStory->qualification;
     $grandPrixName = $qualiStory->qualification->grandPrixWeekend->name;
     $countryName = $quali->grandPrixWeekend->country->name;
-    $year=$qualiStory->qualification->grandPrixWeekend->season_id
+    $year=$qualiStory->qualification->grandPrixWeekend->season_id;
+
 @endphp
 
 

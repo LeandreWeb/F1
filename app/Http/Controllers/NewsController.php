@@ -43,8 +43,11 @@ class NewsController extends Controller
     {
         $quali = Qualification::where("id", $id)->first();
 
+        echo($quali);
+
         if($quali){
-            if ($quali->grandPrixWeekend->status == "done") {
+
+            if ( $quali->grandPrixWeekend->status == "done" || $quali->grandPrixWeekend->status == "current") {
 
                 $qualiStory = $quali->qualificationStory;
     
