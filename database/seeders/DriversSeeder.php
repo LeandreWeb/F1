@@ -96,7 +96,7 @@ class DriversSeeder extends Seeder
         $drivers[] = [
             "id" => 63,
             "FirstName" => "George",
-            "LastName" => "Russel",
+            "LastName" => "Russell",
             "country_id" => 11,
             "Number" => 63,
             "status" => 'active',
