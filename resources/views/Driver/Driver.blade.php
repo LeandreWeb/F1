@@ -210,7 +210,7 @@
 
                     & .driver_fullname {
                         font-size: clamp(2rem, 2vw, 2.4rem);
-                        display:flex;
+                        display: flex;
                         justify-content: center;
                     }
                 }
@@ -218,7 +218,8 @@
 
                 & .driver_team {
                     grid-area: 4/1/5/3;
-                    & img{
+
+                    & img {
                         height: 2.5rem;
                     }
                 }
