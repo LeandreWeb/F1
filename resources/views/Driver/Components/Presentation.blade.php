@@ -21,7 +21,7 @@
 
         </div>
         <div class="driver_country driver_box driver_box--center ">
-            <img src="{{ asset('Images/flags/' . $driver->country->name . '.jpg') }}" alt="">
+            <img src="{{ asset('Images/Flags/' . $driver->country->name . '.jpg') }}" alt="">
             <p>{{ $driver->country->name }}</p>
 
         </div>
