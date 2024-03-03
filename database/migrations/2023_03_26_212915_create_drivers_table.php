@@ -16,11 +16,12 @@ return new class extends Migration
             $table->string('Firstname');
             $table->string("Lastname");
             $table->foreignId('country_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->integer('Number');            $table->integer("points")->nullable();
+            $table->integer('Number');
+            $table->integer("points")->nullable();
             $table->string("status");
+            $table->foreignId('socials_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
-
         });
     }
 

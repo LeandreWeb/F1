@@ -31,7 +31,10 @@ class Driver extends Model
         return $this->hasMany(TeamDriver::class);
     }
     public function currentTeam(){
-        
+        return $this->hasOne(TeamDriver::class)->orderBy("id","desc")->limit(1);
+    }
+    public function socials(){
+        return $this->belongsTo(Socials::class);
     }
     
     

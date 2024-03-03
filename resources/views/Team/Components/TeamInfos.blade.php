@@ -1,4 +1,3 @@
-
 <section class="team__infos--wrapper">
     <h2 class="team--title team_{{ $seasonTeam->team->id }}--text">
         Informations
@@ -8,26 +7,30 @@
             <p class="team__infos__data">Points: <span
                     class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->points() }}</span></p>
             <p class="team__infos__data">Chef-Équipe: <span
-                    class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->activeTeamPrincipal()->firstname}}
+                    class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->activeTeamPrincipal()->firstname }}
                     {{ $seasonTeam->activeTeamPrincipal()->Lastname }}</span></p>
             <p class="team__infos__data">Pays: <span
                     class="team_{{ $seasonTeam->team->id }}--text">{{ $seasonTeam->team->country->name }}<img
-                        src="{{ asset('Images/Flags/' . $seasonTeam->team->country->name . '.jpg') }}" alt=""></span></p>
+                        src="{{ asset('Images/Flags/' . $seasonTeam->team->country->name . '.jpg') }}"
+                        alt=""></span></p>
         </div>
         <div class="team__text">
-            {{ $seasonTeam->team->socials->teamText }}
+            {{ $seasonTeam->team->socials->smallText }}
         </div>
     </div>
     <div class="team__socials">
         <div class="team__social"><i class="fa-brands fa-x-twitter team_{{ $seasonTeam->team->id }}--text "></i><a
                 class="team_{{ $seasonTeam->team->id }}--text "
-                href="{{ $seasonTeam->team->socials->twitterLink }}">{{ $seasonTeam->team->socials->twitterName }}</a></div>
+                href="{{ $seasonTeam->team->socials->twitterLink }}">{{ $seasonTeam->team->socials->twitterName }}</a>
+        </div>
         <div class="team__social"><i class="fa-brands fa-instagram team_{{ $seasonTeam->team->id }}--text"></i> <a
                 href="{{ $seasonTeam->team->socials->instagramLink }}"
-                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->instagramName }}</a></div>
+                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->instagramName }}</a>
+        </div>
         <div class="team__social"><i class="fa-solid fa-globe team_{{ $seasonTeam->team->id }}--text"></i></i><a
                 href="{{ $seasonTeam->team->socials->websiteLink }}"
-                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->websiteName }}</a></div>
+                class="team_{{ $seasonTeam->team->id }}--text ">{{ $seasonTeam->team->socials->websiteName }}</a>
+        </div>
     </div>
 
 
@@ -121,49 +124,58 @@
         .team__text {
             font-size: 1.2rem;
         }
-        .team__socials{
+
+        .team__socials {
             font-size: 1.2rem;
         }
+
         .team__socials i {
             font-size: 1.6rem;
         }
     }
 
-@keyframes bounce {
-  0% {
+    @keyframes bounce {
+        0% {
             animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
+            opacity: 1;
+        }
+
+        24% {
+            opacity: 1;
+        }
+
+        40% {
             transform: translateY(-8px);
             animation-timing-function: ease-in;
-  }
-  65% {
+        }
+
+        65% {
             transform: translateY(-8px);
             animation-timing-function: ease-in;
-  }
-  82% {
-                transform: translateY(-3px);
+        }
+
+        82% {
+            transform: translateY(-3px);
             animation-timing-function: ease-in;
-  }
-  93% {
-                transform: translateY(-2px);
+        }
+
+        93% {
+            transform: translateY(-2px);
             animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-               transform: translateY(0px);
+        }
+
+        25%,
+        55%,
+        75%,
+        87% {
+            transform: translateY(0px);
             animation-timing-function: ease-out;
-  }
-  100% {
-               transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(0px);
             animation-timing-function: ease-out;
-    opacity: 1;
-  }
-}
+            opacity: 1;
+        }
+    }
 </style>

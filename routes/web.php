@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DriversController;
+use App\Http\Controllers\DriverController;
 use App\Http\Controllers\HomePage;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ScheduleController;
@@ -40,6 +41,7 @@ Route::get('/about', function () {
 
 Route::prefix("drivers")->group(function () {
     Route::get('/', [DriversController::class, 'menu'])->name('allDrivers');
+    Route::get('/driver{id}',[DriverController::class,'driver'])->name('driver');
 });
 
 Route::get('/team/{teamName}',[TeamController::class,'team'])->name('team');
