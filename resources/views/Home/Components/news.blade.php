@@ -27,11 +27,12 @@
         $title = 'Course';
     }
 
+    
 @endphp
 
 
 
-<section id="News-Top3">
+<section id="News-Top5">
     <a href="{{ route($eventType . 'News', ['id' => $event->id]) }}" class="top-news">
         <h4 class="top-left">Nouvelle</h4>
         <img class="news-img" src="{{ asset($imagePath) }}" alt="">
@@ -41,20 +42,15 @@
         </div>
     </a>
 
-    @isset($top3[0])
-    <div class="top3">
-        <h2>Top 3</h2>
-        <div class="top3-drivers"->
-                @for ($i = 0; $i < 3; $i++)
-                @include('Home.Components.driver-card', ['position' => $i, 'teamDriver' => $top3[$i]])
+    @isset($top5[0])
+    <div class="top5">
+        <h2>Top 5</h2>
+        <div class="top5-drivers"->
+                @for ($i = 0; $i < 5; $i++)
+                @include('Home.Components.driver-card', ['position' => $i, 'teamDriver' => $top5[$i]])
                 @endfor
         </div>
     </div>
     @endisset ()
 </section>
 
-
-<style>
-
-
-</style>

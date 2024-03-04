@@ -5,64 +5,60 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size:62.5%;
+html {
+    font-size: 62.5%;
     scroll-behavior: smooth;
-    scrollbar-color:var(--accent) var(--background-light);
-    scrollbar-width:thin;
+    scrollbar-color: var(--accent) var(--background-light);
+    scrollbar-width: thin;
 }
 
 :root {
     --background: #242124;
     --background-light: #464046;
-    --background-dark:#3B373B;
-    --background-darker:#050505;
+    --background-dark: #3b373b;
+    --background-darker: #050505;
 
     --text: #fefefa;
     --accent: #68fe9a;
-    --accent-darker:#34FE77 ;
-    --danger:#ef233c;
-    --confirmation:#6096BA;
-    --attention:#f2bb05;
+    --accent-darker: #34fe77;
+    --danger: #ef233c;
+    --confirmation: #6096ba;
+    --attention: #f2bb05;
 
-    --gold:#FFD700;
-    --silver:#C0C0C0;
-    --bronze:#CD7F32;
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --bronze: #cd7f32;
 
-    --Red-Bull: #3671C6;
+    --Red-Bull: #3671c6;
     --Red-Bull--accent: #e30a20;
-    --Mercedes:#6CD3BF;
-    --Mercedes--accent:#E3DEE7;
-    --Aston-Martin:#358C75;
-    --Aston-Martin--accent:#cedc00;
-    --Ferrari:#F91536;
-    --Ferrari--accent:#ffd21f;
-    --Mclaren:#F58020;
-    --Mclaren--accent:#484B50;
-    --Alpine:#2293D1;
-    --Alpine--accent:#fd4bc7;
-    --Hass:#B6BABD;
-    --Hass--accent:#DA291C;
-    --Alfa-Romeo:#C92D4B;
-    --Alfa-Romeo--accent:#050505;
-    --AlphaTauri:#5E8FAA;
-    --AlphaTauri--accent:#f2f2f2;
-    --Williams:#37BEDD;
-    --Williams--accent:#f2f2f2;
-    --Stake-F1:#00EC00;
-    --Stake-F1--accent:#fefefe;
-    --Visa-RB:#1634CE;
-    --Visa-RB--accent:#ffffff;
+    --Mercedes: #6cd3bf;
+    --Mercedes--accent: #e3dee7;
+    --Aston-Martin: #358c75;
+    --Aston-Martin--accent: #cedc00;
+    --Ferrari: #f91536;
+    --Ferrari--accent: #ffd21f;
+    --Mclaren: #f58020;
+    --Mclaren--accent: #484b50;
+    --Alpine: #2293d1;
+    --Alpine--accent: #fd4bc7;
+    --Hass: #b6babd;
+    --Hass--accent: #da291c;
+    --Alfa-Romeo: #c92d4b;
+    --Alfa-Romeo--accent: #050505;
+    --AlphaTauri: #5e8faa;
+    --AlphaTauri--accent: #f2f2f2;
+    --Williams: #37bedd;
+    --Williams--accent: #f2f2f2;
+    --Stake-F1: #00ec00;
+    --Stake-F1--accent: #fefefe;
+    --Visa-RB: #1634ce;
+    --Visa-RB--accent: #ffffff;
 
-
-    --card-shadow:0px 0px 30px -5px #000;
+    --card-shadow: 0px 0px 30px -5px #000;
     --card-shadow-begin: 0px 0px 0px 0px transparent;
     --header-height: 12rem;
     --footer-heaght: 16rem;
-
 }
-
-
 
 body {
     background-color: var(--background);
@@ -72,7 +68,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-
 
 /* Header */
 
@@ -87,7 +82,6 @@ header {
     min-height: var(--header-height);
     z-index: 1;
     background-color: var(--background);
-
 }
 
 header a {
@@ -96,29 +90,27 @@ header a {
     color: var(--text);
 }
 
-.year-selector form{
+.year-selector form {
     position: relative;
 }
 
-.loader{
+.loader {
     height: 50px;
     width: 50px;
     position: absolute;
     left: -70px;
     top: 50%;
-    translate:  0px -50%;
+    translate: 0px -50%;
     scale: 0;
     opacity: 0;
-    transition: opacity .5s;
-    
+    transition: opacity 0.5s;
 }
 
-.loading{
-    animation: spin .5s linear infinite ;
+.loading {
+    animation: spin 0.5s linear infinite;
     scale: 1;
     opacity: 1;
 }
-
 
 #title {
     display: flex;
@@ -145,21 +137,21 @@ header a {
 .nav-links:hover {
     text-decoration: underline var(--accent);
 }
-.hamburger{
+.hamburger {
     display: none;
 }
 @media screen and (max-width: 800px) {
-    .nav-links{
+    .nav-links {
         display: none;
     }
-header{
-    justify-content: center;
-    position: relative;
-    padding: 1em;
-}
+    header {
+        justify-content: center;
+        position: relative;
+        padding: 1em;
+    }
 
-    .hamburger{
-        display:grid;
+    .hamburger {
+        display: grid;
         top: 1em;
         place-items: center;
         position: absolute;
@@ -171,19 +163,18 @@ header{
         aspect-ratio: 1/1;
         z-index: 2;
     }
-    .open-hamburger{
+    .open-hamburger {
         position: fixed;
     }
 
-    .hamburger-main{
+    .hamburger-main {
         width: 35px;
         height: 2px;
         background-color: var(--text);
 
         position: relative;
-
     }
-    .hamburger-main::after{
+    .hamburger-main::after {
         position: absolute;
         background-color: inherit;
         content: "";
@@ -194,10 +185,9 @@ header{
         z-index: 10;
     }
 
-    .hamburger:hover .hamburger-main{
+    .hamburger:hover .hamburger-main {
         background-color: var(--accent);
     }
-
 
     .open-hamburger .hamburger-main {
         animation: open-hamburgerTop forwards 1s;
@@ -206,48 +196,39 @@ header{
     .closed-hamburger .hamburger-main {
         animation: close-hamburgerTop forwards 1s;
     }
-
-  }
+}
 
 /* Color by teams */
 
-
-
-
 /* Selectors */
 
-select{
-    padding: 1rem ;
+select {
+    padding: 1rem;
     background-color: transparent;
     border-radius: 7.5px;
     color: var(--text);
     font-size: 3.2rem;
     border: 2.5px solid var(--accent);
-    
 }
-option{
+option {
     background-color: var(--background);
 }
 
-.year-selector{
+.year-selector {
     display: flex;
     padding: 4rem;
     flex-direction: row-reverse;
 }
-
-
-
-
 
 /* main */
 
 main {
     flex: 1 1 auto;
 }
-.top-left{
+.top-left {
     position: absolute;
     top: -2.5vw;
-    left: .5em;
+    left: 0.5em;
     color: var(--accent);
     font-size: 5vw;
     font-weight: 700;
@@ -255,30 +236,53 @@ main {
 
 /* News and top 3 */
 
-#News-Top3 {
+#News-Top5 {
     display: flex;
-    padding: 2em 3em;
-    gap: 1em;
+    padding: 2rem 5rem;
+    gap: 5em;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-end;
 }
 
 /* News */
 
-.top-news  {
+.top-news {
     background-color: var(--background-light);
     position: relative;
-    flex: 3;
-    padding: 0.5em;
-    border-radius: 15px;
-    aspect-ratio: 16/9;
-    flex-shrink: 0;
-    min-width: 1000px;
-    max-width: 1150px;
+    flex: 0 1 115rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
     display: flex;
     justify-content: center;
     color: var(--text);
     box-shadow: var(--card-shadow);
+}
+
+.top5 {
+    flex: .5 0 0rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    & h2{
+        font-size: clamp(2rem, 2vw, 3.5rem);
+        font-weight: 800;
+        color: var(--accent);
+        z-index: 1;
+        margin-bottom: 1rem;
+    }
+    @media screen and (max-width: 1600px) {
+    flex: 1 0 0rem;
+        
+    }
+}
+.top5-drivers{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .top-news:hover .news-title {
@@ -286,28 +290,30 @@ main {
     text-decoration-color: var(--accent);
 }
 
-
-.news-img{
-    width: 100%;
+.news-img {
     object-fit: cover;
     border-radius: 7.5px;
+    max-width: 100%;
+    height: auto;
 }
 
-.news-title{
+.news-title {
     position: absolute;
     border-radius: inherit;
     bottom: 0px;
     left: 1px;
     right: 1px;
-    padding:  1em;
+    padding: 1em;
     font-size: 2vw;
-    background-image: linear-gradient(to top, var(--background-light), transparent);
-
+    background-image: linear-gradient(
+        to top,
+        var(--background-light),
+        transparent
+    );
 }
 
-.news-title h2{
+.news-title h2 {
     font-size: 4vw;
-
 }
 
 /*Top 3*/
@@ -321,7 +327,7 @@ main {
     gap: 20px;
     justify-content: space-between;
 }
-.top3-drivers{
+.top3-drivers {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -332,18 +338,16 @@ main {
     text-align: center;
     color: var(--accent);
     font-size: 50px;
-
 }
-.top3 h2:first-child{
+.top3 h2:first-child {
     text-decoration: underline;
     text-decoration-color: var(--text);
 }
 
-
 /* Footer */
 
 footer {
-    flex:  0 0 var(--footer-heaght);
+    flex: 0 0 var(--footer-heaght);
     padding: 0 3em;
     display: flex;
     flex-direction: column;
@@ -407,15 +411,15 @@ footer h4 {
     margin-bottom: 1rem;
 }
 
-.in_construction{
+.in_construction {
     overflow: hidden;
-    & h1{
+    & h1 {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 1655px) {
-    .top3{
+    .top3 {
         margin: auto;
     }
 
@@ -423,79 +427,65 @@ footer h4 {
         flex-direction: row;
         justify-content: center;
     }
-  }
+}
 
-  @media screen and (max-width: 1200px) {
-
-    .top-news{
+@media screen and (max-width: 1200px) {
+    .top-news {
         min-width: 0px;
-
     }
 
-    .driver-card{
+    .driver-card {
         width: auto;
-
     }
+}
 
-  }
-
-  @media screen and (max-width: 700px) {
-    .year-selector{
+@media screen and (max-width: 700px) {
+    .year-selector {
         justify-content: center;
     }
-  }
-  @media screen and (max-width: 600px) {
-
-    .news-title{
-        position:initial;
-
+}
+@media screen and (max-width: 600px) {
+    .news-title {
+        position: initial;
     }
-    .top-news{
+    .top-news {
         flex-direction: column;
     }
 
-    .news-title h2{
+    .news-title h2 {
         font-size: 38px;
-
     }
-    .news-title h3{
+    .news-title h3 {
         font-size: 20px;
-
     }
+}
 
-
-  }
 
 
 /* Animation */
 
 @keyframes open-hamburgerTop {
-    from{
+    from {
         transform: rotate(0deg);
-
     }
-    to{
+    to {
         transform: rotate(25deg);
     }
 }
 @keyframes close-hamburgerTop {
-    from{
+    from {
         transform: rotate(25deg);
-
     }
-    to{
+    to {
         transform: rotate(0deg);
     }
 }
 
 @keyframes spin {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
-
-
-
