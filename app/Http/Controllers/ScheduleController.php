@@ -6,16 +6,21 @@ use Illuminate\Http\Request;
 use  App\Models\Race;
 use  App\Models\GrandPrixWeekend;
 use App\Models\Season;
+use DateTime;
+
 
 
 
 class ScheduleController extends Controller
 {
     public function menu(){
-
+        
         $year = date('Y') ;
         $seasons =Season::orderBy("id","desc")->get();
         $seasonSelect=Season::latest()->where("id",request()->query("year_id"))->get();
+        $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
+        $currentGp = GrandPrixWeekend::where("status","current")->first();
+        
         
         
         if(count($seasonSelect)){
@@ -27,82 +32,64 @@ class ScheduleController extends Controller
             
         }
         
-        
-        $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
-        
-        
         if($nextRace)
         {
-            $dateDiff =  (int)now()->diff($nextRace->date)->format('%d');
+            $interval =  now()->diff($nextRace->date);
+            $dateDiff = $interval->format('%d') + ($interval->format('%m') * 30);
         }
         else
         {
             $dateDiff = 4;
         }
         
-        $this->SetRacesToDone();
-        $currentGp = GrandPrixWeekend::where("status","current");
+        $this->SetRacesToDone($year);
 
-        if(!$currentGp && $nextRace != null &&  $dateDiff<3 ){
-            $currentGp= Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
-            if($currentGp){
-                $currentGp->status="current";
+        if ($dateDiff <= 3 && $nextRace->grandPrixWeekend->status != "current" && $nextRace != null) {
+            $nextRace->grandPrixWeekend->status = "current";
+            $nextRace->grandPrixWeekend->save();
+
+            if ($currentGp) {
+                $currentGp->status = "done";
                 $currentGp->save();
+                $currentGp = $nextRace->grandPrixWeekend;
             }
-
-        }
-
-        if($dateDiff<=3 && $nextRace->grandPrixWeekend->status != "current"){
-            
-            $currentGp = GrandPrixWeekend::where("status","current")->first();
-            
-            if($currentGp){
-
-                $currentGpDatediff= (int)now()->diff($currentGp->date)->format('%d');
-            
-
-                if($nextRace && $currentGpDatediff >= 3){
-                    $nextRace->grandPrixWeekend->status= "current";
-                    $nextRace->grandPrixWeekend->save();
-                }
-                
-                
-                if($currentGp){
-                    $currentGp->status="done";
-                    $currentGp->save();
-                    $currentGp = $nextRace->grandPrixWeekend;
-                }
-
-            }
-
 
             //$driver->save();
         }
+        if (!$currentGp) {
 
+            $currentGp = Race::whereDate("date", "<=", now())->orderBy("date", "desc")->first()->grandPrixWeekend;
+            $currentGpDatediff = (int)now()->diff($currentGp->date)->format('%d');
+
+
+            if ($currentGp && $currentGpDatediff >= 3) {
+                $currentGp->status = "current";
+                $currentGp->save();
+            }
+        }
 
         $GrandPrixWeekends = $season->grandPrix;
 
         return view("Schedule.schedule",compact('GrandPrixWeekends','seasons'));
     }
 
-    public function SetRacesToDone(){
-
+    public function SetRacesToDone($year){
         $RacesDones = Race::whereDate("date", "<=", now())->orderBy("date", "asc")->get();
 
         foreach ($RacesDones as $race) {
             $dateDiff =  (int)now()->diff($race->date)->format('%d');
             $monthDiff =  (int)now()->diff($race->date)->format('%m');
-
-
-            if ($dateDiff >= 3 && ($race->grandPrixWeekend->status != "done"&& $race->grandPrixWeekend->status != "cancelled")) {
+            $raceDate = new DateTime($race->date);
+            $raceYear = $raceDate->format('Y');
+            
+            // echo("year:".$year. "race:".$race.  "Datediff:". $dateDiff. "<br>");
+            
+            if ($year>$raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")  ) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
-            }
-            else if($dateDiff <= 3 & $monthDiff == 0){
+            } else if ($dateDiff <= 2 && $monthDiff == 0 ) {
                 $race->grandPrixWeekend->status = "current";
                 $race->grandPrixWeekend->save();
-
-
             }
         }
    }
