@@ -13,35 +13,31 @@ use DateTime;
 
 class ScheduleController extends Controller
 {
-    public function menu(){
-        
-        $year = date('Y') ;
-        $seasons =Season::orderBy("id","desc")->get();
-        $seasonSelect=Season::latest()->where("id",request()->query("year_id"))->get();
+    public function menu()
+    {
+
+        $year = date('Y');
+        $seasons = Season::orderBy("id", "desc")->get();
+        $seasonSelect = Season::latest()->where("id", request()->query("year_id"))->get();
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
-        $currentGp = GrandPrixWeekend::where("status","current")->first();
-        
-        
-        
-        if(count($seasonSelect)){
-            
-            $season= $seasonSelect[0];
-        }
-        else{
+        $currentGp = GrandPrixWeekend::where("status", "current")->first();
+
+
+
+        if (count($seasonSelect)) {
+
+            $season = $seasonSelect[0];
+        } else {
             $season = Season::with('seasonTeams.teamDrivers')->find($year);
-            
         }
-        
-        if($nextRace)
-        {
+
+        if ($nextRace) {
             $interval =  now()->diff($nextRace->date);
             $dateDiff = $interval->format('%d') + ($interval->format('%m') * 30);
-        }
-        else
-        {
+        } else {
             $dateDiff = 4;
         }
-        
+
         $this->SetRacesToDone($year);
 
         if ($dateDiff <= 3 && $nextRace->grandPrixWeekend->status != "current" && $nextRace != null) {
@@ -70,10 +66,11 @@ class ScheduleController extends Controller
 
         $GrandPrixWeekends = $season->grandPrix;
 
-        return view("Schedule.schedule",compact('GrandPrixWeekends','seasons'));
+        return view("Schedule.schedule", compact('GrandPrixWeekends', 'seasons'));
     }
 
-    public function SetRacesToDone($year){
+    public function SetRacesToDone($year)
+    {
         $RacesDones = Race::whereDate("date", "<=", now())->orderBy("date", "asc")->get();
 
         foreach ($RacesDones as $race) {
@@ -81,16 +78,14 @@ class ScheduleController extends Controller
             $monthDiff =  (int)now()->diff($race->date)->format('%m');
             $raceDate = new DateTime($race->date);
             $raceYear = $raceDate->format('Y');
-            
-            // echo("year:".$year. "race:".$race.  "Datediff:". $dateDiff. "<br>");
-            
-            if ($year>$raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")  ) {
+
+            if ($year > $raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
-            } else if ($dateDiff <= 2 && $monthDiff == 0 ) {
+            } else if ($dateDiff <= 2 && $monthDiff == 0) {
                 $race->grandPrixWeekend->status = "current";
                 $race->grandPrixWeekend->save();
             }
         }
-   }
+    }
 }

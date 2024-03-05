@@ -85,7 +85,6 @@ class HomePage extends Controller
             return view('Home.home', compact('top3', 'article', 'nextRace'));
         } else if ($lastGp->race->race_story_id) {
             $race = $lastGp->race;
-            echo($nextRace);
             return view('Home.home', compact('top3', 'race', 'nextRace'));
         } else if ($lastGp->sprint->sprint_story_id ?? null) {
             $sprint = $lastGp->sprint;
@@ -111,13 +110,11 @@ class HomePage extends Controller
             $monthDiff =  (int)now()->diff($race->date)->format('%m');
             $raceDate = new DateTime($race->date);
             $raceYear = $raceDate->format('Y');
-            
-            // echo("year:".$year. "race:".$race.  "Datediff:". $dateDiff. "<br>");
-            
-            if ($year>$raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")  ) {
+
+            if ($year > $raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
-            } else if ($dateDiff <= 2 && $monthDiff == 0 ) {
+            } else if ($dateDiff <= 2 && $monthDiff == 0) {
                 $race->grandPrixWeekend->status = "current";
                 $race->grandPrixWeekend->save();
             }
