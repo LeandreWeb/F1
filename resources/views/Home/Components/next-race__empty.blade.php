@@ -15,7 +15,6 @@
 
 <style>
     #next_race {
-        margin: 10em 0;
         display: flex;
         justify-content: center;
         padding: 2em 3em;
