@@ -451,12 +451,12 @@ footer h4 {
         justify-content: center;
     }
 }
-@media screen and (max-width: 600px) {
-    .news-title {
-        position: initial;
+@media screen and (max-width: 650px) {
+    #News-Top5{
+        padding: 2rem;
     }
     .top-news {
-        flex-direction: column;
+        height: calc(100dvh - var(--header-height) - 4rem);
     }
 
     .news-title h2 {
