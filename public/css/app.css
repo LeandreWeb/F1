@@ -84,6 +84,14 @@ header {
     background-color: var(--background);
 }
 
+.linear-box{
+    background: linear-gradient(
+        305deg,
+        color-mix(in srgb, var(--accent), transparent 80%),
+        color-mix(in srgb, var(--text), transparent 80%)
+    );
+}
+
 header a {
     text-decoration: none;
     font-weight: 600;
@@ -198,7 +206,6 @@ header a {
     }
 }
 
-/* Color by teams */
 
 /* Selectors */
 
