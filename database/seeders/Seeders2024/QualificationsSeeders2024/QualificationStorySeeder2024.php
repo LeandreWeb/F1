@@ -40,6 +40,25 @@ class QualificationStorySeeder2024 extends Seeder
 
             "extra" => null
         ];
+        $qualificationStory[] = [
+            "id" => 202402,
+
+            "catchphrase" => "Bearman Super",
+
+            "intro" => "Le Grand Prix d'Arabie Saoudite s'annonce palpitant, mais un coup dur a frappé l'écurie Ferrari. Carlos Sainz, victime d'une appendicite, ne pourra pas participer aux qualifications. Ce forfait est un véritable bouleversement pour le pilote espagnol et son équipe, qui comptaient sur lui pour rivaliser avec les Red Bull de Max Verstappen et Sergio Pérez.",
+
+            "q1" => "La première session de qualifications du Grand Prix d'Arabie Saoudite a été marquée par un accident majeur impliquant Guanyu Zhou lors des essais libres 3. Les mécaniciens de l'écurie Stake F1 ont travaillé d'arrache-pied pour réparer sa voiture à temps pour les qualifications, mais Zhou n'a pas pu franchir la ligne de départ et s'élancera en dernière position pour la course Outre Zhou, quatre autres pilotes ont été éliminés en Q1 : Logan Sargeant (Williams), Pierre Gasly (Alpine), Esteban Ocon (Alpine) et Valtteri Bottas (Stake F1).",
+
+            "q2" => "La deuxième session de qualifications du Grand Prix d'Arabie Saoudite a été marquée par un drapeau rouge et plusieurs surprises. Nico Hulkenberg a été contraint d'abandonner en raison d'un problème électrique sur sa Haas, tandis que Daniel Ricciardo, Kevin Magnussen, Alex Albon et Oliver Bearman ont été éliminés.Oliver Bearman, qui disputait sa première qualification en Formule 1, a également réalisé une performance remarquable. Le jeune pilote britannique a pris la 11ème position",
+
+            "q3" => "La troisième et dernière session de qualifications du Grand Prix d'Arabie Saoudite a été une véritable bataille pour la deuxième place. Max Verstappen, intouchable, a réalisé un tour extraordinaire en 1:28.171, s'assurant ainsi la pole position pour la course de dimanche.
+            Charles Leclerc, Sergio Pérez et Fernando Alonso se sont livrés une lutte acharnée pour la deuxième place. Le Monégasque a finalement réussi à prendre l'avantage sur le Mexicain et l'Espagnol, s'assurant ainsi une place sur la première ligne pour la course.",
+
+            "conclusion" => "Le Néerlandais a réalisé un tour extraordinaire en Q3 et semble intouchable. Il sera difficile pour ses adversaires de le battre dimanche, mais la course n'est jamais terminée avant le drapeau à damier.
+            Le Monégasque et le Mexicain ont tous deux réalisé de belles performances en qualifications. Ils seront à l'affût de la moindre erreur de Verstappen pour tenter de lui ravir la victoire.Oliver Bearman, qui remplaçait Carlos Sainz, a réalisé une performance très remarquée en se qualifiant en 11ème position. Le jeune Britannique a montré qu'il avait le potentiel pour devenir un grand pilote de Formule 1.",
+
+            "extra" => null
+        ];
 
 
 

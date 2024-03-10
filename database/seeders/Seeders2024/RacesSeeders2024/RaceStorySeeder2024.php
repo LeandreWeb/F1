@@ -43,6 +43,29 @@ class RaceStorySeeder2024 extends Seeder
 
             "extra" => null,
         ];
+        $raceStories[] = [
+            "id" => 202402,
+
+            "catchphrase" => "Bearman Prodige",
+
+            "intro" => "Après des qualifications intenses, le Grand Prix d'Arabie Saoudite s'annonce comme une course palpitante. Charles Leclerc, qualifié en deuxième position, aura-t-il les moyens de défier le leader du championnat, Max Verstappen, qui s'est élancé en pole position ? Tous les regards seront également tournés vers Oliver Bearman, qui remplace Carlos Sainz, forfait pour cause d'appendicite, et s'élancera de la 11ème place.",
+
+            "first_part" => "Dès la fin du tour de formation, Pierre Gasly est contraint à l'abandon. Le Français rencontre des problèmes de transmission et ne peut prendre le départ de la course. Verstappen, en pole position, effectue un excellent départ et prend immédiatement la tête. Il devance Charles Leclerc et Sergio Pérez, qui se livrent à une bataille intense pour la deuxième place. La lutte entre les deux pilotes est serrée, mais Pérez finit par prendre l'avantage au quatrième tour. Deux tours plus tard, Lance Stroll perd le contrôle de sa voiture et heurte le mur. L'accident est spectaculaire, mais le Canadien s'en sort indemne. La voiture de sécurité est déployée pour permettre aux commissaires de piste d'évacuer la monoplace de Stroll.",
+
+            "middle_part" => "La course est relancée et Norris, qui n'a pas effectué son arrêt aux stands, se retrouve en tête devant Verstappen. Le Britannique se défend bien, mais Verstappen finit par le dépasser au 13ème tour.
+            Magnussen reçoit deux pénalités de 10 secondes  L'équipe Haas décide de tirer parti de cette situation en demandant à Magnussen de ralentir les pilotes derrière lui afin de permettre à son coéquipier Hülkenberg de faire un arrêt aux stands plus facilement. Bearman continue de montrer son talent en dépassant Hülkenberg pour prendre la 9ème position au 21ème tour. Le jeune Britannique impressionne par sa maturité et sa vitesse.",
+
+            "last_part" => "La stratégie de Haas fonctionne à merveille. Hülkenberg s'arrête aux stands au 34ème tour et parvient à conserver sa 10ème position. Piastry tente de dépasser Hamilton, qui est plus lent en raison de pneus usés. Le jeune Australien met la pression sur le septuple champion du monde, mais Hamilton se défend avec brio et conserve sa position. Piastry ne parvient à prendre l'avantage lorsqu'Hamilton s'arrête enfin aux stands.
+            La course se dirige vers son terme et Verstappen contrôle la situation. Il devance Pérez et Leclerc, qui ne semblent pas en mesure de le menacer. Verstappen franchit la ligne d'arrivée en vainqueur et signe sa deuxième victoire consécutive de la saison. Il est suivi par Pérez et Leclerc, qui complètent le podium.",
+
+            "conclusion" => "Le Grand Prix d'Arabie Saoudite a été une course palpitante et pleine de surprises. Max Verstappen a confirmé sa domination en s'imposant pour la deuxième fois consécutive cette saison. Le Néerlandais a été intouchable du début à la fin et a parfaitement géré sa course.
+            Derrière Verstappen, Sergio Pérez et Charles Leclerc ont complété le podium. Les deux pilotes ont réalisé une bonne course, mais ils n'ont pas pu rivaliser avec le rythme du leader du championnat.
+            La surprise de la journée est venue de Frederik Bearman. Le jeune Britannique, qui remplaçait Carlos Sainz au pied levé, a réalisé une performance exceptionnelle en terminant à la 7ème place. Bearman a montré sa maturité et son talent en dépassant plusieurs pilotes expérimentés.
+            L'équipe Haas a également réalisé une belle course. Grâce à une stratégie audacieuse, Hülkenberg a notamment profité de la stratégie de son coéquipier pour prendre la 10ème place.",
+
+            "extra" => null,
+        ];
+
         // $raceStories[] = [
         //     "id" => 202401,
 
