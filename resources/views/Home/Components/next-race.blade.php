@@ -155,7 +155,8 @@
 
 
             & .track-card {
-                background-color: color-mix(in srgb, var(--background-light), transparent 20%);
+                background-color: color-mix(in srgb, var(--background-light), transparent 100%);
+                backdrop-filter: blur(100px);
                 max-width: 60rem;
                 width: 100%;
                 padding: 2rem;

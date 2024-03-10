@@ -84,12 +84,19 @@ header {
     background-color: var(--background);
 }
 
-.linear-box{
+.linear-box {
     background: linear-gradient(
-        305deg,
-        color-mix(in srgb, var(--accent), transparent 80%),
-        color-mix(in srgb, var(--text), transparent 80%)
+        45deg,
+        color-mix(in srgb, var(--background), transparent 70%) 20%,
+        color-mix(in srgb, var(--accent), transparent 70%) 30%,
+        color-mix(in srgb, var(--background), transparent 50%) 40%,
+        color-mix(in srgb, var(--background), transparent 70%) 50%,
+        color-mix(in srgb, var(--accent), transparent 70%) 60%,
+        color-mix(in srgb, var(--background), transparent 50%) 70%,
+        color-mix(in srgb, var(--text), transparent 70%) 100%
     );
+    background-size: 125% 125%;
+    animation: animatedBackground 10s ease infinite;
 }
 
 header a {
@@ -206,7 +213,6 @@ header a {
     }
 }
 
-
 /* Selectors */
 
 select {
@@ -267,11 +273,11 @@ main {
 }
 
 .top5 {
-    flex: .5 0 0rem;
+    flex: 0.5 0 0rem;
     display: flex;
     flex-direction: column;
     height: 100%;
-    & h2{
+    & h2 {
         font-size: clamp(2rem, 2vw, 3.5rem);
         font-weight: 800;
         color: var(--accent);
@@ -279,11 +285,10 @@ main {
         margin-bottom: 1rem;
     }
     @media screen and (max-width: 1600px) {
-    flex: 1 0 0rem;
-        
+        flex: 1 0 0rem;
     }
 }
-.top5-drivers{
+.top5-drivers {
     display: flex;
     height: 100%;
     justify-content: space-around;
@@ -452,7 +457,7 @@ footer h4 {
     }
 }
 @media screen and (max-width: 650px) {
-    #News-Top5{
+    #News-Top5 {
         padding: 2rem;
     }
     .top-news {
@@ -466,8 +471,6 @@ footer h4 {
         font-size: 20px;
     }
 }
-
-
 
 /* Animation */
 
@@ -494,5 +497,17 @@ footer h4 {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 10% 0%;
+    }
+    50% {
+        background-position: 91% 100%;
+    }
+    100% {
+        background-position: 10% 0%;
     }
 }
