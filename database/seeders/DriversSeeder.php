@@ -240,6 +240,15 @@ class DriversSeeder extends Seeder
             "status" => 'reserve',
             'socials_id' => 4440
         ];
+        $drivers[] = [
+            "id" => 38,
+            "FirstName" => "Oliver",
+            "LastName" => "Bearman",
+            "country_id" => 11,
+            "Number" => 38,
+            "status" => 'reserve',
+            'socials_id' => 4440
+        ];
 
 
         Db::table("drivers")->delete();
