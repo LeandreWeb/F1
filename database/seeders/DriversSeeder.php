@@ -247,7 +247,7 @@ class DriversSeeder extends Seeder
             "country_id" => 11,
             "Number" => 38,
             "status" => 'reserve',
-            'socials_id' => 4440
+            'socials_id' => 4438
         ];
 
 
