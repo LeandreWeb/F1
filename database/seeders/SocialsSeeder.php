@@ -384,6 +384,19 @@ class SocialsSeeder extends Seeder
             Sa performance, notamment son entrée in extremis dans le top 10, a impressionné les observateurs et a renforcé son statut de pilote prometteur. Cependant, il n'a pas obtenu de baquet permanent pour la saison 2024, AlphaTauri ayant choisi de reconduire Yuki Tsunoda et Daniel Ricciardo.
             Malgré ce revers, Lawson reste un pilote important pour Red Bull et AlphaTauri en tant que réserviste. Son expérience en course et sa capacité d'adaptation rapide en F1 sont des atouts précieux pour l'équipe. Il est fort probable qu'il retrouve sa place sur la grille de départ dans un avenir proche."
         ];
+        $socials[] = [
+            'id' => 4438,
+            'twitterName' => '@OllieBearman',
+            'twitterLink' => 'https://twitter.com/OllieBearman',
+            'instagramName' => 'olliebearman',
+            'instagramLink' => 'https://www.instagram.com/olliebearman/',
+            'websiteName' => 'ferrari/oliver-beearman',
+            'websiteLink' => 'https://www.ferrari.com/en-EN/fda/oliver-bearman',
+            'smallText' => "Oliver Bearman, jeune pilote britannique membre de la Ferrari Driver Academy, a fait une entrée remarquée en Formule 1 en remplaçant Carlos Sainz, victime d'appendicite, lors du Grand Prix d'Arabie Saoudite en 2023.
+            Pilote de Formule 2 à l'époque, Bearman a impressionné dès les essais libres. Il a manqué de peu la qualification pour la Q3, échouant à seulement trois centièmes de Lewis Hamilton. Son talent brut et sa capacité à s'adapter rapidement à une monoplace de pointe ont surpris les observateurs.
+            Bien que déçu de ne pas avoir atteint la Q3, Bearman a fait preuve de maturité et d'une grande combativité en course. Il est devenu le plus jeune pilote britannique de l'histoire de la F1 et le premier Anglais à piloter une Ferrari depuis Nigel Mansell en 1990.
+            Malgré son statut de réserviste, ce baptême du feu réussi a renforcé sa position au sein de la Scuderia Ferrari. Son avenir en F1 s'annonce prometteur, et on peut s'attendre à le voir de nouveau sur la grille de départ prochainement."
+        ];
 
         // $socials[]=[
         //     'id'=>11,

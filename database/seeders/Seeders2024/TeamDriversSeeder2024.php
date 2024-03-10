@@ -141,6 +141,12 @@ class TeamDriversSeeder2024 extends Seeder
             'season_team_id'=>202410,
             'status'=>'active'
         ];
+        $teamDrivers[]=[
+            'id'=>202423,
+            'driver_id'=>38,
+            'season_team_id'=>202401,
+            'status'=>'reserve'
+        ];
 
         DB::table('team_drivers')->insert($teamDrivers);
 
