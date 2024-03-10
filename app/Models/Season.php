@@ -29,22 +29,32 @@ class Season extends Model
         });
     }
 
-    public function top3Drivers(){
+    public function top5Drivers(){
         $drivers=$this->teamDrivers();
 
         $driver1points= -1;
         $driver2points= -1;
         $driver3points= -1;
+        $driver4points= -1;
+        $driver5points= -1;
+
+
 
         $driver1= null;
         $driver2= null;
         $driver3= null;
+        $driver4= null;
+        $driver5= null;
 
         for ($i=0; $i < count($drivers); $i++) { 
             
             $driverpoint = $drivers[$i]->points();
 
             if ($driverpoint > $driver1points) {
+                $driver5=$driver4;
+                $driver5points = $driver4points;
+                $driver4=$driver3;
+                $driver4points = $driver3points;
                 $driver3=$driver2;
                 $driver3points = $driver2points;
                 $driver2=$driver1;
@@ -54,21 +64,40 @@ class Season extends Model
                 
             }
             elseif($driverpoint > $driver2points){
+                $driver5=$driver4;
+                $driver5points = $driver4points;
+                $driver4=$driver3;
+                $driver4points = $driver3points;
                 $driver3=$driver2;
                 $driver3points = $driver2points;
                 $driver2 = $drivers[$i];
                 $driver2points = $drivers[$i]->points();
             }
             elseif($driverpoint > $driver3points){
+                $driver5=$driver4;
+                $driver5points = $driver4points;
+                $driver4=$driver3;
+                $driver4points = $driver3points;
                 $driver3 = $drivers[$i];
                 $driver3points = $drivers[$i]->points();
+            }
+            elseif($driverpoint > $driver4points){
+                $driver5=$driver4;
+                $driver5points = $driver4points;
+                $driver4 = $drivers[$i];
+                $driver4points = $drivers[$i]->points();
+            }
+            elseif($driverpoint > $driver5points){
+                $driver5 = $drivers[$i];
+                $driver5points = $drivers[$i]->points();
             }
 
         }
 
-        $top3 = [$driver1, $driver2, $driver3];
+        $top5 = [$driver1, $driver2, $driver3,$driver4,$driver5];
 
-        return $top3;
+
+        return $top5;
     }
 
     public function rankedTeams(){

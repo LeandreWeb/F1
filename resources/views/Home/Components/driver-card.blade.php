@@ -14,10 +14,10 @@
                         $teamDriver->driver->Lastname .
                         '.png')))
             <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->seasonteam->season_id . '/' . $teamDriver->driver->Lastname . '.png') }}"
-                alt="" >
+                alt="">
         @else
             <img src="{{ asset('Images/Drivers/Side-profil/' . $teamDriver->seasonteam->season_id - 1 . '/' . $teamDriver->driver->Lastname . '.png') }}"
-                alt="" >
+                alt="">
         @endif
         <h2 class="driver-position">{{ $position + 1 }}</h2>
         <img src="{{ asset('Images/Teams/' . $teamDriver->seasonTeam->team->Name . ' black.png') }}" class="driver-team"
@@ -29,65 +29,69 @@
     .driver-card {
         position: relative;
         background-color: var(--background-light);
-        width: 37.5rem;
         display: flex;
         justify-content: space-between;
         padding: 1rem;
-        border-radius: 2rem;
-
+        border-radius: 1.5rem;
         box-shadow: var(--card-shadow);
-
-
-
+        width: 30rem;
+        @media screen and (max-width: 650px) {
+            width:100%;
+        }
     }
 
     .driver-info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex: 1;
+        flex: 1 1 auto;
         font-weight: 700;
         z-index: 1;
-
     }
 
     .driver-points {
-        font-size: 4rem
+        font-size: clamp(2rem, 1vw, 4.5rem);
     }
 
     .driver-firstname {
-        font-size: 2.4rem;
+        font-size: clamp(2rem, 1vw, 4.5rem);
     }
 
     .driver-lastname {
-        font-size: 3rem;
+        font-size: clamp(2rem, 1.25vw, 4.5rem);
     }
 
     .driver-photo {
         display: flex;
         justify-content: flex-end;
+        flex: 0 0 40%;
+
+        @media screen and (max-width: 365px) {
+            flex: 0 0 30%;
+        }
 
     }
 
     .driver-photo img {
-        object-fit: cover;
+        object-fit: contain;
+        aspect-ratio: 1/1;
 
     }
 
     .driver-photo img:first-child {
         background-color: transparent;
+        width: 100%;
         z-index: 1;
         margin-bottom: -1rem;
     }
 
     .driver-team {
         position: absolute;
-        width: 75%;
+        height: 80%;
         object-fit: contain !important;
         top: 10%;
         aspect-ratio: 2/1;
         right: 0px;
-
         opacity: .4;
     }
 
@@ -95,28 +99,7 @@
         position: absolute;
         top: 0px;
         right: 10px;
-        font-size: 12.8rem;
+        font-size: clamp(2rem, 2vw, 3.5rem);
         font-weight: 800;
-    }
-
-    @media screen and (max-width: 500px) {
-
-        .driver-card {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .driver-team {
-            position: absolute;
-            width: 100%;
-            object-fit: contain !important;
-            top: 30%;
-            aspect-ratio: 2/1;
-            right: 0px;
-            left: 0px;
-
-            opacity: .4;
-        }
-
     }
 </style>

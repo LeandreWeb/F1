@@ -26,7 +26,12 @@ class HomePage extends Controller
 
         $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
-        $top3 = $season->top3Drivers();
+        
+        $teamDriver = TeamDriver::where("driver_id",1)->first();
+
+
+
+        $top5 = $season->top5Drivers();
         $article = Article::whereDate("created_time", "<=", now())->orderBy("created_time", "desc")->first();
         $nextRace = Race::whereDate("date", ">=", now())->orderBy("date", "asc")->first();
         $currentGp = GrandPrixWeekend::where("status", "current")->first();
@@ -82,19 +87,19 @@ class HomePage extends Controller
 
 
         if ($lastGp->status == "cancelled") {
-            return view('Home.home', compact('top3', 'article', 'nextRace'));
+            return view('Home.home', compact('top5', 'article', 'nextRace'));
         } else if ($lastGp->race->race_story_id) {
             $race = $lastGp->race;
-            return view('Home.home', compact('top3', 'race', 'nextRace'));
+            return view('Home.home', compact('top5', 'race', 'nextRace'));
         } else if ($lastGp->sprint->sprint_story_id ?? null) {
-            $sprint = $lastGp->sprint;
-            return view('Home.home', compact('top3', 'sprint', 'nextRace'));
+            $sprint=$lastGp->sprint;
+            return view('Home.home', compact('top5', 'sprint', 'nextRace'));
         } else if ($lastGp->sprintShootout->sprint_shootout_story_id ?? null) {
-            $sprintShootout = $lastGp->sprintShootout;
-            return view('Home.home', compact('top3', 'sprintShootout', 'nextRace'));
+            $sprintShootout=$lastGp->sprintShootout;
+            return view('Home.home', compact('top5', 'sprintShootout', 'nextRace'));
         } else if ($lastGp->qualification->qualification_story_id) {
             $qualification = $lastGp->qualification;
-            return view('Home.home', compact('top3', 'qualification', 'nextRace'));
+            return view('Home.home', compact('top5', 'qualification', 'nextRace'));
         }
     }
 
