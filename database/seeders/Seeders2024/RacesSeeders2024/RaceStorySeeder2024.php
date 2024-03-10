@@ -43,6 +43,24 @@ class RaceStorySeeder2024 extends Seeder
 
             "extra" => null,
         ];
+        $raceStories[] = [
+            "id" => 202402,
+
+            "catchphrase" => "",
+
+            "intro" => "",
+
+            "first_part" => "",
+
+            "middle_part" => "",
+
+            "last_part" => "",
+
+            "conclusion" => "",
+
+            "extra" => null,
+        ];
+
         // $raceStories[] = [
         //     "id" => 202401,
 
