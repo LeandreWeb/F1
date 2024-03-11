@@ -6,7 +6,6 @@ const qualiStarter = document.querySelector(".start--animation");
 const qualiDriver = document.querySelector(".driver_circle");
 const navMenu = document.querySelector(".nav-menu");
 
-
 hamburger.addEventListener("click", () => {
     console.log("Click ");
 
@@ -55,9 +54,6 @@ window.addEventListener("resize", () => {
     }
 });
 
-var path = document.querySelector('#horse');
-
-
+var path = document.querySelector("#horse");
 
 // var length = path.getTotalLength();
-

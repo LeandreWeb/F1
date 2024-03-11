@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
+<script src="{{ asset('js/homepage.js') }}" defer></script>
+
     <main>
 
         @isset($article)
