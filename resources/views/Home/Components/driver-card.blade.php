@@ -1,4 +1,4 @@
-<div class="driver-card">
+<div class="driver-card driver-rank-{{$position + 1}}">
     <div class="driver-info">
         <div class="driver-points">{{ $teamDriver->points() }} Points</div>
         <div class="driver-fullname">
@@ -36,9 +36,28 @@
         box-shadow: var(--card-shadow);
         width: 30rem;
         @media screen and (max-width: 650px) {
-            width:100%;
+            width: 100%;
         }
     }
+
+    .visible{
+        & .driver-card{
+            animation: slide-in-blurred-right .75s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        }
+        & .driver-rank-2{
+            animation-delay: .15s;
+        }
+        & .driver-rank-3{
+            animation-delay: .3s;
+        }
+        & .driver-rank-4{
+            animation-delay: .45s;
+        }
+        & .driver-rank-5{
+            animation-delay: .6s;
+        }
+    }
+
 
     .driver-info {
         display: flex;
