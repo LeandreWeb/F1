@@ -19,27 +19,39 @@
         </section>
 
         <section class="first_part race_content">
-            <div>
+            <div class="race_content-photo">
                 <img src="{{ asset('Images/Stories/' . $year . '/' . 'Races/FirstPart/' . $grandPrixName . '.jpg') }}""
                     alt="">
             </div>
-            <p>{{ $raceStory->first_part }}</p>
+            <div class="race_content-texts">
+                <h3>Départ</h3>
+                <p>{{ $raceStory->first_part }}</p>
+            </div>
+
         </section>
 
         <section class="middle_part race_content">
-            <div>
+            <div class="race_content-photo">
                 <img src="{{ asset('Images/Stories/' . $year . '/' . 'Races/MiddlePart/' . $grandPrixName . '.jpg') }}""
                     alt="">
             </div>
-            <p>{{ $raceStory->middle_part }}</p>
+            <div class="race_content-texts">
+                <h3>Millieu</h3>
+                <p>{{ $raceStory->middle_part }}</p>
+            </div>
+
         </section>
 
         <section class="last_part race_content">
-            <div>
+            <div class="race_content-photo">
                 <img src="{{ asset('Images/Stories/' . $year . '/' . 'Races/LastPart/' . $grandPrixName . '.jpg') }}""
                     alt="">
             </div>
-            <p>{{ $raceStory->last_part }}</p>
+            <div class="race_content-texts">
+                <h3>Fin</h3>
+                <p>{{ $raceStory->last_part }}</p>
+            </div>
+
         </section>
 
         <section class="race_conclusion">
@@ -88,7 +100,6 @@
             display: flex;
             flex-wrap: wrap;
             min-height: calc(100vh - 138px);
-            height: calc(100vh - 138px);
             padding: 2rem;
             margin-bottom: 10rem;
         }
@@ -125,35 +136,58 @@
             max-width: 100%;
             max-height: 100%;
 
-
-
         }
 
         .race_content {
             display: flex;
             flex-wrap: wrap-reverse;
-            padding: 2rem;
-            gap: 1em;
+            padding: 5rem;
+            gap: 2rem;
             margin-top: 1em;
             align-items: center;
             min-height: 50dvh;
+            margin-inline: auto;
+            max-width: 175rem;
+            justify-content: center;
+            background-color: var(--background-light);
+
+            @media screen and (max-width: 675px) {
+                padding: 2.5rem;
+            }
         }
 
-        .race_content p {
+        .race_content .race_content-texts {
             flex: 1 0 30rem;
-            min-width: 525px;
-            padding: 1em
+            padding: 3.5rem;
+
+            & h3 {
+                font-size: clamp(2.4rem, 3.5dvw, 4.4rem);
+                color: var(--accent);
+            }
+
+            @media screen and (max-width: 500px) {
+                padding: 0;
+            }
         }
 
-        .race_content div {
+        .race_content .race_content-photo {
             flex: 1 0 50rem;
             background-color: rgba(0, 0, 0, 0.50);
-            border-radius: 15px;
+            border-radius: .5rem;
             aspect-ratio: 16/9;
             place-items: center;
             align-self: stretch;
             max-height: 100%;
             max-width: 100%;
+            width: 100%;
+
+
+            @media screen and (max-width: 1175px) {
+                max-width: 75rem;
+                flex: 1 1 auto;
+
+
+            }
 
 
 
@@ -165,8 +199,7 @@
             height: 100%;
             border-radius: inherit;
             box-shadow: var(--card-shadow);
-
-
+            min-width: 25rem;
         }
 
         .middle_part {
@@ -199,13 +232,17 @@
         }
 
         .race_conclusion {
-            padding: 5rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
             margin: 5em 0;
             margin-inline: auto;
             max-width: 150rem;
+            padding: 5rem;
+            background-color: var(--background-light);
+
+
+
 
             & h2 {
                 text-decoration-color: var(--text);
@@ -222,7 +259,7 @@
                     width: 100%;
                     aspect-ratio: 16/9;
                     object-fit: cover;
-                    border-radius: .7rem;
+                    border-radius: .5rem;
                     box-shadow: var(--card-shadow);
                 }
 
@@ -248,6 +285,10 @@
 
         .race_conclusion p {
             padding: 0 5rem;
+
+            @media screen and (max-width: 500px) {
+                padding: 0;
+            }
         }
 
 
