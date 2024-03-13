@@ -134,7 +134,7 @@
             border-radius: 0.5rem;
             box-shadow: var(--card-shadow);
             max-width: 100%;
-            max-height: 100%;
+            max-height: 74.5rem;
 
         }
 
