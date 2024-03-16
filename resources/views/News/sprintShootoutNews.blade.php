@@ -146,7 +146,7 @@
                 'time' => $sprintShootout->winner->q3,
                 'teamid' => $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id,
             ])
-            <div class="quali_visual--infos">
+            <div class="pole_containeer">
                 <button class="start--animation">Démarrer</button>
                 <h3>{{ $sprintShootout->winner->q3 }} s</h3>
                 <h3 class="driver_pole team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">

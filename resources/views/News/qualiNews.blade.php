@@ -132,18 +132,21 @@
             @endif
         </section>
 
-        <section class="quali_visual">
+        <section class="pole_container">
 
-            @include('svg.Qualifications.' . $quali->grandPrixWeekend->track->name, [
-                'time' => $quali->winner->q3,
-                'teamid' => $quali->winner->driver->teamDriver[0]->seasonTeam->team->id,
-            ])
-            <div class="quali_visual--infos">
-                <button class="start--animation">Démarrer</button>
-                <h3>{{ $quali->winner->q3 }} s</h3>
-                <h3 class="driver_pole team_{{ $quali->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
+            <div class="pole-infos">
+                <h3 class="pole-driver team_{{ $quali->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
                     {{ $quali->winner->driver->Firstname }} {{ $quali->winner->driver->Lastname }}</h3>
+                <h3 class="pole_time">{{ $quali->winner->q3 }} s</h3>
+                    <button class="start--animation">Démarrer</button>
             </div>
+            <div class="track_container">
+                @include('svg.Qualifications.' . $quali->grandPrixWeekend->track->name, [
+                    'time' => $quali->winner->q3,
+                    'teamid' => $quali->winner->driver->teamDriver[0]->seasonTeam->team->id,
+                ])
+            </div>
+
         </section>
 
         @if ($qualiStory->extra)

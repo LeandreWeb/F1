@@ -101,7 +101,8 @@
     min-width: 25rem;
 }
 
-.middle_part , .quali_end {
+.middle_part,
+.quali_end {
     flex-direction: row-reverse;
 }
 
@@ -207,7 +208,7 @@
 }
 
 .quali_outs {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
     box-shadow: var(--card-shadow);
@@ -220,7 +221,7 @@
 }
 
 .quali_times:not(:last-child) {
-    border-bottom: solid 2px var(--background-light)
+    border-bottom: solid 2px var(--background-light);
 }
 
 .quali_outs {
@@ -236,7 +237,7 @@
     left: 16px;
     top: -16px;
     font-size: 32px;
-    color: var(--accent)
+    color: var(--accent);
 }
 
 .race_link {
@@ -253,7 +254,7 @@
     width: 0%;
     height: 5px;
     background-color: var(--accent);
-    transition: .5s
+    transition: 0.5s;
 }
 
 .race_link:hover::after {
@@ -266,18 +267,16 @@
     align-items: center;
     font-size: 32px;
     color: var(--accent);
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     align-self: center;
     max-width: 1000px;
     width: 100%;
-    box-shadow: var(--card-shadow);
-
 
     border-radius: 15px;
 }
 
 .quali_visual button {
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .start--animation {
@@ -289,20 +288,97 @@
     border: transparent;
     cursor: pointer;
     display: block;
-    margin: auto;
-    border-radius: 15px;
+    border-radius: 0.25rem;
+    max-width: fit-content;
+    transition: width 2s;
 }
 
 .start--animation:active {
-    transform: translateY(3px)
+    transform: translateY(3px);
 }
 
 .quali_visual--infos {
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
     align-self: stretch;
     border-radius: 0 0 10px 10px;
     padding: 0 15px 15px 15px;
-    border-top: solid 2px var(--background-light)
+    border-top: solid 2px var(--background-light);
+}
+
+.pole_container {
+    background: linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--background), transparent 70%) 20%,
+        color-mix(in srgb, var(--accent), transparent 70%) 30%,
+        color-mix(in srgb, var(--background), transparent 50%) 40%,
+        color-mix(in srgb, var(--background), transparent 70%) 50%,
+        color-mix(in srgb, var(--accent), transparent 70%) 60%,
+        color-mix(in srgb, var(--background), transparent 50%) 70%,
+        color-mix(in srgb, var(--text), transparent 70%) 100%
+    );
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: row;
+    background-size: 125% 125%;
+    animation: animatedBackground 5s ease infinite;
+    max-width: 125rem;
+    width: 100%;
+    align-self: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    min-height: 30rem;
+    flex-wrap: wrap-reverse;
+    max-height: 100dvh;
+
+    & .pole-infos {
+        padding: 1rem;
+        padding-inline: 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        flex: 1 1 fit-content;
+        background-color: color-mix(
+            in srgb,
+            var(--background-darker),
+            transparent 50%
+        );
+
+        & .pole-driver {
+            font-size: clamp(2.4rem, 5dvw, 4.2rem);
+        }
+        & .pole_time {
+            font-size: clamp(2rem, 4dvw, 3.6rem);
+        }
+    }
+
+    & .track_container {
+        flex: 2 1 auto;
+        padding: 2rem;
+        min-width: 50rem;
+
+        & svg {
+            background-color: color-mix(
+                in srgb,
+                var(--background-light),
+                transparent 80%
+            );
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (width<550px) {
+            min-width: 30rem;
+            padding-inline: 0;
+
+        }
+        @media screen and (height<400px) {
+            min-width: 30rem;
+
+        }
+    }
 }
 
 @media screen and (max-width: 675px) {
@@ -313,5 +389,18 @@
     .article_content div {
         flex: auto;
         min-width: 200px;
+    }
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 10% 0%;
+    }
+    50% {
+        background-position: 91% 100%;
+    }
+
+    100% {
+        background-position: 10% 0%;
     }
 }
