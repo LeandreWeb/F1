@@ -79,7 +79,7 @@ class ScheduleController extends Controller
             $raceDate = new DateTime($race->date);
             $raceYear = $raceDate->format('Y');
 
-            if ($year > $raceYear || $dateDiff > 2 && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
+            if (($year > $raceYear || $dateDiff > 2) && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
             } else if ($dateDiff <= 2 && $monthDiff == 0) {

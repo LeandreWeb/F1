@@ -1,0 +1,410 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 138px);
+    padding: 2rem;
+    margin-bottom: 10rem;
+}
+
+.intro_presentation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.intro_presentation h1 {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--text);
+    font-size: clamp(4.8rem, 5dvw, 9.6rem);
+}
+
+.story p {
+    font-size: clamp(1.2rem, 1.5dvw, 2.4rem);
+}
+
+.intro img {
+    flex: 3 0 75rem;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    min-width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+    max-width: 100%;
+    max-height: 74.5rem;
+}
+
+.article_content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 5rem;
+    gap: 2rem;
+    margin-top: 1em;
+    align-items: center;
+    min-height: 50dvh;
+    margin-inline: auto;
+    max-width: 175rem;
+    justify-content: center;
+    background-color: var(--background-light);
+
+    @media screen and (max-width: 675px) {
+        padding: 2.5rem;
+    }
+}
+
+.article_content .content-texts {
+    flex: 1 0 30rem;
+    padding: 3.5rem;
+
+    & h3 {
+        font-size: clamp(2.4rem, 3.5dvw, 4.4rem);
+        color: var(--accent);
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
+}
+
+.article_content .content-photo {
+    flex: 1 0 50rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+    place-items: center;
+    align-self: stretch;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 1175px) {
+        max-width: 75rem;
+        flex: 1 1 auto;
+    }
+}
+
+.article_content img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    box-shadow: var(--card-shadow);
+    min-width: 25rem;
+}
+
+.middle_part,
+.quali_end {
+    flex-direction: row-reverse;
+}
+
+.quali_link {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.quali_link::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: 0.5s;
+}
+
+.quali_link:hover::after {
+    width: 100%;
+}
+
+.conclusion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5em 0;
+    margin-inline: auto;
+    max-width: 150rem;
+    padding: 5rem;
+    background-color: var(--background-light);
+
+    & h2 {
+        text-decoration-color: var(--text);
+        font-size: clamp(2.4rem, 5dvw, 4.8rem);
+        color: var(--accent);
+    }
+
+    & .conclusion_photo {
+        display: grid;
+        place-items: center;
+
+        & img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: var(--card-shadow);
+        }
+    }
+}
+
+.extra {
+    padding: 4rem;
+    border: solid var(--attention) 2px;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem 0px var(--attention);
+}
+
+.extra h2 {
+    font-size: 3.2rem;
+    color: var(--attention);
+}
+
+.conclusion p {
+    padding: 0 5rem;
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 3rem;
+}
+
+.link {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.link::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: 0.5s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.quali_outs {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--card-shadow);
+}
+
+.quali_times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quali_times:not(:last-child) {
+    border-bottom: solid 2px var(--background-light);
+}
+
+.quali_outs {
+    position: relative;
+    padding: 45px 1.5em;
+    flex: 1.25;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.out_title {
+    position: absolute;
+    left: 16px;
+    top: -16px;
+    font-size: 32px;
+    color: var(--accent);
+}
+
+.race_link {
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.race_link::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--accent);
+    transition: 0.5s;
+}
+
+.race_link:hover::after {
+    width: 100%;
+}
+
+.quali_visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    color: var(--accent);
+    background-color: #1e1e1e;
+    align-self: center;
+    max-width: 1000px;
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+.quali_visual button {
+    margin-top: 15px;
+}
+
+.start--animation {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    background-color: var(--accent);
+    border: transparent;
+    cursor: pointer;
+    display: block;
+    border-radius: 0.25rem;
+    max-width: fit-content;
+    transition: width 2s;
+}
+
+.start--animation:active {
+    transform: translateY(3px);
+}
+
+.quali_visual--infos {
+    background-color: #0f0f0f;
+    align-self: stretch;
+    border-radius: 0 0 10px 10px;
+    padding: 0 15px 15px 15px;
+    border-top: solid 2px var(--background-light);
+}
+
+.pole_container {
+    background: linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--background), transparent 70%) 20%,
+        color-mix(in srgb, var(--accent), transparent 70%) 30%,
+        color-mix(in srgb, var(--background), transparent 50%) 40%,
+        color-mix(in srgb, var(--background), transparent 70%) 50%,
+        color-mix(in srgb, var(--accent), transparent 70%) 60%,
+        color-mix(in srgb, var(--background), transparent 50%) 70%,
+        color-mix(in srgb, var(--text), transparent 70%) 100%
+    );
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: row;
+    background-size: 125% 125%;
+    animation: animatedBackground 5s ease infinite;
+    max-width: 125rem;
+    width: 100%;
+    align-self: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    min-height: 30rem;
+    flex-wrap: wrap-reverse;
+    max-height: 100dvh;
+
+    & .pole-infos {
+        padding: 1rem;
+        padding-inline: 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        flex: 1 1 fit-content;
+        background-color: color-mix(
+            in srgb,
+            var(--background-darker),
+            transparent 50%
+        );
+
+        & .pole-driver {
+            font-size: clamp(2.4rem, 5dvw, 4.2rem);
+        }
+        & .pole_time {
+            font-size: clamp(2rem, 4dvw, 3.6rem);
+        }
+    }
+
+    & .track_container {
+        flex: 2 1 auto;
+        padding: 2rem;
+        min-width: 50rem;
+
+        & svg {
+            background-color: color-mix(
+                in srgb,
+                var(--background-light),
+                transparent 80%
+            );
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (width<550px) {
+            min-width: 30rem;
+            padding-inline: 0;
+        }
+        @media screen and (height<425px) {
+            min-width: 0rem;
+            max-height: 50dvh;
+            align-self: center;
+
+            & svg {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .article_content p {
+        min-width: auto;
+    }
+
+    .article_content div {
+        flex: auto;
+        min-width: 200px;
+    }
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 10% 0%;
+    }
+    50% {
+        background-position: 91% 100%;
+    }
+
+    100% {
+        background-position: 10% 0%;
+    }
+}
