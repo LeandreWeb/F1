@@ -372,11 +372,15 @@
         @media screen and (width<550px) {
             min-width: 30rem;
             padding-inline: 0;
-
         }
-        @media screen and (height<400px) {
-            min-width: 30rem;
+        @media screen and (height<425px) {
+            min-width: 0rem;
+            max-height: 50dvh;
+            align-self: center;
 
+            & svg {
+                width: auto;
+            }
         }
     }
 }

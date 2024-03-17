@@ -127,18 +127,24 @@
             <h2>En Conclusion</h2>
             <p>{{ $qualiStory->conclusion }}</p>
 
-            @if ($quali->grandPrixWeekend->race->race_story_id)
-                <a class="race_link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">Course -></a>
-            @endif
         </section>
 
         <section class="pole_container">
 
             <div class="pole-infos">
                 <h3 class="pole-driver team_{{ $quali->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
-                    {{ $quali->winner->driver->Firstname }} {{ $quali->winner->driver->Lastname }}</h3>
-                <h3 class="pole_time">{{ $quali->winner->q3 }} s</h3>
-                    <button class="start--animation">Démarrer</button>
+                    {{ $quali->winner->driver->Firstname }} {{ $quali->winner->driver->Lastname }}
+                </h3>
+                @php
+                    $minutes = floor($quali->winner->q3 / 60);
+                    $seconds = fmod($quali->winner->q3, 60);
+                    $millisecondsparts = explode('.', $quali->winner->q3);
+                    $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
+                    $seconds = floor($seconds);
+                    $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
+                @endphp
+                <h3 class="pole_time">{{ $time }}</h3>
+                <button class="start--animation">Démarrer</button>
             </div>
             <div class="track_container">
                 @include('svg.Qualifications.' . $quali->grandPrixWeekend->track->name, [
@@ -155,6 +161,13 @@
                 <p>{{ $qualiStory->extra }}</p>
             </section>
         @endif
+
+        <section class="links">
+            @if ($quali->grandPrixWeekend->race->race_story_id)
+                <a class="race_link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">Course -></a>
+            @endif
+        </section>
+
 
 
 

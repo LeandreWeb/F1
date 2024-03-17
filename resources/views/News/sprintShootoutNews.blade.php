@@ -3,14 +3,14 @@
 
     $sprintShootout = $sprintShootoutStory->sprintShootout;
     $countryName = $sprintShootout->grandPrixWeekend->country->name;
-    $year=$sprintShootout->grandPrixWeekend->season_id
+    $year = $sprintShootout->grandPrixWeekend->season_id;
 @endphp
 
 
 @extends('layouts.main')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/news.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/news.css') }}">
     <main id="sprintShootout_story" class="story">
         {{-- Intro --}}
         <section class="intro">
@@ -18,7 +18,8 @@
                 <h1>{{ $sprintShootoutStory->catchphrase }}</h1>
                 <p>{{ $sprintShootoutStory->intro }}</p>
             </div>
-            <img src="{{ asset('Images/Stories/'. $year .'/'.'SprintShootouts/Main/' . $grandPrixName . '.jpg') }}" alt="Main Photo">
+            <img src="{{ asset('Images/Stories/' . $year . '/' . 'SprintShootouts/Main/' . $grandPrixName . '.jpg') }}"
+                alt="Main Photo">
         </section>
         {{-- SQ1 --}}
         <section class="q1 article_content">
@@ -120,7 +121,8 @@
         {{-- conclusion --}}
         <section class="conclusion">
             <div class="conclusion_photo">
-                <img src="{{ asset('Images/Stories/'. $year .'/'.'SprintShootouts/End/' . $grandPrixName . '.jpg') }}" alt="Photo Winner">
+                <img src="{{ asset('Images/Stories/' . $year . '/' . 'SprintShootouts/End/' . $grandPrixName . '.jpg') }}"
+                    alt="Photo Winner">
             </div>
             <h2>En Conclusion</h2>
             <p>{{ $sprintShootoutStory->conclusion }}</p>
@@ -128,33 +130,48 @@
 
         </section>
 
+        {{-- Visuel du gagnant --}}
+        <section class="pole_container">
+            
+            <div class="pole-infos">
+                <h3
+                class="pole-driver team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
+                {{ $sprintShootout->winner->driver->Firstname }} {{ $sprintShootout->winner->driver->Lastname }}
+            </h3>
+            @php
+                    $minutes = floor($sprintShootout->winner->q3 / 60);
+                    $seconds = fmod($sprintShootout->winner->q3, 60);
+                    $millisecondsparts = explode('.', $sprintShootout->winner->q3);
+                    $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
+                    $seconds = floor($seconds);
+                    $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
+                    @endphp
+                <h3 class="pole_time">{{ $time }}</h3>
+                <button class="start--animation">Démarrer</button>
+            </div>
+            
+            <div class="track_container">
+                @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
+                    'time' => $sprintShootout->winner->q3,
+                    'teamid' => $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id,
+                    ])
+            </div>
+            
+        </section>
+        
         <section class="links">
-            <a class="quali_link link" href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">Qualifications
+            <a class="quali_link link"
+                href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">Qualifications
                 -></a>
 
             @if ($sprintShootout->grandPrixWeekend->sprint->sprint_story_id)
-                <a class="sprint_link link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">Sprint -></a>
+                <a class="sprint_link link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">Sprint
+                    -></a>
             @endif
             @if ($sprintShootout->grandPrixWeekend->race->race_story_id)
                 <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
             @endif
         </section>
-        {{-- Visuel du gagnant --}}
-        <section class="quali_visual">
-
-            @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
-                'time' => $sprintShootout->winner->q3,
-                'teamid' => $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id,
-            ])
-            <div class="pole_containeer">
-                <button class="start--animation">Démarrer</button>
-                <h3>{{ $sprintShootout->winner->q3 }} s</h3>
-                <h3 class="driver_pole team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
-                    {{ $sprintShootout->winner->driver->Firstname }} {{ $sprintShootout->winner->driver->Lastname }}
-                </h3>
-            </div>
-        </section>
-
         @if ($sprintShootoutStory->extra)
             <section class="extra">
                 <h2>Mise a Jour</h2>
@@ -162,6 +179,4 @@
             </section>
         @endif
     </main>
-
-
 @endsection
