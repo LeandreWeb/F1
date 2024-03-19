@@ -81,8 +81,9 @@
                     Shootout -></a>
             @endif
             @if ($race->grandPrixWeekend->qualification->qualification_story_id)
-                <a class="race_link link" href="{{ route('qualificationNews', ['id' => $raceStory->id]) }}">Qualifications
-                    -></a>
+                <a class="race_link link" href="{{ route('qualificationNews', ['id' => $raceStory->id]) }}">
+                    @include('Links.quali')
+                </a>
             @endif
 
         </section>
