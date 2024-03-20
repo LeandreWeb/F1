@@ -132,46 +132,61 @@
 
         {{-- Visuel du gagnant --}}
         <section class="pole_container">
-            
+
             <div class="pole-infos">
                 <h3
-                class="pole-driver team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
-                {{ $sprintShootout->winner->driver->Firstname }} {{ $sprintShootout->winner->driver->Lastname }}
-            </h3>
-            @php
+                    class="pole-driver team_{{ $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id }}--text">
+                    {{ $sprintShootout->winner->driver->Firstname }} {{ $sprintShootout->winner->driver->Lastname }}
+                </h3>
+                @php
                     $minutes = floor($sprintShootout->winner->q3 / 60);
                     $seconds = fmod($sprintShootout->winner->q3, 60);
                     $millisecondsparts = explode('.', $sprintShootout->winner->q3);
                     $milliseconds = isset($millisecondsparts[1]) ? $millisecondsparts[1] : '';
                     $seconds = floor($seconds);
                     $time = sprintf('%d:%02d.%03d', $minutes, $seconds, $milliseconds);
-                    @endphp
+                @endphp
                 <h3 class="pole_time">{{ $time }}</h3>
                 <button class="start--animation">Démarrer</button>
             </div>
-            
+
             <div class="track_container">
                 @include('svg.Qualifications.' . $sprintShootout->grandPrixWeekend->track->name, [
                     'time' => $sprintShootout->winner->q3,
                     'teamid' => $sprintShootout->winner->driver->teamDriver[0]->seasonTeam->team->id,
-                    ])
+                ])
             </div>
-            
-        </section>
-        
-        <section class="links">
-            <a class="quali_link link"
-                href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">Qualifications
-                -></a>
 
-            @if ($sprintShootout->grandPrixWeekend->sprint->sprint_story_id)
-                <a class="sprint_link link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">Sprint
-                    -></a>
-            @endif
-            @if ($sprintShootout->grandPrixWeekend->race->race_story_id)
-                <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">Course -></a>
-            @endif
         </section>
+
+        <section class="links-wrapper">
+            <div class="links-container">
+
+                <p>Liens GP</p>
+                <div class="links">
+                    @if ($sprintShootout->grandPrixWeekend->sprint->sprint_story_id)
+                        <a class="sprint_link link" href="{{ route('sprintNews', ['id' => $sprintShootoutStory->id]) }}">
+                            @include('Links.sprint')
+                        </a>
+                    @endif
+
+                    @if ($sprintShootout->grandPrixWeekend->qualification->qualification_story_id)
+                        <a class="link" href="{{ route('qualificationNews', ['id' => $sprintShootoutStory->id]) }}">
+                            @include('Links.quali')
+                        </a>
+                    @endif
+
+
+                    @if ($sprintShootout->grandPrixWeekend->race->race_story_id)
+                        <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintShootoutStory->id]) }}">
+                            @include('Links.race')
+                        </a>
+                    @endif
+                </div>
+
+            </div>
+        </section>
+
         @if ($sprintShootoutStory->extra)
             <section class="extra">
                 <h2>Mise a Jour</h2>

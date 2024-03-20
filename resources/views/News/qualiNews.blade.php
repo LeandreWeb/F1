@@ -161,14 +161,30 @@
                 <p>{{ $qualiStory->extra }}</p>
             </section>
         @endif
-
-        <section class="links">
-            @if ($quali->grandPrixWeekend->race->race_story_id)
-                <a class="race_link link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">
-                    @include('Links.race')
-                </a>
-            @endif
+        <section class="links-wrapper">
+            <div class="links-container">
+                <p>Liens GP</p>
+                <div class="links">
+                    @if ($quali->grandPrixWeekend->sprintShootout)
+                        <a class="sprint_link link" href="{{ route('sprint shootoutNews', ['id' => $qualiStory->id]) }}">
+                            @include('Links.sprintShootout')
+                        </a>
+                    @endif
+                    @if ($quali->grandPrixWeekend->sprint)
+                        <a class="race_link link" href="{{ route('sprintNews', ['id' => $qualiStory->id]) }}">
+                            @include('Links.sprint')
+                        </a>
+                    @endif
+                    @if ($quali->grandPrixWeekend->race->race_story_id)
+                        <a class="race_link link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">
+                            @include('Links.race')
+                        </a>
+                    @endif
+                </div>
+            </div>
         </section>
+
+
 
 
 
