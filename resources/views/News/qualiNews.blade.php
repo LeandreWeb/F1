@@ -164,7 +164,9 @@
 
         <section class="links">
             @if ($quali->grandPrixWeekend->race->race_story_id)
-                <a class="race_link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">Course -></a>
+                <a class="race_link link" href="{{ route('raceNews', ['id' => $qualiStory->id]) }}">
+                    @include('Links.race')
+                </a>
             @endif
         </section>
 

@@ -1,9 +1,10 @@
 <div class="linkcard">
-    <div class="img-wrapper">
-        @include('Links.svg.wheel')
+    <div class="img-wrapper fill">
+        @include('Links.svg.sprintLines')
     </div>
     <div class="text">
-        <p class="single-line">Quali</p>
+        <p class="single-line">Sprint</p>
+        <p class="single-line">Shootout</p>
     </div>
 </div>
 
@@ -31,9 +32,14 @@
 
                 & path {
                     transition: .4s;
+                    stroke: var(--accent)
 
                 }
             }
+        }
+
+        & .fill svg path{
+            fill: var(--accent)
         }
 
 
@@ -55,6 +61,9 @@
 
             & .img-wrapper svg path {
                 stroke: var(--background-darker);
+            }
+            & .fill svg path{
+                fill: var(--background-darker);
             }
         }
 

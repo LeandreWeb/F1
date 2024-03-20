@@ -74,11 +74,15 @@
 
         <section class="links">
             @if ($race->grandPrixWeekend->sprint)
-                <a class="race_link link" href="{{ route('sprintNews', ['id' => $raceStory->id]) }}">Sprint -></a>
+                <a class="race_link link"
+                    href="{{ route('sprintNews', ['id' => $raceStory->id]) }}">
+                    @include('Links.sprint')
+                </a>
             @endif
             @if ($race->grandPrixWeekend->sprintShootout)
-                <a class="sprint_link link" href="{{ route('sprint shootoutNews', ['id' => $raceStory->id]) }}">Sprint
-                    Shootout -></a>
+                <a class="sprint_link link" href="{{ route('sprint shootoutNews', ['id' => $raceStory->id]) }}">
+                    @include('Links.sprintShootout')
+                </a>
             @endif
             @if ($race->grandPrixWeekend->qualification->qualification_story_id)
                 <a class="race_link link" href="{{ route('qualificationNews', ['id' => $raceStory->id]) }}">

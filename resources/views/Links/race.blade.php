@@ -1,9 +1,9 @@
 <div class="linkcard">
     <div class="img-wrapper">
-        @include('Links.svg.wheel')
+        @include('Links.svg.cars')
     </div>
     <div class="text">
-        <p class="single-line">Quali</p>
+        <p class="single-line">Race</p>
     </div>
 </div>
 
@@ -28,6 +28,7 @@
             & svg {
                 width: 100%;
                 height: 100%;
+                padding:0px;
 
                 & path {
                     transition: .4s;

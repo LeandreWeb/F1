@@ -1,9 +1,9 @@
 <div class="linkcard">
-    <div class="img-wrapper">
-        @include('Links.svg.wheel')
+    <div class="img-wrapper fill">
+        @include('Links.svg.sprint')
     </div>
     <div class="text">
-        <p class="single-line">Quali</p>
+        <p class="single-line">Sprint</p>
     </div>
 </div>
 
@@ -55,6 +55,9 @@
 
             & .img-wrapper svg path {
                 stroke: var(--background-darker);
+            }
+            & .fill svg path{
+                fill: var(--background-darker);
             }
         }
 
