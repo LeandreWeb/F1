@@ -159,19 +159,8 @@
             box-shadow: 0px 0px 20px -5px var(--danger);
         }
 
-        .event_info_events {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
 
-        .event_info_events a ,.article_to_do  {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 800;
-            position: relative;
-            overflow: hidden;
-        }
+
 
         .article_to_do{
             opacity: .5;
@@ -179,20 +168,8 @@
             
         } 
 
-        .event_info_events a::after {
-            content: "";
-            background-color: var(--accent);
-            width: 100%;
-            height: .5rem;
-            position: absolute;
-            right: -100%;
-            bottom: 0;
-            transition: .2s
-        }
 
-        .event_info_events a:hover::after {
-            right: 0rem;
-        }
+
 
         .event_round {
             position: absolute;

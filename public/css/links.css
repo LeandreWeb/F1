@@ -1,7 +1,12 @@
 .linkcard {
     width: 6.75rem;
     height: 10rem;
-    background: linear-gradient(to bottom, var(--background-dark) 50%, var(--accent) 50%) top;
+    background: linear-gradient(
+            to bottom,
+            var(--background-dark) 50%,
+            var(--accent) 50%
+        )
+        top;
     background-size: 100% 200%;
     border: solid 2px var(--accent);
     border-radius: 7.5px;
@@ -11,7 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    transition: .25s;
+    transition: 0.25s;
 
     & .img-wrapper {
         max-height: 5rem;
@@ -22,24 +27,21 @@
             padding: 0px;
 
             & path {
-                transition: .4s;
-                stroke: var(--accent)
-
+                transition: 0.4s;
+                stroke: var(--accent);
             }
         }
     }
 
-    & .fill svg path{
-        fill: var(--accent)
+    & .fill svg path {
+        fill: var(--accent);
     }
-
 
     & .single-line {
         font-weight: 600;
         font-size: 1.2rem;
         text-align: center;
-        transition: .4s;
-
+        transition: 0.4s;
     }
 
     &:hover {
@@ -53,9 +55,76 @@
         & .img-wrapper svg path {
             stroke: var(--background-darker);
         }
-        & .fill svg path{
+        & .fill svg path {
             fill: var(--background-darker);
         }
     }
+}
 
+.event_info_events {
+    & .links-wrapper .links-container {
+        background-color: transparent;
+        padding: 0;
+
+        & .links {
+            background-color: transparent;
+            padding: 0;
+            gap: 0.5rem;
+
+            & .linkcard {
+                width: 5.75rem;
+                height: 8rem;
+
+                & .single-line {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+.links-wrapper {
+    display: flex;
+    max-width: 175rem;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.links-container {
+    display: flex;
+    background-color: var(--background-dark);
+    border-radius: 7.5px;
+    padding: 1rem;
+    flex-direction: column;
+
+    & .links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--background);
+        border-radius: 7.5px;
+        flex-direction: row;
+        justify-content: center;
+
+        & .link:only-child .linkcard {
+            width: 12rem;
+
+            & .single-line {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    & p {
+        color: var(--accent);
+        font-weight: 800;
+        font-size: clamp(2.4rem, 4dvw, 3.8rem);
+    }
+}
+
+.links a {
+    text-decoration: none;
 }
