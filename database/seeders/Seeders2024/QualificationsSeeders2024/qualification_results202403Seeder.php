@@ -22,14 +22,14 @@ class qualification_results202403Seeder extends Seeder
             "id" => 20240301,
             "driver_id" => 1,
             'qualification_id' => 202403,
-            "q1" => 88.171, //91.295
+            "q1" => 75.915, //91.295
             "q2" => 88.033,
             "q3" => 87.472,
             "position" => 1
         ];
         $qualificationResults[] = [
             "id" => 20240302,
-            "driver_id" => 16,
+            "driver_id" => 55,
             'qualification_id' => 202403,
             "q1" => 88.318,
             "q2" => 88.112,
@@ -47,7 +47,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240304,
-            "driver_id" => 14,
+            "driver_id" => 4,
             'qualification_id' => 202403,
             "q1" => 88.706,
             "q2" => 88.122,
@@ -56,7 +56,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240305,
-            "driver_id" => 81,
+            "driver_id" => 16,
             'qualification_id' => 202403,
             "q1" => 88.755,
             "q2" => 88.343,
@@ -65,7 +65,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240306,
-            "driver_id" => 4,
+            "driver_id" => 81,
             'qualification_id' => 202403,
             "q1" => 88.805,
             "q2" => 88.479,
@@ -83,7 +83,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240308,
-            "driver_id" => 44,
+            "driver_id" => 22,
             'qualification_id' => 202403,
             "q1" => 88.994,
             "q2" => 88.606,
@@ -92,7 +92,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240309,
-            "driver_id" => 22,
+            "driver_id" => 18,
             'qualification_id' => 202403,
             "q1" => 88.988,
             "q2" => 88.564,
@@ -101,7 +101,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240310,
-            "driver_id" => 18,
+            "driver_id" => 14,
             'qualification_id' => 202403,
             "q1" => 88.250,
             "q2" => 88.578,
@@ -110,7 +110,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240311,
-            "driver_id" => 38,
+            "driver_id" => 44,
             'qualification_id' => 202403,
             "q1" => 88.984,
             "q2" => 88.642,
@@ -128,7 +128,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240313,
-            "driver_id" => 20,
+            "driver_id" => 77,
             'qualification_id' => 202403,
             "q1" => 89.069,
             "q2" => 89.020,
@@ -137,7 +137,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240314,
-            "driver_id" => 3,
+            "driver_id" => 20,
             'qualification_id' => 202403,
             "q1" => 89.065,
             "q2" => 89.025,
@@ -146,7 +146,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240315,
-            "driver_id" => 27,
+            "driver_id" => 31,
             'qualification_id' => 202403,
             "q1" => 89.065,
             "q2" => null,
@@ -155,7 +155,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240316,
-            "driver_id" => 77,
+            "driver_id" => 27,
             'qualification_id' => 202403,
             "q1" => 89.179,
             "q2" => null,
@@ -164,7 +164,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240317,
-            "driver_id" => 31,
+            "driver_id" => 10,
             'qualification_id' => 202403,
             "q1" => 89.475,
             "q2" => null,
@@ -173,7 +173,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240318,
-            "driver_id" => 10,
+            "driver_id" => 3,
             'qualification_id' => 202403,
             "q1" => 89.479,
             "q2" => null,
@@ -182,7 +182,7 @@ class qualification_results202403Seeder extends Seeder
         ];
         $qualificationResults[] = [
             "id" => 20240319,
-            "driver_id" => 2,
+            "driver_id" => 24,
             'qualification_id' => 202403,
             "q1" => 89.526,
             "q2" => null,
