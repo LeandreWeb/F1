@@ -60,6 +60,23 @@ class QualificationStorySeeder2024 extends Seeder
             "extra" => null
         ];
 
+        $qualificationStory[] = [
+            "id" => 202403,
+
+            "catchphrase" => "",
+
+            "intro" => "",
+
+            "q1" => "",
+
+            "q2" => "",
+
+            "q3" => "",
+
+            "conclusion" => "",
+
+            "extra" => null
+        ];
 
 
 
