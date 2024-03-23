@@ -22,7 +22,7 @@ class qualification_results202403Seeder extends Seeder
             "id" => 20240301,
             "driver_id" => 1,
             'qualification_id' => 202403,
-            "q1" => 75.915, //91.295
+            "q1" => 88.888, //91.295
             "q2" => 88.033,
             "q3" => 87.472,
             "position" => 1
