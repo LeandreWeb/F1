@@ -19,7 +19,7 @@ class QualificationsDatabaseSeeder extends Seeder
         $this->call(qualificationsSeeder2024::class);
         $this->call(qualification_results202401Seeder::class);
         $this->call(qualification_results202402Seeder::class);
-        // $this->call(qualification_results202403Seeder::class);
+        $this->call(qualification_results202403Seeder::class);
         // $this->call(qualification_results202404Seeder::class);
         // $this->call(qualification_results202405Seeder::class);
         // $this->call(qualification_results202407Seeder::class);
