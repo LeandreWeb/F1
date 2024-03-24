@@ -66,6 +66,40 @@ class RaceStorySeeder2024 extends Seeder
             "extra" => null,
         ];
 
+        $raceStories[] = [
+            "id" => 202403,
+
+            "catchphrase" => "Ferrari 1 2",
+
+            "intro" => "Le duel entre Max Verstappen et Carlos Sainz, qui a subi une opération de l'appendicite il y a seulement une semaine, promet d'être intense. Le Néerlandais, en pole position, aura fort à faire face à l'Espagnol, qui a déjà montré sa combativité par le passé.
+            Sergio Pérez, pénalisé de trois places sur la grille pour avoir gêné Nico Hülkenberg en qualifications, aura à cœur de remonter le peloton.
+            Guanyu Zhou partira des stands après un changement d'aileron avant. Le Chinois, victime d'un accident lors des qualifications, aura fort à faire pour remonter dans le classement.",
+
+            "first_part" => "Le départ du Grand Prix d'Australie 2024 a été donné et Max Verstappen a réalisé un excellent envol pour conserver la tête de la course devant Carlos Sainz. Le Néerlandais semblait en mesure de contrôler la course, mais le deuxième tour a été riche en rebondissements.
+
+            Verstappen a manqué le virage 3 et Sainz en a profité pour le dépasser juste avant le virage 9. Le duel entre les deux pilotes était intense et promettait une course palpitante.
+            
+            Cependant, au début du 4ème tour, un événement inattendu s'est produit. De la fumée a commencé à s'échapper de l'arrière de la voiture de Verstappen. Le pilote Red Bull a été contraint de se retirer de la course, son frein arrière droit ayant brûlé. C'est la première fois que Verstappen n'a pas pu terminer une course depuis le Grand Prix d'Australie 2022, et sa série de 9 victoires consécutives s'est donc terminée.
+            Suite à divers arrêts aux stands, Charles Leclerc s'est retrouvé en 2ème position au 16ème tour.
+            Un problème de moteur a contraint Lewis Hamilton à abandonner au 17ème tour. L'arrêt d'Hamilton a provoqué un VSC (Virtual Safety Car), dont Fernando Alonso a profité pour faire un arrêt aux stands et se retrouver 5ème.",
+
+            "middle_part" => "Le milieu de course a été relativement calme, mais il a été marqué par une bataille stratégique entre Ferrari et McLaren. Les deux équipes ont pris une longueur d'avance sur le reste du peloton en optant pour une stratégie à deux arrêts aux stands.
+            Pendant ce temps, plusieurs batailles ont eu lieu pour les derniers points. Nico Hulkenberg a réussi à dépasser Alex Albon pour la 10ème position, tandis que Sergio Perez a  dépasser Fernando Alonso pour la 5eme position ,mais l'Espagnol a profité du DRS pour rester proche du Mexicain.",
+
+            "last_part" => "Au tour 45, Kevin Magnussen a réussi à dépasser Alex Albon pour prendre la 11ème position. Le Danois a réalisé une course solide et a profité des erreurs de ses concurrents pour marquer des points précieux.
+
+            Dans les derniers tours, une bataille intense a eu lieu entre George Russell et Fernando Alonso pour la 6ème position. L'Espagnol a bien défendu sa position et a réussi à repousser les attaques du Britannique. Cependant, Russell a commis une erreur au dernier tour et a frappé la barrière de sécurité au virage 6. Cet incident a permis à Alonso de terminer 6ème et de marquer des points importants pour Aston Martin.
+            Malgré la fin de course mouvementée, Carlos Sainz a réussi à conserver sa première place et à remporter sa 3ème victoire en Formule 1. Le pilote Ferrari a réalisé une course impeccable et a été récompensé par ses efforts. Charles Leclerc a terminé 2ème, juste devant Lando Norris, qui a complété le podium.",
+
+            "conclusion" => "Le Grand Prix d'Australie 2024 a été une course extraordinaire qui a vu Carlos Sainz s'imposer de manière magistrale. Le pilote Ferrari a réalisé une performance exceptionnelle, s'emparant de la tête de la course dès le départ et la conservant jusqu'à l'arrivée. Cette victoire est d'autant plus impressionnante qu'elle survient moins d'une semaine après une opération de l'appendicite.
+            La course a également été marquée par les abandons des deux Mercedes. Lewis Hamilton a été contraint à l'abandon au 17ème tour à cause d'un problème de moteur, tandis que George Russell a connu un accident au dernier tour après une bataille intense avec Fernando Alonso.
+            Max Verstappen, qui visait une 10ème victoire consécutive, a également été contraint à l'abandon. Le pilote Red Bull a subi une panne de frein arrière droit au 4ème tour, mettant fin à sa série de succès.
+            Le Grand Prix d'Australie 2024 a été un triomphe pour Ferrari. L'équipe italienne a réalisé un doublé avec Sainz et Leclerc, signant son premier 1-2 depuis 2022.",
+
+            "extra" => "Après une enquête approfondie, la FIA a décidé de pénaliser Fernando Alonso de 20 secondes pour conduite dangereuse. L'Espagnol a été jugé responsable de l'accident de George Russell dans le dernier tour de la course.
+            En conséquence de cette pénalité, Alonso perd deux positions et se retrouve 8ème au lieu de 6ème. Son coéquipier Lance Stroll est promu à la 6ème position et Yuki Tsunoda à la 7ème position.",
+        ];
+
         // $raceStories[] = [
         //     "id" => 202401,
 

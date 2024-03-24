@@ -16,7 +16,7 @@ class RacesDatabaseSeeder extends Seeder
         $this->call(racesSeeder2024::class);
         $this->call(race_results202401Seeder::class);
         $this->call(race_results202402Seeder::class);
-        // $this->call(race_results202403Seeder::class);
+        $this->call(race_results202403Seeder::class);
         // $this->call(race_results202404Seeder::class);
         // $this->call(race_results202405Seeder::class);
         // $this->call(race_results202407Seeder::class);
