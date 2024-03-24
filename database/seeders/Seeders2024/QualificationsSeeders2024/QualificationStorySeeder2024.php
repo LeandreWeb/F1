@@ -65,17 +65,38 @@ class QualificationStorySeeder2024 extends Seeder
 
             "catchphrase" => "Max Poleman",
 
-            "intro" => "",
+            "intro" => "Le Grand Prix d'Australie 2024 a connu une semaine de préparation agitée.
+            Un accident spectaculaire d'Alex Albon en essais libres a brisé son châssis. Williams, sans châssis de réserve, a placé Albon dans la voiture de Sargent, privant ce dernier de course.
+            Sainz de retour, mais diminué.
+            Carlos Sainz, de retour après une opération de l'appendicite, n'est pas encore à 100%.",
 
-            "q1" => "",
+            "q1" => "Le premier incident notable a impliqué Sergio Pérez et Nico Hulkenberg.
+            Alors que  l'Allemand  tentait de réaliser un tour rapide, il s'est retrouvé en face du Mexicain , qui était en train de se préparer pour son propre tour. Hulkenberg a été contraint de ralentir 
+            Les commissaires de course ont décidé d'ouvrir une enquête après la séance pour déterminer si Pérez a effectivement bloqué Hulkenberg et s'il mérite une pénalité.
+            Pierre Gasly a également attiré l'attention des commissaires de course. Le Français a franchi la ligne blanche à la sortie des stands, ce qui est une infraction passible d'une pénalité.
+            Daniel Ricciardo avait réalisé un superbe dernier tour qui lui aurait permis de se qualifier en Q2. Cependant, son rêve a été brisé lorsque les commissaires ont décidé d'annuler son temps pour avoir dépassé les limites de la piste dans le virage 4. Une terrible déception pour le pilote australien, qui espérait briller devant son public.
+            Zhou a pris le virage 10 un peu trops large et a pris la courbe violemment, détruisant son aileron avant et compromettant son dernier tour.",
 
-            "q2" => "",
+            "q2" => " Le septuple champion du monde n'a pas réussi à trouver le rythme nécessaire pour se qualifier en Q3 et s'est classé 11ème. Une performance décevante pour le Britannique et Mercedes, qui devront se battre en course pour remonter dans le peloton.
+            L'autre surprise de la Q2 est venue de Yuki Tsunoda. Le pilote japonais, au volant de sa RB, a réalisé un superbe dernier tour pour se hisser en Q3. Une performance impressionnante qui confirme le potentiel de Tsunoda et qui lui offre une belle opportunité de marquer des points lors de la course sprint.
+            Outre Hamilton, les autres pilotes qui n'ont pas réussi à se qualifier en Q3 sont Alex Albon (Williams), Valtteri Bottas (Stake F1), Kevin Magnussen (Haas) et Esteban Ocon (Alpine).
+            ",
 
-            "q3" => "",
+            "q3" => "La Q3 du Grand Prix d'Australie 2024 a été une véritable bataille entre Red Bull et Ferrari. Les deux équipes se sont livrées à un duel acharné pour la pole position.
+            La séance a été marquée par un incident impliquant Fernando Alonso. Le pilote Alpine a perdu le contrôle de sa voiture dans le virage 6 lors de son premier tour. Cela l'a contraint à abandonner son tour et à se contenter d'une 10ème place sur la grille de départ.
+            Malgré la pression des Ferrari, Verstappen n'a pas tremblé et a réalisé un tour impeccable pour s'adjuger sa troisième pole position de la saison. Le Néerlandais semble en pleine forme et sera le favori pour la victoire lors de la course.
+            Les Ferrari de Sainz et Pérez se sont classées deuxième et troisième, à quelques dixièmes de secondes de Verstappen. Les deux pilotes seront à l'affût du moindre faux pas du Néerlandais pour tenter de lui chiper la victoire.
+            ",
 
-            "conclusion" => "",
+            "conclusion" => "Oscar Piastry s'est illustré en signant une superbe performance. Le jeune Australien, au volant de sa Mclaren, a réalisé le sixième temps et se positionne comme une menace pour la course.
+            Daniel Ricciardo, en revanche, a connu une journée difficile. Le pilote RB n'a pas réussi à trouver le rythme et s'est qualifié en 18ème position. Une performance décevante pour l'Australien qui devra se battre en course pour remonter dans le peloton.
+            La lutte entre Red Bull et Ferrari a été l'un des moments forts de la séance. Max Verstappen a réalisé un tour impeccable pour s'adjuger sa troisième pole position de la saison. Le Néerlandais semble en pleine confiance et sera le favori pour la victoire.
+            Cependant, les Ferrari de Carlos Sainz et Sergio Pérez ne sont pas loin. Les deux pilotes seront à l'affût du moindre faux pas de Verstappen pour tenter de lui voleer la victoire.",
 
-            "extra" => null
+            "extra" => "Après une enquête approfondie, la FIA a décidé de pénaliser Sergio Pérez de trois positions sur la grille de départ du Grand Prix d'Australie 2024. Le Mexicain a été reconnu coupable d'avoir entravé Nico Hülkenberg lors de la Q1, ce qui a eu un impact négatif sur le tour du pilote Haas.
+            Lando Norris, Charles Leclerc et Oscar Piastri gagnent donc chacun une position sur la grille de départ. Norris passe de la quatrième à la troisième place, Leclerc de la cinquième à la quatrième et Piastri de la sixième à la cinquième.
+            La pénalité de Pérez est un coup dur pour Red Bull, qui perd une place sur la grille de départ pour son deuxième pilote. Cela pourrait avoir un impact important sur la stratégie de l'équipe pour la course.
+            "
         ];
 
 
