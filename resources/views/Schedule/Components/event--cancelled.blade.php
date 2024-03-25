@@ -10,9 +10,19 @@
             </h4>
         </div>
         <div class="event_info_events">
-            @if ($gp->article)
-                <a href="{{ route('articleNews', ['id' => $gp->article->id]) }}">Article</a>
-            @endif
+            <div class="links-wrapper">
+                <div class="links-container">
+                    <div class="links">
+                        @if ($gp->article)
+                            <a
+                                href="{{ route('articleNews', ['id' => $gp->article->id]) }}">@include('Links.news')</a>
+                        @else
+                            <div class="article_to_do">@include('Links.news')</div>
+                        @endif
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <h2 class="event_round">Ronde {{ $gp->round }}</h2>
@@ -26,4 +36,3 @@
 <style>
 
 </style>
-
