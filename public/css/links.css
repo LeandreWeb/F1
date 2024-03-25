@@ -91,7 +91,7 @@
                     }
 
                     & .single-line {
-                        font-size: .8rem;
+                        font-size: 0.8rem;
                     }
                 }
 
@@ -104,7 +104,7 @@
                     }
 
                     & .single-line {
-                        font-size: .8rem;
+                        font-size: 0.8rem;
                     }
                 }
 
@@ -121,6 +121,27 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.article_to_do {
+    opacity: 0.75;
+    filter: blur(1px);
+
+    & .linkcard:hover {
+        background-position: top;
+        border-color: var(--accent);
+
+        & .single-line {
+            color: var(--accent);
+        }
+
+        & .img-wrapper svg path {
+            stroke: var(--accent);
+        }
+        & .fill svg path {
+            fill: var(--accent);
         }
     }
 }

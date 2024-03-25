@@ -76,8 +76,6 @@ class HomePage extends Controller
             if ($currentGp->race->date <= now()) {
                 $lastGp = $currentGp;
 
-                echo ($lastGp);
-
                 if (!$lastGp->qualification->qualification_story_id) {
 
                     $lastGp = Qualification::whereNotNull("qualification_story_id")->orderBy("id", "desc")->first()->grandPrixWeekend;

@@ -162,12 +162,6 @@
 
 
 
-        .article_to_do{
-            opacity: .5;
-            filter: blur(1px)
-            
-        } 
-
 
 
 
