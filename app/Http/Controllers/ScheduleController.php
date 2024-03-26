@@ -76,13 +76,15 @@ class ScheduleController extends Controller
         foreach ($RacesDones as $race) {
             $dateDiff =  (int)now()->diff($race->date)->format('%d');
             $monthDiff =  (int)now()->diff($race->date)->format('%m');
+            $yearDiff =  (int)now()->diff($race->date)->format('%y');
+
             $raceDate = new DateTime($race->date);
             $raceYear = $raceDate->format('Y');
 
             if (($year > $raceYear || $dateDiff > 2) && ($race->grandPrixWeekend->status != "done" && $race->grandPrixWeekend->status != "cancelled")) {
                 $race->grandPrixWeekend->status = "done";
                 $race->grandPrixWeekend->save();
-            } else if ($dateDiff <= 2 && $monthDiff == 0) {
+            } else if ($dateDiff <= 2 && $monthDiff == 0 && $yearDiff == 0) {
                 $race->grandPrixWeekend->status = "current";
                 $race->grandPrixWeekend->save();
             }

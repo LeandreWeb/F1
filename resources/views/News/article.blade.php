@@ -109,33 +109,7 @@
 
         }
 
-        .links {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
 
-        .link {
-            font-size: 25px;
-            font-weight: 800;
-            text-decoration: none;
-            color: var(--accent);
-            width: fit-content;
-        }
-
-        .link::after {
-            display: block;
-            content: "";
-            width: 0%;
-            height: 5px;
-            background-color: var(--accent);
-            transition: .5s
-        }
-
-        .link:hover::after {
-            width: 100%;
-        }
 
         .article_text {
             padding: 0 2em;

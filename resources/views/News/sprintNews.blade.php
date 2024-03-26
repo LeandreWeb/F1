@@ -61,24 +61,29 @@
             </section>
         @endif
 
-        <section class="links">
-            @if ($sprint->grandPrixWeekend->sprintShootout->sprint_shootout_story_id)
-                <a class="sprint_link link" href="{{ route('sprint shootoutNews', ['id' => $sprintStory->id]) }}">Sprint
-                    Shootout -></a>
-            @endif
-            @if ($sprint->grandPrixWeekend->race->race_story_id)
-                <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintStory->id]) }}">Course -></a>
-            @endif
-            @if ($sprint->grandPrixWeekend->qualification->qualification_story_id)
-                <a class="race_link link" href="{{ route('qualificationNews', ['id' => $sprintStory->id]) }}">Qualification
-                    -></a>
-            @endif
+        <section class="links-wrapper">
+            <div class="links-container">
+                <p>Liens GP</p>
+                <div class="links">
+                    @if ($sprint->grandPrixWeekend->sprintShootout->sprint_shootout_story_id)
+                        <a class="sprint_link link" href="{{ route('sprint shootoutNews', ['id' => $sprintStory->id]) }}">
+                            @include('Links.sprintShootout')
+                        </a>
+                    @endif
+                    @if ($sprint->grandPrixWeekend->qualification->qualification_story_id)
+                        <a class="race_link link" href="{{ route('qualificationNews', ['id' => $sprintStory->id]) }}">
+                            @include('Links.quali')
+                        </a>
+                    @endif
+                    @if ($sprint->grandPrixWeekend->race->race_story_id)
+                        <a class="race_link link" href="{{ route('raceNews', ['id' => $sprintStory->id]) }}">
+                            @include('Links.race')
+                        </a>
+                    @endif
 
+                </div>
+            </div>
         </section>
 
-
-
     </main>
-
-
 @endsection

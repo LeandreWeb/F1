@@ -178,13 +178,7 @@
     }
 }
 
-.links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0 3rem;
-}
+
 
 .link {
     font-size: 25px;
@@ -192,19 +186,6 @@
     text-decoration: none;
     color: var(--accent);
     width: fit-content;
-}
-
-.link::after {
-    display: block;
-    content: "";
-    width: 0%;
-    height: 5px;
-    background-color: var(--accent);
-    transition: 0.5s;
-}
-
-.link:hover::after {
-    width: 100%;
 }
 
 .quali_outs {
@@ -238,27 +219,6 @@
     top: -16px;
     font-size: 32px;
     color: var(--accent);
-}
-
-.race_link {
-    font-size: 24px;
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--accent);
-    width: fit-content;
-}
-
-.race_link::after {
-    display: block;
-    content: "";
-    width: 0%;
-    height: 5px;
-    background-color: var(--accent);
-    transition: 0.5s;
-}
-
-.race_link:hover::after {
-    width: 100%;
 }
 
 .quali_visual {
