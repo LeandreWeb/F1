@@ -33,7 +33,7 @@
                             @if ($gp->qualification->qualification_story_id)
                                 <a href="{{ route('qualificationNews', ['id' => $gp->id]) }}">@include('Links.quali')</a>
                             @else
-                                <p>
+                                <p class="upcoming-time">
                                     Qualification: {{ $formattedDatequali }}{{ $gp->qualification->start }}
                                 </p>
                             @endif
@@ -41,7 +41,7 @@
                                 @if ($gp->sprintShootout->sprint_shootout_story_id)
                                     <a href="{{ route('sprint shootoutNews', ['id' => $gp->id]) }}">@include('Links.sprintShootout')</a>
                                 @else
-                                    <p>Sprint Shootout {{ $formattedDateSprintShootout }}
+                                    <p class="upcoming-time">Sprint Shootout {{ $formattedDateSprintShootout }}
                                         {{ $gp->sprintShootout->start }}</p>
                                 @endif
                             @endif
@@ -50,13 +50,13 @@
                                 @if ($gp->sprint->sprint_story_id)
                                     <a href="{{ route('sprintNews', ['id' => $gp->id]) }}">@include('Links.sprint')</a>
                                 @else
-                                    <p>Sprint {{ $formattedDateSprint }} {{ $gp->sprint->start }}</p>
+                                    <p class="upcoming-time">Sprint {{ $formattedDateSprint }} {{ $gp->sprint->start }}</p>
                                 @endif
                             @endif
                             @if ($gp->race->race_story_id)
                                 <a href="{{ route('raceNews', ['id' => $gp->id]) }}">@include('Links.race')</a>
                             @else
-                                <p>
+                                <p class="upcoming-time">
                                     Course: {{ $formattedDaterace }}{{ $gp->race->start }}
                                 </p>
                             @endif

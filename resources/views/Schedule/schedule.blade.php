@@ -105,6 +105,7 @@
         .event_container--current p {
             font-weight: 800;
             text-align: end;
+            
         }
 
 

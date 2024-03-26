@@ -191,3 +191,11 @@
 .links a {
     text-decoration: none;
 }
+
+.links:has(.upcoming-time) {
+    justify-content: end;
+
+    & .upcoming-time {
+        font-weight: 700;
+    }
+}
