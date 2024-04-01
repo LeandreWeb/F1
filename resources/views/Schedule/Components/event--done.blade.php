@@ -1,4 +1,7 @@
 <div class="event_container">
+    <div class="wave">
+        @include('svg.Animated.misc.wave')
+    </div>
     <div class="event_track">
         @include('svg.CalendarTracks.' . $gp->track->name)
     </div>
@@ -11,13 +14,15 @@
                 <div class="links-container">
                     <div class="links">
                         @if ($gp->qualification->qualification_story_id)
-                            <a href="{{ route('qualificationNews', ['id' => $gp->id]) }}">@include('Links.quali')</a>
+                            <a
+                                href="{{ route('qualificationNews', ['id' => $gp->id]) }}">@include('Links.quali')</a>
                         @else
                             <div class="article_to_do">@include('Links.quali')</div>
                         @endif
                         @if ($gp->sprint_shootout_id)
                             @if ($gp->sprintShootout->sprint_shootout_story_id)
-                                <a href="{{ route('sprint shootoutNews', ['id' => $gp->id]) }}">@include('Links.sprintShootout')</a>
+                                <a
+                                    href="{{ route('sprint shootoutNews', ['id' => $gp->id]) }}">@include('Links.sprintShootout')</a>
                             @else
                                 <div class="article_to_do">@include('Links.sprintShootout')</div>
                             @endif
@@ -39,8 +44,8 @@
             </section>
 
         </div>
-        <h2 class="event_round">Ronde {{ $gp->round }}</h2>
     </div>
+    <h2 class="event_round">Ronde {{ $gp->round }}</h2>
 </div>
 
 <style>

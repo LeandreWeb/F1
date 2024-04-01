@@ -25,10 +25,10 @@
 
         </div>
 
-        <h2 class="event_round">Ronde {{ $gp->round }}</h2>
-
-
+        
+        
     </div>
+    <h2 class="event_round">Ronde {{ $gp->round }}</h2>
 
 
 </div>
