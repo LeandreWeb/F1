@@ -25,7 +25,6 @@
 
 .event_container {
     border-radius: 0.75rem;
-    background-color: var(--background-light);
     display: flex;
     max-width: 75rem;
     aspect-ratio: 2.25/1;
@@ -57,7 +56,7 @@
     flex: 1 1;
     padding: 2rem;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 
 }
 
@@ -66,6 +65,7 @@
     height: 100%;
     padding: 0.5rem;
     min-width: 2.3rem;
+
 }
 
 .event_track svg #circuit {
@@ -89,7 +89,8 @@
     background-color: var(--background-darker-clear);
     border-radius: inherit;
     z-index: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+
 
 }
 
@@ -144,10 +145,15 @@
     & svg{
         width: 100%;
         height: 100%;
+        background-color: var(--accent-clear);
+        filter: blur(7px);
 
-        & path {
-            fill: var(--accent-clear);
+        & g{
+            scale: 1.5;
+            transform: translateY(-375px) scale(1.25) rotate(10deg);
         }
+
+        
     }
 }
 

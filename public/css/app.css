@@ -15,13 +15,14 @@ html {
 :root {
     --background: #242124;
     --background-light: #464046;
+    --background-light-clear: #4640469d;
     --background-dark: #3b373b;
     --background-darker: #050505;
     --background-darker-clear: #050505f5;
 
     --text: #fefefa;
     --accent: #68fe9a;
-    --accent-clear: #68fe9a73;
+    --accent-clear: #68fe9a15;
     --accent-darker: #34fe77;
     --danger: #ef233c;
     --confirmation: #6096ba;
