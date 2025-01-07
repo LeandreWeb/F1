@@ -13,24 +13,29 @@ class StandingController extends Controller
     public function menu()
     {
 
-        $year = date('Y') ;
-        $seasons =Season::orderBy("id","desc")->get();
+        $year = date('Y');
+        $seasons = Season::orderBy("id", "desc")->get();
 
-        
-        $seasonSelect=Season::latest()->where("id",request()->query("year_id"))->get();
 
-        if(count($seasonSelect)){
+        $seasonSelect = Season::latest()->where("id", request()->query("year_id"))->get();
+
+        if (count($seasonSelect)) {
             $season = $seasonSelect[0];
-        }
-        else{
+        } else {
 
-            $season = Season::with('seasonTeams.teamDrivers')->find($year);
+
+            do {
+                $season = Season::with('seasonTeams.teamDrivers')->find($year);
+                if (is_null($season)) {
+                    $year = $year - 1;
+                }
+            } while (is_null($season));
         }
 
         $teams = $season->rankedTeams();
 
         $drivers = $season->rankedDrivers();
 
-        return view("Standing.standing", compact('drivers', 'teams','seasons'));
+        return view("Standing.standing", compact('drivers', 'teams', 'seasons'));
     }
 }

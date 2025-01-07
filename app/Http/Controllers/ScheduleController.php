@@ -29,6 +29,13 @@ class ScheduleController extends Controller
             $season = $seasonSelect[0];
         } else {
             $season = Season::with('seasonTeams.teamDrivers')->find($year);
+
+            do {
+                $season = Season::with('seasonTeams.teamDrivers')->find($year);
+                if (is_null($season)) {
+                    $year = $year - 1;
+                }
+            } while (is_null($season));
         }
 
         if ($nextRace) {

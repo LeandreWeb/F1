@@ -10,11 +10,21 @@ use App\Models\Season;
 
 class TeamsController extends Controller
 {
-    public function menu (){
-        $year = date('Y') ;
+    public function menu()
+    {
+        $year = date('Y');
 
-        $seasonTeams = Season::with('seasonTeams.teamDrivers')->find($year)->seasonTeams;
+        $seasonTeamsYear = Season::with('seasonTeams.teamDrivers')->find($year);
 
-        return view("Teams.teams",compact('seasonTeams'));
+        do {
+            $seasonTeamsYear = Season::with('seasonTeams.teamDrivers')->find($year);
+            if (is_null($seasonTeamsYear)) {
+                $year = $year - 1;
+            }
+        } while (is_null($seasonTeamsYear));
+
+        $seasonTeams = $seasonTeamsYear->seasonTeams;
+
+        return view("Teams.teams", compact('seasonTeams'));
     }
 }

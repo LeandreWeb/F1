@@ -26,6 +26,12 @@ class HomePage extends Controller
 
         $season = Season::with('seasonTeams.teamDrivers')->find($year);
 
+        do {
+            $season = Season::with('seasonTeams.teamDrivers')->find($year);
+            if (is_null($season)) {
+                $year = $year - 1;
+            }
+        } while (is_null($season));
 
         $teamDriver = TeamDriver::where("driver_id", 1)->first();
 

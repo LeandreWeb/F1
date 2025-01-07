@@ -8,34 +8,38 @@ use App\Models\Season;
 
 class DriversController extends Controller
 {
-    public function menu( )
+    public function menu()
     {
 
-        $year = date('Y') ;
-        
-        $seasons =Season::orderBy("id","desc")->get();
+        $year = date('Y');
 
-        $seasonSelect=Season::latest()->where("id",request()->query("year_id"))->get();
+        $seasons = Season::orderBy("id", "desc")->get();
 
-        if(count($seasonSelect)){
+        $seasonSelect = Season::latest()->where("id", request()->query("year_id"))->get();
+
+        if (count($seasonSelect)) {
             $season = $seasonSelect[0];
-        }
-        else{
+        } else {
 
-            $season = Season::with('seasonTeams.teamDrivers')->find($year);
+            do {
+                $season = Season::with('seasonTeams.teamDrivers')->find($year);
+                if (is_null($season)) {
+                    $year = $year - 1;
+                }
+            } while (is_null($season));
         }
 
 
 
         $drivers = $season->teamDrivers();
 
-        $sortedDrivers = $drivers->sortBy(function ($d,$key){
-            
+        $sortedDrivers = $drivers->sortBy(function ($d, $key) {
+
             return $d->driver->Lastname;
         });
 
-        $teamDrivers=$sortedDrivers;
-        
-        return view('Drivers.Drivers',compact('teamDrivers','seasons'));
+        $teamDrivers = $sortedDrivers;
+
+        return view('Drivers.Drivers', compact('teamDrivers', 'seasons'));
     }
 }
